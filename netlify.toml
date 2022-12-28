@@ -20,3 +20,7 @@
 from = "/aaa"
 to = "index.html"
 status = 200
+
+from = "/aaab"
+to = "about.html"
+status = 200
