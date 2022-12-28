@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.statichunt.com/geeky-hugo/"
+baseURL = "https://appcodify.com/"
 title = "AppCodify | Raúl Ferrer Blog"
 theme = "geeky-hugo"
 languageName = "En"
