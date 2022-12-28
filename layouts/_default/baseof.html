@@ -8,9 +8,9 @@ AUTHOR WEBSITE: https://gethugothemes.com
 -->
 
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode | default `en-US` }}">
+<html prefix="og: http://ogp.me/ns#" lang="{{ site.LanguageCode | default `en-US` }}">
 
-<head>
+<head itemscope itemtype="{{ .Site.BaseURL }}">
 	{{ partial "head.html" . }}
 
 	<!-- cache partial only in production -->

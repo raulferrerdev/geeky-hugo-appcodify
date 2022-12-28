@@ -8,7 +8,7 @@
 ######################### site variables ##############################
 # customize your color and font from here.
 [params.variables]
-color_primary = "#2ba283"
+color_primary = "#A71A1A"
 body_color = "#FFF"
 text_color = "#555"
 text_dark = "#222"
@@ -20,7 +20,7 @@ light = "#f2f2f2"
 
 # font variables
 # base font size for full website, 
-font_size = "15px" # default is 16px
+font_size = "18px" # default is 16px
 
 # Font Scale Sizes
 # "minorSecond": 1.067,
@@ -35,7 +35,7 @@ font_scale = "1.3" # default is "majorThird": 1.25
 
 # Give your font name from google font. add font weight using ":wght@" and separate by ";"
 # example: "Work Sans:wght@400;500;600"
-font_primary = "Raleway:wght@400"
+font_primary = "Arsenal:wght@400"
 font_primary_type = "sans-serif"                  # [serif/sans-serif]
 font_secondary = "Merriweather Sans:wght@400;700"
 font_secondary_type = "sans-serif"                # [serif/sans-serif]
