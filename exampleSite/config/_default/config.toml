@@ -73,6 +73,6 @@ canonifyURLs = true
 [params]
   author = "Raúl Ferrer García"
   github = "https://github.com/raulferrerdev"
-  ogimage = "images/icon.png"
+  ogimage = "images/loo.png"
   sitename = "AppCodify"
   twitter = "@raulferrerdev"
