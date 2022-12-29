@@ -45,13 +45,13 @@ preloader = "" # use jpg, png, svg or gif format.
 # Banner
 [banner]
 enable = true
-title_large = "Welcome **!**"
-title_small = "to Raúl Ferrer Blog"
+title_large = "**Code** Craftsmanship"
+title_small = "Become a **Better Developer** with Our Blog and Tutorials"
 image = "images/banner.png"
 background_image = "/images/banner-bg-shape.svg"
-content = "A Developement Blog about iOS, Xcode, Swift, SwiftUI and Flutter. Learn how to build better applications."
-button_label = "Know About Me"
-button_link = "about/"
+#content = "A Developement Blog about iOS, Xcode, Swift, SwiftUI and Flutter. Learn how to build better applications."
+#button_label = "Know About Me"
+#button_link = "about/"
 
 # Advertise
 [advertisement]
@@ -82,35 +82,35 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this co
 ############################# social site ########################
 #[[social]]
 #title = "facebook"
-#icon = "fab fa-facebook fa-2x" # themify icon : https://themify.me/themify-icons
+#icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
 #link = "#"
 
 [[social]]
 title = "mail"
-icon = "fas fa-envelope fa-2x" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fas fa-envelope fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "mailto:developer.blog@icloud.com"
 
 [[social]]
 title = "twitter"
-icon = "fab fa-twitter fa-2x" # themify icon : https://themify.me/themify-icons
+icon = "fab fa-twitter fa-lg" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/raulferrerdev"
 
 #[[social]]
 #title = "instagram"
-#icon = "fab fa-instagram fa-2x" # fontawesome icon pack : https://fontawesome.com/icons/
+#icon = "fab fa-instagram fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
 #link = "https://www.instagram.com/raulferrerdev/"
 
 [[social]]
 title = "github"
-icon = "fab fa-github fa-2x" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-github fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://github.com/raulferrerdev"
 
 [[social]]
 title = "linkedin"
-icon = "fab fa-linkedin fa-2x" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-linkedin fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://es.linkedin.com/in/raulferrergarcia"
 
 [[social]]
 title = "youtube"
-icon = "fab fa-youtube fa-2x" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-youtube fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://www.youtube.com/channel/UCnVlVlHwC_Mz-n3Kqy90SkQ?sub_confirmation=1"

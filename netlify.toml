@@ -21,6 +21,7 @@ from = "/aaa"
 to = "index.html"
 status = 200
 
+[[redirects]]
 from = "/aaab"
 to = "about.html"
 status = 200
