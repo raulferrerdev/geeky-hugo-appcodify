@@ -13,7 +13,7 @@ navbar_fixed = true
 # OpenGraph / Twitter Card metadata
 description = "AppCodify | Become a Better Software Developer at AppCodify."
 author = "Raúl Ferrer"
-#ogimage = "icon.png" # this image will be used as fallback if a page has no image of its own
+ogimage = "images/twitter_card.png" # this image will be used as fallback if a page has no image of its own
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
@@ -93,7 +93,7 @@ link = "mailto:appcodify@icloud.com"
 [[social]]
 title = "twitter"
 icon = "fab fa-twitter fa-lg" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/raulferrerdev"
+link = "https://twitter.com/appcodify"
 
 #[[social]]
 #title = "instagram"
