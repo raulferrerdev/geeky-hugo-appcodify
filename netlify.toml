@@ -30,34 +30,42 @@ status = 200
 from = "/en/git-and-workflow-with-git"
 to = "/blog/git_workflow_gitflow"
 status = 302
+
 [[redirects]]
 from = "/git-y-flujo-de-trabajo-con-gitflow"
 to = "/blog/git_workflow_gitflow"
 status = 302
+
 [[redirects]]
 from = "/en/deploy-the-moor-database-on-flutter"
 to = "/blog/moor_database_flutter"
 status = 302
+
 [[redirects]]
 from = "/incluye-la-base-de-datos-moor-en-flutter"
 to = "/blog/moor_database_flutter"
 status = 302
+
 [[redirects]]
 from = "/en/dependency-injection-in-swift"
 to = "/blog/dependency_injection_swift"
 status = 302
+
 [[redirects]]
 from = "/inyeccion-de-dependencias-en-swift"
 to = "/blog/dependency_injection_swift"
 status = 302
+
 [[redirects]]
 from = "/mejora-codigo-swift-funciones-orden-superior"
 to = "/blog/swift_high_order_functions"
 status = 302
+
 [[redirects]]
 from = "/en/improve-your-swift-code-with-higher-order-functions"
 to = "/blog/swift_high_order_functions"
 status = 302
+
 [[redirects]]
 from = "/en/what-is-new-in-swift-5-3"
 to = "/blog/new_swift_5_3"
@@ -66,122 +74,153 @@ status = 302
 from = "/novedades-swift-5-3"
 to = "/blog/new_swift_5_3"
 status = 302
+
 [[redirects]]
 from = "/construye-una-aplicacion-de-mapas-y-rutas-con-mapkit"
 to = "/blog/build_maps_mapkit"
 status = 302
+
 [[redirects]]
 from = "/en/how-to-build-a-maps-and-routes-app-with-mapkit"
 to = "/blog/build_maps_mapkit"
 status = 302
+
 [[redirects]]
 from = "/en/how-to-automatize-the-deployment-of-ios-applications-with-bitrise"
 to = "/blog/automatize_deployment_bitrise"
 status = 302
+
 [[redirects]]
 from = "/como-automatizar-el-despliegue-de-aplicaciones-ios-con-bitrise"
 to = "/blog/automatize_deployment_bitrise"
 status = 302
+
 [[redirects]]
 from = "/en/create-a-fab-button-with-swift"
 to = "/blog/create_fab_button_swift"
 status = 302
+
 [[redirects]]
 from = "/crea-un-fab-button-con-swift"
 to = "/blog/create_fab_button_swift"
 status = 302
+
 [[redirects]]
 from = "/en/how-to-use-swift-package-manager"
 to = "/blog/swift_package_manager"
 status = 302
+
 [[redirects]]
 from = "/aprender-a-usar-swift-package-manager"
 to = "/blog/swift_package_manager"
 status = 302
+
 [[redirects]]
 from = "/en/use-the-new-apple-sf-symbols-in-your-applications"
 to = "/blog/apple_sf_symbols"
 status = 302
+
 [[redirects]]
 from = "/utilizar-los-nuevos-apple-sf-symbols-en-tus-aplicaciones"
 to = "/blog/apple_sf_symbols"
 status = 302
+
 [[redirects]]
 from = "/desarrolla-una-aplicacion-de-tareas-con-cloudkit"
 to = "/blog/develop_todo_cloudkit"
 status = 302
+
 [[redirects]]
 from = "/en/develop-a-todo-app-with-cloudkit"
 to = "/blog/develop_todo_cloudkit"
 status = 302
+
 [[redirects]]
 from = "/en/improve-your-flutter-navigation-with-routes"
 to = "/blog/flutter_navigation_routes"
 status = 302
+
 [[redirects]]
 from = "/mejora-la-navegacion-en-flutter-con-routes"
 to = "/blog/flutter_navigation_routes"
 status = 302
+
 [[redirects]]
 from = "/en/develop-your-own-ocr-on-ios-13-with-visionkit"
 to = "/blog/develop_ocr_visionkit"
 status = 302
+
 [[redirects]]
 from = "/desarrolla-tu-propio-ocr-en-ios-13-con-visionkit"
 to = "/blog/develop_ocr_visionkit"
 status = 302
+
 [[redirects]]
 from = "/en/how-to-test-push-notifications-in-xcode-11-4-simulator"
 to = "/blog/xcode_push_notifications_simulator"
 status = 302
+
 [[redirects]]
-from = "from = "/como-probar-notificaciones-push-en-el-simulador-en-xcode-11-4"
+from = "/como-probar-notificaciones-push-en-el-simulador-en-xcode-11-4"
 to = "/blog/xcode_push_notifications_simulator"
 status = 302
+
 [[redirects]]
 from = "/en/cryptokit-tutorial-how-to-use-cryptokit-on-ios13-apps"
 to = "/blog/criptokit_tutorial"
 status = 302
+
 [[redirects]]
 from = "/tutorial-cryptokit-aplicaciones-ios13"
 to = "/blog/criptokit_tutorial"
 status = 302
+
 [[redirects]]
 from = "/en/solid-principles-application-to-swift-development"
 to = "/blog/solid_principles_swift"
 status = 302
+
 [[redirects]]
 from = "/principios-solid-aplicacion-al-desarrollo-con-swift"
 to = "/blog/solid_principles_swift"
 status = 302
+
 [[redirects]]
 from = "/en/design-patterns-in-software"
 to = "/blog/design_patterns_software"
 status = 302
+
 [[redirects]]
 from = "/patrones-de-diseno-en-programacion"
 to = "/blog/design_patterns_software"
 status = 302
+
 [[redirects]]
 from = "/en/continuous-integration-and-continuous-delivery-ci-cd-with-github-action"
 to = "/blog/cicd_github_actions"
 status = 302
+
 [[redirects]]
 from = "/integracion-y-distribucion-continua-ci-cd-con-github-actions"
 to = "/blog/cicd_github_actions"
 status = 302
+
 [[redirects]]
 from = "/en/learn-how-to-build-in-flutter-widgets"
 to = "/blog/learn_how_build_widgets_flutter"
 status = 302
+
 [[redirects]]
 from = "/conoce-como-se-construye-en-flutter-los-widgets"
 to = "/blog/learn_how_build_widgets_flutter"
 status = 302
+
 [[redirects]]
 from = "/en/how-to-create-a-color-palette-color-assets-in-xcode"
 to = "/blog/create_color_palette"
 status = 302
+
+
 [[redirects]]
 from = "/como-crear-una-paleta-de-colores-color-assets-en-xcode"
 to = "/blog/create_color_palette"
@@ -190,110 +229,143 @@ status = 302
 from = "/en/how-to-add-dark-mode-in-ios-13"
 to = "/blog/add_dark_mode_ios"
 status = 302
+
 [[redirects]]
 from = "/como-anadir-el-modo-oscuro-o-dark-mode-en-ios-13"
 to = "/blog/add_dark_mode_ios"
 status = 302
+
 [[redirects]]
 from = "/en/do-you-want-to-learn-to-program-with-flutter-get-ready"
 to = "/blog/learn_programming_with_flutter"
 status = 302
+
 [[redirects]]
 from = "/primeros-pasos-con-flutter"
 to = "/blog/learn_programming_with_flutter"
 status = 302
+
 [[redirects]]
 from = "/en/what-is-metrickit"
 to = "/blog/what-is-metrickit"
 status = 302
+
 [[redirects]]
 from = "/que-es-metrickit"
 to = "/blog/what-is-metrickit"
 status = 302
+
 [[redirects]]
 from = "/en/database-layer-in-swift"
 to = "/blog/database_layer_in_swift"
 status = 302
+
 [[redirects]]
 from = "/capa-de-base-de-datos-en-swift"
 to = "/blog/database_layer_in_swift"
 status = 302
+
 [[redirects]]
 from = "/en/detect-net-status-with-nwpathmonitor"
 to = "/blog/detect_net_satus_with_nwpathmonitor"
 status = 302
+
 [[redirects]]
 from = "/deteccion-del-estado-de-la-red-con-nwpathmonitor"
 to = "/blog/detect_net_satus_with_nwpathmonitor"
 status = 302
+
 [[redirects]]
 from = "/en/result-type-in-swift-5"
 to = "/blog/result-type-swift-5"
 status = 302
+
 [[redirects]]
 from = "/tipo-result-en-swift-5"
 to = "/blog/result-type-swift-5"
 status = 302
+
 [[redirects]]
 from = "/en/custom-codable-types"
 to = "/blog/custom_codable_types"
 status = 302
+
 [[redirects]]
 from = "/tipos-codable-personalizados"
 to = "/blog/custom_codable_types"
 status = 302
+
 [[redirects]]
 from = "/en/encode-decode-protocols-in-swift-4-introduction"
 to = "/blog/encode_decode_protocols_in_swift_4"
 status = 302
+
 [[redirects]]
 from = "/protocolos-encode-decode-en-swift-4-introduccion"
 to = "/blog/encode_decode_protocols_in_swift_4"
 status = 302
+
 [[redirects]]
 from = "/en/architecture_patterns_ios"
 to = "/blog/architecture_patterns_ios"
 status = 302
+
 [[redirects]]
 from = "/patrones_arquitectura_ios"
 to = "/blog/architecture_patterns_ios"
 status = 302
+
 [[redirects]]
 from = "/en/learn_blockchain_free"
 to = "/blog/learn_blockchain_free"
 status = 302
+
 [[redirects]]
 from = "/aprende_blockchain_gratis"
 to = "/blog/learn_blockchain_free"
 status = 302
+
 [[redirects]]
 from = "/en/xcode_14_one_icon"
 to = "/blog/xcode_14_one_icon"
 status = 302
+
 [[redirects]]
 from = "/xcode_14_one_icon"
 to = "/blog/xcode_14_one_icon"
 status = 302
+
 [[redirects]]
 from = "/en/scenedelegate_ios13"
 to = "/blog/scenedelegate_ios13"
 status = 302
+
 [[redirects]]
 from = "/scenedelegate_ios13"
 to = "/blog/scenedelegate_ios13"
 status = 302
+
 [[redirects]]
 from = "/en"
-to = "/ 302
+to = "/"
+status = 302
+
 [[redirects]]
 from = "/sobre-mi"
-to = "/ 302
+to = "/"
+status = 302
+
 [[redirects]]
 from = "/en/about-me"
-to = "/ 302
+to = "/"
+status = 302
+
 [[redirects]]
 from = "/siy-swift-it-yourself"
-to = "/ 302
+to = "/"
+status = 302
+
 [[redirects]]
 from = "/flutter"
-to = "/ 302
+to = "/"
+status = 302
