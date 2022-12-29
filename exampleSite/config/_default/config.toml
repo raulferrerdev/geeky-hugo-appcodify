@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://appcodify.com/"
-title = "AppCodify | Raúl Ferrer Blog"
+title = "AppCodify | Craftsmanship Code"
 theme = "geeky-hugo"
 languageName = "En"
 languageCode = "en-us"
@@ -73,6 +73,6 @@ canonifyURLs = true
 [params]
   author = "Raúl Ferrer García"
   github = "https://github.com/raulferrerdev"
-  image = "images/og.png"
+  ogimage = "images/icon.png"
   sitename = "AppCodify"
   twitter = "@raulferrerdev"

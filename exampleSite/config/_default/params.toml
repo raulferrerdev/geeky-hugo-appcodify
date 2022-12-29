@@ -11,13 +11,13 @@ logo_text = "App{Codify}"
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata
-description = "AppCodify | Learn about Swift, SwiftUI, Flutter for App Development."
+description = "AppCodify | Become a Better Software Developer at AppCodify."
 author = "Raúl Ferrer"
-image = "images/og.png" # this image will be used as fallback if a page has no image of its own
+#ogimage = "icon.png" # this image will be used as fallback if a page has no image of its own
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
-email = "developer.blog@icloud.com"
+email = "appcodify@icloud.com"
 # contact form action
 #contact_form_action = "#" # contact form works with https://formspree.io
 # search
@@ -54,7 +54,7 @@ button_label = "Know About Me"
 button_link = "about/"
 
 # Advertise
-[advertisement]
+[[advertisement]]
 image = "images/promotion.png"
 link = "swiftui-course/"
 
@@ -88,7 +88,7 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this co
 [[social]]
 title = "mail"
 icon = "fas fa-envelope fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "mailto:developer.blog@icloud.com"
+link = "mailto:appcodify@icloud.com"
 
 [[social]]
 title = "twitter"

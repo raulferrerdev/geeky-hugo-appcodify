@@ -54,7 +54,7 @@
 
 {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-{{ $image_path := .Params.image | default site.Params.image -}}
+{{ $image_path := .Params.ogimage | default site.Params.ogimage -}}
 {{ $image_path_local :=  printf "assets/%s" $image_path -}}
 {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
 {{ if fileExists $image_path_local -}}
