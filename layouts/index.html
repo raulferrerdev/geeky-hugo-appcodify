@@ -97,7 +97,7 @@
         <div class="mb-5">
           <a href="{{.link | absLangURL}}">
             {{ $image:= resources.Get .image }}
-            <img class="img-fluid w-100" width="858" height="123" src="{{ $image.RelPermalink }}" alt="image">
+            <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" class="img-fluid w-100" width="858" height="123" src="{{ $image.RelPermalink }}" alt="image">
           </a>
         </div>
         {{ end }}
