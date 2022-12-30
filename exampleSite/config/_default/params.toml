@@ -11,9 +11,9 @@ logo_text = "App{Codify}"
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata
-description = "AppCodify | Become a Better Software Developer at AppCodify."
+description = "Become a Better Software Developer at AppCodify."
 author = "Raúl Ferrer"
-image = "images/twitter_card_promo.png" # this image will be used as fallback if a page has no image of its own
+image = "images/twitter_card_promo.png?123" # this image will be used as fallback if a page has no image of its own
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
