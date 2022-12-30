@@ -70,9 +70,9 @@ enableGitInfo = true
 enableRobotsTXT = true
 canonifyURLs = true
 
-[params]
+[Params]
   author = "Raúl Ferrer García"
   github = "https://github.com/raulferrerdev"
-  ogimage = "images/twitter_card_promo.png"
+  images = ["images/twitter_card_promo.png"]
   sitename = "AppCodify"
   twitter = "@raulferrerdev"

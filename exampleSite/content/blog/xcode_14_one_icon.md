@@ -5,7 +5,7 @@ date: 2022-12-02
 categories: ["Design", "Swift"]
 tags: ["Swift"]
 type: "regular" # available types: [featured/regular]
-draft: true
+draft: false
 ---
 
 How many times have we found ourselves preparing countless icons of all the sizes required by Apple for our applications: sizes for iPhone and iPad and for different utilities — Spotlight, Notifications, App…
