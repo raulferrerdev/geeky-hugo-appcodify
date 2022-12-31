@@ -51,10 +51,12 @@
     <div style="display: flex; flex-wrap: wrap;">
       <!-- advertisement -->
       {{ range site.Params.advertisement }}
+      {{ if ne .link "twitter" }}
         <a href="{{.link | absLangURL}}" style = "width: 20%; height: auto; margin: 0px auto 40px auto;">
           {{ $image:= resources.Get .image }}
             <img  src="{{ $image.RelPermalink }}" alt="image">
         </a>
+      {{ end }}
       {{ end }}
       <!-- /advertisement -->
     </div>
