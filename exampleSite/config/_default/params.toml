@@ -11,9 +11,15 @@ logo_text = "App{Codify}"
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata
-description = "Become a Better Software Developer at Raúl Ferrer Dev."
-author = "Raúl Ferrer"
-images = ["images/ttwitter_card_main_hu60e7ccee6e85b0d3da37cdf58e9dbc63_609767_650x0_resize_box_3.png"] # this image will be used as fallback if a page has no image of its own
+[twitterCard]
+    generate = true
+    card = "summary_large_image"
+    image = "images/twitter_card_main.jpg"
+    imageAlt = "Raúl Ferrer Dev Blog"
+    site = "@raulferrerdev"
+    creator = "@raulferrerdev"
+    title = "RaúlFerrer{Dev}"
+    description = "Become a Better Software Developer at Raúl Ferrer Dev."
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
@@ -69,10 +75,6 @@ link = "swiftui-course/"
 [[advertisement]]
 image = "images/flutter_tutorials_ads.png"
 link = "flutter-tutorials/"
-
-[[advertisement]]
-image = "images/twitter_card_main_hu60e7ccee6e85b0d3da37cdf58e9dbc63_609767_650x0_resize_box_3.png"
-link = "twitter"
 
 # cookies
 [cookies]
