@@ -14,7 +14,7 @@ navbar_fixed = true
 [twitterCard]
     generate = true
     card = "summary_large_image"
-    image = "https://raulferrer.dev/images/twitter_card_main.jpg"
+    image = "/images/twitter_card_main.jpg"
     imageAlt = "Raúl Ferrer Dev Blog"
     site = "@raulferrerdev"
     creator = "@raulferrerdev"
