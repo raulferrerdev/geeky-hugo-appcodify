@@ -61,7 +61,7 @@ course:
   - name: "CryptoKit tutorial. How to use CryptoKit on iOS13 apps"
     content: "Cryptokit is an Apple library that allows us to work with encryption in our applications, generate public and private keys... Look in this post at some of its most interesting possibilities."
     url: "https://raulferrer.dev/blog/criptokit_tutorial/"
-    date: 2020-02-170
+    date: 2020-02-17
   - name: "SOLID principles: Application to Swift development"
     content: "Learn the SOLID principles and how to apply them in the development of your applications. SOLID principles improve our code, making it cleaner, scalable and testable."
     url: "https://raulferrer.dev/blog/solid_principles_swift/"
