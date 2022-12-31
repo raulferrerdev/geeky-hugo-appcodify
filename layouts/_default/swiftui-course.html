@@ -34,11 +34,44 @@
         {{ end }}
         <!-- /image processing for multiple device -->
         {{ end }}
-        <h2 class="mb-3">{{ .Title | markdownify }}</h2>
+        <h2 class="mb-3" style="text-align: center;">{{ .Title | markdownify }}</h2>
         <div class="content">
           {{.Content}}
         </div>
       </div>
+    </div>
+    <div class="row" style="margin-top: -75px;">
+      {{ with .Params.course }}
+      {{ if .enable }}
+      <div class="col-md-12 mb-4 mb-md-0">
+        <div class="p-4 border rounded">
+          <!--<h2 class="h4 mb-5 title-border">Formal Education</h2>-->
+          <div class="row">
+            {{ range .course_list }}
+            <div class="col-md-6 mb-3">
+              {{ $imagePath:= .image }}
+              {{ if $imagePath }}
+          {{ if fileExists (add `assets/` $imagePath) }}
+          {{ $image:= resources.Get $imagePath }}
+          <img loading="lazy" decoding="async" src="{{$image.RelPermalink}}" alt="{{ .Title }}"
+             width="100%" height="auto" style="border-radius: 10px; margin: 10px 0;">
+          {{ end }}
+          <!-- /image processing for single device -->
+          {{ end }}
+          <p>Published: {{ .date }}
+            
+            <h4 class="h5 mb-2"><a class="title-linked" href={{ .url }}>{{.name | markdownify}}</a></h4>
+
+              <h4 class="h5 mb-2">{{ .name | markdownify }}</h4>
+              <p>{{.content | markdownify}}</p>
+              
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 </section>

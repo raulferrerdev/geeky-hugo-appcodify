@@ -11,13 +11,13 @@ logo_text = "App{Codify}"
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata
-description = "Become a Better Software Developer at AppCodify."
+description = "Become a Better Software Developer at Raúl Ferrer Dev."
 author = "Raúl Ferrer"
-images = ["images/twitter_card_promo.png"] # this image will be used as fallback if a page has no image of its own
+images = ["images/twitter_card_main.png"] # this image will be used as fallback if a page has no image of its own
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
-email = "appcodify@icloud.com"
+email = "developer.blog@icloud.com"
 # contact form action
 #contact_form_action = "#" # contact form works with https://formspree.io
 # search
@@ -25,7 +25,7 @@ search = false
 
 # featured post title
 featured_post_title = "Featured Post"
-recent_post_title = "Recent Post"
+recent_post_title = "Recent Posts"
 mainSections = ["blog"]
 # about widget content
 about_widget_content = "I'm **Raúl Ferrer** a Mobile Tech Lead & iOS Engineer. I like to write and explain about everthing I learn."
@@ -55,8 +55,20 @@ button_link = "about/"
 
 # Advertise
 [[advertisement]]
-image = "images/promotion.png"
+image = "images/software_architecture_ads.png"
+link = "architecture/"
+
+[[advertisement]]
+image = "images/swift_tutorial_ads.png"
+link = "swift-tutorials/"
+
+[[advertisement]]
+image = "images/swiftui_course_ads.png"
 link = "swiftui-course/"
+
+[[advertisement]]
+image = "images/flutter_tutorials_ads.png"
+link = "flutter-tutorials/"
 
 # cookies
 [cookies]
@@ -88,12 +100,12 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this co
 [[social]]
 title = "mail"
 icon = "fas fa-envelope fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "mailto:appcodify@icloud.com"
+link = "mailto:developer.blog@icloud.com"
 
 [[social]]
 title = "twitter"
 icon = "fab fa-twitter fa-lg" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/appcodify"
+link = "https://twitter.com/raulferrerdev"
 
 #[[social]]
 #title = "instagram"
