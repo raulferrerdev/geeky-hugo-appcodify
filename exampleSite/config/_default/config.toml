@@ -9,7 +9,7 @@ paginate = "6"
 # post excerpt
 summaryLength = "10"
 # google analytics
-googleAnalytics = "G-KL5D4SHD52" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+googleAnalytics = "G-GT7TFLR19R" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
 # disqus short name
 #disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
 # disable language
