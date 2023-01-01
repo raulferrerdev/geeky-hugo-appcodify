@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://appcodify.com/sitemap.xml
+Sitemap: https://raulferrer.dev/sitemap.xml
