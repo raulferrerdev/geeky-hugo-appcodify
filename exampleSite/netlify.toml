@@ -355,6 +355,6 @@
   status = 301
 
 [[redirects]]
-  from = "/flutter"
+  from = "https://raulferrergarcia.com/flutter"
   to = "/"
   status = 301
