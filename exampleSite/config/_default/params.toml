@@ -7,6 +7,7 @@ logo = "images/logo.png"
 # Note: logo_width is not work with .svg file
 logo_width = "200x"
 author = "Raúl Ferrer"
+recent_post_title = "Recent Posts"
 # logo text will only show when logo is missing.
 logo_text = "App{Codify}"
 # navbar fixed to top
