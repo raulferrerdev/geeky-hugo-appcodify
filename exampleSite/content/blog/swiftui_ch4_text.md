@@ -4,6 +4,7 @@ description: "Text is a SwiftUI component that allows us to display text on the 
 date: 2022-12-24
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
+image: "images/swiftui-course/swiftui4.png"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

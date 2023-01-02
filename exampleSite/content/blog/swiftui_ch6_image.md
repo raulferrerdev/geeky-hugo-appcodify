@@ -4,6 +4,7 @@ description: "Image component is a powerful and flexible way to display images i
 date: 2023-01-01
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
+image: "images/swiftui-course/swiftui6.png"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

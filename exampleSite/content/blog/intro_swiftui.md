@@ -4,6 +4,7 @@ description: "Learn Learn how to set up your first project for SwiftUI with Xcod
 date: 2022-12-15
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
+image: "images/swiftui-course/swiftui0.png"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

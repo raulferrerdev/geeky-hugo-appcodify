@@ -4,6 +4,7 @@ description: "We are going to see some of the most used modifiers that can be ap
 date: 2022-12-21
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
+image: "images/swiftui-course/swiftui3.png"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

@@ -4,6 +4,7 @@ description: "The Button view, which can be modified with a number of modifiers 
 date: 2022-12-26
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
+image: "images/swiftui-course/swiftui5.png"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
