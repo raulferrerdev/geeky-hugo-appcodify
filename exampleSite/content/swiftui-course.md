@@ -40,4 +40,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_ch5_button/"
     image: "images/swiftui-course/swiftui5.png"
     date: 2022-12-26
+  - name: "SwiftUI Course #6. Using the Image component"
+    content: "Image component is a powerful and flexible way to display images in your app. You can use it to display images from your app bundle, from a remote URL, or from the user's photo library."
+    url: "https://raulferrer.dev/blog/swiftui_ch5_button/"
+    image: "images/swiftui-course/swiftui6.png"
+    date: 2023-01-02
 ---

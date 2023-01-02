@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI Course #2. Avoid the 10 elements limit in VStack, HStack and Zstack"
+title: "SwiftUI Course #2. Avoid the 10 elements limit in VStack, HStack and ZStack"
 description: "VStack, HStack and ZStack have a limit on the number of elements they can contain: 10. Let's see how we can make these structures contain more than 10 elements."
 date: 2022-12-18
 categories: ["SwiftUI Course"]
@@ -9,7 +9,7 @@ draft: false
 ---
 
 
-{{< youtube 0QJTVPfRS >}}
+{{< youtube 0QJTVPfRS-0 >}}
 
 There is a limit of 10 views that can be put directly into the VStack, HStack or ZStack structures in SwiftUI. This is so because VStack, HStack, and ZStack are constructed as generic structures, and the type parameter controls the amount of views that can be directly included in them.
 

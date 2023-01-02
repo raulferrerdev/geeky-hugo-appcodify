@@ -6,6 +6,7 @@ logo = "images/logo.png"
 # use `x` with logo_width, example: "100x".
 # Note: logo_width is not work with .svg file
 logo_width = "200x"
+author = "Raúl Ferrer"
 # logo text will only show when logo is missing.
 logo_text = "App{Codify}"
 # navbar fixed to top
@@ -24,6 +25,7 @@ navbar_fixed = true
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
 email = "developer.blog@icloud.com"
+author = "Raúl Ferrer"
 # contact form action
 #contact_form_action = "#" # contact form works with https://formspree.io
 # search
