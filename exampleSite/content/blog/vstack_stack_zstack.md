@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI Course #1. VStack, HStack and ZStack: SwitUI basic layout"
+title: "SwiftUI #1. VStack, HStack and ZStack: SwitUI basic layout"
 description: "Learn about the basic layouts in SwifUI with VStack, HStack, ZStack and Spacer."
 date: 2022-12-17
 categories: ["SwiftUI Course"]

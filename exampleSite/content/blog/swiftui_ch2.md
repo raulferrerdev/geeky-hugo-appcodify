@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI Course #2. Avoid the 10 elements limit in VStack, HStack and ZStack"
+title: "SwiftUI #2. Avoid the 10 elements limit in VStack, HStack and ZStack"
 description: "VStack, HStack and ZStack have a limit on the number of elements they can contain: 10. Let's see how we can make these structures contain more than 10 elements."
 date: 2022-12-18
 categories: ["SwiftUI Course"]

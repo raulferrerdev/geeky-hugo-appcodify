@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI Course #0. The First Project"
+title: "SwiftUI #0. The First Project"
 description: "Learn Learn how to set up your first project for SwiftUI with Xcode."
 date: 2022-12-15
 categories: ["SwiftUI Course"]

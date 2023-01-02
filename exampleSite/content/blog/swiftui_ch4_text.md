@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI Course #4. Using the Text component"
+title: "SwiftUI #4. Using the Text component"
 description: "Text is a SwiftUI component that allows us to display text on the screen. The different modifiers that we can apply to this component allow us to greatly customize it."
 date: 2022-12-24
 categories: ["SwiftUI Course"]
