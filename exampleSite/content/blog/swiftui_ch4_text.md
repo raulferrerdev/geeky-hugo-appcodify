@@ -4,10 +4,11 @@ description: "Text is a SwiftUI component that allows us to display text on the 
 date: 2022-12-24
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
-image: "images/swiftui-course/swiftui4.png"
+image: "https://drive.google.com/uc?id=1Fa0oMOIq8WE0_JKeSCADy8_ijODiJ0TV"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
 {{< youtube ev0Bux_NSKU >}}
 SwiftUI's core component, **Text**, is used to display and input text in our apps. It is a view from the SwiftUI framework that symbolizes a line of text.
 

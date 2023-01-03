@@ -4,11 +4,10 @@ description: "VStack, HStack and ZStack have a limit on the number of elements t
 date: 2022-12-18
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
-image: "images/swiftui-course/swiftui2.png"
+image: "https://drive.google.com/uc?id=1SNNrUKB-X-oydqqJJl9t6oyY6vNA-kTV"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-
 
 {{< youtube 0QJTVPfRS-0 >}}
 

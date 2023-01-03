@@ -4,11 +4,10 @@ description: "We are going to see some of the most used modifiers that can be ap
 date: 2022-12-21
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
-image: "images/swiftui-course/swiftui3.png"
+image: "https://drive.google.com/uc?id=11oCQ5IZvxf6xOoL_RPAnAHz74gLXCBLs"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-
 {{< youtube Q2m3bpgI5gs >}}
 
 In SwiftUI, methods called **view modifiers** can be chained to views to change their behavior or look. A view can be modified with view modifiers, which also make it easier to reuse code.

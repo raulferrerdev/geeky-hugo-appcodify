@@ -4,10 +4,11 @@ description: "Image component is a powerful and flexible way to display images i
 date: 2023-01-01
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
-image: "images/swiftui-course/swiftui6.png"
+image: "https://drive.google.com/uc?id=10CbwH4wwiM_kX-FasTbvdtOc0RF0i5H7"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
 {{< youtube QBlLpGJ846s >}}
 
 The **Image** component in SwiftUI is a potent and adaptable way to show images in your app. It can be used to show pictures from the user's photo collection, a remote URL, or your software bundle. Modifiers allow you to adapt the appearance and behavior of the Image component to your own requirements.

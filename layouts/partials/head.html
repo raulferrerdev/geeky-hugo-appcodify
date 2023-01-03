@@ -53,7 +53,19 @@
 
 
 {{ template "_internal/opengraph.html" . }}
-{{ partial "configurable_twitter_cards.html" . }}
+<meta name="twitter:site" content="@raulferrerdev">
+<meta name="twitter:creator" content="@raulferrerdev">
+{{ if .IsPage }}
+<meta name="twitter:description" content="{{ .Summary }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ .Params.image }}" />
+{{ else }}
+<meta name="twitter:title" content="{{ .Site.Title }}" />
+<meta name="twitter:description" content="{{ .Description }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ .Site.Params.image }}" />
+{{ end }}
 
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}

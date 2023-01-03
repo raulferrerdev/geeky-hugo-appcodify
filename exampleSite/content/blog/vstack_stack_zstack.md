@@ -4,7 +4,7 @@ description: "Learn about the basic layouts in SwifUI with VStack, HStack, ZStac
 date: 2022-12-17
 categories: ["SwiftUI Course"]
 tags: ["SwiftUI"]
-image: "images/swiftui-course/swiftui1.png"
+image: "https://drive.google.com/uc?id=1TGpWa1YdCTo5JToV_EXuOyPDWV7wQdqe"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

@@ -13,20 +13,13 @@ logo_text = "App{Codify}"
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata
-[twitterCard]
-    generate = true
-    card = "summary_large_image"
-    image = "https://drive.google.com/uc?id=1fgY4h4t_CAiRmTKkd6t9BNGyO06NskU_"
-    imageAlt = "Raúl Ferrer Dev Blog"
-    site = "@raulferrerdev"
-    creator = "@raulferrerdev"
-    title = "RaúlFerrer{Dev}"
-    description = "Become a Better Software Developer at Raúl Ferrer Dev."
+image = "https://drive.google.com/uc?id=1fgY4h4t_CAiRmTKkd6t9BNGyO06NskU_"
+title = "RaúlFerrer{Dev}"
+description = "Become a Better Software Developer at Raúl Ferrer Dev."
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"
 email = "developer.blog@icloud.com"
-author = "Raúl Ferrer"
 # contact form action
 #contact_form_action = "#" # contact form works with https://formspree.io
 # search
@@ -34,7 +27,6 @@ search = false
 
 # featured post title
 featured_post_title = "Featured Post"
-recent_post_title = "Recent Posts"
 mainSections = ["blog"]
 # about widget content
 about_widget_content = "I'm **Raúl Ferrer** a Mobile Tech Lead & iOS Engineer. I like to write and explain about everthing I learn."
