@@ -87,7 +87,7 @@ For this map to show us exactly, we must use the [CLLocationManager](https://dev
 
 ##### Permissions
 
-Keep in mind that in order to use the location functions, we must first ask the user for permission. To do this, we add in the Info.plist file, a series of parameters (as I also showed to [use notifications](https://raulferrer.dev/articles/how-to-test-push-notifications-in-xcode-11-4-simulator/)):
+Keep in mind that in order to use the location functions, we must first ask the user for permission. To do this, we add in the Info.plist file, a series of parameters (as I also showed to [use notifications](https://raulferrer.dev/blog/xcode_push_notifications_simulator/)):
 
 * Privacy – Location Always and When In Use Usage Description
 * Privacy – Location Always Usage Description

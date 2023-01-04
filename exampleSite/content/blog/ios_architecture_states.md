@@ -8,7 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 Surely you have applied or, at least, you know architectures such as MVC, MVVM, MVP (even others such as VIPER or VIP). However, there are also other architectures that have been developed and that are somewhat less known.
-For example, in a previous [post I already talked about Redux](https://raulferrer.dev/articles/redux_pattern/) as an architecture that, although it is well known in web development, is perhaps less so in iOS development. But there are others that are perhaps less well known, such as The Composable Architecture (TCA) or The Elm Architecture, of which we will now make a short introduction so that you know them.
+For example, in a previous [post I already talked about Redux](https://raulferrer.dev/blog/redux_pattern/) as an architecture that, although it is well known in web development, is perhaps less so in iOS development. But there are others that are perhaps less well known, such as The Composable Architecture (TCA) or The Elm Architecture, of which we will now make a short introduction so that you know them.
 
 #### The Elm Architecture (TEA)
 The Elm Architecture se orginó en el uso de Elm y el desarrollo de webapps. Esta arquitectura se basa en un Modelo (que contiene el estado de la apliación), una vista que se genera según el modelo y en un Update que transforme el modelo.
