@@ -3,7 +3,7 @@ title: "Result type in Swift 5"
 description: "Swift 5 has introduced the Result type, a new feature that will allow us to improve error handling in asynchronous APIs."
 date: 2018-04-06
 categories: ["Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

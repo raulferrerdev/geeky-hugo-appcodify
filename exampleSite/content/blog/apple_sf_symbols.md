@@ -3,7 +3,7 @@ title: "Use the new Apple SF Symbols in your applications"
 description: "Discover how to add hundreds of icons to your applications using SF Symbols and how to customize them."
 date: 2020-03-24
 categories: ["Swift", "Design"]
-tags: ["Design"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

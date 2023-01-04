@@ -1,9 +1,9 @@
 ---
 title: "Develop your own OCR on iOS 13 with VisionKit"
-description: "VisionKit is an Apple framework that we can use in our projects from iOS 13 and that allows us, for example, to detect text or read barcodes. Learn how to do it in this practical post."
+description: "VisionKit is an Apple framework that we can use in our projects from iOS 13 and that allows us, for example, to detect text or read barcodes."
 date: 2020-02-25
 categories: ["Framework", "Swift"]
-tags: ["Swift"]
+tags: ["Development", "VisionKit", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

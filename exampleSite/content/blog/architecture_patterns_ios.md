@@ -1,9 +1,9 @@
 ---
-title: "Pros and cons of some iOS Architecture patterns"
-description: "Some pros and cons of some of the most used architecture patterns in the development of iOS applications."
+title: "Pros and cons of some iOS Architecture patterns: MVC. MVP, MVVM, VIPER, and VIP"
+description: "Some pros and cons of some of the most used architecture patterns in the development of iOS applications: MVC. MVP, MVVM, VIPER, and VIP."
 date: 2017-12-01
 categories: ["Swift", "Architecture"]
-tags: ["Design"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "Xcode 14: One Icon to Rule Them All!"
 description: "With Xcode 14 it is no longer necessary to use an application icon for each of the required sizes (depending on where the icon is to be displayed), only one is required. Let's see how to do it."
 date: 2022-12-02
 categories: ["Design", "Swift"]
-tags: ["Swift"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

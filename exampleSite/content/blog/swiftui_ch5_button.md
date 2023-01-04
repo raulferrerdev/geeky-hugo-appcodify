@@ -3,7 +3,7 @@ title: "SwiftUI #5. Using the Button component"
 description: "The Button view, which can be modified with a number of modifiers to change its appearance and behavior, is used in SwiftUI to build buttons."
 date: 2022-12-26
 categories: ["SwiftUI Course"]
-tags: ["SwiftUI"]
+tags: ["Development", "Code", "SwiftUI"]
 image: "https://drive.google.com/uc?id=1KDGGuMdzk8mIuasmDDnsqQm8WvLsoUuG"
 type: "regular" # available types: [featured/regular]
 draft: false

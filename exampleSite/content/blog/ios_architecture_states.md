@@ -1,9 +1,9 @@
 ---
-title: "New architectures for iOS Apps"
-description: "In the development of iOS applications, new architectures different from those already known are being introduced (MVC, MVVM, VIPER...). One of them is Redux, which we talked about a few months ago. But there are others, like The Composable Architecture or The Elm Architecrure."
+title: "New architectures for iOS Apps: The ELM Architecture and TheComposable Architecture"
+description: "The Elm Architecture and The Composable Architecture are two architectures for developing iOS applications that are designed to be easy to reason about and maintain."
 date: 2020-01-14
 categories: ["Architecture", "Swift"]
-tags: ["Swift"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
@@ -11,7 +11,7 @@ Surely you have applied or, at least, you know architectures such as MVC, MVVM, 
 For example, in a previous [post I already talked about Redux](https://raulferrer.dev/blog/redux_pattern/) as an architecture that, although it is well known in web development, is perhaps less so in iOS development. But there are others that are perhaps less well known, such as The Composable Architecture (TCA) or The Elm Architecture, of which we will now make a short introduction so that you know them.
 
 #### The Elm Architecture (TEA)
-The Elm Architecture se orginó en el uso de Elm y el desarrollo de webapps. Esta arquitectura se basa en un Modelo (que contiene el estado de la apliación), una vista que se genera según el modelo y en un Update que transforme el modelo.
+The Elm Architecture originated from the use of Elm and the development of webapps. This architecture is based on a Model (which contains the state of the application), a view that is generated according to the model, and an Update that transforms the model.
 {{< image src="images/posts/ios_architecture_states_3.png" alt="The Elm Architecture is Swift schema">}}
 
 So, first the Model is passed to the View, which renders it. When the user interacts with the View, this interaction is transmitted in the form of a message to the Runtime (which is sent to the Update together with the current Model).

@@ -3,7 +3,7 @@ title: "How to create a color palette (Color Assets) in Xcode"
 description: "Learn how to create color palettes in Xcode and how to define all the colors in an application in a single point."
 date: 2020-01-04
 categories: ["Swift", "Design"]
-tags: ["Design"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "Securely Store and Retrieve Sensitive Data with the Keychain in Swift"
 description: "Learn how to use the keychain in your iOS, macOS, tvOS, or watchOS app to safely store and retrieve passwords, encryption keys, and other sensitive data. Learn how to share data between apps using the keychain and how to use iCloud to back up your data. Swift examples that walk you through each step will show you how to use the keychain in your own apps."
 date: 2023-01-04
 categories: ["Swift", "Security"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=1rgluJG_cPLPZ2xJ8utoidu7NDx1PJLqA"
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "How to automatize the deployment of iOS applications with Bitrise"
 description: "Learn how to automate the deployment of your applications through the Bitrise platform. CI/CD at your fingertips."
 date: 2020-04-28
 categories: ["Deployment"]
-tags: ["Deployment"]
+tags: ["CI/CD"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

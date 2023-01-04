@@ -1,9 +1,9 @@
 ---
 title: "How to build a maps and routes app with MapKit"
-description: "With Xcode and Mapkit you can easily and quickly add maps to your applications: see directions, calculate routes... Learn to use this Apple framework."
+description: "With Xcode and Mapkit you can easily and quickly add maps to your applications: see directions, calculate routes"
 date: 2020-05-04
 categories: ["Swift", "Framework"]
-tags: ["Framework"]
+tags: ["MapKit"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

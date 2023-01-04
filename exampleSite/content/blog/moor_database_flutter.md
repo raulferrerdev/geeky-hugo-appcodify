@@ -3,7 +3,7 @@ title: "Deploy the Moor database on Flutter!"
 description: "Moor is one of the most used databases when developing applications with Flutter. Learn in a practical way to use Moor by developing an application with Flutter and Moor."
 date: 2019-12-28
 categories: ["Flutter"]
-tags: ["Flutter"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

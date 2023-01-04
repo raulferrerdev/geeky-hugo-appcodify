@@ -3,7 +3,7 @@ title: "Develop a to-do app with CloudKit"
 description: "Learn how to use and develop an application using CloudKit as database."
 date: 2020-03-18
 categories: ["Framework", "Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code", "CloudKit"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

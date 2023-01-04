@@ -1,9 +1,9 @@
 ---
 title: "What is Clean Architecture?"
-description: "What is Clean Architecture y why is so important in the softwrare development."
+description: "What is Clean Architecture and why is so important in the softwrare development."
 date: 2018-01-03
 categories: ["Architecture"]
-tags: ["Architecture"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

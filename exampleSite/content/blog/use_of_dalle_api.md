@@ -3,7 +3,7 @@ title: "Create your on DALL-E app in SwiftUI"
 description: "Let's see how to use de DALL-E API to create a SwiftUI app that will allow us to generate images."
 date: 2020-01-30
 categories: ["Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: true
 ---

@@ -3,7 +3,7 @@ title: "How to test push notifications in Xcode 11.4 simulator"
 description: "Learn how to test push notifications from your apps directly in the iOS simulator. You will simply need XCode 11.4 for it. In this post I explain how to do it."
 date: 2020-02-20
 categories: ["Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

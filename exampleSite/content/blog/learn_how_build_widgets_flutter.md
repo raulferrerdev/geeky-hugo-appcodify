@@ -3,7 +3,7 @@ title: "Learn how to build in Flutter: Widgets"
 description: "Widgets are the main components in an application developed with Flutter. Learn what types there are, how to create them and how to use them."
 date: 2020-01-12
 categories: ["Flutter"]
-tags: ["Flutter"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

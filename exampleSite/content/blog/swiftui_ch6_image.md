@@ -3,7 +3,7 @@ title: "SwiftUI #6. Using the Image component"
 description: "Image component is a powerful and flexible way to display images in your app. You can use it to display images from your app bundle, from a remote URL, or from the user's photo library."
 date: 2023-01-01
 categories: ["SwiftUI Course"]
-tags: ["SwiftUI"]
+tags: ["Development", "Code", "SwiftUI"]
 image: "https://drive.google.com/uc?id=10CbwH4wwiM_kX-FasTbvdtOc0RF0i5H7"
 type: "regular" # available types: [featured/regular]
 draft: false

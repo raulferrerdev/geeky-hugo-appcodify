@@ -1,9 +1,9 @@
 ---
 title: "Create a FAB Button with Swift"
-description: "This is a practical tutorial on how to create a FAB or Floating Action Button for your applications. Step by step you will be able to create this component and use it to improve the UI of your applications."
+description: "This is a practical tutorial on how to create a FAB or Floating Action Button for your applications."
 date: 2020-04-17
 categories: ["Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

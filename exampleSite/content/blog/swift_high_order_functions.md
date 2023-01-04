@@ -1,9 +1,9 @@
 ---
 title: "Improve your Swift code with higher order functions"
-description: "Learn how to use High-order functions to improve your Swift code. map, compactMap, faltMap, reduce, filter, forEach... will help you in your day to day as an iOS developer."
+description: "Learn how to use High-order functions to improve your Swift code: map, compactMap, faltMap, reduce, filter, forEach..."
 date: 2020-06-09
 categories: ["Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

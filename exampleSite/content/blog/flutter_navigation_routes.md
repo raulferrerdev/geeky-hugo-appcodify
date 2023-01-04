@@ -3,7 +3,7 @@ title: "Improve your Flutter Navigation with Routes"
 description: "Learn how to use Routes to navigate between the different pages that make up an application developed with Flutter."
 date: 2020-03-08
 categories: ["Flutter"]
-tags: ["Flutter"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

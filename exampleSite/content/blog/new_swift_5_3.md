@@ -3,7 +3,7 @@ title: "What is new in Swift 5.3"
 description: "In this post he explains some of the most important new features that Swift 5.3 introduces."
 date: 2020-01-18
 categories: ["Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

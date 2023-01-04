@@ -3,7 +3,7 @@ title: "How to add Dark Mode in iOS 13"
 description: "Find out how to add 'Dark mode' to your iOS apps. Learn to adapt them and use adaptive colors."
 date: 2022-12-04
 categories: ["Swift", "Design"]
-tags: ["Design"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

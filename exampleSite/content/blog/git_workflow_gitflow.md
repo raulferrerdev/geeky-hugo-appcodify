@@ -3,7 +3,7 @@ title: "Git and workflow with GitFlow"
 description: "Learn how to use Git and Gitflow to be able to control changes in the code of your projects. Understand what branch, checkout, clone, or commit mean."
 date: 2021-07-20
 categories: ["Deployment"]
-tags: ["Deployment"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

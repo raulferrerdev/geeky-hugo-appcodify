@@ -1,9 +1,9 @@
 ---
 title: "Design patterns in software"
-description: "Design patterns are solutions that have been found to similar problems in software development. In this post I will tell you about the 23 identified design patterns, and their characteristics."
+description: "Design patterns are solutions that have been found to similar problems in software development. Learn about the 23 identified design patterns."
 date: 2020-02-01
 categories: ["Architecture", "Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

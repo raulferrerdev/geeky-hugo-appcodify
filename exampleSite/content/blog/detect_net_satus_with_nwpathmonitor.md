@@ -1,9 +1,9 @@
 ---
 title: "Detect Net status with NWPathMonitor"
-description: "Learn how to use NWPathMonitor to control the connectivity of your application. You will be able to know if there is an Internet connection or not and of what type, without the need for external libraries, thanks to Apple's Network framework."
+description: "Learn how to use NWPathMonitor to control the connectivity of your application (to know if there is an Internet connection or not and of what type)."
 date: 2018-11-11
 categories: ["Connectivity", "Swift"]
-tags: ["Swift"]
+tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---

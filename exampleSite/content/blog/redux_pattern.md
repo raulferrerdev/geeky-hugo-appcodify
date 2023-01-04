@@ -1,9 +1,9 @@
 ---
-title: "Redux architecture or iOS Apps: Introduction"
-description: "Redux is an architecture based on a centralized state and an unidirectional flow of data. This library is widely used on Web development, but has been started to be also used on iOS development."
+title: "Introduction of Redux architecture for iOS: Pros and cons"
+description: "Redux is an architecture for managing a centralized state and unidirectional data flow. It is commonly used in web development but is also gaining popularity in iOS development."
 date: 2018-01-23
 categories: ["Architecture", "Swift"]
-tags: ["Swift"]
+tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
