@@ -66,6 +66,8 @@
           </li>
         </ul>
         <div class="content drop-cap">{{.Content}}</div>
+        {{ partial "social-share.html" . }}
+
         <!-- disqus comments -->
         {{ if .Site.DisqusShortname }}
         <div class="border rounded p-4">

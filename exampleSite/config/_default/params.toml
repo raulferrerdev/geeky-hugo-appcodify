@@ -29,7 +29,7 @@ search = false
 featured_post_title = "Featured Post"
 mainSections = ["blog"]
 # about widget content
-about_widget_content = "I'm **Raúl Ferrer** a Mobile Tech Lead & iOS Engineer. I like to write and explain about everthing I learn."
+about_widget_content = "I'm **Raúl Ferrer** a Mobile Tech Lead & iOS Engineer. I like to write and explain about everything I learn."
 # footer content
 #footer_content = "Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus laoreet. Libero ullam rgscper."
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
