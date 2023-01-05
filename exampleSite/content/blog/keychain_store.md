@@ -1,6 +1,6 @@
 ---
 title: "Securely Store and Retrieve Sensitive Data with the Keychain in Swift"
-description: "Learn how to use the keychain in your iOS, macOS, tvOS, or watchOS app to safely store and retrieve passwords, encryption keys, and other sensitive data. Learn how to share data between apps using the keychain and how to use iCloud to back up your data. Swift examples that walk you through each step will show you how to use the keychain in your own apps."
+description: "Learn how to use the keychain in your iOS, macOS, tvOS, or watchOS app to safely store and retrieve passwords, encryption keys, and other sensitive data."
 date: 2023-01-04
 categories: ["Swift", "Security"]
 tags: ["Development", "Code"]
@@ -106,7 +106,7 @@ The dictionary is then passed to the *SecItemCopyMatching*'* function, which ret
 
 ##### Uptating information in the keychain
 
-The *SecItemUpdate*'* function can be used to update data in the keychain. Here's an example of how to update a keychain password:
+The *SecItemUpdate* function can be used to update data in the keychain. Here's an example of how to update a keychain password:
 
 ```swift
 func update(password: String, account: String, service: String) {
@@ -135,7 +135,7 @@ func update(password: String, account: String, service: String) {
 
 In the example, we create a dictionary containing the key-value pairs needed to update the password in the keychain. The keys are *Security* framework constants, and the values are the *account* and *service* Data objects and the new password Data object.
 
-The dictionary is then passed to the **SecItemUpdate* function, which updates the password in the keychain. The function returns a status code that indicates whether or not the operation was successful.
+The dictionary is then passed to the *SecItemUpdate* function, which updates the password in the keychain. The function returns a status code that indicates whether or not the operation was successful.
 
 ##### Deleting information from the keychain
 
