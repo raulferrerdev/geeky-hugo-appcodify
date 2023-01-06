@@ -56,7 +56,6 @@ The **View** is in charge of displaying the application's current state and is w
 
 #### Redux flow
 In redux the flow is as follows:
-{{< image src="images/posts/redux_flow_1.png" alt="Redux flow">}}
 
 * It starts by an Action on the View.
 * Then, the Reducer component receives this instruction, and its job is to change the application's state in accordance with it.
