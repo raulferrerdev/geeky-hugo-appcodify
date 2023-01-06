@@ -1,11 +1,11 @@
 ---
 title: "Async/Await use in Swift and SwiftUI"
 description: "Async/await is a language feature that allows you to write asynchronous code in a synchronous-looking style. "
-date: 2023-01-02
+date: 2023-01-06
 categories: ["Swift", "Concurrency"]
 tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=14gxuTvOLzWNzsy7gvFS4yt6dIddPxPiF"
-draft: true
+draft: false
 ---
 
 A language feature called **async/await**, enables you to construct asynchronous code that seems to be synchronous. It enables concurrent task execution without the use of convoluted callback procedures, making concurrent task execution code easier to create and read.
@@ -185,9 +185,3 @@ The asynchronous task is carried out in this case within the continuation block.
 ##### Conclusion
 
 It is simpler to write and comprehend code that does tasks concurrently because to the strong language feature known as **async/await**, which enables you to express asynchronous code in a synchronous-looking manner. It may result in applications that are more responsive and effective, as well as a better developer experience. Swift's implementation of **async/await** makes use of special function types, the await operator, and can be combined with try-catch blocks to handle errors. You can build asynchronous code that is simpler, clearer to understand, and easier to maintain than code that uses closures by using **async/await**.
-
-
-
-
-
-
