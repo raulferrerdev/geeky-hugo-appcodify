@@ -76,7 +76,7 @@ By using the dependency injection technique, objects (such services or helpers) 
 Define a protocol for the dependency you wish to inject, and then send an instance of that dependency to your view controller when it is initialized if you want to use dependency injection. This will make it simple for you to switch between several dependency implementations as necessary and will facilitate isolation testing for your view controller.
 
 ###### 9. Utilize functional programming methods
-*Map*, *filter*, and *reduce* are examples of functional programming techniques that can be used to build more terse and expressive code. These methods enable declarative manipulation of data sets, which can facilitate code comprehension and maintenance.
+*Map*, *filter*, and *reduce* are examples of [functional programming techniques](https://raulferrer.dev/blog/swift_high_order_functions/) that can be used to build more terse and expressive code. These methods enable declarative manipulation of data sets, which can facilitate code comprehension and maintenance.
 
 If you want to make your view controller logic simpler and clearer, think about adopting functional programming techniques. For instance, you could use filter to choose a subset of data based on specific criteria or map to change the format of an array of data.
 
