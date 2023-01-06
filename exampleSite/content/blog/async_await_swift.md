@@ -90,28 +90,104 @@ func fetchData() {
 
 ##### Legacy code transformation
 
-If we have to deal with old code we can mainly follow two ways to transform it to **async/await**: creating it again or using a wrapper.
+If we have to deal with old code we can mainly follow two ways to transform it to **async/await**: creating it again or using withCheckedContinuation/withCheckedThrowingContinuation.
 
-Supose:
-func callAPI() async -> Result<Data, Error> {
-    let url = URL(string: "https://www.example.com")!
-    let semaphore = DispatchSemaphore(value: 0)
-    var result: Result<Data, Error>!
-    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+For example, let's say we have the folloqwig code to download an image:
+
+```swift
+func downloadImage(from url: URL, to fileURL: URL, completion: @escaping (Result<Void, Error>) -> Void) {
+    let request = URLRequest(url: url)
+    let dataTask = urlSession.dataTask(with: request) { data, response, error in
         if let error = error {
-            result = .failure(error)
-        } else if let data = data, let response = response as? HTTPURLResponse {
-            result = .success(data)
+            completion(.failure(error))
+        } else if let data = data {
+            do {
+                try data.write(to: fileURL)
+                completion(.success(()))
+            } catch {
+                completion(.failure(error))
+            }
+        } else {
+            completion(.failure(URLError(.badServerResponse)))
         }
-        semaphore.signal()
     }
-    task.resume()
-    semaphore.wait()
-    return result
+    dataTask.resume()
 }
+```
+We can write a new method with pure **async/await**:
 
-###### New methods
-This case is based on developing new methods from scratch with async/await functionality. By creating new methods, we make sure that code based on previous methods doesn't break and everything works correctly.
+```swift
+func downloadImage(from url: URL, to fileURL: URL) async throws {
+    let request = URLRequest(url: url)
+    let (data, _) = try await urlSession.dataTask(with: request)
+    try data.write(to: fileURL)
+}
+```
+But, we can refactor the legacy to **async/await** using *withCheckedContinuation/withCheckedThrowingContinuation*:
+
+```swift
+func downloadImage(from url: URL, to fileURL: URL) async throws {
+    let request = URLRequest(url: url)
+    try await withCheckedThrowingContinuation { continuation in
+        let dataTask = urlSession.dataTask(with: request) { data, response, error in
+            if let error = error {
+                continuation.resume(throwing: error)
+            } else if let data = data {
+                do {
+                    try data.write(to: fileURL)
+                    continuation.resume(returning: ())
+                } catch {
+                    continuation.resume(throwing: error)
+                }
+            } else {
+                continuation.resume(throwing: URLError(.badServerResponse))
+            }
+        }
+        dataTask.resume()
+    }
+}
+```
+
+###### withCheckedThrowingContinuation
+
+**withCheckedThrowingContinuation** is a function that creates a continuation that can be resumed with a throwing expression. It is used in conjunction with the **await** keyword to enable asynchronous error handling.
+
+Only **async** functions are permitted to utilize the **await** keyword, which pauses the execution of the function until an awaited job is finished. The task's outcome is returned if it is successfully completed. The caller of the **async** function receives the error if the task throws one. 
+
+You can make a continuation that can be resumed with a throwing expression by using the **withCheckedThrowingContinuation** function, which enables you to throw errors from within the continuation block. This is advantageous when working with asynchronous tasks that could fail since it enables you to transmit any faults to the async function's caller.
+
+Here is an illustration of how to use **withCheckedThrowingContinuation**:
+
+```swift
+try await withCheckedThrowingContinuation { continuation in
+    // Perform some asynchronous task
+    if someErrorOccurs {
+        continuation.resume(throwing: someError)
+    } else {
+        continuation.resume(returning: someResult)
+    }
+}
+```
+The asynchronous task is carried out in this case within the continuation block. In the event of an error, the continuation is continued with a throwing expression, which propagates the error to the async function's caller. If the task succeeds, the continuation is continued with a returning expression that gives the caller the task's outcome.
+
+###### withCheckedContinuation
+
+A continuation created by the function **withCheckedContinuation** can be picked up by a returning expression. Despite not allowing you to throw errors from within the continuation block, it is comparable to **withCheckedThrowingContinuation**.
+
+```swift
+let result = try await withCheckedContinuation { continuation in
+    // Perform some asynchronous task
+    continuation.resume(returning: someResult)
+}
+```
+The asynchronous task is carried out in this case within the continuation block. A returning expression that returns the task's outcome to the caller resumes the continuation when the task is finished.
+
+##### Conclusion
+
+It is simpler to write and comprehend code that does tasks concurrently because to the strong language feature known as **async/await**, which enables you to express asynchronous code in a synchronous-looking manner. It may result in applications that are more responsive and effective, as well as a better developer experience. Swift's implementation of **async/await** makes use of special function types, the await operator, and can be combined with try-catch blocks to handle errors. You can build asynchronous code that is simpler, clearer to understand, and easier to maintain than code that uses closures by using **async/await**.
 
 
-Wrapping methods
+
+
+
+
