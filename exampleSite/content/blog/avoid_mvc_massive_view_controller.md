@@ -7,9 +7,7 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-{{< rawhtml >}}
-<time datetime="2021-02-01 19:00:00 +01:00">February 1, 2021</time>
-{{< /rawhtml >}}
+
 The **Model-View-Controller** (**MVC**) design pattern is a basic component of creating app user interfaces, as any iOS developer is aware. However, when an app becomes more complicated, it's not unusual for view controllers to get huge and cumbersome. This can make the code difficult to comprehend and maintain and cause a number of issues, including lengthy build times and poor performance.
 
 ##### Model-View-Controller components
