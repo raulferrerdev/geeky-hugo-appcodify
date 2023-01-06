@@ -1,6 +1,6 @@
 ---
-title: "Introductios of Redux architecture for iOS: Pros and cons"
-description: "Redux is an architecture for managing a centralized state and unidirectional data flow. It is commonly used in web development but is also gaining popularity in iOS development."
+title: "9 Tips for Avoiding Massive View Controllers in MVC-Based Swift Apps"
+description: "Learn how to avoid having massive view controllers in MVC-based Swift apps with these 9 tips for keeping your code well-organized, maintainable, and scalable."
 date: 2021-01-23
 categories: ["Architecture", "Swift"]
 tags: ["Development"]
