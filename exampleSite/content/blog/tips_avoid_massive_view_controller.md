@@ -8,75 +8,78 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
-Dan Abramov and Andrew Clark created the **Redux** Open Source Javascript library in 2015. Redux is modeled after the Flux architecture created by Facebook and manages and centralizes the application state.
-#### Foundation
-The foundation of the Redux architecture is the assumption that data can only flow in one direction and that there can be only one model (the source of truth) in charge of storing and modifying the data so that it can be shown.
-#### Redux components
-In the Redux architecture we can find the following components (listed in alphabetical order).
-##### Action
-An **Action** is a straightforward object that the View sends to alter the application's State. For example, receiving a response to a call to an external server is an example os a thing that can trigger an action.
-For example, imagine an action that changes an username. It can be done as an *enum*:
+The **Model-View-Controller** (**MVC**) design pattern is a basic component of creating app user interfaces, as any iOS developer is aware. However, when an app becomes more complicated, it's not unusual for view controllers to get huge and cumbersome. This can make the code difficult to comprehend and maintain and cause a number of issues, including lengthy build times and poor performance.
 
-```swift
-enum Action {
-    case changeUsername(name: String)
-}
-```
+##### Model-View-Controller components
+First of all, let's remember which components make up the Model-View-Controller pattern and what their functions are.
+###### Model
+The **Model** holds de business logic and is in charge of accessing, manipulating, or storing the data of the application:
+•	Contains classes related to data persistence, like those which use databases (Core Data, SQLite, Realm...) or user preferences (UserDefaults).
+•	Contains the classes that handles communications (Networking) and that allows the application to receive and send data.
+•	Contains the classes that are in charge of parse the information received into the application (and convert it into model objects).
+•	Contains extensions, constants, helper classes...
+•	A model object can communicate with other model objects with 1:1 and 1:n relationships.
+•	Direct communication between the Model and the View is not permitted. The Controller serves as the conduit for information exchange between the Model and the View.
+###### View
+The **View** is composed by those components that the user can see:
+• These classes are those that come from the UIKit, AppKit, Core Animation, and Core Graphics libraries.
+• Despite not being directly related to the Model, they display the data that originates from it (they do it through the Controller).
+• Users may interact with these elements.
+###### Controller
+The **Controller** serves as a liaison between the **Model** and the **View**:
+• It is the central element of the MVC model and interacts with both the Model and the View.
+• It receives and analyzes the user's actions on the View, then updates the Model as necessary.
+• If the model's data changes, the view is updated to reflect those changes.
+• It looks after the application's life cycle.
 
-##### Middleware
-A **Middleware** is charge of using dependencies in the application, such as database access or external calls management. The application state and the action are passed through the middlewares when an action is launched.
+##### Tips to avoid Massive-View-Controllers
+We'll look at various tactics for avoiding large view controllers in MVC-based programs in this post. Your codebase will be easier to maintain and scale if you use these strategies to keep your view controllers compact, tidy, and understandable.
 
-##### Reducer
-A **Reducer** is a synchronous, pure function that houses the logic and is in charge of changing the application's state (they are the only components that can do it). The Reducer takes the State and Action from the Store, creates a new State, and then passes the new State back to the Store.
-Let's see how to set a reducer that updates the username in the State:
-```swift
-func reducer(action: Action, state: State) -> State {
-    switch action {
-        case .changeUsername(let newUsername): 
-            var newState = state
-            newState.username = newUsername
-            return newState
-    }
-}
-```
+###### 1. Set distinct classes for view controller and  logic
+The fact that view controllers frequently end up managing a broad range of duties unrelated to their primary function is one common cause of their size. A view controller, for instance, might be in charge of networking duties, data formatting, or business logic.
 
-##### State
-There can only be one application state (for this reason, we may also say that the state is the origin of truth in the app).
-In the example we are seen, the State is a *struct* with a paremeter:
-```swift
-struct State {
-    var username: String = ""
-}
-```
-##### Store
-The **Store** contains the State and is responsible for passing it to the Reducer together with the View and the Action. The new State generated by the Reducer is received by the View, which is subscribed to the State changes.
+Consider separating the functionality that is not directly connected to the view controller's primary duties into different classes to prevent this. You might develop a manager class to manage networking operations or a helper class to format data, for instance. By doing so, you'll be able to divide up the functionality into smaller, simpler-to-manage chunks, which will also make the code easier to comprehend and maintain.
 
-##### View
-The **View** is in charge of displaying the application's current state and is what the user sees. It receives updates whenever the State changes because, as we have seen, it is subscribed to changes in the State.
+###### 2. Implement child view controllers
+Consider using child view controllers if your view controller contains several sections, each of which has a distinct set of duties. By doing so, you'll be able to divide up the functionality into smaller, simpler-to-manage chunks, which will also make the code easier to comprehend and maintain.
 
-#### Redux flow
-In redux the flow is as follows:
+You must first establish a container view in your main view controller before adding the child view controllers as children of the main view controller in order to use child view controllers. The content of the child view controllers can then be shown using the container view.
 
-* It starts by an Action on the View.
-* Then, the Reducer component receives this instruction, and its job is to change the application's state in accordance with it.
-* Finally, the state change causes the new information to be updated in the View, as the View is subscribed to this changes.
+###### 3. Employ delegation
+Consider transferring the delegate methods to a different class if your view controller manages a lot of delegate methods. By doing so, you can make your view controller smaller and simpler to understand.
 
- It is preferable to use different Reducers (Composition pattern) rather than different Stores when dividing the logic of an application.
+Define a protocol with the delegate methods you want to utilize before having your view controller adopt it in order to use delegation. Then, you may make a different class to serve as the delegate and provide a particular instance of it to your view controller as required.
 
-#### Some Pros and Cons of the Redux architecture
-##### Pros
-* Redux is lightweight, so external libraries are not required.
-* The business logic is simpler to test because the Reducer is composed entirely of functions.
-* We can decrease the amount of mocks in the test by isolating the business logic (Reducers) from the dependencies (Middlewares).
-* The separation of responsibilities is effective.
-* The fact that it only has one state makes debugging easier.
-* State can be saved, so we can restore the previous state and use it, for example, on restar the app.
+###### 4. Utilize notifications
+Consider transferring the notification handling logic to a different class if your view controller is handling a lot of alerts. By doing so, you can make your view controller smaller and simpler to understand.
 
-##### Cons
-* By only working with one State, as the application grows, passing that State in each Action will increase the memory consumption of the application.
-* It is an architecture that is widely used in web development, but little used in the development of iOS applications, so the available information is limited and can be inconvenient for newbies.
-* It is a fairly fixed and specialized architecture, which means that it leaves little ability to customize or change to another architecture once it has been applied in the development of a project.
-* Asynchronous events that occur in a Middleware can lead to conflicts between actions.
+Create a notification observer in your view controller before registering for the alerts you want to receive in order to use notifications. When necessary, you can send a class instance to your view controller and construct a separate class to handle the notification events.
 
-#### Conclusion
-Redux is another possibility to consider when developing an iOS application. As is all architectures, it has its pros and cons, which must be evaluated according to the project we have in hand.
+
+###### 5. Use model classes
+Consider developing model classes to manage the data if your view controller is in charge of processing a lot of data. Making your code more understandable will be made possible by separating the view controller from the data management logic.
+
+Model classes should be made to be independent of the view controller and should provide the attributes and methods required to manage the data. This will increase the modularity and maintainability of your codebase and make it simpler to reuse the model classes in other areas of your application.
+
+###### 6. Implement protocols and protocol extensions
+In Swift, protocols are a useful tool for outlining a class's anticipated behavior. You can describe a collection of methods and attributes that a class must implement using protocols without mentioning the specific implementation. You can write more modular, reusable code as a result.
+
+A protocol's methods can have default implementations by using protocol extensions. If you have several view controllers that must implement the same set of methods, this can be extremely helpful. You can avoid repeatedly writing the same code in each view controller by using protocol extensions.
+
+###### 7. Employ custom view classes
+Consider putting a lot of the view-related code in your view controller onto a separate custom view class. By doing so, you can make your view controller smaller and simpler to understand.
+
+It is simpler to reuse and maintain view-related code when it is encapsulated in a single location using custom view classes. To further style and modify the user interface of your app, you can add new interface elements like buttons or text fields using custom view classes.
+
+###### 8. Use dependency injection
+By using the dependency injection technique, objects (such services or helpers) can be passed into a class as dependencies rather than being created there. This can make your view controller smaller and simpler, which will make testing easier.
+
+Define a protocol for the dependency you wish to inject, and then send an instance of that dependency to your view controller when it is initialized if you want to use dependency injection. This will make it simple for you to switch between several dependency implementations as necessary and will facilitate isolation testing for your view controller.
+
+###### 9. Utilize functional programming methods
+*Map*, *filter*, and *reduce* are examples of [functional programming techniques](https://raulferrer.dev/blog/swift_high_order_functions/) that can be used to build more terse and expressive code. These methods enable declarative manipulation of data sets, which can facilitate code comprehension and maintenance.
+
+If you want to make your view controller logic simpler and clearer, think about adopting functional programming techniques. For instance, you could use filter to choose a subset of data based on specific criteria or map to change the format of an array of data.
+
+##### Conclusion
+The MVC design pattern in Swift allows you to avoid huge view controllers using a variety of techniques. Your codebase will be easier to maintain and scale by keeping your view controllers compact, well-organized, and understandable if you adhere to best practices like isolating logic into distinct classes, employing child view controllers, and using functional programming approaches.
