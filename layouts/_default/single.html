@@ -65,6 +65,9 @@
             <span>{{ time.Format ":date_long" .PublishDate }}</span>
           </li>
         </ul>
+        <div class=”postmetadata”>
+          Posted on <span class=”updated”>{{ time.Format ":date_long" .PublishDate }}</span> 
+        </div>
         <div class="content drop-cap">{{.Content}}</div>
         {{ partial "social-share.html" . }}
 
