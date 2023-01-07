@@ -14,6 +14,10 @@ course:
     content: "Learn the SOLID principles and how to apply them in the development of your applications. SOLID principles improve our code, making it cleaner, scalable and testable."
     url: "https://raulferrer.dev/blog/solid_principles_swift/"
     date: 2020-02-07
+  - name: "9 Tips for Avoiding Massive View Controllers in MVC-Based Swift Apps"
+    content: "Learn how to avoid having massive view controllers in MVC-based Swift apps with these 9 tips for keeping your code well-organized, maintainable, and scalable."
+    url: "https://raulferrer.dev/blog/9_tips_avoid_massive_view_controller/"
+    date: 2020-01-23
   - name: "Design patterns in software"
     content: "Design patterns are solutions that have been found to similar problems in software development. In this post I will tell you about the 23 identified design patterns, and their characteristics."
     url: "https://raulferrer.dev/blog/design_patterns_software/"
