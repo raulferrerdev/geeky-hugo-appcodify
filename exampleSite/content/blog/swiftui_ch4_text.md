@@ -2,8 +2,8 @@
 title: "SwiftUI #4. Using the Text component"
 description: "Text is a SwiftUI component that allows us to display text on the screen. The different modifiers that we can apply to this component allow us to greatly customize it."
 date: 2022-12-24
-categories: ["SwiftUI Course"]
-tags: ["Development", "Code", "SwiftUI"]
+categories: ["SwiftUI"]
+tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=1Fa0oMOIq8WE0_JKeSCADy8_ijODiJ0TV"
 type: "regular" # available types: [featured/regular]
 draft: false

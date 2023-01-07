@@ -2,8 +2,8 @@
 title: "SwiftUI #3. Layout modifiers: frame, padding, background... and more"
 description: "We are going to see some of the most used modifiers that can be applied to a View in SwiftUI."
 date: 2022-12-21
-categories: ["SwiftUI Course"]
-tags: ["Development", "Code", "SwiftUI"]
+categories: ["SwiftUI"]
+tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=11oCQ5IZvxf6xOoL_RPAnAHz74gLXCBLs"
 type: "regular" # available types: [featured/regular]
 draft: false

@@ -2,8 +2,8 @@
 title: "SwiftUI #0. The First Project"
 description: "Learn Learn how to set up your first project for SwiftUI with Xcode."
 date: 2022-12-15
-categories: ["SwiftUI Course"]
-tags: ["Development", "Code", "SwiftUI"]
+categories: ["SwiftUI"]
+tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=1dh6SFB_R0yEgJXgLWHpzpC5KH7csTYMx"
 type: "regular" # available types: [featured/regular]
 draft: false
