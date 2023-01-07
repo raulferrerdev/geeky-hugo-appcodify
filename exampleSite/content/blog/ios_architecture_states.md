@@ -1,5 +1,5 @@
 ---
-title: "New architectures for iOS Apps: The ELM Architecture and TheComposable Architecture"
+title: "New architectures for iOS Apps: The ELM Architecture and The Composable Architecture"
 description: "The Elm Architecture and The Composable Architecture are two architectures for developing iOS applications that are designed to be easy to reason about and maintain."
 date: 2020-01-14
 categories: ["Architecture", "Swift"]

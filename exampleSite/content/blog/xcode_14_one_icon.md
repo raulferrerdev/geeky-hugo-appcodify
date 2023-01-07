@@ -8,7 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
-How many times have we found ourselves preparing countless icons of all the sizes required by Apple for our applications: sizes for iPhone and iPad and for different utilities — Spotlight, Notifications, App…
+How many times have we found ourselves preparing countless icons of all the sizes required by Apple for our applications: sizes for iPhone and iPad and for different utilities — Spotlight, Notifications or App.
 Generating so many icons of different sizes was tedious if you did it manually, and something simpler and you used an icon generator (which from an icon, normally 1024x1024px, generated all the necessary sizes).
 But now with Xcode 14, as Apple announced at WWDC 2022, it will only be necessary to configure the Assets catalog of our application so that it only uses a 1024x1024px icon. Xcode 14 will take care of resizing this icon according to its needs.
 
