@@ -1,5 +1,5 @@
 ---
-title: "Testing UINavigationController and UITabBarControllr in Swift"
+title: "Testing UINavigationController and UITabBarController in Swift"
 description: "In this work, we discussed different techniques for testing an UINavigationController or UITabBarController using XCTest in Swift. We covered four main techniques: setting up the controller in the test method, creating a subclass of the controller, using a mock object, and using a partial mock."
 date: 2018-07-02
 categories: ["Swift", "Testing"]
