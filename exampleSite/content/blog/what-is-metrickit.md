@@ -8,7 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 **MetricKit** in a new framework, introduced in iOS 13 (WWDC2019), with which it is intended to gather information (metrics) about battery behavior and application performance. For a registered application, reports on the behavior of said application will be received once a day as a general rule.
-#### Battery
+## Battery
 
 Battery metrics include, among other parameters:
 
@@ -20,7 +20,7 @@ Battery metrics include, among other parameters:
 * The use of device location functions.
 
 
-#### Performance
+## Performance
 
 From the point of view of performance, metrics are obtained, for example, on:
 
@@ -29,7 +29,7 @@ From the point of view of performance, metrics are obtained, for example, on:
 * The amount of time the application is active.
 * The use of memory and disk.
 
-#### Use
+## Use
 
 In order to receive metric reports, we need to add a subscription to *MXMetricManager* (for example in the *AppDelegate* class):
 

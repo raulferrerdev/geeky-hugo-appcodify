@@ -5,16 +5,16 @@ draft: false
 
 ---
 
-#### A. Introduction
+## A. Introduction
 
 The privacy of our website visitors is very important to us, and we are committed to safeguarding it. This policy explains what we will do with your personal information.
 Consenting to our use of cookies in accordance with the terms of this policy when you first visit our website permits us to use cookies every time you visit our website.
 
-#### B. Credit
+## B. Credit
 This document was created using a template from SEQ Legal (seqlegal.com)
 and modified by Website Planet (www.websiteplanet.com)
 
-#### C. Collecting personal information
+## C. Collecting personal information
 
 The following types of personal information may be collected, stored, and used:
 
@@ -32,7 +32,7 @@ The following types of personal information may be collected, stored, and used:
 
 Before you disclose to us the personal information of another person, you must obtain that person’s consent to both the disclosure and the processing of that personal information in accordance with this policy
 
-#### D. Using your personal information
+## D. Using your personal information
 
 Personal information submitted to us through our website will be used for the purposes specified in this policy or on the relevant pages of the website. We may use your personal information for the following:
 
@@ -58,7 +58,7 @@ Your privacy settings can be used to limit the publication of your information o
 
 We will not, without your express consent, supply your personal information to any third party for their or any other third party’s direct marketing.
 
-#### E. Disclosing personal information
+## E. Disclosing personal information
 
 We may disclose your personal information to any of our employees, officers, insurers, professional advisers, agents, suppliers, or subcontractors as reasonably necessary for the purposes set out in this policy.
 
@@ -74,14 +74,14 @@ We may disclose your personal information:
 
 Except as provided in this policy, we will not provide your personal information to third parties.
 
-#### F. International data transfers
+## F. International data transfers
 
 * Information that we collect may be stored, processed in, and transferred between any of the countries in which we operate in order to enable us to use the information in accordance with this policy.
 * Information that we collect may be transferred to the following countries which do not have data protection laws equivalent to those in force in the European Economic Area: the United States of America, Russia, Japan, China, and India.
 * Personal information that you publish on our website or submit for publication on our website may be available, via the internet, around the world. We cannot prevent the use or misuse of such information by others.
 * You expressly agree to the transfers of personal information described in this Section F.
 
-#### G. Retaining personal information
+## G. Retaining personal information
 
 * This Section G sets out our data retention policies and procedure, which are designed to help ensure that we comply with our legal obligations regarding the retention and deletion of personal information.
 * Personal information that we process for any purpose or purposes shall not be kept for longer than is necessary for that purpose or those purposes.
@@ -93,7 +93,7 @@ Except as provided in this policy, we will not provide your personal information
     * if we believe that the documents may be relevant to any ongoing or prospective legal proceedings; and
     * in order to establish, exercise, or defend our legal rights (including providing information to others for the purposes of fraud prevention and reducing credit risk).
 
-#### H. Security of your personal information
+## H. Security of your personal information
 
 * We will take reasonable technical and organizational precautions to prevent the loss, misuse, or alteration of your personal information.
 * We will store all the personal information you provide on our secure (password- and firewall-protected) servers.
@@ -101,11 +101,11 @@ Except as provided in this policy, we will not provide your personal information
 * You acknowledge that the transmission of information over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet.
 * You are responsible for keeping the password you use for accessing our website confidential; we will not ask you for your password (except when you log in to our website).
 
-#### I. Amendments
+## I. Amendments
 
 We may update this policy from time to time by publishing a new version on our website. You should check this page occasionally to ensure you understand any changes to this policy. We may notify you of changes to this policy by email or through the private messaging system on our website.
 
-#### J. Your rights
+## J. Your rights
 
 You may instruct us to provide you with any personal information we hold about you; provision of such information will be subject to the following:
 
@@ -118,15 +118,15 @@ You may instruct us at any time not to process your personal information for mar
 
 In practice, you will usually either expressly agree in advance to our use of your personal information for marketing purposes, or we will provide you with an opportunity to opt out of the use of your personal information for marketing purposes.
 
-#### K. Third party websites
+## K. Third party websites
 
 Our website includes hyperlinks to, and details of, third party websites. We have no control over, and are not responsible for, the privacy policies and practices of third parties.
 
-#### L. Updating information
+## L. Updating information
 
 Please let us know if the personal information that we hold about you needs to be corrected or updated.
 
-#### M. Cookies
+## M. Cookies
 
 Our website uses session cookies. A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server. Cookies may be either “persistent” cookies or “session” cookies: a persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed. Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies.
 

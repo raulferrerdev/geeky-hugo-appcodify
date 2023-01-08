@@ -8,7 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 In all applications we need to navigate from one screen to another to be able to access their contents. This can be done in two different ways in Flutter: by creating an instance of the *PageRoute* widget and then passing it to the **Navigator** widget, or by using the Named Routes option. In this article we are going to see how to set **Flutter** navigation with **Routes**.
-#### Using *PageRoute* to navigate between pages
+## Using *PageRoute* to navigate between pages
 
 Both the *Cupertino* package (iOS layout) and the *Material Design* (Android layout), present a display router: *CupertinoPageRoute* and *MaterialPageRoute*.
 
@@ -30,7 +30,7 @@ In this case that we have just seen, the movement between the different pages is
  Navigator.pop(context);
 ```
 
-#### Using named routes
+## Using named routes
 
 The navigation system is fine if we have a simple application. However, in more complex applications where it is necessary to navigate to a page from different points, we can find duplicate code.
 
@@ -134,7 +134,7 @@ And make the call by:
 Navigator.of(context).pushNamed(Welcome.id);
 ```
 
-##### Search order of routes
+### Search order of routes
 
 When searching for routes, the **Navigator** component follows the following order:
 
@@ -143,7 +143,7 @@ When searching for routes, the **Navigator** component follows the following ord
 * Then the *onGenerateRoute* parameter would be called (it must return a non-null value for any route not contemplated in home or in routes).
 * If all of the above fail, *onUnknownRoute* is called.
 
-#### Using *onGenerateRoute* for navigation
+## Using *onGenerateRoute* for navigation
 
 We can also plan the navigation of our application by configuring the *onGenerateRoute* parameter. This parameter must be passed a function that takes a parameter of type *RouteSettings* and returns one of type *Route*.
 
@@ -195,6 +195,6 @@ And the navigation is done as follows:
 Navigator.pushNamed(context, ROUTE_LIBRARY);
 ```
 
-#### Conclusions
+## Conclusions
 
 We have seen how we can implement navigation between screens in a *Flutter* project directly (creating a *PageRoute* instance) or by using routes (both in the routes parameter and in the *onGenerateRoute* parameter):

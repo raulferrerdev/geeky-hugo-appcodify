@@ -10,19 +10,19 @@ draft: false
 
 In mobile application development, along with native development platforms (iOS and Android), there are others, called hybrids, that allow developing applications for multiple platforms while maintaining a common code base: *PhoneGap*, *Ionic*, *React Native*, *Xamarin* and from recently, **Flutter**. Do you want to learn to program with Flutter? Here we will take the first steps.
 
-#### Let’s see what Flutter is
+## Let’s see what Flutter is
 
 {{< image src="images/posts/learn_programming_with_flutter_1.png" alt="Learning programming with flutter">}}
 
 [Flutter](https://flutter.dev/) is an open source SDK, originating around 2015, but not officially released by Google until December 2018 released in 2017 by Google. Flutter uses Dart as a programming language, plus C++ and Skia as rendering engines.
-#### The Dart programming language
+## The Dart programming language
 
 {{< image src="images/posts/learn_programming_with_flutter_2.png" alt="Learning programming with flutter">}}
 
 [Dart](https://dart.dev/) is an open source language, the first stable version of which was released in 2011. The idea of Dart is to facilitate its use by developers, so it has a very wide series of tools and utilities integrated: its own dependency manager, compilers … and, in addition, it presents a syntax similar to Javascript or Java.
 
 It is a strongly typed and object-oriented. From a mobile application point of view, Dart supports JIT (Just In Time) compilation, which allows **Flutter** to recompile directly while the application is running (Hot Reload), and AOT (Ahead Of Time), which allows compilation in native code.
-#### Journey Inside Flutter: The Widgets
+## Journey Inside Flutter: The Widgets
 
 In **Flutter** we can say that everything works around **Widgets**.
 
@@ -32,14 +32,14 @@ In **Flutter** you can create **Widgets** with styles that reproduce those of iO
 ## Do I choose Flutter? Pros and cons of Flutter
 
 As in everything, Flutter has a series of advantages and disadvantages that you have to take into account when using it. If you want to learn to program with Flutter, you should know what these pros and cons are.
-##### Pros
+### Pros
 
 * By having the same code base for iOS and Android, it allows for **relatively fast development**.
 * The Hot Reload allows us to **instantly see (normally) the changes made**, since it is not necessary to recompile the code.
 * Flutter, apart from iOS and Android, also allows compiling for the web (update). It is **perfect for developing MVP** (Minimum Viable Product) with just the right features.
 * It has a **fairly fast learning curve** and has a growing developer community.
 
-##### Cons
+### Cons
 
 * Flutter is fairly new and therefore **immature**. Dart is also immature when compared to Swift or Kotlin.
 * The fact that both Flutter and Dart are in **continuous development** (and with changes that happen quickly), **makes it difficult to maintain the code in the long term**.
@@ -49,7 +49,7 @@ As in everything, Flutter has a series of advantages and disadvantages that you 
 * Compared to native applications, Flutter applications are larger (**take up more space**) and when run, they **tend to consume more device memory**.
 * A final note to keep in mind: it would **not be the first time that Google has closed a project**, which makes the future of Flutter somewhat uncertain.
 
-#### We are going to install Flutter on the computer
+## We are going to install Flutter on the computer
 
 Let’s see how we can install **Flutter** on a macOS operating system:
 
@@ -82,7 +82,7 @@ Let’s see how we can install **Flutter** on a macOS operating system:
 ```
 
 
-#### What else do I need besides Flutter?
+## What else do I need besides Flutter?
 
 If we want to develop, compile and test applications on iOS and Android, we need to have the respective SDKs installed (**Xcode** and **Android Studio**). To know what we need to install on our computer we execute the following command in the terminal:
 
@@ -95,7 +95,7 @@ As you can see, in this case everything related to Android development would be 
 
 {{< image src="images/posts/learn_programming_with_flutter_3.png" alt="Learning programming with flutter">}}
 
-##### Our first app on Flutter
+## Our first app on Flutter
 
 To create our first application in fluter we simply have to go to the directory where we want to create it:
 
@@ -120,7 +120,7 @@ If you now access the directory you will see something similar to the following:
 {{< image src="images/posts/learn_programming_with_flutter_4.png" alt="Learning programming with flutter">}}
 
 We can see specific folders for Android and iOS (with the specific files for each of these platforms). Update, the web folder shows us the content if we compile the app to be shown as web.
-##### And we start the application!
+## And we start the application!
 
 Now we are going to launch the application that we have created. To do this, if you are using Xcode, start the simulator and then, from within the application folder, execute:
 
@@ -133,6 +133,6 @@ Flutter will start the process of compiling, linking and signing the app, and it
 {{< image src="images/posts/learn_programming_with_flutter_5.png" alt="Learning programming with flutter">}}
 {{< image src="images/posts/learn_programming_with_flutter_6.png" alt="Learning programming with flutter">}}
 
-#### Conclusions
+## Conclusions
 
 Do you want to learn to program with Flutter? In this article we have taken our first steps with Flutter. We have seen what Flutter is, how it works, what are its advantages and disadvantages and how to create our first application with Flutter.

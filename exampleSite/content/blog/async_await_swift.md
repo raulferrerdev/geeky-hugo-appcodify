@@ -13,7 +13,7 @@ A language feature called **async/await**, enables you to construct asynchronous
 Utilizing **async/await** has a number of advantages, one of which is that it makes your software more effective and responsive. When you utilize **async/await**, you may create programs that conduct time-consuming processes in the background while letting the main thread carry on. This guarantees that your software will remain responsive while it waits for a task to finish, which can be crucial in user-facing apps.
 
 **Async/await** can enhance the developer experience in addition to making your code more effective and responsive. Developers used to writing synchronous code will find it easier to grasp and more familiar to create asynchronous code in this manner. This may lessen the learning curve for dealing with asynchronous code and facilitate developers' assimilation.
-##### Async/Await syntaxis
+## Async/Await syntaxis
 
 The **async** keyword designates an *asynchronous* function that will employ the **await** operator. When an asynchronous task is supplied, the await operator is used to delay the function's execution until it has finished.
 
@@ -32,7 +32,7 @@ The function must be marked with the async keyword and called with the await ope
 let resquestResult = await request()
 ```
 
-##### Adding try-catch
+### Adding try-catch
 When we use **async/await**, we will most likely find ourselves needing to handle errors, so we will have to use **try-catch**. Adding this case is very simple, for example:
 
 ```swift
@@ -66,7 +66,7 @@ do {
 }
 ```
 
-##### Removing closures
+### Removing closures
 One benefit of using **async/await** that makes it possible to write asynchronous code without the usage of challenging *callback* methods. This may result in easier to write and maintain, simpler, more succinct code.
 For example, let see how the above example of request looks with *callback* methods (closures):
 
@@ -88,7 +88,7 @@ func fetchData() {
 
 ```
 
-##### Legacy code transformation
+### Legacy code transformation
 
 If we have to deal with old code we can mainly follow two ways to transform it to **async/await**: creating it again or using withCheckedContinuation/withCheckedThrowingContinuation.
 
@@ -148,7 +148,7 @@ func downloadImage(from url: URL, to fileURL: URL) async throws {
 }
 ```
 
-###### withCheckedThrowingContinuation
+#### withCheckedThrowingContinuation
 
 **withCheckedThrowingContinuation** is a function that creates a continuation that can be resumed with a throwing expression. It is used in conjunction with the **await** keyword to enable asynchronous error handling.
 
@@ -170,7 +170,7 @@ try await withCheckedThrowingContinuation { continuation in
 ```
 The asynchronous task is carried out in this case within the continuation block. In the event of an error, the continuation is continued with a throwing expression, which propagates the error to the async function's caller. If the task succeeds, the continuation is continued with a returning expression that gives the caller the task's outcome.
 
-###### withCheckedContinuation
+#### withCheckedContinuation
 
 A continuation created by the function **withCheckedContinuation** can be picked up by a returning expression. Despite not allowing you to throw errors from within the continuation block, it is comparable to **withCheckedThrowingContinuation**.
 
@@ -182,6 +182,6 @@ let result = try await withCheckedContinuation { continuation in
 ```
 The asynchronous task is carried out in this case within the continuation block. A returning expression that returns the task's outcome to the caller resumes the continuation when the task is finished.
 
-##### Conclusion
+### Conclusion
 
 It is simpler to write and comprehend code that does tasks concurrently because to the strong language feature known as **async/await**, which enables you to express asynchronous code in a synchronous-looking manner. It may result in applications that are more responsive and effective, as well as a better developer experience. Swift's implementation of **async/await** makes use of special function types, the await operator, and can be combined with try-catch blocks to handle errors. You can build asynchronous code that is simpler, clearer to understand, and easier to maintain than code that uses closures by using **async/await**.

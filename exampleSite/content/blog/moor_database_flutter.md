@@ -12,26 +12,26 @@ There are different databases to incorporate into a **Flutter** application, eac
 The introduction to Moor will be done by developing a small project in Flutter, which you can download from [GitHub](https://github.com/raulferrerdev/moor_project).
 {{< image src="images/posts/moor_database_flutter_1.png" alt="Flutter and Moor database">}}
 
-#### Introduction
+## Introduction
 
 When we begin to develop applications, there comes a time when we find ourselves with the need to save data within the application itself: information about the user, generated data.
 
 At that point, what we do is introduce a database in the development of the application. But what database do we choose to work with?
-#### Types of databases
+## Types of databases
 
 Today there are numerous databases that can be used in mobile development, but they can be basically classified into two groups: **Relational** and **NoSQL**.
-##### Relational databases
+### Relational databases
 
 In relational databases, information is stored in tables (with rows and columns, where each row represents a record and each column an ​​attribute of that record). In addition to the saved data, this type of database also saves the relationships between them.
 
 For example, SQLite is an example of a relational database, which we can implement in Flutter using the [SQFLite](https://pub.dev/packages/sqflite) package.
-##### NoSQL databases
+### NoSQL databases
 
 NoSQL databases do not have predefined schemas like relational databases would. A clear example are databases such as [MongoDB](https://pub.dev/packages/mongo_dart), which store information in the form of documents and allow you to easily work with unstructured information.
-#### What is Moor?
+## What is Moor?
 
 [Moor](https://pub.dev/packages/moor) is a library for Flutter that allows us to work with the SQLite database easily and in Dart. Moor works using SQFLite and, what Moor does for us is to transform our Dart code into SQL language (although it also allows us to use SQL).
-##### How to install Moor in our project?
+### How to install Moor in our project?
 
 The first step to using Moor in our projects is to install a series of dependencies (updated). First we create a project by entering the following command in the terminal:
 
@@ -63,7 +63,7 @@ dev_dependencies:
 * *build_runner*. This library generates the database files in Dart language.
 
 We also add the [path_provider](https://pub.dev/packages/path_provider) library, which will allow us to find and add the database to the application sandbox, and the [get_it](https://pub.dev/packages/get_it) library, which is a service provider and will help us establish the AppDatabase class as a singleton.
-#### Our first table with Moor
+## Our first table with Moor
 
 One of the advantages of Moor is that when creating a table we can do it directly in Dart, without using SQL language. Suppose we want our database to contain a user table.
 
@@ -84,7 +84,7 @@ class Users extends Table {
 By adding the autoIncrement feature to the id parameter we achieve two things: the first is that this parameter increases by 1 each time we add a user; the second is that at that time, the id parameter becomes the primaryKey of the table. As you can see, the Users class will be our table in the database, while the properties defined as getters will be the columns of the table. Moor accepts the following types of data:
 {{< image src="images/posts/moor_database_flutter_2.png" alt="Flutter and Moor database">}}
 
-#### Creation of the database
+## Creation of the database
 
 Now, what we must do is create the database, and that it takes into account the Users table. We do this with the following code, which we will introduce in the database_manager.dart class:
 
@@ -123,7 +123,7 @@ This code contains two different parts:
 * The second part what it does is run the database. To do this, in our application we simply have to make the call AppDatabase(openConnection()).
 
 We have also added the instruction part ‘database_manager.g.dart’;, which will contain the generated code.
-#### Code generation
+## Code generation
 
 Now we simply have to make the code generation process run (in the database_manager.g.dart file that we have defined). To do this, we go to the terminal and execute the following code:
 
@@ -132,7 +132,7 @@ flutter pub run build_runner build watch
 ```
 {{< image src="images/posts/moor_database_flutter_3.png" alt="Flutter and Moor database">}}
 
-#### Time to add queries
+## Time to add queries
 
 Once we have created the database with the users table, what we need is to add the queries that will allow us to create, update, delete … those users.
 
@@ -162,10 +162,10 @@ class AppDatabase extends _$AppDatabase {
 ```
 
 Keep in mind that in the case of updating an object in the table, this is done using the primaryKey of said object (in our case it is the id parameter, which was marked as primaryKey when adding the autoIncrement option).
-#### It’s flutter time
+## It’s flutter time
 
 Now that we have the project created and we have included the database_manager.dart and users.dart classes, we can continue creating the user interface that will allow us to create a user.
-##### Adding the service provider
+### Adding the service provider
 
 In order to establish the AppDatabase class as a singleton, we will use the get_it library, which is a service provider and will allow us to access the database from anywhere in the application.
 
@@ -184,7 +184,7 @@ Future setupLocator() async {
 
 
 What setupLocator() allows us to do is initialize the database and register it as a singleton.
-#### Starting the application
+## Starting the application
 
 To begin, we will take the main.dart class that was created when the project was generated, we will delete all its content and we will add the following code:
 
@@ -218,7 +218,7 @@ class MyApp extends StatelessWidget {
 
 
 We have modified the call to main() to be asynchronous, since the setupLocator() call returns a Future: when this call finishes executing, the rest of the application will be executed.
-#### The data entry screen
+## The data entry screen
 
 Now we will create a simple screen to enter the data with which we will create the user in the database. To do this, we create a home.dart file and add the following code:
 
@@ -382,7 +382,7 @@ class CustomTextField extends StatelessWidget {
 }
 ```
 
-#### Launching the application
+## Launching the application
 
 With all the code in place, we are going to execute the code in an iOS simulator. To do this, first we load the simulator (from the Simulator application) and then, in the terminal, from the root directory of the project we execute:
 
@@ -407,6 +407,6 @@ Once the file is found, we can open it with an application like [DB Browser for 
 
 {{< image src="images/posts/moor_database_flutter_6.png" alt="Flutter and Moor database">}}
 
-#### Conclusion
+## Conclusion
 
 In this article I wanted to make a brief introduction to the use of databases in projects developed with Flutter and, especially, to the use of the Moor database. This database has many more possibilities that we will see in later articles.

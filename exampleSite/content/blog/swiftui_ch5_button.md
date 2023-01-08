@@ -25,7 +25,7 @@ Button(action: {
 
 By doing this, a button with the label "Button" is created, and tapping it causes it to carry out the desired action. By nesting them inside the Text view, you may also utilize other views, like photos, as the label for the button.
 
-#### Modifiers
+## Modifiers
 
 *ForegroundColor*, a modifier that lets you alter the color of the button's label, is one of the most helpful ones. As an illustration, the code that follows generates a red button with white text:
 

@@ -13,7 +13,7 @@ SwiftUI allows us to easily compose a user interface (UI) by adding components (
 The components to organize these Views are basically three: **VStack**, **HStack** and **ZStack**.
 {{< youtube -dQ7ADkO_qk >}}
 
-#### VStack
+## VStack
 When we create an application with SwiftUI, a default scene (*ContentView*) appears, which contains the following code:
 ```swift
 struct ContentView: View {
@@ -40,7 +40,7 @@ VStack(alignment: .leading, spacing: 10) {
 In this case, what we have done is say that the elements should be aligned to the left and with a separation between them of 10.
 The main alignments that we can give are (*HorizontalAlignment* type): *.leading* (left), *.center* (center) and *.trailing* (right).
 
-#### HStack
+## HStack
 Now we change **VStack** for **HStack**, we will see that the two elements have been placed next to each other (probably if you have directly changed **VStack** for **HStack** it will have given you an error, since the values that the align parameter accepts are different, except for *.center*).
 ```swift
 struct ContentView: View {
@@ -62,7 +62,7 @@ HStack(alignment: .top, spacing: 25) {
 }
 ```
 
-#### ZStack
+## ZStack
 If **VStack** allows us to align the elements on the Y axis and **HStack** on the X axis, **ZStack** allows us to put them on the Z axis, that is, stacked one above the other.
 For example, we modify the code used so far and put a *Rectangle* component instead of the *Image* component:
 
@@ -102,7 +102,7 @@ struct ContentView: View {
 ```
 
 > By default, zIndex has a value of 0 on each element of a **ZStack**. This value can be changed to positive or negative values to modify the positioning on the stack.
-#### Spacer
+## Spacer
 We have seen that in the case of **VStack** and **HStack** we can indicate the separation between the different elements through the spacing parameter. But what if we wanted the **VStack** items to be at the bottom of the screen? And at the top?
 For this we have the **Spacer** element. This is an element with no content that expands to take up all available space (vertically on a **VStack** and horizontally on an **HStack**).
 

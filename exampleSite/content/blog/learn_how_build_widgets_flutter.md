@@ -8,17 +8,17 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 In a [previous article](https://raulferrergarcia.netlify.app/blog/learn_programmming_with_flutter/), in which I introduce Flutter, I discussed the importance of widgets in Flutter. Let’s see how it is built in Flutter.
-#### What is a widget?
+## What is a widget?
 
 We can think of **widgets** as reusable code blocks that describe the appearance of the user interface (UI). They do this based on their state, which, as we will see later, can be *static* (does not change) or *dynamic* (changes over time).
 
 A **widget** can not only be a button, a text, an image … something that we would associate directly with a graphic appearance, but it is also everything that allows defining that appearance, such as the margin of an object or that we can center it in the interface .
 
 Thus, while *Image*, *Text* or *FlatButton* are widgets that allow us to display an image, a text or a button, they are also *Padding* widgets (that allow us to add space around another widget) or *FutureBuilder* (that allow us to add an asynchrony pattern) .
-#### Types of Widgets
+## Types of Widgets
 
 To know how to build in Flutter, you have to know that there are two types of widgets, **StatelessWidgets** and **StatefulWidgtets**.
-##### Stateless Widgets
+### Stateless Widgets
 
 They are called stateless or static widgets. These are widgets that do not save any type of state, that is, they do not have values that can change. For example, an Image widget that only displays an image on the screen.
 
@@ -77,7 +77,7 @@ In this case, we declare the *Car* class and extend it from *StatefulWidget*. In
 In the second part of the code, we are defining the state of the *Car* class inside which we can see, on the one hand, the *speedUp*() function, that each time it is called it will increase the value of one of the speed parameter. In addition, this is done within the *setState* call, with which we modify the state of the class and, at the same time, a new rendering of the widget is executed.
 
 Next you can see the build function, made up of a *Container* type widget, which in turn contains a *Column* type widget, which contains two *Text* type children.
-#### How are widgets structured? The widget tree
+## How are widgets structured? The widget tree
 
 We have just seen an example of a widget that contains different nested widgets, following a parent-child structure. This case is quite simple, but as the design of an interface becomes more complicated, this structure has become longer and more complex. This is what is known as a **widget tree**.
 
@@ -180,6 +180,6 @@ In this case, the build method returns a somewhat more complex series of widgets
 * **Text:** display text on the screen.
 * **FloatingActionButton:** This widget features an on-screen button.
 
-#### Conclusions
+## Conclusions
 
 We have seen the two categories in which we can divide the widgets in Flutter: *Stateless* and *Stateful*. The use of each type will depend on its use. In general we can say that, if it does not change, we will use a **StatelessWidget** and, if it changes, we will use a **StatefulWidget**.

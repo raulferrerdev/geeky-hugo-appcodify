@@ -38,7 +38,7 @@ func sceneDidEnterBackground (_ scene: UIScene) // It is called when a 'scene' g
 Once a scene is created or reconnected, the first method that is called is *sceneWillEnterForeground(_ scene:)* when the scene will appear (either because it is activated for the first time or because it goes from second to foreground).
 
 Next, the *sceneDidBecomeActive(_ scene:)* method is called, when the scene is ready to receive and respond to user events.When the application is about to stop responding to user events, the *sceneWillResignActive(_ scene:)* method is called, and when it goes from the foreground to the background, the *sceneDidEnterBackground(_ scene:)* method.
-#### New methods on the AppDelegate class
+## New methods on the AppDelegate class
 
 On the other hand, in the *AppDelegate* class there are two new methods related to the scenes, since now the new life cycle of the scenes sessions is managed by *UIApplicationDelegate*:
 

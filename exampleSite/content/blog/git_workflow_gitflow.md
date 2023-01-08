@@ -8,12 +8,12 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 When developing software we find ourselves with the need to manage the changes that are being made in the code and that, when working as a team, all team members always have a copy of this code in which they can work and, later, integrate these changes. To facilitate this work we have version control systems, such as **Git**, which allow us to track and manage changes that occur in the code over time: for this we are going to see the use of **Git** and the workflow with **GitFlow**.
-#### What is Git
+## What is Git
 
 **Git** is a version control software developed by Linus Torvarlds (the creator of Linux), in order to coordinate the work with his collaborators.
 
 Keep in mind that **Git** has a distributed architecture, so instead of the code being in a single place, when a developer makes a working copy of this code, it generates a repository that can contain the full history of changes that have been made in that code.
-#### Repository, revision, commit … Some vocabulary
+## Repository, revision, commit … Some vocabulary
 
 When working with **Git** and version control, we come across a series of terms that it is necessary to know to know what is being done:
 
@@ -31,7 +31,7 @@ When working with **Git** and version control, we come across a series of terms 
 * **Repository**. It is the place where both the code and the history of changes that have been made are stored.
 * **Tag (label)**. As its name suggests, it allows us to label different revisions of a project to be able to identify them more easily (they are often used, for example, with versions of a project released to production).
 
-#### Let’s do it
+## Let’s do it
 
 Having seen some vocabulary, let’s see how to start using git in our projects in a basic way.
 
@@ -149,15 +149,15 @@ When we work on a project, especially if we do it with more developers, it is ne
 For this we will use a branch and work system developed by [Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) and which we know from **GitFlow**. According to this system, we should have a couple of main branches and other secondary or support branches.
 {{< image src="images/posts/git_workflow_gitflow_1.png" alt="Git and gitflow">}}
 
-##### master (main)
+### master (main)
 
 This branch contains the code for each version that has been uploaded to production. In addition, any code that is uploaded to this branch must be prepared to be released to production.
-##### develop (main)
+### develop (main)
 
 This branch includes the code for the next iteration or version of the project, and it integrates the new functionalities that are being developed for that version.
 
 {{< image src="images/posts/git_workflow_gitflow_2.png" alt="Git and gitflow">}}
-##### release (secondary)
+### release (secondary)
 
 This branch derives from **develop**, and contains the code for the version that will be released to production shortly. In this branch you can also correct any error before publishing it. After publishing the version, this branch will need to be integrated into both **develop** and **master**.
 
@@ -173,7 +173,7 @@ $ git checkout -b release-2.3.5 develop
 ```
 
 
-##### feature (secondary)
+### feature (secondary)
 
 These are branches that, like the **release** branch, derive from the **develop** branch and contain the code corresponding to new functionalities. They are usually branches that only exist in the local repository of each developer. Every time a feature is finalized and approved, its branch is integrated into **develop**.
 
@@ -189,7 +189,7 @@ Or with a single command:
 $ git checkout -b feature/userinfosync develop
 ```
 
-##### hotfix (secondary)
+### hotfix (secondary)
 
 A **hotfix** branch is created to correct a bug that needs to be fixed urgently in production code. That is why it derives from the **master** branch and, once corrected, is integrated into both the **master** branch and the **develop** branch.
 
@@ -207,7 +207,7 @@ $ git checkout -b hotfix-2.3.1 master
 
 
 That is, from **master** we create a **hotfix** branch with the value of the new version that will be uploaded to production (the old one is 2.3 and the corrected one will be 2.3.1).
-##### Tagging the master branch
+### Tagging the master branch
 
 Every time we release a version to production and integrate the code in the master branch, it is highly recommended to tag that integration, so that we can have the final code of each version identified.
 
@@ -219,7 +219,7 @@ $ git tag -a 2.3.1 -m "Version 2.3.1"
 
 
 With **-a** we have labeled the version and with **-m** we have added a message.
-##### Git extensions for GitFlow implementation
+### Git extensions for GitFlow implementation
 
 We have just seen a series of commands that allow us to manage the repositories of our code: create branches, move between them, integrate them … But thanks to a series of **git** extensions, we can do all this in a simpler way. For this we will simply have to install [git-flow](https://github.com/nvie/gitflow) on our computer.
 
@@ -256,8 +256,8 @@ Support branches? [support/]
 Version tag prefix? []
 ```
 
-##### Managing the different branches with git-flow
-###### Feature
+### Managing the different branches with git-flow
+#### Feature
 
 ```shell
 $ git flow feature
@@ -293,7 +293,7 @@ $ git flow feature pull origin {feature_name}
 
 
 With this command we download the branch *{feature_name}* from the remote repository.
-######## Release
+#### Release
 
 ```shell
 $ git flow release
@@ -322,7 +322,7 @@ $ git flow release publish {release_name}
 
 
 This command is used to publish the branch *{release_name}* to a remote repository.
-###### Hotfix
+#### Hotfix
 
 ```shell
 $ git flow hotfix

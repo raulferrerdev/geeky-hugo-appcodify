@@ -13,7 +13,7 @@ In addition, we will develop this button as a Swift package, so that we can shar
 
 > The code for this article can be found on [GitHub](https://github.com/raulferrerdev/FABButton). Keep in mind there may be some modifications in the repository code compared to the one described here, since new functionalities can be added, others can be improved and small errors can be corrected.
 
-##### Swift Package Creation
+## Swift Package Creation
 
 First we create the Swift package. To do this, from the Xcode menu we follow the New > Swift Package path and give it the name of FABButton (remember to activate version control, Create Git repository on my Mac, to be able to upload it later to a repository on the network).
 
@@ -51,14 +51,14 @@ let package = Package(
 )
 ```
 
-#### Component design
+## Component design
 
 The component design will be as follows:
 
 {{< image src="images/posts/create_fab_button_swift_2.png" alt="Add FAB Button">}}
 
 The main view is made up of a UIStackView component, which will contain the main button (UIButton component) and a second UIStackView component, which will be the one containing the secondary buttons, each of which will be labeled (with a UILabel component). The fact of using UIStackView components is due both to its ability to distribute the elements it contains and to adapt to its content.
-#### Main view development
+## Main view development
 
 The main view is created in the Sources/FABButton directory with the name FABView. Initially, in this view we will define and place the components that make it up: the main button and the UIStackView component that will contain the secondary buttons.
 ```swift
@@ -183,7 +183,7 @@ private func layoutUI() {
 
 
 In the configuration of the UIStackView component, we have indicated that the elements (secondary buttons) that it contains are arranged vertically, align to the right (trailing), fill all the space (the UIStackView component will grow when you add buttons) and that there is a separation of 16).
-#### Main button configuration
+## Main button configuration
 
 The main button we have created, mainButton, is a simple square button with an image inside. To make it look like a FAB button we have to make it round and shaded.
 
@@ -268,7 +268,7 @@ To:
 private var mainButton = FABMainButton(frame: .zero)
 ```
 
-#### Creating the secondary buttons
+## Creating the secondary buttons
 
 The menu components consist of a button (with a personalized image) and a label with the button’s identifier. To create these components we will use a UIView subclass in which we will define the button and the label.
 
@@ -515,7 +515,7 @@ class FABSecondaryButton: UIView {
 }
 ```
 
-#### Creating the secondary button menu
+## Creating the secondary button menu
 
 We will create the secondary button menu, as we have indicated in the component design, with a UIStackView component. For this, what we will do is create a subclass of UIStackView with the characteristics that we want to give it. What we do is:
 
@@ -618,10 +618,10 @@ private func setSecondaryButtonsArray() {
 }
 ```
 
-#### Animation of secondary buttons when appearing and disappearing
+## Animation of secondary buttons when appearing and disappearing
 
 To make the presentation and hiding of the secondary buttons a little more attractive, we will add animations both when showing and hiding them.
-##### Presentation of the buttons
+### Presentation of the buttons
 
 The buttons will be presented one by one, and a bounce effect will be sought in said appearance. We will do this by concatenating three animations in a row on the same button:
 ```swift
@@ -665,7 +665,7 @@ func showButtons() {
 * Finally, we transform it to its real size in 0.03 seconds.
 
 All this, together, gives a rebound effect on the appearance of the button. In addition, when the final animation is completed, this method is recursively called, so that the buttons are presented one by one (see how at the beginning of the method we use the copy of the buttons to extract and delete them at the same time as the we show).
-##### Hiding the buttons
+### Hiding the buttons
 
 To hide the buttons we will do something similar to what was previously mentioned for your presentation, but for now we will only use an animation, in which for 0.075 seconds it goes from the original size to a scale of 0.001, and then eliminate the button from the view:
 
@@ -687,7 +687,7 @@ func dismissButtons() {
 }
 ```
 
-#### Adoption of the FABSecondaryButtonDelegate protocol
+## Adoption of the FABSecondaryButtonDelegate protocol
 
 Since the secondary buttons pass their action through a delegate and the FABSecondaryButtonDelegate protocol, we have to make the FABStackView class adopt the method of this protocol (we do it using an extension to have the code ordered):
 
@@ -796,7 +796,7 @@ extension FABView: FABSecondaryButtonDelegate {
 
 
 Now we simply have to upload all the code entered to a repository (in this case, GitHub) so that it is available to be used as a dependency in any application.
-#### How to import the FAB Button into a project
+## How to import the FAB Button into a project
 
 To import the Swift package that contains the FAB Button, the first thing we do is create a new project in Xcode.
 
@@ -875,6 +875,6 @@ If we now run this application, we can check the operation of the FAB Button.
 
 {{< youtube CitIua96wrc >}}
 
-##### Conclusion
+## Conclusion
 
 In this article we have seen how to create a FAB Button that displays a secondary menu and, in addition, create it as a Swift package to be able to upload it to the repository and share it with other projects. Since Swift Package Manager has been incorporated into Xcode 11, this process has become much easier.

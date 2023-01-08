@@ -29,7 +29,7 @@ struct ContentView: View {
 }
 ```
 The **Text** view includes a number of modifiers that we can use to alter how it looks and behaves in addition to displaying text.
-#### .font(_:)
+## .font(_:)
 We can modify the text's font using this modification. To indicate the preferred font, a Font value can be passed as an input. To use the system's huge title font, for instance, we can use *.largeTitle*:
 
 ```swift
@@ -44,7 +44,7 @@ let customFont = Font.custom("Avenir", size: 24)
 Text("Hello, World!")
   .font(customFont)
 ```
-#### .foregroundColor(_:)
+## .foregroundColor(_:)
 
 We can modify the text's color using this modification. We can indicate the preferred color by passing in a Color value as an input. For instance, to make the text red, we can use the *.red* color:
 
@@ -61,7 +61,7 @@ let customColor = Color(red: 0.5, green: 0.2, blue: 0.9, opacity: 1)
 Text("Hello, World!")
   .foregroundColor(customColor)
 ```
-#### .lineLimit(_:)
+## .lineLimit(_:)
 
 By using this modification, we can restrict the number of text lines that are displayed. A **Text** view always shows the entire text that it contains by default. However, we may supply a value as an argument to this modifier if we wish to restrict the number of lines. For instance, we can use the code below to make the content only two lines long:
 
@@ -71,7 +71,7 @@ Text("Hello, World!")
 ```
 
 The text will be truncated and an *ellipsis* (...) will be displayed at the end if it has more lines than the number given by this modification.
-#### .multilineTextAlignment(_:)
+## .multilineTextAlignment(_:)
 
 With the help of this modification, we may align the text in a multi-line **Text** view. The text is oriented to the left by default. However, we can change the alignment by using this modification. For instance, we may use the following code to center the text:
 
@@ -82,7 +82,7 @@ Text("Hello, World!")
 
 Additionally, we can use *.leading* to align text to the left, *.trailing* to align text to the right, or *.justified* to justify text.
 
-#### .lineSpacing(_:)
+## .lineSpacing(_:)
 
 We can alter the gap between lines of text using this modification. The lines are uniformly spaced by default. The modifier can, however, be used to specify a different line spacing. For instance, we can use the following code to add 10 points of space between each line of text:
 
@@ -91,7 +91,7 @@ Text("Hello, World!")
   .lineSpacing(10)
 ```
 
-#### .truncationMode(_:)
+## .truncationMode(_:)
 This modifier controls how the text is truncated when it exceeds the bounds of the Text view. By default, the text is truncated at the end and an *ellipsis* (...) is displayed. However, we can use this modifier to specify a different truncation mode. For example, to truncate the text at the beginning and display an *ellipsis* at the start, we can use the following code:
 
 ```swift

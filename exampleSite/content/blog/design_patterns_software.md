@@ -10,10 +10,10 @@ draft: false
 Normally, in software development we often encounter problems that have similar characteristics. To solve them we find different solutions, but as some of these solutions are usually better than others (from the point of view of flexibility and reusability), they end up being preferred. These solutions end up becoming Design Patterns in software. Design Patterns in software are solutions to recurring design problems that are being applied daily in the software industry.
 
 Design patterns allow developers to have a guide when establishing the structure of a program, and make it more flexible and reusable. In addition, it also allows solving problems with a methodology already tested and not doing so from scratch.
-#### How many design patterns in software are there?
+## How many design patterns in software are there?
 
 There are 23 design patterns, which were described in the book [Design Patterns, Elements of Reusable Object-Oriented Software](https://www.oreilly.com/library/view/design-patterns-elements/0201633612/) by E. Gamma , R. Helm, E. Johnson and J. Vlissides. This group of authors are considered the ‘Gang of Four’ and as the gurus of the design patterns in software. These authors described the 23 design patterns and classified them into three groups: structural patterns, creational patterns and behaviour patterns.
-#### Creational Patterns
+## Creational Patterns
 
 Creational patterns are those that allow us to create objects. These patterns encapsulate the procedure for creating an object and usually work through interfaces:
 
@@ -23,7 +23,7 @@ Creational patterns are those that allow us to create objects. These patterns en
 * **Singleton.** This pattern ensures that a class has only one possible instance, which can be accessed globally.
 * **Prototype.** It allows you to copy or clone an object without the need for our code to depend on its classes.
 
-#### Structural patterns
+## Structural patterns
 
 Structural patterns specify how objects and classes relate to each other to form more complex structures, so that they are flexible and efficient. They rely on inheritance to define interfaces and obtain new functionalities:
 
@@ -35,7 +35,7 @@ Structural patterns specify how objects and classes relate to each other to form
 * **Flyweight.** It is a pattern that allows you to save RAM, since it causes many objects to share common properties in the same object, instead of maintaining these properties in each and every object.
 * **Proxy.** It is an object that acts as a simplified version of the original. A proxy controls access to the original object, which allows us to perform some tasks before or after accessing that object. This pattern is usually used in internet connections, access to device files, etc. That is to say expensive processes, and allows to reduce the cost and complexity.
 
-#### Behavioural patterns
+## Behavioural patterns
 
 They are the most numerous, focus on communication between objects and are responsible for managing algorithms, relationships and responsibilities between these objects:
 

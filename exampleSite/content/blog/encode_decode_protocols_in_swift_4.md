@@ -23,7 +23,7 @@ A struct or class may adopt the Codable type if its properties are also of the C
 String, Int, Double, Data, URL
 Array, Dictionary, Optional (if contain Codable types)
 
-#### Decodable
+## Decodable
 
 Let’s see now how to work with the Decodable protocol. We will assume that our application calls a web service that returns the information of a specific user in JSON format:
 
@@ -59,7 +59,7 @@ do {
 }
 ```
 
-#### Encodable
+## Encodable
 
 If we want to obtain a JSON from an instance of our struct User:
 

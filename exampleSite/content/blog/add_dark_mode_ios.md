@@ -12,11 +12,11 @@ Surely you have heard of **Dark Mode** on iOS 13, that is, a mode in which the c
 Although some applications already included a Dark Mode in their interface, it was not until the publication of iOS 13 and iPadOS, that the Dark Mode was included in the configuration of the device itself.
 To change to Dark
 
-#### Adapt applications to Dark Mode
+## Adapt applications to Dark Mode
 
 To adapt an application to Dark Mode we must work with Xcode 11 and iOS 13. In addition, we must modify the colors and images used in the application.
 
-##### Use adaptive colors
+## Use adaptive colors
 
 Colors that adapt automatically to the style of the interface should be used. For this we have two possibilities:
 
@@ -31,7 +31,7 @@ To use these colors, for example, from the code, just write:
 
 - Or if we are in the Interface Builder, select it in the color attribute of the component we want to color.
 
-#### Define custom colors
+## Define custom colors
 
 As we saw in [How to create a color palette (Color Assets) in Xcode](https://appcodifiy.com/articles/create_color_palette/), we can define our own color palette in Xcode, so that we can call from any point of the application to these colors (both from the code and from the Interface Builder)
 
@@ -39,7 +39,7 @@ To do this, we select the Assets.xcassets folder (or creating our own .xcassets 
 
 Then we right-click, select New Color Set and change its attributes to generate the new color.
 
-#### Two versions of the same color
+## Two versions of the same color
 
 But now we must generate two versions of the same color: the version of the light or default mode and that of the dark mode.
 

@@ -7,7 +7,7 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: true
 ---
-#### Introduction
+## Introduction
 <!--{{< youtube w7Ft2ymGmfc >}}-->
 Surely you have heard of, and have even tried, an Artificial Intelligence that allows you to generate images from text. This is the case of DALL-E.
 
@@ -17,7 +17,7 @@ Surely you have heard of, and have even tried, an Artificial Intelligence that a
 
 **DALL-E**'s capacity to produce images that are not only realistic but also original and creative is one of its primary characteristics. It has the capacity to produce a wide variety of previously unseen visuals, including pictures of things and scenes that don't actually exist.
 
-#### DALL-E API Key
+## DALL-E API Key
 Developers can access and use the DALL-E model in their own apps by using the API that OpenAI provides for it. Developers can send a written description to **DALL-E** and get an image in reply by using the API. The API is easily incorporated into a number of applications and is accessed through a straightforward RESTful interface.
 
 

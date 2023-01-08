@@ -39,9 +39,21 @@ $level-size: $font-size;
 @each $level in $type-levels {
   $level-size: $level-size * $font-scale;
   // Output heading styles
+  h1,
+  .h1 {
+    font-size: $level-size *0.5 !important;
+    line-height: calc(2px + 2ex + 2px);
+    margin-bottom: 0.65em;
+    @include tablet {
+      font-size: calc( #{$level-size} * .85);
+    }
+    @include mobile {
+      font-size: calc( #{$level-size} * .65);
+    }
+  }
   h#{$level},
   .h#{$level} {
-    font-size: $level-size;
+    font-size: $level-size * 0.5;
     line-height: calc(2px + 2ex + 2px);
     margin-bottom: 0.65em;
     @include tablet {

@@ -15,7 +15,7 @@ If we apply these five principles:
 * The software developed will be robust, stable and scalable (we can easily add new features).
 * Together with the use of the Design Patterns, it will allow us to create software that is highly cohesive (that is, the elements of the system are closely related) and loosely coupled (the degree of dependence between elements is low).
 
-#### Origin of the acronym SOLID
+## Origin of the acronym SOLID
 
 The acronym SOLID comes from:
 
@@ -25,7 +25,7 @@ The acronym SOLID comes from:
 * **I** (ISP): Interface segregation principle
 * **D** (DIP): Dependency inversion principle
 
-##### Single responsibility principle
+### Single responsibility principle
 
 According to this principle, a class should have a reason, and only one, to change. That is, a class should only have one responsibility.
 
@@ -93,7 +93,7 @@ class DataBaseHandler {
 }
 ```
 
-##### Open/closed principle
+### Open/closed principle
 
 According to this principle, we must be able to extend the a class without changing its behaviour. This is achieved by abstraction.
 
@@ -196,7 +196,7 @@ class Truck: Scrappable {
 }
 ```
 
-##### Liskov substitution principle
+### Liskov substitution principle
 
 This principle, introduced by [Barbara Liskov](https://en.wikipedia.org/wiki/Barbara_Liskov) in 1987, states that in a program any class should be able to be replaced by one of its subclasses without affecting its functioning.
 
@@ -230,7 +230,7 @@ class UserService {
 }
 ```
 
-##### Interface segregation principle
+### Interface segregation principle
 
 The Principle of segregation of the interface indicates that it is better to have different interfaces (protocols) that are specific to each client, than to have a general interface. In addition, it indicates that a client would not have to implement methods that he does not use.
 
@@ -358,6 +358,6 @@ class UserService: StorageManager {
 }
 ```
 
-#### Conclusion
+## Conclusion
 
 These principles will allow us to reduce the rigidity and fragility of the code, by allowing us to create reusable, maintainable and higher quality components in your code.
