@@ -71,8 +71,5 @@
 <meta property="og:description" content="{{ .Description }}"/>
 {{ end }}
 
-{{ if isset site.Taxonomies "categories" }}
-<meta name="robots" content="noindex,nofollow">
-{{ end }}
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}
