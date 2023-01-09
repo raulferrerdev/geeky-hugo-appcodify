@@ -5,7 +5,7 @@ date: 2023-01-09
 categories: ["Swift"]
 tags: ["Development"]
 image: "https://drive.google.com/uc?id=1h2M3iTBC71QQSVvdaW6RUjDaYHdxDYNQ"
-draft: true
+draft: false
 ---
 
 A useful tool in any programmer's toolbox is an **enumeration**, or **enum**. They enable type-safe interaction and the grouping of related variables. **Enums** will be discussed in this post, along with how Swift may make use of them. **Enum** fundamentals as well as some more complex ideas, like related values, raw values, and custom initializers, will be covered.
