@@ -33,7 +33,7 @@ To use these colors, for example, from the code, just write:
 
 ## Define custom colors
 
-As we saw in [How to create a color palette (Color Assets) in Xcode](https://appcodifiy.com/articles/create_color_palette/), we can define our own color palette in Xcode, so that we can call from any point of the application to these colors (both from the code and from the Interface Builder)
+As we saw in [How to create a color palette (Color Assets) in Xcode](https://raulferrer.dev/blog/create_color_palette/), we can define our own color palette in Xcode, so that we can call from any point of the application to these colors (both from the code and from the Interface Builder)
 
 To do this, we select the Assets.xcassets folder (or creating our own .xcassets folder for colors) in the project navigator (Project Navigator).
 
