@@ -2,7 +2,6 @@
 <title itemprop="name">{{.Title | default site.Title}}</title>
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta itemprop="description" content="{{ .Params.description }}" />
-<meta name="msvalidate.01" content="53A4231ED5C1305C95257BCCE1E7B545" />
 <!-- base url -->
 {{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
 <base href="{{ site.BaseURL }}">
