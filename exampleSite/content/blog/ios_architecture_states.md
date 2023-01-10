@@ -75,7 +75,7 @@ TCA starts from TEA, but works assuming that each View has its own Store, and ea
 ### TCA components
 TCA is based on six components: Action, Environment, Reducer, State, Store and View.
 
-* **Action.** In a similar way to how it was described in a [previous Redux post](https://raulferrer.dev/articles/redux_pattern/), we can set an Action as an enum that contains the different actions that can be given. For example:
+* **Action.** In a similar way to how it was described in a [previous Redux post](https://raulferrer.dev/blog/redux_pattern/), we can set an Action as an enum that contains the different actions that can be given. For example:
 
 
 ```swift
