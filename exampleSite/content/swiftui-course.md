@@ -45,4 +45,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_ch6_image/"
     image: "images/swiftui-course/swiftui6.png"
     date: 2023-01-02
+  - name: "SwiftUI #7. Design a complex UI with SwiftUI"
+    content: "In this tutorial, we will be diving into the world of SwiftUI and creating a complex UI design. We will be covering various layout techniques that will help you take your app's design to the next level."
+    url: "https://raulferrer.dev/blog/swiftui_ch7_practical_example/"
+    image: "images/swiftui-course/swiftui7.png"
+    date: 2023-01-12
 ---
