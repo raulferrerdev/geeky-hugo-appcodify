@@ -152,7 +152,7 @@ This example uses a custom initializer for the *Temperature* **enum**, which cre
 
 ## Enume cases as function parameters
 
-Like any other value, **enum** cases can be utilized as function parameters. Consider the function below, which takes a *Day* **enum **case as a parameter:
+Like any other value, **enum** cases can be utilized as function parameters. Consider the function below, which takes a *Day* **enum** case as a parameter:
 
 ```swift
 func getActivities(for day: Day) -> [String] {
@@ -186,7 +186,7 @@ The *allCases* attribute of an *enum* allows us to repeatedly loop through all o
 
 ```swift
 for day in Day.allCases {
-    print(dat)
+    print(day)
 }
 
 // prints:
