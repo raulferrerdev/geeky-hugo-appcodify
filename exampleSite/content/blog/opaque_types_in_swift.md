@@ -55,23 +55,25 @@ It is simpler to alter the implementation of a framework or library without affe
 ## Opaque types in SwiftUI
 When used as the return type for the body field of a struct that complies with the View protocol, *some View* in SwiftUI is an **opaque type**. The *some View* type enables the caller to utilize the view like any other view type while keeping the implementation of the view hidden from the caller.
 
+> **Opaque types** are denoted with the word *some*"* to show that they are an implementation detail of the function or type that is using them. It is used to convey that the caller only cares that the type follows a given protocol or has a specific set of methods and is not concerned with the precise type being used.
+
 Here is an example of how *some View* might be used in a SwiftUI view hierarchy:
 
 ```swift
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Text("Hello, World!")
-            MyCustomView()
+    struct ContentView: View {
+        var body: some View {
+            VStack {
+                Text("Hello, World!")
+                MyCustomView()
+            }
         }
     }
-}
 
-struct MyCustomView: View {
-    var body: some View {
-        Text("This is a custom view")
+    struct MyCustomView: View {
+        var body: some View {
+            Text("This is a custom view")
+        }
     }
-}
 ```
 
 The *ContentView* in this illustration is a struct that complies with the View protocol and has a body that returns a VStack with a Text view and a *MyCustomView* view within. The body of the *MyCustomView* struct, which follows the View protocol, returns a Text view.
@@ -87,9 +89,9 @@ When a function or method returns an **opaque type**, it signifies that the call
 An example of a function returning an opaque type is given below:
 
 ```swift
-func getAuthenticator() -> some Authenticator {
-    return TokenAuth()
-}
+    func getAuthenticator() -> some Authenticator {
+        return TokenAuth()
+    }
 ```
 
 The *getAuthenticator()* function in this example returns an **opaque type** *some Authenticator*, which means that the caller is not made aware of the true type of the given value. The caller does not have access to the implementation specifics of the underlying type but can still utilize the returned value as an instance of the Authenticator protocol.
@@ -106,23 +108,23 @@ A type that is defined in one module (such a framework or library) but may only 
 Consider a framework that defines the **opaque type** *Authenticator* and a **generic** function that accepts an instance of *Authenticator* as an input as well as a value of any type, and returns a Boolean value indicating whether or not the authentication was successful. Although the actual underlying type of the *Authenticator* is concealed from the caller, any type of value can be used with the function.
 
 ```swift
-public protocol Authenticator {
-    func authenticate<T>(value: T) -> Bool
-}
-
-public struct BasicAuth: Authenticator {
-    public func authenticate<T>(value: T) -> Bool {
-        // Perform basic authentication on the value
-        return true
+    public protocol Authenticator {
+        func authenticate<T>(value: T) -> Bool
     }
-}
 
-public struct TokenAuth: Authenticator {
-    public func authenticate<T>(value: T) -> Bool {
-        // Perform token-based authentication on the value
-        return true
+    public struct BasicAuth: Authenticator {
+        public func authenticate<T>(value: T) -> Bool {
+            // Perform basic authentication on the value
+            return true
+        }
     }
-}
+
+    public struct TokenAuth: Authenticator {
+        public func authenticate<T>(value: T) -> Bool {
+            // Perform token-based authentication on the value
+            return true
+        }
+    }
 ```
 In this instance, the framework defines the *authenticate* function, which accepts any type as a value. The importing module is not informed of the true *Authenticator*'s underlying type. By doing so, the framework can operate on any kind of value while still keeping the caller's implementation of the *Authenticator* a secret.
 
