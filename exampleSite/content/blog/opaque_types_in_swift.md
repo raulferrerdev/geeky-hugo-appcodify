@@ -55,7 +55,7 @@ It is simpler to alter the implementation of a framework or library without affe
 ## Opaque types in SwiftUI
 When used as the return type for the body field of a struct that complies with the View protocol, *some View* in SwiftUI is an **opaque type**. The *some View* type enables the caller to utilize the view like any other view type while keeping the implementation of the view hidden from the caller.
 
-> **Opaque types** are denoted with the word *some*"* to show that they are an implementation detail of the function or type that is using them. It is used to convey that the caller only cares that the type follows a given protocol or has a specific set of methods and is not concerned with the precise type being used.
+> **Opaque types** are denoted with the word *some* to show that they are an implementation detail of the function or type that is using them. It is used to convey that the caller only cares that the type follows a given protocol or has a specific set of methods and is not concerned with the precise type being used.
 
 Here is an example of how *some View* might be used in a SwiftUI view hierarchy:
 
