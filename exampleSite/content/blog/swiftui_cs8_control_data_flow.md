@@ -51,7 +51,7 @@ struct ContentView: View {
 ```
 The **@State** attribute is shared by both of the text fields in this example, so any changes made to one will also be reflected in the other.
 
-Additionally, it's crucial to remember that **@State** properties support a wide range of types, including custom *structs*, *classes*, *Strings*, *Ints*, and *Doubles*.
+Additionally, it's important to remember that **@State** properties support a wide range of types, including custom *structs*, *classes*, *Strings*, *Ints*, and *Doubles*.
 
 In conclusion, **@State** is a potent property wrapper that enables you to handle a view's state in a predictable and self-contained manner. The property is automatically stored in the view's internal state, a re-render of the view is triggered when the state changes, and a fresh copy of the value is created each time it is accessed to ensure consistency. You may design dynamic and reactive user interfaces that react to user interactions by updating automatically by using **@State**.
 
@@ -110,7 +110,9 @@ In conclusion, **@Binding** is a potent property wrapper that enables data to be
 In response to user interactions, this enables several views to update dynamically and share the same state. Additionally, it gives you more control over how data moves through the view hierarchy by enabling you to construct a two-way binding between the parent and child views. You may design more intricate and dynamic user interfaces that react in real-time to user interactions by utilizing **@Binding**.
 
 ## @ObservedObject
-SwiftUI's **@ObservedObjec**t property wrapper enables you to control an object's state that complies with the *ObservableObject protocol*. Any modifications to an object that has the @ObservedObject wrapper will cause the view to be re-rendered. In response to changes in the underlying data, it is simple to design dynamic and reactive user interfaces that update automatically.
+SwiftUI's **@ObservedObject** property wrapper enables you to control an object's state that complies with the *ObservableObject protocol*. Any modifications to an object that has the @ObservedObject wrapper will cause the view to be re-rendered. In response to changes in the underlying data, it is simple to design dynamic and reactive user interfaces that update automatically.
+
+> **ObservableObject** enables to keep track of class modifications. Any views that depend on a class instance annotated with **ObservableObject** will reload themselves automatically to reflect the changing state. This enables a user interface that is more responsive and effective. To utilize **ObservableObject**, a class's properties must have an *objectWillChange* property that will be called before any changes are made to the class's properties. For example, the *objectWillChange* publisher is sent automatically by the **Published** property wrapper so that you don't have to explicitly call it each time a property changes.
 
 Here is an illustration of a straightforward view utilizing a **@ObservedObject** to show the name and age of a person:
 

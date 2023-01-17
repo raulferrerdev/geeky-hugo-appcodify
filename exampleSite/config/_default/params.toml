@@ -48,7 +48,7 @@ preloader = "" # use jpg, png, svg or gif format.
 enable = true
 #title_large = "**Code** Craftsmanship"
 title_small = "Become a **Better Developer** with my Blog and Tutorials"
-image = "images/banner.png"
+image = "images/banner.webp"
 background_image = "/images/banner-bg-shape.svg"
 #content = "A Developement Blog about iOS, Xcode, Swift, SwiftUI and Flutter. Learn how to build better applications."
 button_label = "Know About Me"
@@ -56,19 +56,19 @@ button_link = "about/"
 
 # Advertise
 [[advertisement]]
-image = "images/software_architecture_ads.png"
+image = "images/software_architecture_ads.webp"
 link = "architecture/"
 
 [[advertisement]]
-image = "images/swift_tutorial_ads.png"
+image = "images/swift_tutorial_ads.webp"
 link = "swift-tutorials/"
 
 [[advertisement]]
-image = "images/swiftui_course_ads.png"
+image = "images/swiftui_course_ads.webp"
 link = "swiftui-course/"
 
 [[advertisement]]
-image = "images/flutter_tutorials_ads.png"
+image = "images/flutter_tutorials_ads.webp"
 link = "flutter-tutorials/"
 
 # cookies
