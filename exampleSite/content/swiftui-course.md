@@ -52,7 +52,7 @@ course:
     date: 2023-01-12
   - name: "SwiftUI #8. Control data flow with @State, @Binding, @ObserverObject, and @Published"
     content: "This chapter covers the use of property wrappers in SwiftUI: @State, @Binding, @ObservedObject, and @Published. We will examine examples and use cases to understand how to effectively manage the state of views and objects, and create dynamic and reactive user interfaces."
-    url: "https://raulferrer.dev/blog/swiftui_ch8_control_data_flow/"
+    url: "https://raulferrer.dev/blog/swiftui_cs8_control_data_flow/"
     image: "images/swiftui-course/swiftui8.png"
     date: 2023-01-20
 ---
