@@ -58,7 +58,7 @@
               {{ end }}
               <!-- /image processing for single device -->
               {{ end }}            
-              <h4 class="h5 mb-2"><a class="title-linked" href={{ .url }}>{{.name | markdownify}}</a></h4>
+              <h3 class="h3 mb-2" style="margin-top: 10px;"><a class="title-linked" href={{ .url }}>{{.name | markdownify}}</a></h4>
               <p><i class="fas fa-calendar me-2"></i>Published on {{ .date | dateFormat "Jan 2, 2006" }}</p>
               <p>{{.content | markdownify}}</p>
             </div>
