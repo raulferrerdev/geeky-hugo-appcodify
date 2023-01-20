@@ -1,7 +1,7 @@
 ---
 title: "SwiftUI #8. Control data flow with @State, @Binding, @ObserverObject, and @Published"
 description: "This chapter covers the use of property wrappers in SwiftUI: @State, @Binding, @ObservedObject, and @Published. We will examine examples and use cases to understand how to effectively manage the state of views and objects, and create dynamic and reactive user interfaces."
-date: 2023-01-15
+date: 2023-01-20
 categories: ["SwiftUI"]
 tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=10KAqSHojb16PiQE6iqKHIn4ni4lzuLI2"
