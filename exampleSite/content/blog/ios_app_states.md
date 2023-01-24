@@ -4,30 +4,23 @@ description: "Learn about the different states of an iOS app, including not runn
 date: 2023-01-13
 categories: ["Swift"]
 tags: ["Development", "Code"]
-image: "https://drive.google.com/uc?id=1D9G6ELElIJs94vg1ZWCJouNokwU5lNTo"
+image: "https://drive.google.com/uc?id=106d2oMIj6zYTSj5BBd6Qt2OYOLGkKsAw"
 draft: true
 ---
 
-An iOS app can exist in several states, each with its own unique characteristics and behaviors. These states include not running, inactive, active, background, and suspended.
+An iOS app can exist in multiple states, each with its own set of features and behaviors. **Not running**, **inactive**, **active**, **background**, and **suspended** are some of these states.
 
-When an app is not running, it is not currently executing any code and is not visible to the user. This state can occur when an app is first installed and has not yet been launched, or when an app is terminated by the system.
+When an app is **not running**, no code is being executed and it is not visible to the user. This state can occur when an app is first installed and not yet launched, or when the system terminates an app.
 
-An app can transition from the not running state to the inactive state when it is launched by the user. In this state, the app is still executing code, but it is not currently receiving any events or updates from the system. This can occur when an app is launched but not yet visible to the user, such as when a user is presented with a login screen before the main app interface is displayed.
+When an app is no longer the foreground app but is still executing code, it can transition from the **active** state to the **background** state. This can happen when a user switches to another app or when a system event occurs, such as a phone call. While in the **background**, an app can continue to execute code, but it has limited access to system resources and is not visible to the user.
 
-The active state is the state in which an app is running in the foreground and is visible to the user. In this state, the app is receiving events and updates from the system and is able to interact with the user. This is the state in which an app typically spends the majority of its time.
+Finally, an app can enter the **suspended** state if it is no longer executing code and is not visible to the user. The system uses this type of hibernation to conserve resources. A **suspended** app remains in memory but does not consume CPU or other system resources.
 
-An app can transition from the active state to the background state when it is no longer the foreground app but is still executing code. This can occur when a user switches to another app or when a system event, such as a phone call, occurs. While in the background, an app can continue to execute code, but it has limited access to system resources and is not visible to the user.
+Each state has unique characteristics and behaviors, and it is critical for developers to understand these distinctions when creating iOS apps. An app in the **background**, for example, has limited access to system resources, so it is critical to manage those resources carefully. Furthermore, developers should be aware of the various ways in which an app can transition between states and design their apps to handle these transitions smoothly.
 
-Finally, an app can transition to the suspended state when it is no longer executing code and is not visible to the user. This state is a form of hibernation and is used by the system to preserve resources. An app in the suspended state remains in memory but is not consuming CPU or other system resources.
+## Respond to changes in app state
 
-Each state has its own characteristics and behaviors, and it is important for developers to understand these differences when developing iOS apps. For example, an app in the background state has limited access to system resources, so it is important to manage those resources carefully. Additionally, developers should be aware of the different ways that an app can transition between states, and they should design their apps to handle these transitions smoothly.
-
-
-
-
-raul.ferrer.dev@icloud.com
-Code for doing task on entering those states
-To respond to changes in an app's state, developers can use the UIApplicationDelegate protocol in their app's delegate class. The protocol defines several methods that are called by the system as an app's state changes.
+To respond to changes in an app's state, developers can use the **UIApplicationDelegate** protocol in their app's delegate class. The protocol defines several methods that are called by the system as an app's state changes.
 
 For example, to respond to an app entering the active state, a developer can implement the applicationDidBecomeActive(_:) method in the app's delegate class:
 

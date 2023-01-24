@@ -7,10 +7,13 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-Since the introduction of iOS as an Operating System, the programming of its applications has evolved in terms of the architecture on which the code of said applications was based.
-Starting with the MVC (Model-View-Controller) architecture recommended by Apple, other architectures have been used, each one with its pros and cons.
-In this post we are going to see some of these pros and cons for five of the most used or most projected architectures today: MVC, MVVM, MVP, VIPER and VIP.
+A little over 6 years ago, on 2011, when I started learning to program applications for iOS, I used the MVC architecture (recommended by Apple), although it always ended up being a “Massive-View-Controller” architecture.
 
+Step by step I became interested in improving the way in which applications could be built. From MVC in Objective-C I went to MVC with Swift, then to MVVM applying RXSwift, even doing tests with VIPER and VIP, although initially they seemed complex to me (without forgetting MVP, which I learned about through Android developers).
+
+After reading numerous posts and books, watching videos… I came to the conclusion that each architecture has developers who praise it and others who criticize it. From my point of view, each of these architectures has advantages and disadvantages, and it all depends on how we use them.
+
+For this reason, I wanted to compile those advantages and disadvantages that I have found that these architectures can present: MVC, MVP, MVVM, VIPER and VIP. But keep in mind that some of them may be advantages for some but disadvantages for others, and vice versa.
 ## 1. MVC: Model-View-ViewController
 In this architecture, the application logic is found in the ViewController, which acts as a link between the View and the Model.
 ### Pros
