@@ -9,7 +9,7 @@ draft: false
 ---
 Normally, in software development we often encounter problems that have similar characteristics. To solve them we find different solutions, but as some of these solutions are usually better than others (from the point of view of flexibility and reusability), they end up being preferred. These solutions end up becoming Design Patterns in software. Design Patterns in software are solutions to recurring design problems that are being applied daily in the software industry.
 
-Design patterns allow developers to have a guide when establishing the structure of a program, and make it more flexible and reusable. In addition, it also allows solving problems with a methodology already tested and not doing so from scratch.
+Design patterns allow developers to have a guide when establishing the [structure of a program, and make it more flexible and reusable](https://raulferrer.dev/blog/architecture_patterns_ios/). In addition, it also allows solving problems with a methodology already tested and not doing so from scratch.
 ## How many design patterns in software are there?
 
 There are 23 design patterns, which were described in the book [Design Patterns, Elements of Reusable Object-Oriented Software](https://www.oreilly.com/library/view/design-patterns-elements/0201633612/) by E. Gamma , R. Helm, E. Johnson and J. Vlissides. This group of authors are considered the ‘Gang of Four’ and as the gurus of the design patterns in software. These authors described the 23 design patterns and classified them into three groups: structural patterns, creational patterns and behaviour patterns.

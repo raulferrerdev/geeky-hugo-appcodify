@@ -1,68 +1,26 @@
 ---
-title: "SwiftUI #9. Navigation in SwiftUI: A Comprehensive Guide to NavigationView and NavigationLink"
-description: "This post will go over how to use NavigationView and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. The post describes how to use these components in detail, as well as how to customize their appearance and behavior with built-in modifiers. The guide also includes examples and explanations of how to pass data between views and control navigation programmatically."
-date: 2023-01-23
+title: "SwiftUI #9. Navigation in SwiftUI: NavigationStack"
+description: "This post will go over how to use NavigationStack and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. The post describes how to use these components in detail, as well as how to customize their appearance and behavior with built-in modifiers. The guide also includes examples and explanations of how to pass data between views and control navigation programmatically."
+date: 2023-01-25
 categories: ["SwiftUI"]
 tags: ["Development", "Code"]
-image: "https://drive.google.com/uc?id=10KAqSHojb16PiQE6iqKHIn4ni4lzuLI2"
+image: "https://drive.google.com/uc?id=1xJKqgsPvdwoJ8naCWwWekClv8tU0U9i1"
 type: "regular" # available types: [featured/regular]
 draft: true
 ---
 
-**NavigationView** and **NavigationLink** are key components in SwiftUI for managing the navigation stack and navigating between views in an app. **NavigationView** acts as a container view that manages the navigation stack, while **NavigationLink** pushes a new view onto the stack when tapped or triggered programmatically. Together, they allow for seamless navigation throughout an app.
+## NavigationView Deprecation in iOS 16.2
 
-## NavigationView
-To use **NavigationView**, it should be added to the main body of a SwiftUI view. Inside the **NavigationView**, content such as a list of items that the user can tap to navigate to a detail view can be added.
+About six months ago, Apple announced that the **NavigationView** will be [deprecated](https://developer.apple.com/documentation/swiftui/navigationview) in iOS 16.2. **NavigationView** was the primary method of managing an app's various levels, from the main menu to the deeper levels. It enabled developers to create complex, hierarchical apps quickly and easily. Its straightforward design, which was consistent across Apple's platforms, made it a popular choice among developers.
+However, the **NavigationView** will be deprecated in iOS 16.2. As a result, developers will need to consider alternative solutions for managing the various levels of their apps. Apple has provided some guidance on the best course of action.
 
-```swift
-struct ContentView: View {
-    let items = [Item(name: "Item 1"), Item(name: "Item 2"), Item(name: "Item 3")]
+## NavigationLink Methods Deprecation in iOS 16.0
 
-    var body: some View {
-        NavigationView {
-            List(items) { item in
-                NavigationLink(destination: DetailView(item: item)) {
-                    Text(item.name)
-                }
-            }
-            .navigationBarTitle("Home")
-            .background(Color.green)
-        }
-    }
-}
+Although Apple has not deprecated the **NavigationLink** component (which allows us to push from a new perspective), it has deprecated some of its [methods](https://developer.apple.com/documentation/swiftui/navigationlink/init(_:isactive:destination:)-6xw7h) as of iOS 16.0. It's the case of methods like *init( :isActive:destination:)* or *init( :tag:selection:destination:)*, which allow you to check if a link is active (*isActive*) or pass data to a new window (*tag*).
+## Before iOS 16.2
 
-struct DetailView: View {
-    var item: Item
+This is an example of how NavigationView was used before its deprecation:
 
-    var body: some View {
-        VStack {
-            Text("Details for: \(item.name)")
-        }
-        .navigationBarTitle("Detail View")
-    }
-}
-
-struct Item {
-    let name: String
-}
-```
-The *ContentView* in this example has an array of items, each of which is displayed in a list, and each of which is enclosed in a **NavigationLink**, which, when clicked, directs the user to the *DetailView* while supplying the item as an argument. A *List* that is enclosed by a **NavigationView** contains the **NavigationLink**. There is a modifier for the *NavigationView*, *navigationBarTitle("Home")*, and for the **NavigationView**'s background, *.background(Color.green)*.
-
-### NavigationView modifiers
-
-**NavigationView** has several built-in *modifiers* that allow for customization of its appearance and behavior, including:
-
-* **.navigationBarTitle(Text("Title"))**. Sets the title of the navigation bar.
-* **.navigationBarHidden(Bool)**. Hide or show the navigation bar.
-* **.navigationBarBackButtonHidden(Bool)**. Hide or show the back button in the navigation bar.
-* **.navigationBarItems(leading:, trailing:)**. To add leading and trailing buttons to the navigation bar.
-* **.toolbar(items:)**. To add items to the toolbar.
-* **.background(Color)**. To set the background color of the **NavigationView**.
-* **.transition(AnyTransition)**. To set the transition animation when navigating between views.
-* **.navigationViewStyle(StackNavigationViewStyle())**. To set the navigation style of the **NavigationView**.
-* **.edgesIgnoringSafeArea(.top)**. To make the **NavigationView** ignore the safe area at the top.
-
-For example, to set the title of the navigation bar and hide the back button:
 ```swift
 struct ContentView: View {
     let items = [Item(name: "Item 1"), Item(name: "Item 2"), Item(name: "Item 3")]
@@ -87,9 +45,8 @@ struct ContentView: View {
                     Image(systemName: "heart")
                 }
             )
-            .navigationBarHidden(false)
+            .toolbar(.hidden)
             .navigationBarBackButtonHidden(true)
-            .background(Color.green)
         }
     }
 }
@@ -108,92 +65,98 @@ struct DetailView: View {
     }
 }
 
-struct Item {
+struct Item: Identifiable {
+    let id = UUID()
     let name: String
 }
 ```
 
-In this example, the **NavigationView** has some modifiers: *.navigationBarTitle("Home")* to set the title of the navigation bar, *.navigationBarItems(leading:, trailing:)* to add leading and trailing buttons to the navigation bar, *.navigationBarHidden(false)* to show the navigation bar, *.navigationBarBackButtonHidden(true)* to hide the back button, and *.background(Color.green)* to change the background color of the **NavigationView**.
+## From iOS 16.2: NavigationStack
 
-## NavigationLink
-As we have seen, **NavigationLink** allows for navigating between views in an app by being added to a SwiftUI view and specifying the destination view to navigate to using the destination parameter.
+On iOS 16.2, Apple changed NavigationView by NavigationStack. According to [Apple](https://developer.apple.com/documentation/swiftui/navigationstack):
+
+> A view that displays a root view and enables you to present additional views over the root view.
+
+That is, it is a root view to which more views can be added on top (*push*).
+
+Let's see an example:
 
 ```swift
 struct ContentView: View {
-    @State private var selectedId: String? = nil
-    let items = [Item(id: "1", name: "Item 1"), Item(id: "2", name: "Item 2"), Item(id: "3", name: "Item 3")]
-
+    let items = [Item(name: "Item 1"), Item(name: "Item 2"), Item(name: "Item 3")]
+    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(items) { item in
-                NavigationLink(destination: DetailView(), tag: item.id, selection: $selectedId) {
+                NavigationLink(destination: DetailView(item: item)) {
                     Text(item.name)
                 }
             }
-            .navigationBarTitle("Home")
+            .navigationTitle("Home")
         }
     }
 }
 
 struct DetailView: View {
-    @Environment(\.selectedId) var selectedId
-
+    var item: Item
+    
     var body: some View {
         VStack {
-            Text("Selected item id: \(selectedId ?? "None")")
-            NavigationLink(destination: ContentView(), isActive: .constant(false), label: {
-                Text("Go back to Home")
-            })
+            Text("Details for: \(item.name)")
         }
-        .navigationBarTitle("Detail View")
+        .navigationTitle("Detail View")
+    }
+}
+```
+It's the same example as the old **NavigationView** example. We only have changed **NavigationView** with **NavigationStack**, but it has the same behaviour: shows some links and, opn tap on ones of those links (**NavigationLink**), the DetailedView is pushed to the stack.
+
+## Data-driven navigation
+With the introduction of the **NavigationStack**, Apple has also introduced a *data-driven* navigation model. What does this mean, since it has added a new modifier (*navigationDestination*) that relates the destination to which you want to navigate with a specific data type.
+
+Let's modify the previous example in order to use *navigationDestination*:
+
+```swift
+struct ContentView: View {
+    let items = [Item(name: "Item 1"), Item(name: "Item 2"), Item(name: "Item 3")]
+    
+    var body: some View {
+        NavigationStack {
+            List(items) { item in
+                NavigationLink(item.name, value: item)
+            }
+            .navigationDestination(for: Item.self) { item in
+                DetailView(item: item)
+            }
+            .navigationTitle("Home")
+        }
     }
 }
 
-struct Item {
-    let id: String
+struct DetailView: View {
+    var item: Item
+    
+    var body: some View {
+        VStack {
+            Text("Details for: \(item.name)")
+        }
+        .navigationTitle("Detail View")
+    }
+}
+
+struct Item: Identifiable, Hashable {
+    let id = UUID()
     let name: String
 }
 ```
-
-
-
-
-
-
-### tag
-The *tag* property of the **NavigationLink** allows for passing data to the destination view:
+Now, in the **NavigationLink** we are not passing a view, but data (in this case, of the *Item* type, although we could add more types).
+Next, in the *navigationDestination(for:)* modifier we set the navigation. This is where it is possible to add different paths depending on the type passed to it. For example:
 
 ```swift
-NavigationLink(destination: DetailView(item: item), tag: item.id, selection: $selectedId) {
-    Text(item.name)
+.navigationDestination(for: Item.self) { item in
+    DetailView(item: item)
+}
+.navigationDestination(for: Box.self) { item in
+    BoxView(item: item)
 }
 ```
-In the destination view, the passed data can be accessed using the environment variable.
-
-```swift
-struct DetailView: View {
-    @Environment(.selectedId) var selectedId
-    var item: Item
-    var body: some View {
-        Text(item.name)
-    }
-}
-```
-### isActive
-
-The *isActive* property of the **NavigationLink** allows for programmatically controlling whether the link is active or not. This can be useful if you want to conditionally navigate to a view based on some logic. For example:
-
-```swift
-NavigationLink(destination: DetailView(), isActive: $showDetail) {
-    Text("Show Detail View")
-}
-```
-
-The *isActive* property is a *binding*, which means that you can change its value from elsewhere in your code to activate or deactivate the link. For example, you can set *showDetail = true* when a user taps a button, and the **NavigationLink** will navigate to the *DetailView*.
-You can also use the **NavigationLink(destination:, isActive:, label:)** with *isActive* set to *false* and *label* to *.pop* to navigate back to the previous view.
-```swift
-NavigationLink(destination: Text("Hello World"), isActive: self.$isActive, label: { EmptyView() }).hidden()
-```
-
-## Conclusion
-**NavigationView** and **NavigationLink** are essential components in SwiftUI for managing the navigation stack and navigating between views in an app. Understanding and utilizing the various *modifiers* available for **NavigationView** and **NavigationLink** allows for more customization and control over the navigation flow in your app.
+Where if the item passed is of type *Item*, it will show a DetailedView, while for a type Box it will show a BoxView.
