@@ -1,13 +1,17 @@
 ---
 title: "SwiftUI #9. Navigation in SwiftUI: NavigationStack"
-description: "This post will go over how to use NavigationStack and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. The post describes how to use these components in detail, as well as how to customize their appearance and behavior with built-in modifiers. The guide also includes examples and explanations of how to pass data between views and control navigation programmatically."
-date: 2023-01-25
+description: "This chapter will go over how to use NavigationStack and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. The post describes how to use these components in detail, as well as how to customize their appearance and behavior with built-in modifiers. The guide also includes examples and explanations of how to pass data between views and control navigation programmatically."
+date: 2023-01-26
 categories: ["SwiftUI"]
 tags: ["Development", "Code"]
-image: "https://drive.google.com/uc?id=1xJKqgsPvdwoJ8naCWwWekClv8tU0U9i1"
+image: "https://drive.google.com/uc?id=1lUjUTZnNmq3FPdNGv0nvVLnj-qIHZUrU"
 type: "regular" # available types: [featured/regular]
-draft: true
+draft: false
 ---
+
+{{< youtube FAcwmuamy5I >}}
+
+This post will go over how to use NavigationStack and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. 
 
 ## NavigationView Deprecation in iOS 16.2
 
@@ -152,11 +156,64 @@ Now, in the **NavigationLink** we are not passing a view, but data (in this case
 Next, in the *navigationDestination(for:)* modifier we set the navigation. This is where it is possible to add different paths depending on the type passed to it. For example:
 
 ```swift
-.navigationDestination(for: Item.self) { item in
-    DetailView(item: item)
+struct ContentView: View {
+    let items = [Item(name: "Item 1"), Item(name: "Item 2"), Item(name: "Item 3")]
+    let boxes = [Box(name: "Box 1"), Box(name: "Box 2"), Box(name: "Box 3")]
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(boxes) { box in
+                    NavigationLink(box.name, value: box)
+                }
+                ForEach(items) { item in
+                    NavigationLink(item.name, value: item)
+                }
+            }
+            .navigationDestination(for: Box.self) { box in
+                BoxView(box: box)
+            }
+            .navigationDestination(for: Item.self) { item in
+                ItemView(item: item)
+            }
+            .navigationTitle("Home")
+        }
+    }
 }
-.navigationDestination(for: Box.self) { item in
-    BoxView(item: item)
+
+struct ItemView: View {
+    var item: Item
+    
+    var body: some View {
+        VStack {
+            Text("Details for: \(item.name)")
+        }
+        .navigationTitle("Item View")
+    }
+}
+
+struct BoxView: View {
+    var box: Box
+    
+    var body: some View {
+        VStack {
+            Text("Details for: \(box.name)")
+        }
+        .navigationTitle("Box View")
+    }
+}
+
+struct Item: Identifiable, Hashable {
+    let id = UUID()
+    let name: String
+}
+
+struct Box: Identifiable, Hashable {
+    let id = UUID()
+    let name: String
 }
 ```
 Where if the item passed is of type *Item*, it will show a DetailedView, while for a type Box it will show a BoxView.
+
+## Conclusion
+NavigationStack is a game changer for Navigation in SwiftUI. allowing to upgrade our apps.

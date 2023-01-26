@@ -55,4 +55,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_cs8_control_data_flow/"
     image: "images/swiftui-course/swiftui8.png"
     date: 2023-01-20
+  - name: "SwiftUI #9. Navigation in SwiftUI: NavigationStack"
+    content: "This chapter will go over how to use NavigationStack and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. The post describes how to use these components in detail, as well as how to customize their appearance and behavior with built-in modifiers. The guide also includes examples and explanations of how to pass data between views and control navigation programmatically."
+    url: "https://raulferrer.dev/blog/swiftui_cs9_navigationview_navigationlink/"
+    image: "images/swiftui-course/swiftui9.png"
+    date: 2023-01-26
 ---
