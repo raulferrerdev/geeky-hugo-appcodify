@@ -26,4 +26,8 @@ course:
     content: "Widgets are the main components in an application developed with Flutter. Learn what types there are, how to create them and how to use them."
     url: "https://raulferrer.dev/blog/learn_programming_with_flutter/"
     date: 2019-12-28
+  - name: "Flutter Forward 2023: Going Beyond"
+    content: "Learn where is heading Flutter."
+    url: "https://raulferrer.dev/blog/forward_flutter_2023/"
+    date: 2023-01-26
 ---
