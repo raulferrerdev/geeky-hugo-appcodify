@@ -67,7 +67,7 @@ Cons of TEA:
 
 ## The Composable Architecture (TCA)
 TCA was developed by [Brandon Williams and Stephen Celis of Point-Free](https://www.pointfree.co/).
-This architecture was born to solve some of the problems that we find when developing our applications, like split larger functionalities into small ones, manage the state of the aplicacion in a simple way or facilitate the testing of the aplication, unit tests to end-to-end tests.
+This architecture was born to solve some of the problems that we find when developing our applications, like split larger functionalities into small ones, manage the state of the application in a simple way or facilitate the testing of the aplication, unit tests to end-to-end tests.
 TCA works in a declarative way, according to reactive programming principles and following Redux patterns. This makes it very suitable for working on iOS projects based on SwiftUI (declarative) although it can also be used with UIKit (imperative).
 TCA starts from TEA, but works assuming that each View has its own Store, and each one of the components or children of said View saves a part of that Store. In this way, each time a View generates an Action, it is passed to the Stores of the Parents.
 {{< image src="images/posts/ios_architecture_states_1.png" alt="The Composable Architecture is Swift Store propagation">}}
