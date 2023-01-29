@@ -14,7 +14,7 @@ Both the *Cupertino* package (iOS layout) and the *Material Design* (Android lay
 
 For example, let’s say we have an application with a screen called *Home*, and we want to navigate to another screen called *Settings*. To do so, for example with *MaterialPageRoute*, the code to use would be the following:
 
-```swift
+```dart
 Navigator.push(context, new MaterialPageRoute(
   builder: (context) => Settings()
 ));
@@ -26,7 +26,7 @@ The *Flutter Navigator*‘s function is to manage a series of secondary widgtets
 
 In this case that we have just seen, the movement between the different pages is carried out by the **Navigator** according to a logic of *push* (*Navigator.push*) and *pop* (*Navigator.pop*), the latter being the one that would allow us to return to a page:
 
-```swift
+```dart
  Navigator.pop(context);
 ```
 
@@ -43,7 +43,7 @@ To avoid this we can use named routes. For this, suppose the case in which we ha
 
 We can introduce this information in the routes parameter of the *MaterialApp* class:
 
-```swift
+```dart
 import 'package:flutter/material.dart';
 import './screens/welcome_screen.dart';
 import './screens/settings_screen.dart';
@@ -84,14 +84,14 @@ class _AccessPageState extends State&lt;AccessPage> {
 
 With the addition of these routes we can navigate from one page to another using the following code:
 
-```swift
+```dart
 Navigator.pushNamed(context, 'dashboard_screen');
 ```
 
 
 To avoid the use of text strings every time we have to make the call (thus reducing possible typographical errors), we can add the name of each route within each of the screens:
 
-```swift
+```dart
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -111,7 +111,7 @@ class DashboardScreen extends StatelessWidget {
 
 In this way we can change the code in the *_AccessPageState* class:
 
-```swift
+```dart
 class _AccessPageState extends State&lt;AccessPage> {
   @override
   Widget build(BuildContext context) {
@@ -130,11 +130,11 @@ class _AccessPageState extends State&lt;AccessPage> {
 
 And make the call by:
 
-```swift
+```dart
 Navigator.of(context).pushNamed(Welcome.id);
 ```
 
-### Search order of routes
+### Search order of routes
 
 When searching for routes, the **Navigator** component follows the following order:
 
@@ -149,14 +149,14 @@ We can also plan the navigation of our application by configuring the *onGenerat
 
 To do this we create the *MyRoutes* class, which will help us with this purpose:
 
-```swift
+```dart
 class MyRoutes {
   static const String ROUTE_WELCOME = "/welcome";
   static const String ROUTE_SETTINGS = "/settings";
   static const String ROUTE_DASHBOARD = "/dashboard";
   static const String ROUTE_LIBRARY = "/library";
 
-static Route&lt;dynamic> generateRoute(RouteSettings settings) {
+static Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case '/welcome':
       return MaterialPageRoute(builder: (_) => WelcomeScreen());
@@ -176,7 +176,7 @@ static Route&lt;dynamic> generateRoute(RouteSettings settings) {
 
 If we use *onGenerateRoute*, the *NavDemoApp* class is shown as follows:
 
-```swift
+```dart
 class NavDemoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -191,7 +191,7 @@ class NavDemoApp extends StatelessWidget {
 
 And the navigation is done as follows:
 
-```swift
+```dart
 Navigator.pushNamed(context, ROUTE_LIBRARY);
 ```
 

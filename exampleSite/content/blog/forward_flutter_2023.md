@@ -32,10 +32,8 @@ In the Flutter Forward a series of important improvements were presented in whic
 {{< image src="images/posts/flutter_forward_2023_1.png" alt="Flutter Forward improvements">}}
 
 ## Breakthrough graphics performance
-Impeller, el motor de renderizado de Flutter, se ha reescrito en su mayor parte. De esta forma se ha mejorado de forma importante el rendimiento gráfico, a parte de corregir algunos errores preexistentes.
-Inicialmente estas mejoras se están implementando para plataformas móviles (trabajando sobre la API de Android 3D Vulkan y sobre Metal en el caso de iOS). 
-
-El siguiente video muestra la diferencia entre el motor antiguo y el nuevo.
+Impeller, Flutter's rendering engine, has been largely rewritten. In this way, the graphic performance has been significantly improved, apart from correcting some pre-existing errors. Initially these improvements are being implemented for mobile platforms (working on the Android 3D Vulkan API and on Metal in the case of iOS).
+The following video shows the difference between the old motor and the new one.
 
 {{< youtube Z7v-YRdHusM >}}
 Source: [Tim Sneath](https://www.youtube.com/@timsneath2036)
