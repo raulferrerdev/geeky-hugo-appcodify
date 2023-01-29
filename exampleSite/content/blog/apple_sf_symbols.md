@@ -137,12 +137,15 @@ In the case of using Storyboards or .xib files, the use of SF Symbols is simple:
 
 * We drag a UIImageView component onto the view:
 
-{{< image src="images/posts/apple_sf_symbols_11.png" alt="SF Symbols iOS 13">}}* Next, in the Attributes Inspector, we select the symbol that we want to show (a menu appears with the available symbols):
+{{< image src="images/posts/apple_sf_symbols_11.png" alt="SF Symbols iOS 13">}}
+
+* Next, in the Attributes Inspector, we select the symbol that we want to show (a menu appears with the available symbols):
 
 {{< image src="images/posts/apple_sf_symbols_12.png" alt="SF Symbols iOS 13">}}
 * Finally, we modify the attributes of the symbol (size, weight, scale, color …):
 
-{{< image src="images/posts/apple_sf_symbols_13.png" alt="SF Symbols iOS 13">}}### Specific cases in iOS 12: UIImageView and UIButton
+{{< image src="images/posts/apple_sf_symbols_13.png" alt="SF Symbols iOS 13">}}
+### Specific cases in iOS 12: UIImageView and UIButton
 
 In addition to adding a symbol setting when creating a UIImage element, there are two new cases where this setting can be applied: UIImageView and UIButton.
 

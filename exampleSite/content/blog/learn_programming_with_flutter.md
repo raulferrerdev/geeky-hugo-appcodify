@@ -1,7 +1,7 @@
 ---
 title: "Do you want to learn to program with Flutter? Get ready!"
 description: "Widgets are the main components in an application developed with Flutter. Learn what types there are, how to create them and how to use them."
-date: 2019-12-28
+date: 2019-06-23
 categories: ["Flutter"]
 tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]

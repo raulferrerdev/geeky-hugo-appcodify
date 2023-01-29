@@ -22,9 +22,8 @@ First, we must establish a protocol that declares the methods for interacting wi
 ```swift
 protocol Storable { }
 
-extension Object: Storable { } // Para la base de datos Realm
-
-extension NSManagedObject: Storable { } // Para la base de datos Core Data
+extension Object: Storable { } // For Realm database
+extension NSManagedObject: Storable { } // For Core Data database
 ```
 
 Now we can develop the StorageManager protocol:

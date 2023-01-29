@@ -10,6 +10,10 @@ course:
   enable: true
   title: "Flutter Tutorials"
   course_list:
+  - name: "Flutter Forward 2023: Going Beyond"
+    content: "Learn where is heading Flutter."
+    url: "https://raulferrer.dev/blog/forward_flutter_2023/"
+    date: 2023-01-26
   - name: "Improve your Flutter Navigation with Routes"
     content: "Learn how to use Routes to navigate between the different pages that make up an application developed with Flutter."
     url: "https://raulferrer.dev/blog/flutter_navigation_routes/"
@@ -25,9 +29,5 @@ course:
   - name: "Do you want to learn to program with Flutter? Get ready!"
     content: "Widgets are the main components in an application developed with Flutter. Learn what types there are, how to create them and how to use them."
     url: "https://raulferrer.dev/blog/learn_programming_with_flutter/"
-    date: 2019-12-28
-  - name: "Flutter Forward 2023: Going Beyond"
-    content: "Learn where is heading Flutter."
-    url: "https://raulferrer.dev/blog/forward_flutter_2023/"
-    date: 2023-01-26
+    date: 2019-06-23
 ---

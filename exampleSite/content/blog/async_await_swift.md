@@ -92,7 +92,7 @@ func fetchData() {
 
 If we have to deal with old code we can mainly follow two ways to transform it to **async/await**: creating it again or using withCheckedContinuation/withCheckedThrowingContinuation.
 
-For example, let's say we have the folloqwig code to download an image:
+For example, let's say we have the following code to download an image:
 
 ```swift
 func downloadImage(from url: URL, to fileURL: URL, completion: @escaping (Result<Void, Error>) -> Void) {

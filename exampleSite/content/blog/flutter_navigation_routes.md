@@ -197,4 +197,4 @@ Navigator.pushNamed(context, ROUTE_LIBRARY);
 
 ## Conclusions
 
-We have seen how we can implement navigation between screens in a *Flutter* project directly (creating a *PageRoute* instance) or by using routes (both in the routes parameter and in the *onGenerateRoute* parameter):
+We have seen how we can implement navigation between screens in a *Flutter* project directly (creating a *PageRoute* instance) or by using routes (both in the routes parameter and in the *onGenerateRoute* parameter).
