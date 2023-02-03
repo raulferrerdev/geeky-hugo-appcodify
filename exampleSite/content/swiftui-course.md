@@ -60,4 +60,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_cs9_navigationview_navigationlink/"
     image: "images/swiftui-course/swiftui9.png"
     date: 2023-01-26
+  - name: "SwiftUI #10. Navigation in SwiftUI: NavigationSplitView"
+    content: "In this new chapter of the course we are going to see a new component available in iOS 16. It is NavigationSplitView, which will allow us to establish navigation interfaces with two and three columns. In this post I will describe how to use it."
+    url: "https://raulferrer.dev/blog/swiftui_cs10_navigationsplitview/"
+    image: "images/swiftui-course/swiftui10.png"
+    date: 2023-02-03
 ---
