@@ -4,7 +4,7 @@ description: "Discover the benefits and limitations of sandboxing in iOS, and le
 date: 2023-02-05
 categories: ["Swift"]
 tags: ["Development"]
-type: "regular" # available types: [featured/regular]
+image: "https://drive.google.com/uc?id=17GKAC_7j-UvCpjHminXlhoSQUD2RptRK"
 draft: false
 ---
 
