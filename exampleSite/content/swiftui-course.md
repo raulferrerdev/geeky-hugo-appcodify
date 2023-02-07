@@ -65,4 +65,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_cs10_navigationsplitview/"
     image: "images/swiftui-course/swiftui10.png"
     date: 2023-02-03
+  - name: "SwiftUI #11. Building Lists"
+    content: "In this chapter, we will delve deep into the world of Lists in SwiftUI, exploring the various features and capabilities of this important component. We will cover the basics of what a List is and how it works, the different types of modifiers you can use to customize your lists, how to create sections with headers and footers, and more."
+    url: "https://raulferrer.dev/blog/swiftui_cs11_list/"
+    image: "images/swiftui-course/swiftui11.png"
+    date: 2023-02-07
 ---
