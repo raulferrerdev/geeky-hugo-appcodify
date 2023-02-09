@@ -36,17 +36,21 @@
     </ul>
   </div>
   {{ else }}
-  <div class="mb-4">
+  <div style="margin-bottom: 0.5rem;">
     {{ range .Params.categories }}
     <a href="{{`categories/` | relLangURL}}{{. | lower | urlize}}/" class="badge badge-primary d-inline-block">{{. | title}}</a>
     {{ end }}
   </div>
   {{ end }}
   <div class="card-body">
-    <h3 class="h3">
-      <a class="title-linked" href="{{.RelPermalink}}">{{.Title | markdownify}}</a>
-    </h3>
-    <ul class="list-inline card-meta d-flex align-items-center mb-3">
+    <div style="display: flex;"> 
+      <h3 class="h3" style="width: 90%;">
+        <a class="title-linked" href="{{.RelPermalink}}">{{.Title | markdownify}}</a>
+      </h3>
+        <a href="{{.RelPermalink}}" style="width: 50px; height: 40px;"><i class="fas fa-arrow-alt-circle-right fa-2x " style="width: 30px; color: #A71A1A"></i></a>
+    </div>
+
+    <ul class="list-inline card-meta d-flex align-items-center">
       <li class="list-inline-item d-flex align-items-center">
         <i class="fas fa-user me-2"></i>
         <a href="{{`about` | relLangURL}}/">{{site.Params.author}}</a>
@@ -56,7 +60,8 @@
         <span>{{ time.Format ":date_long" .PublishDate }}</span>
       </li>
     </ul>
-    <p class="card-text mb-4">{{ .Summary }}</p>
-    <a href="{{.RelPermalink}}" class="btn btn-outline-primary btn-sm">Read more</a>
+    <p class="card-text mb-3" style="line-height: 150%;">{{ .Summary }}</p>
+    <div style="text-align: right;">
+  </div>
   </div>
 </div>

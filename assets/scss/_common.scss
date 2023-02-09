@@ -307,8 +307,9 @@ select {
 }
 
 .badge {
-  padding: .1em .9em;
-  border-radius: 35px;
+  padding: .01em .5em;
+  border-radius: 10px;
+  font-size: 0.8rem;
 }
 
 .badge-primary {

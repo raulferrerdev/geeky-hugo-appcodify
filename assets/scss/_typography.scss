@@ -57,10 +57,10 @@ $level-size: $font-size;
     line-height: calc(2px + 2ex + 2px);
     margin-bottom: 0.65em;
     @include tablet {
-      font-size: calc( #{$level-size} * .85);
+      font-size: calc( #{$level-size} * .5);
     }
     @include mobile {
-      font-size: calc( #{$level-size} * .65);
+      font-size: calc( #{$level-size} * .5);
     }
   }
 }

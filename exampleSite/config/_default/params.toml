@@ -47,8 +47,8 @@ preloader = "" # use jpg, png, svg or gif format.
 [banner]
 enable = true
 #title_large = "**Code** Craftsmanship"
-title_small = "Become a **Better Developer** with my Blog and Tutorials"
-image = "images/banner.webp"
+title_small = "**Become a Software Developer:** Tips, Tricks, and Resources for Success"
+image = "images/youtube-call-to-action.png"
 background_image = "/images/banner-bg-shape.svg"
 #content = "A Developement Blog about iOS, Xcode, Swift, SwiftUI and Flutter. Learn how to build better applications."
 button_label = "Know About Me"

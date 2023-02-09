@@ -19,14 +19,16 @@
         {{ end }}
       </div>
       {{ with .image }}
-      <div class="col-lg-5 col-sm-5 col-9 mx-auto mb-5 mb-lg-0">
+      <div class="col-lg-4 col-sm-4 col-9 mx-auto mb-5 mb-lg-0">
         {{ $image:= resources.Get . }}
         {{ $imageWidth:= add (string $image.Width) "x"}}
         {{ $options := add (string $imageWidth) " webp" }}
         {{ $imageWebp:= $image.Resize $options }}
+        <a href="https://www.youtube.com/@raulferrerdev?sub_confirmation=1">
         <img decoding="async" width="{{$image.Width}}" height="{{$image.Height}}"
           src="{{ $imageWebp.RelPermalink }}" onerror="this.onerror=null;this.src='{{$image.RelPermalink}}'"
           alt="banner-img" class="img-fluid">
+        </a>
       </div>
       {{ end }}
     </div>
@@ -45,8 +47,9 @@
       <h2 class="h4 title-border">{{ . | markdownify}}</h2>
     </div>
     {{end}}
-  -->      <div class="section-title">
-    <h2 class="h4 title-border">Sections</h2>
+  --> 
+  <div class="section-title">
+    <h2 class="h1 title-border">Sections</h2>
   </div>
     <div style="display: flex; flex-wrap: wrap;">
       <!-- advertisement -->
@@ -62,17 +65,17 @@
     </div>
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
-        {{with site.Params.recent_post_title}}
-        <div class="section-title">
-          <h2 class="h4 title-border">{{ . | markdownify}}</h2>
-        </div>
-        {{end}}
         <div class="border pt-4 mb-5 rounded">
-          <div class="row mx-0 g-5">
+          {{with site.Params.recent_post_title}}
+          <div class="section-title">
+            <h2 class="h1 title-border" style="margin-left: 30px;">{{ . | markdownify}}</h2>
+          </div>
+          {{end}}
+          <div class="row mx-0 g-5" style="margin-top:0px;">
             <!-- recent post -->
             {{ $paginator:= .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections ) }}
             {{ range $paginator.Pages }}
-            <div class="col-sm-6 mb-4">
+            <div class="col-sm-12" style="margin-top: 15px !important;">
               {{ .Render "post" }}
             </div>
             {{ end }}
