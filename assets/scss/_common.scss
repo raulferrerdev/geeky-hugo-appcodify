@@ -31,50 +31,7 @@ body {
       }
   }
 
-  #offcanvasRight {
-    background: #c93813 !important;
-  }
-
-  /* offcanvas */
-  .offcanvas {
-    .offcanvas-menu {
-      padding-top: 20px;
-
-      li {
-        margin-bottom: 15px;
-
-        a {
-          text-transform: capitalize;
-          color: black;
-          font-size: 26px;
-          padding: 20px;
-
-          &:hover {
-            color: $color-primary;
-          }
-        }
-      }
-    }
-
-    .btn-close {
-      border: 0;
-      background: #c93813 !important;
-      right: 0;
-      font-size: 1.8rem;
-      width: 1.9em;
-      height: 1.9em;
-      position: absolute;
-      top: 11px;
-      right: 24px;
-      
-      i {
-        background-color: #c93813 !important;
-      }
-    }
-    .nav-item {
-      background-color: #c93813 !important; 
-    }
-  }
+  
 }
 
 
