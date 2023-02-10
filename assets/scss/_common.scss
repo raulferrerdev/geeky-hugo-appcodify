@@ -3,6 +3,27 @@ body {
   overflow-x: hidden;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: rgb(27, 25, 25);
+      color: rgb(246, 246, 246);
+      h1, h2, h3, h4, h5, h6, p, i, span, li {
+        color: rgb(246, 246, 246) !important;
+        background-color: rgb(27, 25, 25) !important;
+      }
+      .h1, .h2, .h3, a {
+        color: rgb(246, 246, 246) !important;
+      }
+      .card, .bg-white {
+        background-color: rgb(27, 25, 25) !important;
+      }
+      .border, .border-default, .widget {
+        border-color: #a71a1a !important;
+      }
+  }
+}
+
+
 ::selection {
   background: lighten($color: $color-primary, $amount: 10);
   color: $white;
@@ -50,7 +71,7 @@ select {
 
 .section {
   padding-top: 75px;
-  padding-bottom: 120px;
+  padding-bottom: 75px;
 
   @include tablet {
     padding-top: 80px;
@@ -112,15 +133,15 @@ select {
       z-index: -1;
     }
 
-    &:first-child::before {
-      border-left: 1px solid $color-primary;
-      right: 30px;
-    }
+    // &:first-child::before {
+    //   border-left: 1px solid $color-primary;
+    //   right: 30px;
+    // }
 
-    &:last-child::before {
-      border-right: 1px solid $color-primary;
-      left: 30px;
-    }
+    // &:last-child::before {
+    //   border-right: 1px solid $color-primary;
+    //   left: 30px;
+    // }
 
     a {
       color: $black;
@@ -314,6 +335,61 @@ select {
 
 .badge-primary {
   background-color: $color-primary !important;
+  color: $white !important;
+}
+
+.badge-architecture {
+  background-color: hwb(25 42% 2%) !important;
+  color: $white !important;
+}
+
+.badge-concurrency {
+  background-color: #F56093 !important;
+  color: $white !important;
+}
+
+.badge-connectivity {
+  background-color: #C6B598 !important;
+  color: $white !important;
+}
+
+.badge-deployment {
+  background-color: #bcb850 !important;
+  color: $white !important;
+}
+
+.badge-design {
+  background-color: #5fb9a5 !important;
+  color: $white !important;
+}
+
+.badge-flutter {
+  background-color: #46a1e2 !important;
+  color: $white !important;
+}
+
+.badge-framework {
+  background-color: #64864A !important;
+  color: $white !important;
+}
+
+.badge-security {
+  background-color: #FF284B !important;
+  color: $white !important;
+}
+
+.badge-swift {
+  background-color: #FFA700 !important;
+  color: $white !important;
+}
+
+.badge-swiftui {
+  background-color: #243ec2 !important;
+  color: $white !important;
+}
+
+.badge-testing {
+  background-color: #ec8888 !important;
   color: $white !important;
 }
 

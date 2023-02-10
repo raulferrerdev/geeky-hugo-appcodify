@@ -3,9 +3,15 @@
 {{ if not (eq (len site.Taxonomies.categories) 0) }}
 <div class="widget category-widget">
   <div class="widget-title">
-    <h3 class="h5 title-border">Blog Categories</h3>
+    <h3 class="h4 title-border">Categories</h3>
   </div>
-  
+
+  <div style="margin-bottom: 0.5rem;">
+    {{ range $name, $items := site.Taxonomies.categories }}
+    <a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}/" class="badge badge-{{ $name | urlize | lower }} d-inline-block">{{ $name | humanize }}</a>
+    {{ end }}
+  </div>
+  <!--
   <ul class="list-group list-unstyled">
     {{ range $name, $items := site.Taxonomies.categories }}
     <li>
@@ -15,6 +21,7 @@
     </li>
     {{ end }}
   </ul>
+-->
 </div>
 {{ end }}
 {{ end }}

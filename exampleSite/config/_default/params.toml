@@ -51,8 +51,8 @@ title_small = "**Become a Software Developer:** Tips, Tricks, and Resources for 
 image = "images/youtube-call-to-action.png"
 background_image = "/images/banner-bg-shape.svg"
 #content = "A Developement Blog about iOS, Xcode, Swift, SwiftUI and Flutter. Learn how to build better applications."
-button_label = "Know About Me"
-button_link = "about/"
+#button_label = "Know About Me"
+#button_link = "about/"
 
 # Advertise
 [[advertisement]]

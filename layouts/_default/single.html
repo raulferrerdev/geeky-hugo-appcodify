@@ -44,14 +44,14 @@
           <ul class="list-inline card-badge">
             {{ range .Params.categories }}
             <li class="list-inline-item">
-              <a href="{{`categories/` | relLangURL}}{{. | lower | urlize}}" class="badge badge-primary py-1">{{. | title}}</a>
+              <a href="{{`categories/` | relLangURL}}{{. | lower | urlize}}" class="badge badge-{{. | lower | urlize}} py-1">{{. | title}}</a>
             </li>
             {{ end }}
           </ul>
         </div>
         {{ else }}
         {{ range .Params.categories }}
-        <a href="{{`categories/` | relLangURL}}{{. | lower | urlize}}" class="badge badge-primary mb-4 d-inline-block">{{. | title}}</a>
+        <a href="{{`categories/` | relLangURL}}{{. | lower | urlize}}" class="badge badge-{{. | lower | urlize}} mb-4 d-inline-block">{{. | title}}</a>
         {{ end }}
         {{ end }}
         <h1 class="h3 mb-4">{{.Title | markdownify}}</h1>

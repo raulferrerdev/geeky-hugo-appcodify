@@ -1,13 +1,21 @@
 // banner
 .banner {
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: left bottom;
+  // background-size: contain;
   padding-top: 40px;
+  padding-bottom: 40px;
+background-color: #c93813;
 
-  h1, h2 strong {
-    color: $color-primary;
+  .h2 {
+    background-color: #c93813 !important;
   }
+
+  h2 {
+    color: #fff;
+  }
+
+
 }
 
 // list styled
@@ -274,10 +282,17 @@
 
 /* footer */
 .footer {
-  padding: 70px 0 30px;
-  background-position: left top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 50px 0 30px;
+  // background-position: left top;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: #c93813;
+
+  p, a, i, li {
+    background-color: #c93813 !important;
+    color: #fff;
+  }
+
 
   .footer-menu {
     li {
@@ -295,9 +310,9 @@
 
       a {
         text-transform: capitalize;
-        color: $text-dark;
-        font-size: 15px;
-        font-weight: 700;
+        //color: $text-dark;
+        font-size: 18px;
+        font-weight: 300;
         padding: 5px;
 
         &:hover {
@@ -309,10 +324,10 @@
   }
 
   .social-icons {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
   }
 
-  .copyright a {
-    color: $color-primary;
-  }
+  // .copyright a {
+  //   color: $color-primary;
+  // }
 }
