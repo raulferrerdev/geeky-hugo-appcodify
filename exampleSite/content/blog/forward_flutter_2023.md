@@ -8,7 +8,7 @@ image: "https://drive.google.com/uc?id=1hgZiqZid5nN2jG5Fgyuf-PbKA2ip8ubb"
 draft: false
 ---
 
-**Flutter** is a multi-platform software created by Google that allows us to develop mobile applications for both Android and iOS, desktop applications that run on Linux, Windows and macOs, and even for the web, always sharing the same code base.
+**[Flutter](https://raulferrer.dev/blog/learn_programming_with_flutter/)** is a multi-platform software created by Google that allows us to develop mobile applications for both Android and iOS, desktop applications that run on Linux, Windows and macOs, and even for the web, always sharing the same code base.
 
 Since its presentation a few years ago (2017), the acceptance of **Flutter** among developers has been increasing day by day, so that today we can find thousands of applications both in the Apple Store and in Google Play developed with **Flutter**.
 

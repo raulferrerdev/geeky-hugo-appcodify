@@ -7,7 +7,7 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-There are different databases to incorporate into a **Flutter** application, each with its advantages and disadvantages. In this article, along with a short introduction, we are going to specifically look at a database to work with in Flutter: [Moor](https://pub.dev/packages/moor). So go ahead and deploy the Moor database on Flutter!
+There are different databases to incorporate into a **[Flutter](https://raulferrer.dev/blog/learn_programming_with_flutter/)** application, each with its advantages and disadvantages. In this article, along with a short introduction, we are going to specifically look at a database to work with in Flutter: [Moor](https://pub.dev/packages/moor). So go ahead and deploy the Moor database on Flutter!
 
 The introduction to Moor will be done by developing a small project in Flutter, which you can download from [GitHub](https://github.com/raulferrerdev/moor_project).
 {{< image src="images/posts/moor_database_flutter_1.png" alt="Flutter and Moor database">}}
