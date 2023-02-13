@@ -9,7 +9,7 @@ draft: false
 
 As a developer knowing how to write code is only half the battle. Equally crucial is making sure that your code functions properly and does so even after updates and modifications. **Testing** is useful in this situation. We'll go through the fundamentals of testing in Swift in this post and show you how to start using tests in your own applications.
 
-## What to test?
+## What to test?
 The act of confirming that a piece of code operates as intended is known as **testing**. This can involve verifying that a function, given a particular input, delivers the right output or that a view controller, when displaying data to the user, does so accurately.
 
 **Testing** aids in finding and fixing defects early in the development process, ultimately saving you time and effort.

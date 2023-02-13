@@ -31,7 +31,18 @@ body {
       }
   }
 
-  
+  blockquote {
+    background: #fff !important;
+
+    @include tablet {
+      padding: 30px 50px;
+    }
+
+    p {
+      background: #fff !important;
+      color: rgb(27, 25, 25) !important;
+    }
+  }
 }
 
 

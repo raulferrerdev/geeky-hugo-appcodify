@@ -7,12 +7,12 @@ tags: ["Development"]
 draft: false
 ---
 
-An important part of efficient software development is **unit testing**. It enables you to check that specific pieces of your code are functioning properly, assisting you in finding and fixing errors early on and ensuring the high quality of your code. In this post, we'll look at the fundamentals of Swift **unit testing and show you how to start using them in your own applications.
+An important part of efficient software development is **unit testing**. It enables you to check that specific pieces of your code are functioning properly, assisting you in finding and fixing errors early on and ensuring the high quality of your code. In this post, we'll look at the fundamentals of Swift **unit testing** and show you how to start using them in your own applications.
 
 ## Unit testing – what is it?
 A type of testing called **unit testing** focuses on distinct pieces of code, usually at the function level. A **unit test** puts a particular piece of code through its paces and ensures that it functions as intended.
 
-A testing framework like **XCTest**, which offers utility functions for authoring and running tests, is generally used to write **unit tests**. By developing a **test class** with methods that contain the *test* prefix, you may write unit tests in Swift.
+A [testing framework](https://raulferrer.dev/blog/intro_to_testing_in_swift/) like **XCTest**, which offers utility functions for authoring and running tests, is generally used to write **unit tests**. By developing a **test class** with methods that contain the *test* prefix, you may write unit tests in Swift.
 
 ## What makes unit testing so important?
 In software development, **unit testing** is crucial for a number of reasons:

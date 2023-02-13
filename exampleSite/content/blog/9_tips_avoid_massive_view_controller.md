@@ -8,34 +8,36 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
-The **Model-View-Controller** (**MVC**) design pattern is a basic component of creating app user interfaces, as any iOS developer is aware. However, when an app becomes more complicated, it's not unusual for view controllers to get huge and cumbersome. This can make the code difficult to comprehend and maintain and cause a number of issues, including lengthy build times and poor performance.
+The **[Model-View-Controller](https://raulferrer.dev/blog/architecture_patterns_ios/)** (**MVC**) design pattern is a basic component of creating app user interfaces, as any iOS developer is aware. However, when an app becomes more complicated, it's not unusual for view controllers to get huge and cumbersome. This can make the code difficult to comprehend and maintain and cause a number of issues, including lengthy build times and poor performance.
 
 ## Model-View-Controller components
 First of all, let's remember which components make up the Model-View-Controller pattern and what their functions are.
+
 ### Model
 The **Model** holds de business logic and is in charge of accessing, manipulating, or storing the data of the application:
-•	Contains classes related to data persistence, like those which use databases (Core Data, SQLite, Realm...) or user preferences (UserDefaults).
-•	Contains the classes that handles communications (Networking) and that allows the application to receive and send data.
-•	Contains the classes that are in charge of parse the information received into the application (and convert it into model objects).
-•	Contains extensions, constants, helper classes...
-•	A model object can communicate with other model objects with 1:1 and 1:n relationships.
-•	Direct communication between the Model and the View is not permitted. The Controller serves as the conduit for information exchange between the Model and the View.
-### View
+* Contains classes related to data persistence, like those which use databases (Core Data, SQLite, Realm...) or user preferences (UserDefaults).
+* Contains the classes that handles communications (Networking) and that allows the application to receive and send data.
+* Contains the classes that are in charge of parse the information received into the application (and convert it into model objects).
+* Contains extensions, constants, helper classes...
+* A model object can communicate with other model objects with 1:1 and 1:n relationships.
+* Direct communication between the Model and the View is not permitted. The Controller serves as the conduit for information exchange between the Model and the View.
+
+### View
 The **View** is composed by those components that the user can see:
-• These classes are those that come from the UIKit, AppKit, Core Animation, and Core Graphics libraries.
-• Despite not being directly related to the Model, they display the data that originates from it (they do it through the Controller).
-• Users may interact with these elements.
+* These classes are those that come from the UIKit, AppKit, Core Animation, and Core Graphics libraries.
+* Despite not being directly related to the Model, they display the data that originates from it (they do it through the Controller).
+* Users may interact with these elements.
 ### Controller
 The **Controller** serves as a liaison between the **Model** and the **View**:
-• It is the central element of the MVC model and interacts with both the Model and the View.
-• It receives and analyzes the user's actions on the View, then updates the Model as necessary.
-• If the model's data changes, the view is updated to reflect those changes.
-• It looks after the application's life cycle.
+* It is the central element of the MVC model and interacts with both the Model and the View.
+* It receives and analyzes the user's actions on the View, then updates the Model as necessary.
+* If the model's data changes, the view is updated to reflect those changes.
+* It looks after the application's life cycle.
 
 ## Tips to avoid Massive-View-Controllers
 We'll look at various tactics for avoiding large view controllers in MVC-based programs in this post. Your codebase will be easier to maintain and scale if you use these strategies to keep your view controllers compact, tidy, and understandable.
 
-### 1. Set distinct classes for view controller and  logic
+### 1. Set distinct classes for view controller and  logic
 The fact that view controllers frequently end up managing a broad range of duties unrelated to their primary function is one common cause of their size. A view controller, for instance, might be in charge of networking duties, data formatting, or business logic.
 
 Consider separating the functionality that is not directly connected to the view controller's primary duties into different classes to prevent this. You might develop a manager class to manage networking operations or a helper class to format data, for instance. By doing so, you'll be able to divide up the functionality into smaller, simpler-to-manage chunks, which will also make the code easier to comprehend and maintain.

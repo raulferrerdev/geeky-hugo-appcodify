@@ -7,7 +7,7 @@ tags: ["Development"]
 draft: false
 ---
 
-**User interface (UI) testing** is a crucial step in the software development process that enables us to make sure the user interface of our program is accurate, dependable, and simple to use. The **XCUITest** framework will be used to demonstrate excellent **UI testing** in Swift in this article.
+**User interface (UI) [testing](https://raulferrer.dev/blog/intro_to_testing_in_swift/)** is a crucial step in the software development process that enables us to make sure the user interface of our program is accurate, dependable, and simple to use. The **XCUITest** framework will be used to demonstrate excellent **UI testing** in Swift in this article.
 
 ## Why testing the UI?
 **User interface (UI) testing** is important for a number of reasons:

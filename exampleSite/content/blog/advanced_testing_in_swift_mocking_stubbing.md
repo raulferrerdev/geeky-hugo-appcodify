@@ -7,7 +7,7 @@ tags: ["Development"]
 draft: false
 ---
 
-As you gain experience testing with Swift, you could encounter problems that are difficult to resolve using simple **test cases**. You might need to employ sophisticated testing methods like **mocking** and **stubbing** in certain circumstances. In this piece, we'll look at **mocking** and **stubbing** and how you can use them to create tests that are more useful.
+As you gain experience testing with Swift, you could encounter problems that are difficult to resolve using [simple **test cases**](https://raulferrer.dev/blog/starting_unit_testing_in_swift/). You might need to employ sophisticated testing methods like **mocking** and **stubbing** in certain circumstances. In this piece, we'll look at **mocking** and **stubbing** and how you can use them to create tests that are more useful.
 
 ## What is mocking?
 Using the **mocking** technique, you can make *fake objects that can be substituted for actual ones in your tests*. You may isolate the piece of code you're testing and make sure it operates as you anticipate using these fictitious objects, often known as mocks.
