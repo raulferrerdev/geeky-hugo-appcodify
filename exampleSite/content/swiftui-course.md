@@ -70,4 +70,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_cs11_list/"
     image: "images/swiftui-course/swiftui11.png"
     date: 2023-02-07
+  - name: "SwiftUI #12. Creating Forms in SwiftUI"
+    content: "SwiftUI makes it simple to build forms that collect user input. This article will discuss sophisticated methods for modifying the look and behavior of forms in SwiftUI, such as creating original form controls, organizing controls into sections, and employing practical modifiers."
+    url: "https://raulferrer.dev/blog/swiftui_cs12_form/"
+    image: "images/swiftui-course/swiftui12.png"
+    date: 2023-02-12
 ---
