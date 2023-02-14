@@ -56,19 +56,19 @@ background_image = "/images/banner-bg-shape.svg"
 
 # Advertise
 [[advertisement]]
-image = "images/software_architecture_ads.webp"
+image = "images/software_architecture_row.png"
 link = "architecture/"
 
 [[advertisement]]
-image = "images/swift_tutorial_ads.webp"
+image = "images/swift_tutorials_row.png"
 link = "swift-tutorials/"
 
 [[advertisement]]
-image = "images/swiftui_course_ads.webp"
+image = "images/swiftui_course_row.png"
 link = "swiftui-course/"
 
 [[advertisement]]
-image = "images/flutter_tutorials_ads.webp"
+image = "images/flutter_tutorials_row.png"
 link = "flutter-tutorials/"
 
 # cookies
@@ -80,7 +80,7 @@ button = "I Accept"
 
 ######################## sidebar widgets #########################
 [widgets]
-sidebar = ["about", "categories"] #, "recent-post", "newsletter"
+sidebar = ["sections", "about", "categories"] #, "recent-post", "newsletter"
 # available widget : about,categories,newsletter,recent-post
 
 

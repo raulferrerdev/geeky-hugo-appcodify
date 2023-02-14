@@ -1,0 +1,14 @@
+<!-- sections -->
+<div class="widget category-widget">
+  <div class="widget-title">
+    <h3 class="h4 title-border">Sections</h3>
+  </div>
+    {{ range site.Params.advertisement }}
+    <div class="mb-3">
+        <a href="{{.link | absLangURL}}" style = "width: 20%; height: auto">
+          {{ $image:= resources.Get .image }}
+            <img  src="{{ $image.RelPermalink }}" alt="image">
+        </a>
+    </div>
+    {{ end }}
+</div>

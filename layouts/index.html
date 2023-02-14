@@ -48,11 +48,11 @@
     </div>
     {{end}}
   --> 
+  <!--
   <div class="section-title">
     <h2 class="h1 title-border">Sections</h2>
   </div>
     <div style="display: flex; flex-wrap: wrap;">
-      <!-- advertisement -->
       {{ range site.Params.advertisement }}
       {{ if ne .link "twitter" }}
         <a href="{{.link | absLangURL}}" style = "width: 20%; height: auto; margin: 0px auto 40px auto;">
@@ -61,8 +61,8 @@
         </a>
       {{ end }}
       {{ end }}
-      <!-- /advertisement -->
     </div>
+  -->
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="border pt-4 mb-5 rounded">
