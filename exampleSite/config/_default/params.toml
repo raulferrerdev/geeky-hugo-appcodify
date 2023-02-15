@@ -56,20 +56,20 @@ background_image = "/images/banner-bg-shape.svg"
 
 # Advertise
 [[advertisement]]
-image = "images/software_architecture_row.png"
-link = "architecture/"
+image = "images/swiftui_course_row.png"
+link = "swiftui-course/"
 
 [[advertisement]]
 image = "images/swift_tutorials_row.png"
 link = "swift-tutorials/"
 
 [[advertisement]]
-image = "images/swiftui_course_row.png"
-link = "swiftui-course/"
-
-[[advertisement]]
 image = "images/flutter_tutorials_row.png"
 link = "flutter-tutorials/"
+
+[[advertisement]]
+image = "images/software_architecture_row.png"
+link = "architecture/"
 
 # cookies
 [cookies]
