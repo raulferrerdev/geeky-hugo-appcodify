@@ -51,7 +51,7 @@ observable.subscribe(onNext: { number in
 
 First of all, we import the **RxSwift** and **RxCocoa** frameworks in this code and create a *dispose bag* to manage the subscription. The *interval* operator is then used to create an **Observable** that emits a new event every second. We also employ the *map* operator to convert the emitted events into random integers ranging from 1 to 100.
 
-The *subscribe* method is then used to subscribe to the **Observable**. This includes a closure that is called whenever the **Observable** emits a new event. In this case, the random number is printed to the console. Finally, we dispose of the *subscription* by usinf the *disposed* method.
+The *subscribe* method is then used to subscribe to the **Observable**. This includes a closure that is called whenever the **Observable** emits a new event. In this case, the random number is printed to the console. Finally, we dispose of the *subscription* by using the *disposed* method.
 
 ### Code elements
 Let's se now in detail those elements:
