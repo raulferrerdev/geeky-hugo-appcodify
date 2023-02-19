@@ -22,7 +22,7 @@ draft: false
 
 The **Observer** and **Observable** are the two most important concepts in **RxSwift**. 
 
-### Observables
+### Observables
 
 **Observables** generate events or data, which observers receive and respond to. This is similar to the **observer pattern**, which is a popular [design pattern](https://raulferrer.dev/design_patterns_software/) in software development.
 
@@ -56,29 +56,17 @@ The *subscribe* method is then used to subscribe to the **Observable**. This inc
 ### Code elements
 Let's se now in detail those elements:
 
-* **Observable<Int>**
+* **Observable<Int>.** In this example, an **Observable** of type <Int> is generated. The type of data that will be emitted by the observable is specified by the generic parameter <Int>, so the observable will output integers in this case.
 
-In this example, an **Observable** of tyep <Int> is generated. The type of data that will be emitted by the observable is specified by the generic parameter <Int>, so the observable will output integers in this case.
+* **interval.** This operator from **RxSwift** generates an **Observable** that emits a new event every predetermined amount of time (1 second in the example).
 
-* **interval**
+* **map.** This is yet another operator offered by **RxSwift** that enables to modify the events that an observable emits. In the example, we utilize it to generate random integers between 1 and 100 from the emitted events.
 
-This operator from **RxSwift** generates an **Observable** that emits a new event every predetermined amount of time (1 second in the example).
+* **subscribe.** This **RxSwift** method enables to *subscribe* to an **Observable** and get the events that it emits. In the example, we pass in a closure that will be called each time a new event is emitted and *subscribe* to the **Observable**.
 
-* **map**
+* **onNext.** An **Observable** can emit this kind of event, and it represents a subsequent event that contains the **Observable**'s subsequent value. The random number is printed to the console using it in the example.
 
-This is yet another operator offered by **RxSwift** that enables to modify the events that an observable emits. In the example, we utilize it to generate random integers between 1 and 100 from the emitted events.
-
-* **subscribe**
-
-This **RxSwift** method enables to *subscribe* to an **Observable** and get the events that it emits. In the example, we pass in a closure that will be called each time a new event is emitted and *subscribe* to the **Observable**.
-
-* **onNext**
-
-An **Observable** can emit this kind of event, and it represents a subsequent event that contains the **Observable**'s subsequent value. The random number is printed to the console using it in the example.
-
-* **disposeBag**
-
-This is an object that **RxSwift** makes available and which controls **Observable** subscriptions. A subscription can be *disposed* of when it is no longer required by using the *disposed(by:)* method on the dispose bag. In the example, we manage the *subscription* to the **Observable** we generated using the dispose bag.
+* **disposeBag.** This is an object that **RxSwift** makes available and which controls **Observable** subscriptions. A subscription can be *disposed* of when it is no longer required by using the *disposed(by:)* method on the dispose bag. In the example, we manage the *subscription* to the **Observable** we generated using the dispose bag.
 
 ## Conclusion
 
