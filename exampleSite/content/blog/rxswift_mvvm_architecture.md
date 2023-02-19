@@ -15,10 +15,10 @@ draft: false
 First, let's make a small introduction for **MVVM architecture**.
 
 ### Model
-Contains the business logic and it's also in charge of deal with data (storing, accesing and manipulating data). The **Model** can only communicate with the **ViewModel** layer (so is unaware of the existence of the **View**).
+Contains the business logic and it's also in charge of deal with data (storing, accessing and manipulating data). The **Model** can only communicate with the **ViewModel** layer (so is unaware of the existence of the **View**).
 
 ### View
-This layer contains the **View** (both the UIView and the UIViewController classes). This layer is in charge of show information to the user but has no logic, and uptading comes from the **ViewModel** (the View can have multiple references to the **ViewModel**).
+This layer contains the **View** (both the UIView and the UIViewController classes). This layer is in charge of show information to the user but has no logic, and updating comes from the **ViewModel** (the View can have multiple references to the **ViewModel**).
 In the case of the UIViewController, it's only in charge of navigation between views (at most, pass information, using a Delegate pattern).
 
 ### ViewModel
@@ -49,8 +49,9 @@ struct User {
 ### ViewModel
 Then, we build the **ViewModel**. As we have seen, the **ViewModel** interacts with the **Model** and with the **View**. What we will do is something simple, **ViewModel** will take the name and will capitalize it.
 Using MVVM with RxSwift, I prefer to use a [Input/Output convention](https://github.com/kickstarter/ios-oss):
-•** Input.** It refers to all of the events and interactions that take place in the **View** and have an impact on the **ViewModel**.
-• **Output.** These are the modifications to the **Model** that must be reflected in the **View**.
+
+* **Input.** It refers to all of the events and interactions that take place in the **View** and have an impact on the **ViewModel**.
+* **Output.** These are the modifications to the **Model** that must be reflected in the **View**.
 ```swift
 import RxSwift
 import RxCocoa
