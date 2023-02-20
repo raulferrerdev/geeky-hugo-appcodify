@@ -1,7 +1,7 @@
 ---
 title: "Dependency injection in Swift"
 description: "If you use dependency injection, your application code will become more decoupled, testable, and scalable."
-date: 2018-12-20
+date: 2020-11-01
 categories: ["Architecture", "Swift"]
 tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]

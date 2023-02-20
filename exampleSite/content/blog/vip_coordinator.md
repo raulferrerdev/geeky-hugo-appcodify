@@ -17,7 +17,8 @@ VIP architecture is well suited for large, complex iOS applications that necessi
 
 VIP architecture is made up of five major components:
 
-### View
+
+### View
 
 The View layer is in charge of displaying data to the user as well as handling user interactions. It is a passive layer that is unaware of the underlying business logic.
 
@@ -40,9 +41,9 @@ Entities represent the application's data models. They include the properties an
 
 ## Using a Configurator
 
-The Configurator function in the VIP architecture pattern is in charge of configuring components for a given view controller. The Configurator function is typically implemented as a separate class or module, with the goal of decoupling the VIP component setup from the view controller itself.
+The Configurator component in the VIP architecture pattern is in charge of configuring components for a given view controller. The Configurator function is typically implemented as a separate class or module, with the goal of decoupling the VIP component setup from the view controller itself.
 
-The Configurator function creates and configures the view controller's VIP components, such as the Interactor, Presenter, and Router. It also creates the links between the components and the view controller. The Configurator function returns the view controller with the components attached once the components have been configured.
+The Configurator creates and configures the view controller's VIP components, such as the Interactor, Presenter, and Router. It also creates the links between the components and the view controller and returns the view controller with the components attached once the components have been configured.
 
 The Configurator allows to encapsulate and segregate the components from the view controller . Additionally, because the VIP components can be tested independently of the view controller, it offers a cleaner, more modular codebase that is simpler to test.
 
@@ -51,7 +52,7 @@ The Configurator allows to encapsulate and segregate the components from the vie
 Let's see an schematic example of the application of VIP architecture with Configurator. As one of the main drawbacks of the VIP architecture is the boilerplate code need for fill all the classes in a scene, we will [use a template](https://raulferrer.dev/blog/xcode_templates/) (you can find many Xcode templates for VIP over Internet).
 
 ### View+ViewController
-```swift
+{{< highlight swift "linenos=inline,linenostart=1" >}}
 protocol ExampleViewDelegate: class {}
 
 final class ExampleView: UIView {
@@ -69,7 +70,8 @@ final class ExampleView: UIView {
     
     func configureUI() {}
 }
-```
+{{< /highlight >}}
+
 
 ```swift
 import UIKit
