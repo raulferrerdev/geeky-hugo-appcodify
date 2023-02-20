@@ -2,7 +2,7 @@
 title: "VIP Architecture with Coordinator"
 description: "The Clean Swift (VIP) architecture pattern is popular because it divides responisibilities into distinct components, making it easier to manage the codebase as it grows. In this post, we'll show how to use a configurator to implement the Clean Swift (VIP) architecture pattern, as well as provide an example of a to-do list app to demonstrate the pattern in action."
 date: 2020-02-12
-categories: ["Swift"]
+categories: ["Swift", "Architecture"]
 tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=1-55gtLjg1VB7hNHtaP9MrxDOaBy0UbvU"
 draft: false
