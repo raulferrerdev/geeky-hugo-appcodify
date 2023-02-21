@@ -22,18 +22,14 @@ course:
     content: "Learn the SOLID principles and how to apply them in the development of your applications. SOLID principles improve our code, making it cleaner, scalable and testable."
     url: "https://raulferrer.dev/blog/solid_principles_swift/"
     date: 2020-02-07
-  - name: "9 Tips for Avoiding Massive View Controllers in MVC-Based Swift Apps"
-    content: "Learn how to avoid having massive view controllers in MVC-based Swift apps with these 9 tips for keeping your code well-organized, maintainable, and scalable."
-    url: "https://raulferrer.dev/blog/9_tips_avoid_massive_view_controller/"
-    date: 2020-01-23
   - name: "Design patterns in software"
     content: "Design patterns are solutions that have been found to similar problems in software development. In this post I will tell you about the 23 identified design patterns, and their characteristics."
     url: "https://raulferrer.dev/blog/design_patterns_software/"
     date: 2020-02-01
-  - name: "Continuous Integration and Continuous Delivery (CI/CD) with GitHub Actions"
-    content: "Github offers the possibility of adding Continuous Integration and Continuous Delivery to your projects thanks to Github Actions. Learn how to use this Github CI/CD for iOS."
-    url: "https://raulferrer.dev/blog/cicd_github_actions/"
-    date: 2020-01-21
+  - name: "9 Tips for Avoiding Massive View Controllers in MVC-Based Swift Apps"
+    content: "Learn how to avoid having massive view controllers in MVC-based Swift apps with these 9 tips for keeping your code well-organized, maintainable, and scalable."
+    url: "https://raulferrer.dev/blog/9_tips_avoid_massive_view_controller/"
+    date: 2020-01-23
   - name: "New architectures for iOS Apps"
     content: "In the development of iOS applications, new architectures different from those already known are being introduced (MVC, MVVM, VIPER...). One of them is Redux, which we talked about a few months ago. But there are others, like The Composable Architecture or The Elm Architecrure."
     url: "https://raulferrer.dev/blog/ios_architecture_states/"

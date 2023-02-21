@@ -2,7 +2,7 @@
 title: "Database layer in Swift"
 description: "Learn how to separate the Database layer of an application from the rest of the components, so that you can change its type without the need for major code changes."
 date: 2018-12-20
-categories: ["Swift"]
+categories: ["Swift", "Architecture"]
 tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
