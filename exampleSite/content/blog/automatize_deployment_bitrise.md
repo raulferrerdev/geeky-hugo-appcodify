@@ -9,7 +9,7 @@ draft: false
 ---
 
 One of the main problems that a team of developers working on the same project usually encounters is the fact that, when the code of each one of them is merged, conflicts between different developers’ code, errors, etc. can occur, which makes this process slow. To solve this point, Integration and continuous distribution comes into action to automate the deployment of applications. In this article we are going to learn how to automatize the deployment of iOS applications with Bitrise.
-## Introduction
+# Introduction
 
 In a previous article we already saw what Continuous Integration (CI), Continuous Delivery (CD) and Continuous Deployment (CD) are, and how it could be done with a new GitHub tool: [GitHub Actions](https://github.com/features/actions).
 
@@ -19,7 +19,7 @@ In summary:
 * **Continuous Delivery**. In the Continuous Delivery (CD) the new code introduced and that has passed the Continuous Integration process is automatically published in a production environment (this implementation may require manual approval). What is intended is that the repository code is always in a state that allows its implementation in a production environment.
 * **Continuous Deployment**. In Continuous Deployment (CD), all changes in the code that have gone through the previous two stages are automatically implemented in production.
 
-## Use of Bitrise
+# Use of Bitrise
 
 As it was seen in the article that we have commented before, there are numerous tools to configure and carry out the entire process of continuous integration and distribution ([Jenkins](https://jenkins.io/), [CircleCI](https://circleci.com/),[ Visual Studio App Center](https://appcenter.ms/)…). In this case we will see how [Bitrise](https://www.bitrise.io/) works.
 
@@ -34,7 +34,7 @@ Bitrise is a paid tool, but there is a free version for us to try:
 {{< image src="images/posts/automatize_deployment_bitrise_1.png" alt="Bitrise">}}
 
 
-### Bitrise registration
+## Bitrise registration
 
 Registration at Bitrise is easy. We simply go to their website, and select ‘Get Started for Free‘:
 {{< image src="images/posts/automatize_deployment_bitrise_2.png" alt="Bitrise">}}
@@ -48,7 +48,7 @@ In this case we will use the registry through GitHub, since it will be the repos
 
 Once registered, a screen will appear indicating that we have not added any application yet and invites us to do so.
 {{< image src="images/posts/automatize_deployment_bitrise_5.png" alt="Bitrise">}}
-### Add an application to Bitrise
+## Add an application to Bitrise
 
 In order to test Bitrise, we first create a project in Xcode (which we will call BitriseTest) and upload it to a repository (in this case, [GitHub](https://github.com/raulferrerdev/BitriseTest)). It is important to edit the schema and activate the ‘Shared‘ option, which will avoid validation problems later when adding the application to Bitrise. In addition, when creating the project we will select the unit tests box, which will allow us to test the workflow with Bitrise when any test fails.
 {{< image src="images/posts/automatize_deployment_bitrise_6.png" alt="Bitrise">}}
@@ -86,7 +86,7 @@ When we select to add an application, we are shown a series of steps that must b
 
 
 As can be seen, the compilation of has produced without errors, since it is a simple project to which no unit tests had been added. Let’s see what happens now if we add a couple of simple unit tests.
-#### Adding unit tests
+## Adding unit tests
 
 We are going to carry out a couple of simple tests, which will be based on testing a data model. To do this we create a new file in the project that we will call BitriseModel.swift, and that will contain the following code:
 ```swift
@@ -151,7 +151,7 @@ If, after the last step, we access the Bitrise console, we can see how a compila
 When it finishes, we see that the compilation of the project has given no errors and that all the tests have been passed.
 {{< image src="images/posts/automatize_deployment_bitrise_20.png" alt="Bitrise">}}
 
-### Failed tests
+## Failed tests
 
 Let’s see what happens now if one of the unit tests gives an error, for this we modify the first of the tests, and instead of checking that the username field is not empty, we will check that it is empty (we remove the ! sign in front of model.username.isEmpty. We run the tests in Xcode and note that indeed that test fails:
 {{< image src="images/posts/automatize_deployment_bitrise_21.png" alt="Bitrise">}}
@@ -185,7 +185,7 @@ We can modify any of these processes simply by selecting the buttons with the �
 {{< image src="images/posts/automatize_deployment_bitrise_28.png" alt="Bitrise">}}
 
 On this page, in addition to modifying existing workflows, we can create new ones.
-## Deploying applications with Bitrise
+# Deploying applications with Bitrise
 
 We have just seen that, by default, there are two types of workflow: the primary one (which is the one that has been used to test the unit tests) and the deployment one. Let’s focus on the latter and see how we can automatically deploy an app on iTunes Connect.
 
@@ -255,13 +255,13 @@ In this section we can see (and modify) the [virtual machine](https://devcenter.
 It is the Bitrise configuration file, which we can download and modify if we want to use it on our own machine thanks to Bitrise CLI. Bitrise CLI is the o  pen source and offline version of Bitrise to run workflows on our own machine.
 {{< image src="images/posts/automatize_deployment_bitrise_41.png" alt="Bitrise">}}
 
-## Conclusion
+# Conclusion
 
 This article has only seen how to easily automate the deployment of an iOS application. Bitrise contains numerous configuration and work possibilities (for example, we can link workflows to a Slack account so that it informs us when a workflow ends and its status).
 
 After doing some tests with Bitrise some of the points for and against that I have found are:
 
-### Pros
+## Pros
 
 * Facilitates the automation of application integration and deployment processes.
 * Very configurable.
@@ -269,7 +269,6 @@ After doing some tests with Bitrise some of the points for and against that I ha
 * Good documentation.
 * Specific for mobile (iOS, Android).
 
-### Cons
-
+## Cons
 * Sometimes setup can be a little tricky.
 * Slow on some compilations (the example project, extremely simple, takes about 3 min to run). This can be a problem for large projects if you have Free or Developer accounts, which have a 45 min limit.

@@ -12,7 +12,7 @@ Surely you have heard of **Dark Mode** on iOS 13, that is, a mode in which the c
 Although some applications already included a Dark Mode in their interface, it was not until the publication of iOS 13 and iPadOS, that the Dark Mode was included in the configuration of the device itself.
 To change to Dark
 
-## Adapt applications to Dark Mode
+# Adapt applications to Dark Mode
 
 To adapt an application to Dark Mode we must work with Xcode 11 and iOS 13. In addition, we must modify the colors and images used in the application.
 

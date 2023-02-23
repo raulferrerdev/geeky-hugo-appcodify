@@ -11,7 +11,7 @@ During [WWDC 2019](https://developer.apple.com/videos/wwdc2019/), Apple introduc
 
 > All SF Symbols shall be considered to be system-provided images as defined in the Xcode and [Apple SDKs license agreements](https://developer.apple.com/terms/) and are subject to the terms and conditions set forth therein. You may not use SF Symbols — or glyphs that are substantially or confusingly similar — in your app icons, logos, or any other trademark-related use. Apple reserves the right to review and, in its sole discretion, require modification or discontinuance of use of any Symbol used in violation of the foregoing restrictions, and you agree to promptly comply with any such request.
 
-## What are SF Symbols
+# What are SF Symbols
 
 As we have said, the SF Symbols are a set of more than 1500 icons, integrated in the San Francisco text font and that are configurable for all types of size and weight.
 
@@ -24,7 +24,7 @@ With this application we can show icons both by weight (in the previous image th
 
 {{< image src="images/posts/apple_sf_symbols_3.png" alt="SF Symbols iOS 13">}}
 
-## Support
+# Support
 
 SF Symbols can be used on the following platforms:
 
@@ -32,7 +32,7 @@ SF Symbols can be used on the following platforms:
 * watchOS 6 and later
 * tvOS 13 and later
 
-## Export, modify and validate SF Symbols
+# Export, modify and validate SF Symbols
 
 SF Symbols can also be exported from the application, simply select the symbol you want to export and from the top menu, select File > Export Custom Symbol Template… or type ⌘E. With this we will obtain the icon in SVG format.
 
@@ -49,13 +49,13 @@ Next, we have to check if the modifications made are valid. To do this, from the
 Once this is done, we can go to an Xcode project, select the Assets folder and drag the .svg file inside. Now we can use it.
 
 {{< image src="images/posts/apple_sf_symbols_9.png" alt="SF Symbols iOS 13">}}
-## How to use SF Symbols in our projects
-### Using SF Symbols in iOS 12
+# How to use SF Symbols in our projects
+## Using SF Symbols in iOS 12
 
 SF Symbols can only be used natively in iOS 13. So how can we use them in previous versions like iOS 12?
 
 If we want to use any of these symbols in versions prior to iOS 13, what we must do is export that symbol (as we have seen before) and, using some graphic tool, transform it into png format (for example) and import it into the Assets.xcassets catalog of the project.
-### Using SF Symbols in iOS 13 and SwiftUI
+## Using SF Symbols in iOS 13 and SwiftUI
 
 Using SF Symbols with SwiftUI is very simple, we simply have to add an Image component with the name of the symbol that we want to show:
 ```swift
@@ -90,11 +90,11 @@ Image (systemName: "sun.min.fill")
      // Change the accent color of the icon
      .accentColor (.orange)
 ```
-### Using SF Symbols in iOS 13 and UIKit
+## Using SF Symbols in iOS 13 and UIKit
 
 If we want to use an SF Symbol in a project with iOS 13, but working with UIKit instead of SwiftUI, we have two options: create it with code or in a storyboard.
 
-#### Code
+### Code
 
 To use these symbols in Swift, call them in a UIImage component using the systemName parameter instead of named:
 ```swift
@@ -131,7 +131,7 @@ let symbconfigurationolConfig3 = UIImage.SymbolConfiguration (textStyle: .headli
 ```
 
 
-#### Storyboards o .xib files
+### Storyboards o .xib files
 
 In the case of using Storyboards or .xib files, the use of SF Symbols is simple:
 
@@ -145,7 +145,7 @@ In the case of using Storyboards or .xib files, the use of SF Symbols is simple:
 * Finally, we modify the attributes of the symbol (size, weight, scale, color …):
 
 {{< image src="images/posts/apple_sf_symbols_13.png" alt="SF Symbols iOS 13">}}
-### Specific cases in iOS 12: UIImageView and UIButton
+## Specific cases in iOS 12: UIImageView and UIButton
 
 In addition to adding a symbol setting when creating a UIImage element, there are two new cases where this setting can be applied: UIImageView and UIButton.
 
@@ -167,6 +167,6 @@ let configuration = UIImage.SymbolConfiguration(weight: .light)
 button.setPreferredSymbolConfiguration(configuration, forImageIn: .normal)
 ```
 
-## Conclusion
+# Conclusion
 
 Thanks to the more than [1500 symbols](https://developer.apple.com/videos/play/wwdc2019/206/) that Apple presented during [WWDC 2019](https://developer.apple.com/videos/wwdc2019/), and that we can use for free, we can develop applications faster with a professional finish.

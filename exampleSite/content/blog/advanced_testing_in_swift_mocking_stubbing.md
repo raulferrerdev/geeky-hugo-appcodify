@@ -9,30 +9,30 @@ draft: false
 
 As you gain experience testing with Swift, you could encounter problems that are difficult to resolve using [simple **test cases**](https://raulferrer.dev/blog/starting_unit_testing_in_swift/). You might need to employ sophisticated testing methods like **mocking** and **stubbing** in certain circumstances. In this piece, we'll look at **mocking** and **stubbing** and how you can use them to create tests that are more useful.
 
-## What is mocking?
+# What is mocking?
 Using the **mocking** technique, you can make *fake objects that can be substituted for actual ones in your tests*. You may isolate the piece of code you're testing and make sure it operates as you anticipate using these fictitious objects, often known as mocks.
 
 A *mocking* framework like *Mockito* or *OCMock* is generally used to construct mocks. These frameworks enable you to define the behavior of any object or class as mocks in your tests.
 
-## Why mocking?
+# Why mocking?
 You might want to utilize **mocking** in your **tests** for a number of reasons:
 
 * To separate and test a single piece of code. When your code is dependent on other objects or services, this is especially helpful.
 * To test software that communicates with outside sources like databases or APIs. You can replicate these interactions using **mocks** instead of sending genuine network requests.
 * To examine code that exhibits complex or unpredictable behavior. Instead of relying on the actual behavior of the object, **mocks** let you specify the precise behavior you want to test.
 
-## What is stubbing?
+# What is stubbing?
 **Stubbing** is a method for *specifying how an object or function behaves in your tests*. **Stubs** give you the same ability as mocks to isolate a piece of code and specify its behavior for the needs of your tests.
 
 In order to **stub** an object or method, you often *create a subclass of it* and modify its behavior. The *@testable* property in Swift enables you to make your code testable and gives you access to and control over private methods and properties.
 
-## Why stubbing?
+# Why stubbing?
 You might wish to **stub** in your tests for a number of reasons:
 * To examine code that exhibits complex or unpredictable behavior. Instead than relying on the actual behavior of the object, stubs let you specify the precise behavior you want to test.
 * To evaluate edge cases and error handling. Stubs let you push your code into particular states so you can test how it reacts.
 * To test software that makes use of databases or other external APIs. You can emulate these interactions using stubs rather than sending genuine network requests.
 
-## Testing a view controller with mocks and stubs
+# Testing a view controller with mocks and stubs
 Let's look at an example of how to test a view controller using **mocks** and **stubs**. Consider a view controller that shows a movie list retrieved from a remote API. To make sure that the view controller is accurately displaying the list of movies, we want to create a test.
 
 We'll start by building a *dummy* API client. The APIClient class will be **mocked** using the *Mockito* framework, and its behavior will be specified in our tests. Here is how our mockup might appear:
@@ -75,6 +75,6 @@ func testLoadMovies() {
 ```
 The **stub** UIViewController in this test defines the behavior of the view controller while the **mock** APIClient simulates the behavior of the real API client. This enables us to independently test and validate the loadMovies method's functionality.
 
-## Conclusion
+# Conclusion
 In this post, we learnt about advanced testing strategies like **mocking** and **stubbing** and how to utilize them to create Swift tests that are more useful. Testing complex or hard-to-predict behavior is made simpler by the use of **mocks** and **stubs**, which enable us to isolate particular code units and specify their behavior for the purposes of our tests. We watched a demonstration of how to test a view controller that pulls data from a remote API using **mocks** and **stubs**.
 
