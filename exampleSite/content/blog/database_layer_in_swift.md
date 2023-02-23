@@ -15,7 +15,7 @@ If we want to implement a database in our application following SOLID principles
 * The database layer should allow changing the type of database in the future (for example, from Core Data to Realm), affecting as little as possible the application code.
 * The objects or entities of the database must not be exposed outside the database layer.
 
-## StoreManager protocol
+# StoreManager protocol
 
 First, we must establish a protocol that declares the methods for interacting with the database. To decouple the type of object that these methods receive with the type of database, we will establish a protocol, Storable, that all objects must adopt:
 

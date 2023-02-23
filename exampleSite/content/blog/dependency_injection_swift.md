@@ -7,10 +7,12 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+# Introduction
+
 If you are like me, when developing an application you are always looking (although sometimes it is difficult) to use a series of ‘rules’ that help you to make the code cleaner, be as uncoupled as possible, be scalable…
 
 In a previous article I already talked about [SOLID](https://codderlly.com/blog/solid_principles_swift/) principles and how to apply them with Swift. In this article I am going to discuss a pattern that will allow us to reduce the coupling of our code and that will make it more easily testable: **Dependency Injection**.
-## But, what is dependency injection?
+# But, what is dependency injection?
 
 If we go directly to the definition that [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection) gives us, we find the following:
 
@@ -23,7 +25,7 @@ The advantages of dependency injection in Swift are:
 * The code is testable.
 * Facilitates code maintenance.
 
-## Dependency injection example
+# Dependency injection example
 
 For example, suppose that we are preparing a screen in which the user can log into the application, but for this we need to validate it on an internet server.
 
@@ -85,7 +87,7 @@ class loginViewModel {
 }
 ```
 
-## Dependency injection testing
+# Dependency injection testing
 
 Now, for example, if we want to test the LoginViewModel class we can pass a ‘mocked’ NetworkManager instance. That is, we can create our own class that has the behavior that we want. The new class simply has to comply with the NetworkManagerProtocol protocol:
 
@@ -127,7 +129,7 @@ class LoginViewModelTests: XCTestCase {
 }
 ```
 
-## Types of dependency injection
+# Types of dependency injection
 
 Within the injection of dependencies we can distinguish three types:
 
@@ -135,7 +137,7 @@ Within the injection of dependencies we can distinguish three types:
 * Property injection
 * Method injection
 
-### Initializer injection
+## Initializer injection
 
 It is the type of initialization that we have seen in the example. In this case we pass the dependency during object initialization. Also, it has the advantage that the dependency is immutable.
 
@@ -150,7 +152,7 @@ class loginViewModel {
 }
 ```
 
-### Property injection
+## Property injection
 
 Injection of a dependency can also be done by assigning it as a parameter. In this case, this assignment makes the property not immutable, since then we could modify it with a new assignment:
 
@@ -164,7 +166,7 @@ let loginViewModel = LoginViewModel()
 loginViewModel.neworkManager = NetworkManager()
 ```
 
-### Method injection
+## Method injection
 
 Another way to inject a dependency is to do it whenever we want. This can be done by creating a method that allows dependency injecting.
 
@@ -177,6 +179,6 @@ class loginViewModel {
 }
 ```
 
-## Conclusion
+# Conclusion
 
 Knowing about dependency injection in Swift will allow us to create more decoupled code, with a lower tendency to have errors and whose maintenance will be easier.

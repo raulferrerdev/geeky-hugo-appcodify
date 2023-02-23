@@ -17,7 +17,7 @@ Since its launch, the evolution of **Flutter** has been permanent and, yesterday
 {{< youtube zKQYGKAe5W8 >}}
 Source: [Flutter](https://www.youtube.com/@flutterdev)
 
-## Flutter 3.7 and Dart 2.19
+# Flutter 3.7 and Dart 2.19
 Flutter 3.7 is the recent release that has added a lot of [features and enhancements](https://docs.flutter.dev/development/tools/sdk/release-notes), like:
 * Material 3 support has improved
 * [New graphical components are added](https://flutter.github.io/samples/web/material_3_demo/#/): Menu bars, context menus...
@@ -26,32 +26,32 @@ Flutter 3.7 is the recent release that has added a lot of [features and enhancem
 * Improvements in memory management
 Dart 2.19 has also some [news](https://dart.dev/guides/language/evolution#dart-219). One of the most significant is that simplifies concurrency with [Isolate.run()](https://medium.com/dartlang/better-isolate-management-with-isolate-run-547ef3d6459b).
 
-## Improvements on Flutter development
+# Improvements on Flutter development
 In the Flutter Forward a series of important improvements were presented in which they are working to improve its use.
 
 {{< image src="images/posts/flutter_forward_2023_1.png" alt="Flutter Forward improvements">}}
 
-## Breakthrough graphics performance
+# Breakthrough graphics performance
 Impeller, Flutter's rendering engine, has been largely rewritten. In this way, the graphic performance has been significantly improved, apart from correcting some pre-existing errors. Initially these improvements are being implemented for mobile platforms (working on the Android 3D Vulkan API and on Metal in the case of iOS).
 The following video shows the difference between the old motor and the new one.
 
 {{< youtube Z7v-YRdHusM >}}
 Source: [Tim Sneath](https://www.youtube.com/@timsneath2036)
 
-## Seamless integration web and mobile
+# Seamless integration web and mobile
 In the **Flutter Forward** improvements have been presented in the integration of Flutter at the web level and mobile applications.
-### Web integration
+## Web integration
 A new feature has been introduced, called **element embedding**, which allows you to insert Flutter content on any website. With this, what is achieved is that our Flutter content becomes a Web component (forming part of the DOM), as can be seen in the [demo that was presented](https://flutter-forward-demos.web.app/#/).
 
-### Mobile integration
+## Mobile integration
 Until now, to make use of native components of the iOS or Android platforms, the communication was done through messages and it was necessary to have knowledge of Kotlin (Android) or Swift (iOS) to complete the access to the native libraries used.
 Now they are working on simplifying this whole process, and that Dart is in charge of automatically creating all these communications.
 
-## Early to new and emerging architectures
+# Early to new and emerging architectures
 Currently, we can develop applications with Flutter for Android, iOS, Linux, macOS, Windows and devices, and also for the web.
 But progress has been made in Dart's support for new architectures, such as WebAssembly or RISC-V.
 
-## Continued focus on developer experience
+# Continued focus on developer experience
 **Flutter Forward** has talk about how is focusing on developer experience:
 * Improved [DevTools](https://docs.flutter.dev/development/tools/devtools/overview) is presented.
 * Has introduced Dart 3, which is a major language update that introduces null sound security and removes deprecated features.
@@ -59,5 +59,5 @@ But progress has been made in Dart's support for new architectures, such as WebA
 *  The team is investing in developer expertise for Flutter, including the [News Toolkit](https://github.com/flutter/news_toolkit) to speed up mobile development for news publishers and other content providers. The News Toolkit includes everything you need to build an article-centric app, complete with navigation, search, authentication, ad integrations, notifications, profiles, and subscriptions.
 
 
-## Conclusion
+# Conclusion
 All this are great news for Flutter developers. If you would deep more in where is Flutter heading, you can check his [roadmap](https://github.com/flutter/flutter/wiki/Roadmap).

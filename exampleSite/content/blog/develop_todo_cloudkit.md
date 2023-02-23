@@ -8,7 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 If we want to develop an application that allows data and files to be shared and synchronized between different devices, we will need to use a backend service that allows us to perform these tasks. In the case of devices with iOS, or macOS, we can use **CloudKit**. In this article we are going to see how a task application is developed with *CloudKit*.
-## What is CloudKit?
+# What is CloudKit?
 
 [CloudKit](https://developer.apple.com/icloud/cloudkit/) is Apple’s storage service that allows your applications to save data and files remotely. Apple introduced CloudKit at [WWDC 2014](https://developer.apple.com/videos/wwdc2014/) as a new library that allowed communication with iCloud servers.
 
@@ -23,7 +23,7 @@ With *CloudKit*, Apple also offers:
 * An API to communicate and transfer data between devices and iCloud.
 * A desktop to manage data stored on Apple servers, measure user activity or bandwidth consumption.
 
-## Using CloudKit
+# Using CloudKit
 
 To use CloudKit we must bear in mind that:
 
@@ -32,7 +32,7 @@ To use CloudKit we must bear in mind that:
 * User data is protected, as developers can only access their own databases and not private user data.
 * Apple recommends notifying the user if an error occurs (such as finding an error in the saving process), so that they know that data may have been lost or has not been saved.
 
-## CloudKit databases
+# CloudKit databases
 
 To start working with CloudKit we must bear in mind that, in the same way that each application has its own *sandbox*, similarly each application has a container in *iCloud* (if we have registered the application for it, as we will see later). *CloudKit* defines three types of databases:
 
@@ -40,16 +40,16 @@ To start working with CloudKit we must bear in mind that, in the same way that e
 * Public
 * Shared
 
-### Private database
+## Private database
 
 Each user of an application (if it has been registered to use *iCloud*) has a private database in an *iCloud* container, as long as the user is logged in to their *iCloud* account. Being private, developers cannot access the data stored in this database.
-### Public database
+## Public database
 
 An *iCloud* container also contains a public database, but in this case its data can be read by all users of the application, even if they have not logged in with their *iCloud* account. Please note that since *CloudKit* logs always have an owner, only users who are logged into *iCloud* will be able to write data to the public database.
-#### Shared database
+## Shared database
 
 In the same way as in the private database, the shared database is only accessible if you are logged into *iCloud*. It is used to share records from a user’s private database with other users of the application.
-#### Concepts to consider
+## Concepts to consider
 
 When working with *CloudKit* we have to take into account some concepts:
 
@@ -64,7 +64,7 @@ let customContainer = CKContainer(identifier: "{YOUR_CONTAINER_IDENTIFIER}")
 * **Registry**. They are objects of type *CKRecord*, and we can consider them as dictionaries in which the keys are the fields of the tables in the database.
 * **Zone**. They are represented by objects of the *CKZone* type, and it is the place where the data is saved. In *CloudKit*, all databases have a default zone, but we can also create custom zones, although only in private databases.
 
-## TodoList project
+# TodoList project
 
 We are going to create a to-do list app, **TodoList**, which will be saved in *iCloud*. You can download this project from [GitHub](https://github.com/raulferrerdev/TodoList).
 
@@ -83,7 +83,7 @@ Now we must add the ability to the project to use *iCloud*. For this we select t
 {{< image src="images/posts/develop_todo_cloudkit_4.png" alt="ToDo app with CloudKit">}}
 
 
-### CloudKit Dashboard
+## CloudKit Dashboard
 
 Now that we have created the project and the container, we have to create the records for the data that we will use in the application. We can do this from the *CloudKit* desktop, which will allow us to know how it works. For this we click on the *CloudKit Dashboard* button.
 
@@ -154,18 +154,17 @@ Next, in the left panel we select from the *Database* menu we select *Public Dat
 {{< image src="images/posts/develop_todo_cloudkit_11.png" alt="ToDo app with CloudKit">}}
 
 
-## A little Swift
+# A little Swift
 
 Once we have entered a couple of sample records, we are going to start developing a simple application. This project can be found in full on [GitHub](https://github.com/raulferrerdev/TodoList).
-### UI design
+## UI design
 
 This project will basically consist of an *UITableView* component, which will be the one that shows the tasks. Each cell of this table will be a task with the title, the creation date and an icon to indicate if it has been done or not.
 
 This table will be inside a *UINavigationController* component in the bar of which we will put the title and a button to add tasks. In this project, all this will be done through code, without using storyboards or .*xib* files.
 
 {{< image src="images/posts/develop_todo_cloudkit_12.png" alt="ToDo app with CloudKit">}}
-
-### Project creation
+## Project creation
 
 To work without storyboards when establishing a project in Xcode 11 we have to do some steps after creating it:
 
@@ -259,7 +258,7 @@ When executing the query, we get a couple of parameters in response: a list of r
 This response is processed in the *processQueryResponseWith* method, in which we check if there has been an error when performing the query, if any records have been returned and what these records are. To facilitate the handling of errors, *enum FetchError* has been created, which collects possible errors.
 
 
-### Creation of the UITableView component
+## Creation of the UITableView component
 
 The UITableView component will be simple, the only thing we will customize is that the cells can have a variable height, to show task titles of up to three lines (*TasksTableViewController.swift*):
 
@@ -529,7 +528,7 @@ class ViewController: UIViewController {
 {{< youtube Jbykv9i4194 >}}
 
 
-### Records deletion
+## Records deletion
 
 To delete records we will enable the use of cell dragging so that the option to delete appears. We will achieve this by adding the following method to the *TasksTableViewController* class:
 
@@ -618,7 +617,7 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
 Now we can test the deletion of tasks.
 {{< youtube HfoG2ZQuMkc >}}
 
-### Adding a task
+## Adding a task
 
 In order to create a task, we will create a *UIViewController* to which we will navigate by clicking on a ‘+’ button in the navigation bar. This new *UIViewController*, which we will call *AddTaskController*, will simply be made up of an *UITextField* component, in which we will introduce the task text, and a *UIButton* component, to add it.
 
@@ -792,7 +791,7 @@ What this method does is add the new record to the beginning of the list of reco
 
 {{< youtube cJR7JLBo4N8 >}}
 
-### Update a task
+## Update a task
 
 We have already seen how to recover, delete or create records with *CloudKit*. Now we will see how to update a registry in *CloudKit*. For this we will use a simple case, the one that corresponds to completing a task and marking it as completed.
 
@@ -850,6 +849,6 @@ Record update.
 
 {{< youtube BtGwu_QwIRU >}}
 
-## Conclusion
+# Conclusion
 
 We have seen how we can create an application that uses *CloudKit* to synchronize data with *iCloud*. In this application we have integrated the basic CRUD methods (*Create, Read, Update, Delete*) of a database. Remember that you can download the complete project from [GitHub](https://github.com/raulferrerdev/TodoList).

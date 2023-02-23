@@ -7,8 +7,10 @@ tags: ["Development", "VisionKit", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
+# What's VisionKit
 In iOS 11 Apple integrated a library called [Vision](https://developer.apple.com/documentation/vision/). This library use algorithms to perform a series of tasks on images and video (text detection, barcodes, etc.). Now, with iOS 13, Apple has published a new library, [VisionKit](https://developer.apple.com/documentation/visionkit), that allows you to use the document scanner of the system itself (the same one that uses the Notes application). Now let’s see how you can develop your own OCR in iOS 13 with VisionKit.
-## Project start
+# Project start
 
 In order to check how we can scan a document and recognize its content, we create a project in Xcode 11 (remember that VisionKit only works on iOS 13+). This project can be found complete on [GitHub](https://github.com/raulferrerdev/DocScan)).
 
@@ -23,11 +25,11 @@ If permission is denied, when we want to scan, the following message will appear
 
 {{< image src="images/posts/develop_ocr_visionkit_3.png" alt="OCR with VisionKit">}}
 
-## Interface design
+# Interface design
 
 This project will basically consist of a *UIImageView* component, in which we will show the scanned document with the recognized text, an *UITextView* component to show the text that the scanner has recognized, and a *UIButton* component to activate the document scanning. In this project, I will do all this through code, without using storyboards or .*xib* files.
 {{< image src="images/posts/develop_ocr_visionkit_4.png" alt="OCR with VisionKit">}}
-### Interface programming
+## Interface programming
 
 First we create the *ScanButton* component:
 
@@ -165,7 +167,7 @@ class ViewController: UIViewController {
 
 {{< image src="images/posts/develop_ocr_visionkit_5.png" alt="OCR with VisionKit">}}
 
-### Presentation of the scanning controller (*VNDocumentCameraViewController*)
+## Presentation of the scanning controller (*VNDocumentCameraViewController*)
 
 In order to present the controller that will allow us to scan the document, we must create and present an instance of the *VNDocumentCameraViewController* class.
 
@@ -227,7 +229,7 @@ The scan object (*VNDocumentCameraScan*) contains three parameters:
 The second method, *documentCameraViewController(_ controller: VNDocumentCameraViewController, didFailWithError error: Error)*, is called when an error occurs when scanning the document, so it is at this point that we must perform some error management action (for example, in if the error is due to the fact that the user has not given permission to use the camera, we can show an alert message asking to activate the permission).
 
 The third method, *documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController)*, is called when the Cancel button of the VNDocumentCameraViewController controller is clicked. Here we will only dismiss the controller.
-### Text recognition
+## Text recognition
 
 Now, in order to recognise and extract the text of the documents we have scanned, we will use the Apple [Vision](https://developer.apple.com/documentation/vision) framework, already integrated into iOS 11. Specifically, we will use the [VNRecognizeTextRequest](https://developer.apple.com/documentation/vision/vnrecognizetextrequest) class. This class, as the documentation indicates, searches and recognizes the text in an image. For this process we will need a request (instance of the *VNRecognizeTextRequest* class), in which we can define the text recognition parameters:
 
@@ -327,6 +329,6 @@ Now we can test the application. To do this we turn it on and capture an image.
 As you can see, it perfectly recognizes the text of the image.
 {{< youtube jdsFRTKW5IA >}}
 
-#### Conclusion
+# Conclusion
 
 As we have seen, thanks to the [Vision](https://developer.apple.com/documentation/vision/) and [VisionKit](https://developer.apple.com/documentation/visionkit) libraries we can easily build our own document scanner on our mobile. Remember that you can download the entire project on [GitHub](https://github.com/raulferrerdev/DocScan).
