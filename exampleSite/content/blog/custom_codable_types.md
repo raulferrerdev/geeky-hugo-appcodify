@@ -32,7 +32,7 @@ struct User: Codable {
 }
 ```
 
-## Custom keys
+# Custom keys
 
 However, what happens when the JSON keys do not match the name of the properties of our structures or classes (for example, due to naming conventions). For example, suppose that in the User data structure we use the firstName parameter, but from the server we get a JSON with the first_name key.
 
@@ -62,7 +62,7 @@ extension User {
 }
 ```
 
-## Encoding example
+# Encoding example
 
 To move from an instance of a structure to a JSON (if we use the same type of User structure and the same JSON):
 
@@ -88,7 +88,7 @@ In this way we get the following in the console:
 {"user_id":"39631383-4e2a-48ef-bb40-f9d896392eab","first_name":"Jane","last_name":"Doe","mail":"jane.doe@example.com","active":"true"}
 ```
 
-## Decoding example
+# Decoding example
 
 For the reverse step, the decoding of JSON to struct, we have:
 
