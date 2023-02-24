@@ -7,9 +7,10 @@ tags: ["Development"]
 draft: false
 ---
 
+# Introduction
 **MVP (Model-View-Presenter)** is an architectural pattern derived from MVC, which is frequently used in the creation of mobile applications. This pattern allows you to separate presentation logic from business logic. This separation helps make the code more maintainable, scalable, and testable.
 
-### Components
+# Components
 The MVP has three components:
 * **Model.** Represents data and business logic.
 
@@ -22,13 +23,13 @@ The **Presenter** receives user input from the **View**, processes it, and updat
 {{< image src="images/posts/mvp_schema_1.png" alt="MVP Schema">}}
 
 
-## Example code
+# Example code
 
 Now we are going to see a simple example of applying the **MVP** pattern.
 
 To do this, let's create a small app with a single screen that will have a TextField, a Button and a Label. When we add a username in the TextField and click on the button, the label will show *"My name is:* " and the name that we have entered.
 
-### Model
+## Model
 The **Model** is very simple, it is a *struct* with a single parameter: the *name* of the user.
 
 ```swift
@@ -37,7 +38,7 @@ struct User {
 }
 ```
 
-### Presenter
+## Presenter
 The **Presenter** has a reference to the **View** but, to avoid a strong reference cycle, is a *weak* reference. A strong reference cycle occurs when two objects have strong references to each other, resulting in an unbreakable retain cycle. Because the objects cannot be deallocated by the system, this can result in a memory leak.
 
 ```swift
@@ -58,7 +59,7 @@ class UserPresenter {
 ```
 By holding a weak reference to the **View**, the **Presenter** can only communicate with it as long as it exists. That is, when the **View** is destroyed, the weak reference becomes null and the **Presenter** can no longer access said **View**. This helps ensure that memory is managed correctly in the application.
 
-### View and UIViewController
+## View and UIViewController
 
 The UIViewController is in charge of instantiating both the **View** and the **Presenter**. Once both are instantiated, the **View** is passed to the **Presenter** and the **Presenter** is also assigned to the view to establish communication.
 
@@ -142,19 +143,19 @@ class UserView: UIView, UserViewDelegate {
     }
 }
 ```
-## Advantages and Disadvantages of MVP
+# Advantages and Disadvantages of MVP
 
-### Advantages
+## Advantages
 * Compared to the MVC pattern, it offers a greater separation of duties.
 * Although it is a bit more complex than MVC, it is derived from it, so we can quickly get used to using it.
 * Business logic tests could be improved.
 
-### Disadvantages
+## Disadvantages
 * Because it's more complex than MVC, it's typically not recommended for use in small, simple applications.
 * The Presenter in MVP has the same potential to become an important component as the Controller in MVC.
 * Even though we have further modularized the design, there are still some issues, such as continuous controller control over screen switching.
 
-## Conclusion
+# Conclusion
 
 **MVP (Model-View-Presenter)** is an architectural pattern that separates the application's presentation layer from its business logic. This allows for a clear separation of responsibilities and reduces component coupling. The View in **MVP** serves as a passive interface that displays data and forwards user actions to the **Presenter**, while the **Presenter** serves as a mediator between the **View** and the **Model**, updating the **View** based on **Model** changes and forwarding user actions to the **Model**. The **Model** represents the application's data and business logic.
 

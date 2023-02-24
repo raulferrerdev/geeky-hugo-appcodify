@@ -7,6 +7,8 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
+# Introduction
 What is new in **Swift 5.3** (whose publication process was announced by [Apple on 3/25](https://swift.org/blog/5-3-release-process/)) can be found both at the code level (multi-pattern catch, multiple trailing closure …) and in the use of Swift Package Manager (addition of binary dependencies or resources. Below I detail some of the new features in Swift 5.3 (keep in mind that we expect to see the new beta of Swift 5.3 at WWDC20, although to test it you can download it at [Swift.org](https://swift.org/download/#snapshots)).
 ## Synthesized Comparable conformance for enums ([SE-0266](https://github.com/apple/swift-evolution/blob/master/proposals/0266-synthesized-comparable-for-enumerations.md))
 
@@ -29,7 +31,7 @@ if operation1 < operation 2 {
 }
 ```
 
-##### Use where on contextually generic declarations ([SE-0267](https://github.com/apple/swift-evolution/blob/master/proposals/0267-where-on-contextually-generic.md))
+## Use where on contextually generic declarations ([SE-0267](https://github.com/apple/swift-evolution/blob/master/proposals/0267-where-on-contextually-generic.md))
 
 What is looking for with this modification is to remove the restriction of attaching where clauses to member declarations that can only refer to external generic parameters. For example:
 
@@ -181,6 +183,6 @@ For those of us who use [Swift Package Manager](https://www.raulferrergarcia.com
 * **Conditional dependencies ([SE-0273](https://github.com/apple/swift-evolution/blob/master/proposals/0273-swiftpm-conditional-target-dependencies.md))**. This option will allow specifying which dependencies are added depending on the platform.
 * **Localized resources ([SE-0278](https://github.com/apple/swift-evolution/blob/master/proposals/0278-package-manager-localized-resources.md))**. Along with the possibility of adding resources to Swift packages, they can be localized.
 
-## Conclusion
+# Conclusion
 
 Swift 5.3 includes interesting improvements at the code or Swift package management level. But there are other improvements to look out for as well, such as the fact that Swift 5.3 will support platforms like Windows and new [Linux](https://swift.org/blog/additional-linux-distros/) distributions.

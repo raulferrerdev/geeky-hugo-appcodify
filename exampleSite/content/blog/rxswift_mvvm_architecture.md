@@ -8,23 +8,24 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
+# What's MVVM
 **MVVM (Model-View-ViewModel)** is an [architecture pattern](https://raulferrer.dev/architecture_patterns_ios/) that wants to separate the presentation logic from the business logic. It's composed by a **Model** layer, a **View** layer and a **ViewModel** layer.
 
-### MVVM Structure
+# MVVM Structure
 
 First, let's make a small introduction for **MVVM architecture**.
 
-### Model
+## Model
 Contains the business logic and it's also in charge of deal with data (storing, accessing and manipulating data). The **Model** can only communicate with the **ViewModel** layer (so is unaware of the existence of the **View**).
 
-### View
+## View
 This layer contains the **View** (both the UIView and the UIViewController classes). This layer is in charge of show information to the user but has no logic, and updating comes from the **ViewModel** (the View can have multiple references to the **ViewModel**).
 In the case of the UIViewController, it's only in charge of navigation between views (at most, pass information, using a Delegate pattern).
 
-### ViewModel
+## ViewModel
 This layer is stands between the View and the Model, and is the central component of the **MVVM architecture**, and processes the input/output data that controls the view. 
 
-## Data flow in MVVM
+# Data flow in MVVM
 
 In the **MVVM architecture** pattern, the **View** is linked to the **Model** through the **ViewModel** thanks to a concept called **Data Binding**. 
 
@@ -34,9 +35,9 @@ There are some methods to do Data Binding (with 3rd party frameworks like RxSwif
 
 [RxSwift](https://github.com/ReactiveX/RxSwift) is a well-known library that adds **reactive programming** to Swift. It allows developers to handle asynchronous events declaratively and modularly, making it ideal for implementing the MVVM pattern.
 
-## Let's write some code
+# Let's write some code
 
-### Model
+## Model
 Let's start our example by defining the **Model**. In this case, it will be a simple **Model** for a *User* (with *name* and *age* parameters):
 
 ```swift
@@ -46,7 +47,7 @@ struct User {
 }
 ```
 
-### ViewModel
+## ViewModel
 Then, we build the **ViewModel**. As we have seen, the **ViewModel** interacts with the **Model** and with the **View**. What we will do is something simple, **ViewModel** will take the name and will capitalize it.
 Using MVVM with RxSwift, I prefer to use a [Input/Output convention](https://github.com/kickstarter/ios-oss):
 
@@ -91,7 +92,7 @@ The *Output* class only has one property, *title*, which is a *Driver* that emit
 
 We created a *BehaviorRelay* object in the *init()* method of the // class to hold the user's information. The *map()* operator was then used to convert the *User* object to a String by capitalizing the user's name. Finally, we used the *asDriver()* operator to convert the *Observable<String>* into a *Driver<String>*, which we assigned to the *Output* object's *title* property.
 
-### View
+## View
 Let's now create the View, which will only displays the user's name:
 
 ```swift
@@ -143,7 +144,7 @@ let view = View()
 view.viewModel = viewModel
 ```
 
-## Conclusion
+# Conclusion
 
 In conclusion, using RxSwift to implement the **MVVM architecture pattern** offers a reliable and scalable method for creating iOS apps. We can build a more maintainable codebase and test each component independently by separating the roles of the **Model**, **View**, and **ViewModel**. We can update the UI and handle asynchronous events declaratively and modularly by using RxSwift, which produces code that is cleaner and shorter. We can develop iOS apps that are adaptable and simple to maintain by utilizing RxSwift and the **MVVM architecture pattern**.
 

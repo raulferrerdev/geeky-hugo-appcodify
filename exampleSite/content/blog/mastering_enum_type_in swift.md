@@ -10,7 +10,7 @@ draft: false
 
 A useful tool in any programmer's toolbox is an **enumeration**, or **enum**. They enable type-safe interaction and the grouping of related variables. **Enums** will be discussed in this post, along with how Swift may make use of them. **Enum** fundamentals as well as some more complex ideas, like related values, raw values, and custom initializers, will be covered.
 
-## What are enums?
+# What are enums?
 
 Value types called **enums** are used to express collections of linked items. They can be defined in Swift in one of two ways: with or without related values.
 
@@ -201,6 +201,6 @@ for day in Day.allCases {
 
 This can be helpful for creating a list of every case that an **enum** could have.
 
-#### Conclusion
+# Conclusion
 
 For organizing related data and interacting with them in a type-safe manner, **enums** are a useful tool. They can be used as function parameters and iterated through. They can also contain associated values, raw values, computed properties and methods, and custom initializers. We have examined both the fundamentals of enums and some more complex ideas in this post. I trust you now know more about how to use **enums** in your own Swift projects.

@@ -75,4 +75,9 @@ course:
     url: "https://raulferrer.dev/blog/swiftui_cs12_form/"
     image: "images/swiftui-course/swiftui12.png"
     date: 2023-02-12
+  - name: "SwiftUI #13. LazyVGrid and LazyHGrid"
+    content: "In SwiftUI, LazyVGrid and LazyHGrid make it easy to create flexible and responsive grid layouts for iOS apps, with intuitive syntax and powerful features."
+    url: "https://raulferrer.dev/blog/swiftui_cs13_lazyvgrid_lazyhgrid/"
+    image: "images/swiftui-course/swiftui13.png"
+    date: 2023-02-24
 ---

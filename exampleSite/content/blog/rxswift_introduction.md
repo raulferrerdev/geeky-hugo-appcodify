@@ -8,9 +8,10 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
+# Introduction
 **RxSwift** is a framework that enables reactive programming in **iOS** apps. It enables developers to write code that more intuitively and efficiently responds to changes in data and events. **RxSwift** is built on top of the ReactiveX framework, which is a cross-platform **reactive programming** implementation.
 
-## RxSwift advantages
+# RxSwift advantages
 **RxSwift** offers several advantages to developers, including:
 
 * Using a declarative programming model to simplify asynchronous programming.
@@ -18,17 +19,17 @@ draft: false
 * Increasing code composability by allowing developers to easily chain operations together.
 * Providing a unified method of handling events and data across multiple platforms and languages.
 
-## Two important concepts: **Observable** and **Observer**
+# Two important concepts: **Observable** and **Observer**
 
 The **Observer** and **Observable** are the two most important concepts in **RxSwift**. 
 
-### Observables
+## Observables
 
 **Observables** generate events or data, which observers receive and respond to. This is similar to the **observer pattern**, which is a popular [design pattern](https://raulferrer.dev/design_patterns_software/) in software development.
 
 These **events** can contain any type of data, including integers, strings, and custom objects. **Observables** can be created in a variety of ways, including converting existing asynchronous APIs, creating custom observables, and transforming existing observables with operators.
 
-### Observer
+## Observer
 An **Observer** is a type of object that can receive and respond to observable events. **Observers** in **RxSwift** are typically closures or functions that receive an event or data and perform some type of action in response. An observable can emit various types of events, including next events, error events, and completion events.
 
 ## Let's see an example
@@ -53,7 +54,7 @@ First of all, we import the **RxSwift** and **RxCocoa** frameworks in this code 
 
 The *subscribe* method is then used to subscribe to the **Observable**. This includes a closure that is called whenever the **Observable** emits a new event. In this case, the random number is printed to the console. Finally, we dispose of the *subscription* by using the *disposed* method.
 
-### Code elements
+# Code elements
 Let's se now in detail those elements:
 
 * **Observable<Int>.** In this example, an **Observable** of type <Int> is generated. The type of data that will be emitted by the observable is specified by the generic parameter <Int>, so the observable will output integers in this case.
@@ -68,6 +69,6 @@ Let's se now in detail those elements:
 
 * **disposeBag.** This is an object that **RxSwift** makes available and which controls **Observable** subscriptions. A subscription can be *disposed* of when it is no longer required by using the *disposed(by:)* method on the dispose bag. In the example, we manage the *subscription* to the **Observable** we generated using the dispose bag.
 
-## Conclusion
+# Conclusion
 
 In this post, we focused on the Observer and Observable concepts as the foundation in order to use **RxSwift** in app development. **RxSwift** offers an effective and adaptable method for managing event-based data and **asynchronous programming** in iOS apps.

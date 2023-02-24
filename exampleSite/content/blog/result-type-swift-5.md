@@ -7,6 +7,8 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
+# Result type
 In [Swift 5](https://swift.org/blog/swift-5-released/) several new features have been introduced. One of them is the **Result** type. The **Result** type in swift 5 is an enum that contains two cases: *success* and *failure*.
 
 ```swift

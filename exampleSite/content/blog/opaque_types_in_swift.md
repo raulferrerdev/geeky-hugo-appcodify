@@ -8,6 +8,7 @@ image: "https://drive.google.com/uc?id=1D9G6ELElIJs94vg1ZWCJouNokwU5lNTo"
 draft: false
 ---
 
+# What are Opaque Types
 In Swift, an **opaque type** is a type that is defined in one module (such as a framework or library) but can only be used as a specific, concrete type within that module. The actual underlying type is hidden from any other modules that import the framework or library.
 
 Consider a framework that specifies the **opaque type** *Authenticator* as an example. A function that accepts an instance of an authenticator as an argument and returns a Boolean value indicating whether or not the authentication was successful may be defined by the framework. The framework, however, conceals the true underlying type of the authenticator. As a result, additional modules that import the framework are unable to instantiate the *Authenticator* class or make use of any of its methods or properties.
@@ -52,7 +53,7 @@ This example implements a protocol called *Authenticator*, which includes two co
 
 It is simpler to alter the implementation of a framework or library without affecting current code when opaque types are used to hide implementation details and prevent clients from depending on certain kinds.
 
-## Opaque types in SwiftUI
+# Opaque types in SwiftUI
 When used as the return type for the body field of a struct that complies with the View protocol, *some View* in SwiftUI is an **opaque type**. The *some View* type enables the caller to utilize the view like any other view type while keeping the implementation of the view hidden from the caller.
 
 > **Opaque types** are denoted with the word *some* to show that they are an implementation detail of the function or type that is using them. It is used to convey that the caller only cares that the type follows a given protocol or has a specific set of methods and is not concerned with the precise type being used.
@@ -82,7 +83,7 @@ The real underlying types of the views that ContentView and *MyCustomView* retur
 
 It's important to remember that *some View* can only ever be used as return types and cannot be used as variables or constants. Additionally, it can only be used inside a struct's body property that follows the View protocol.
 
-## Returning opaque types
+# Returning opaque types
 
 When a function or method returns an **opaque type**, it signifies that the caller is not made aware of the real underlying type of the returned result. Although the caller does not have access to the underlying type's implementation details, it is nevertheless able to use the returned value.
 
@@ -98,7 +99,7 @@ The *getAuthenticator()* function in this example returns an **opaque type** *so
 
 In order to make it easier to modify the implementation of a function or method without affecting current code, returning **opaque types** might be helpful in hiding implementation details and preventing clients from depending on certain kinds. This is especially helpful when building a framework or library and giving users flexibility.
 
-## Combine opaque types and generics
+# Combine opaque types and generics
 In Swift, **opaque types** and **generics** are two related ideas that can be combined to provide more adaptable and reusable code.
 
 A type that is defined in one module (such a framework or library) but may only be used as a particular, concrete type within that module is referred to as an opaque type. Any other modules that import the framework or library are unaware of the true underlying type.
@@ -130,7 +131,7 @@ In this instance, the framework defines the *authenticate* function, which accep
 
 **Generics** and **opaque types** can be combined to produce more adaptable, reusable code that is hidden from the caller. This can be especially helpful when developing frameworks or libraries because it enables you to give users flexibility while keeping control over the implementation specifics.
 
-## Conclusion
+# Conclusion
 
 Finally, **opaque types** are a means to establish a type in Swift that is only utilized as a specific, concrete type within a module, while concealing the real underlying type from other modules that import the framework or library. As a result, changes to the type's implementation can be made without having an impact on the code that employs it.
 
