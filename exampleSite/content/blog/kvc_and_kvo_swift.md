@@ -10,7 +10,7 @@ draft: false
 
 KVC and KVO are two important concepts in iOS app development, especially when using Swift. These two frameworks enable developers to access and manipulate object properties while also observing changes to properties in real time. In this post, we'll go over KVC and KVO in great detail, explaining what they are, how they work, and how to use them effectively in your iOS app.
 
-## KVC (Key-Value Coding)
+# KVC (Key-Value Coding)
 
 **KVC** is an abbreviation for **Key-Value Coding**, and it's a mechanism for accessing an object's properties via string keys rather than direct access. This is especially useful if you don't know what properties an object has or if you want to access properties dynamically based on user input. We must use the *value(forKey:)* method to use **KVC**, which returns the value of the specified key.
 
@@ -40,7 +40,7 @@ let name = person.value(forKey: "name") as? String
 let age = person.value(forKey: "age") as? Int
 ```
 
-## KVO (Key-Value Observing)
+# KVO (Key-Value Observing)
 
 **KVO** is an acronym that stands for **Key-Value Observing**. It is a mechanism for observing changes in an object's properties in real time. When a property is observed, an alert is sent whenever the property changes. This is helpful for keeping views and other components up to date with model data.
 

@@ -18,7 +18,7 @@ Finally, an app can enter the **suspended** state if it is no longer executing c
 
 Each state has unique characteristics and behaviors, and it is critical for developers to understand these distinctions when creating iOS apps. An app in the **background**, for example, has limited access to system resources, so it is critical to manage those resources carefully. Furthermore, developers should be aware of the various ways in which an app can transition between states and design their apps to handle these transitions smoothly.
 
-## Respond to changes in app state
+# Respond to changes in app state
 
 To respond to changes in an app's state, developers can use the **UIApplicationDelegate** protocol in their app's delegate class. The protocol defines several methods that are called by the system as an app's state changes.
 

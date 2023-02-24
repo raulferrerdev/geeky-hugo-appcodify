@@ -12,14 +12,14 @@ A safe approach to persist small amounts of data in your iOS, macOS, tvOS, or wa
 
 In this article, we'll look at utilizing Swift to save data in the **keychain**. We'll start by talking about the keychain and its significance before delving into the procedures needed to store information in the keychain.
 
-## What exactly is a keychain, and why is it significant?
+# What exactly is a keychain, and why is it significant?
 Passwords, encryption keys, and other private data are kept in the keychain, a secure database. The keychain is a secure location to keep sensitive information because it is encrypted and secured by the user's device passcode.
 
 The keychain's ability to be shared throughout different apps on the same device is one of its main advantages. This implies that you don't need to keep a password in numerous locations because you can access it from other apps by storing it in the keychain.
 
 The fact that the keychain is backed up by iCloud means that it is included in the backup of the user's device when that device is backed up to iCloud. This implies that if the user loses their device or installs a new one, the keychain can be restored.
 
-## Swift-based keychain data storage
+# Swift-based keychain data storage
 Swift users must import the Security framework and utilize the SecItemAdd function in order to store data in the keychain.
 
 An illustration of how to store a password in the keychain is as follows:
@@ -163,5 +163,5 @@ In this example, we create a dictionary containing the key-value pairs needed to
 
 The dictionary is then passed to the *SecItemDelete* function, which deletes the password from the keychain. The function returns a status code that indicates whether or not the operation was successful.
 
-## Conclusion
+# Conclusion
 In this post, we learned how to use Swift to store, retrieve, update, and delete data from the keychain. We saw how the keychain can be shared among multiple apps on the same device and is a secure and convenient way to persist small pieces of data in your app.

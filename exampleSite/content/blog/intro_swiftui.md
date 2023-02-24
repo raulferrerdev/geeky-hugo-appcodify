@@ -9,6 +9,8 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
+{{< youtube GHz5CnPq28o >}}
+# Introduction
 **SwiftUI** is a framework that works in a declarative way to create *User Interfaces* (UI). **SwitUI** was introduced by Apple in 2019 with the intention of eventually replacing **UIKit**, which works imperatively.
 
 The fact that **SwiftUI** is a declarative framework means that *User Interfaces* can be generated simply by describing the state of the interface, and leaving the implementation details up to the framework itself. This makes the User Interface development process faster and easier.
@@ -16,9 +18,9 @@ The fact that **SwiftUI** is a declarative framework means that *User Interfaces
 
 This SwiftUI declarative syntax allows applications to show the status of the application at all times, that is, we always have it updated.
 
-## Starting the project
+# Starting the project
 In order to develop applications with **SwiftUI** we need some minimum requirements such as using XCode11+ (currently the Xcode version is 14.1) and iOS13+.
-{{< youtube GHz5CnPq28o >}}
+
 The first step is to create a new project in Xcode. The first window that appears is to select the type of project: in this case we will choose App.
 {{< image src="images/posts/intro_swiftui_2.png" alt="SwiftUI App type selection">}}
 
@@ -68,7 +70,7 @@ The **App** protocol requires that you implement a single property called **body
 
 The **WindowGroup** is a container view that manages a collection of windows. When you create a new project in Xcode using the SwiftUI framework, a single window is created for you by default. The **ContentView** is the root view of the app, and it is displayed in the window when the app launches.
 
-### ContentView
+## ContentView
 
 The **ContentView** file contains the code for the first scene of our app:
 
@@ -101,8 +103,8 @@ The **ContentView_Previews** struct is used to generate a preview of the **Conte
 
 You can customize the **ContentView** struct and add additional views as needed to create the layout and user interface for your app. The **ContentView** is the root view of your app, and it can contain any number of child views and layout elements.
 
-### Assets
+## Assets
 The image assets and other resources that you can use in your app are kept in the **Assets.xcassets** directory. Icons, pictures, and launch screens are just a few examples of the image assets you can utilize in your program.
 
-### Preview Content
+## Preview Content
 This group contains the Review Content.xcassets. This is another catalog that allows us to store all those assets that we are going to use only in the design of the application.

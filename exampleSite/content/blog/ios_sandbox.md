@@ -10,19 +10,19 @@ draft: false
 
 **Sandboxing** is a modern operating system security feature that isolates an application or process from the rest of the system. It is intended to prevent malicious software from spreading and unintended system changes. **Sandboxing** protects the system and the user by running an application or process in a separate, restricted environment.
 
-## Sandboxing in iOS
+# Sandboxing in iOS
 **Sandboxing** is an important security feature in iOS, Apple's mobile operating system. It is used to isolate applications and processes from one another and from the system, thereby protecting the privacy and security of the user. **Sandboxing** helps to prevent malware from spreading and accessing sensitive data by limiting the access that applications have to the system and to other applications.
 
-### Isolation of applications
+## Isolation of applications
 Each application on iOS runs in its own **sandbox**. The **sandbox** restricts the application's access to the system and other applications, as well as the actions that the application can perform. This helps to prevent malware from spreading and accessing sensitive data, as well as unintentional system changes.
 
-### Access limitation to system resources
+## Access limitation to system resources
 The **sandbox** also restricts an application's access to system resources such as the file system, network, and camera. Applications can request additional access to system resources, but the user must grant these requests. This protects the user's privacy and security by preventing applications from accessing sensitive data without permission.
 
-### Restrictions
+## Restrictions
 The **sandbox** also limits an application's ability to perform actions such as writing to the file system or connecting to the network. This helps to prevent unintended changes to the system, which can help to ensure the operating system's stability. It also aids in the prevention of malware spreading and accessing sensitive data.
 
-## Sandox app folder structure
+# Sandox app folder structure
 Each app has its own private sandbox, which consists of a collection of files and directories that are separated from the rest of the system. The directory that has all of the app's assets and resources—the bundle—is where the sandbox normally resides.
 
 {{< image src="images/posts/ios_sandbox_1.png" alt="iOS App Sandbox">}}
@@ -40,7 +40,7 @@ An example of a common iOS app sandbox folder structure is as follows:
 
 The app is only permitted to read and alter files inside its own sandbox, and these directories and files are segregated from the rest of the system. This helps to ensure that the app cannot affect how the operating system or other apps function normally and helps to safeguard the security and privacy of the user.
 
-## Accessing sandbox
+# Accessing sandbox
 We can access sandbox for read and write, for example, the documentes directory:
 
 ```swift
@@ -76,7 +76,7 @@ do {
 The file's contents are read into a string in this example using the *String(contentsOf:encoding:)* method. The encoding option is set to *.utf8* to signify that the file's contents are UTF-8 encoded.
 
 
-## Sandboxing advantages
+# Sandboxing advantages
 Sandoxing has some advantages:
 
 * **Improved security** is one of the primary advantages of **sandboxing** in iOS. **Sandboxing** helps to prevent malware from spreading and accessing sensitive data by isolating applications and processes from each other and from the system. It also helps to prevent unintended changes to the system, which can help to ensure the operating system's stability.
@@ -90,5 +90,5 @@ For developers who are making iOS applications, **sandboxing** has some benefits
 
 On the other hand, **Sandboxing** can add difficulties for developers, as restrict an application's access to system resources, which might make it more challenging to provide specific functionality or restrict what an application can do.
 
-## Conclusion
+# Conclusion
 iOS's **sandboxing** security feature isolates programs and processes from the rest of the system and from other programs and processes. It helps to safeguard the security and privacy of the user by limiting the access that apps have to system resources and the actions that they can perform. The advantages of **sandboxing** in iOS include increased security, performance, and user-friendliness.

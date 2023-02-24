@@ -7,10 +7,12 @@ tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
+# Introduction
 Surely you have applied or, at least, you know architectures such as MVC, MVVM, MVP (even others such as VIPER or VIP). However, there are also other architectures that have been developed and that are somewhat less known.
 For example, in a previous [post I already talked about Redux](https://raulferrer.dev/blog/redux_pattern/) as an architecture that, although it is well known in web development, is perhaps less so in iOS development. But there are others that are perhaps less well known, such as The Composable Architecture (TCA) or The Elm Architecture, of which we will now make a short introduction so that you know them.
 
-## The Elm Architecture (TEA)
+# The Elm Architecture (TEA)
 The Elm Architecture originated from the use of Elm and the development of webapps. This architecture is based on a Model (which contains the state of the application), a view that is generated according to the model, and an Update that transforms the model.
 {{< image src="images/posts/ios_architecture_states_3.png" alt="The Elm Architecture is Swift schema">}}
 
@@ -52,7 +54,7 @@ class func view(_model: Model) -> UIView {
     return updatedView
 }
 ```
-### Pros and Cons of TEA
+## Pros and Cons of TEA
 
 Pros of TEA:
 * It has a straightforward architecture and enables declarative view development.
@@ -65,14 +67,14 @@ Cons of TEA:
 
 
 
-## The Composable Architecture (TCA)
+# The Composable Architecture (TCA)
 TCA was developed by [Brandon Williams and Stephen Celis of Point-Free](https://www.pointfree.co/).
 This architecture was born to solve some of the problems that we find when developing our applications, like split larger functionalities into small ones, manage the state of the application in a simple way or facilitate the testing of the aplication, unit tests to end-to-end tests.
 TCA works in a declarative way, according to reactive programming principles and following Redux patterns. This makes it very suitable for working on iOS projects based on SwiftUI (declarative) although it can also be used with UIKit (imperative).
 TCA starts from TEA, but works assuming that each View has its own Store, and each one of the components or children of said View saves a part of that Store. In this way, each time a View generates an Action, it is passed to the Stores of the Parents.
 {{< image src="images/posts/ios_architecture_states_1.png" alt="The Composable Architecture is Swift Store propagation">}}
 
-### TCA components
+## TCA components
 TCA is based on six components: Action, Environment, Reducer, State, Store and View.
 
 * **Action.** In a similar way to how it was described in a [previous Redux post](https://raulferrer.dev/blog/redux_pattern/), we can set an Action as an enum that contains the different actions that can be given. For example:
@@ -120,7 +122,7 @@ struct AppState: Equatable {
 {{< image src="images/posts/ios_architecture_states_2.png" alt="The Composable Architecture is Swift schema">}}
 
 
-### Pros and Cons of TCA
+## Pros and Cons of TCA
 
 The pros of TCA are:
 
