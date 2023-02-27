@@ -8,7 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 **Push notifications** are the messages that are sent, to an application installed on a device, from a server. In the case of iOS applications, the Apple Push Notifications Service (APN) is used. Until now, the only way to test these notifications was on physical devices. However, this has changed with the beta version of [Xcode 11.4](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_2_release_notes), with which we can already test the push notifications in the simulator.
-## Enable notifications in the simulator
+# Enable notifications in the simulator
 
 First, before testing the **push notifications** in the simulator, we have to ask the user for permission to show the notifications. We can do this by including the following code, for example, in the *AppDelegate* class:
 
@@ -134,7 +134,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-## Sending push notifications to the simulator
+# Sending push notifications to the simulator
 
 Once we have configured in our application the permissions to receive push notifications, we will test the sending of these notifications in the simulator.
 If you look at what Apple has published for [Beta 2 of XCode 11.4](), we can find:
@@ -150,7 +150,7 @@ That is, we can simulate the notification in two different ways:
 * Create an APN file and drag it directly over the simulator.
 * Use the terminal to execute the command shown.
 
-## Drag APNs file
+# Drag APNs file
 
 First of all we have to create an APN file, as Apple shows in its [documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification):
 
@@ -176,7 +176,7 @@ Now we can test the push notifications simply by dragging the file over the simu
 {{< youtube nDVhsLDjumk >}}
 
 
-## Sending notifications by command line
+# Sending notifications by command line
 
 The second way that Apple indicates to test push notifications is through the command line:
 
@@ -202,6 +202,6 @@ In the case we are seeing the command will be:
 ```
 {{< youtube VBDMb4207ow >}}
 
-## Conclusion
+# Conclusion
 
 Thanks to this new functionality that we can see in the beta version of Xcode 11.4, we can already test the push notifications, and the behavior of our applications when receiving them, from the simulator itself, without the need of a physical device.

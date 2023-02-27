@@ -13,8 +13,8 @@ draft: false
 
 The **Image** component in SwiftUI is a potent and adaptable way to show images in your app. It can be used to show pictures from the user's photo collection, a remote URL, or your software bundle. Modifiers allow you to adapt the appearance and behavior of the Image component to your own requirements.
 
-## Image source
-### Bundle
+# Image source
+## Bundle
 Here's an illustration of how you can display a picture from your app bundle using the Image component (first we must add this image in the *Assets* folder of our project):
 
 ```swift
@@ -25,7 +25,7 @@ struct ContentView: View {
 }
 ```
 
-### Bundle
+## Internet
 
 To load images from internet, ywe need the **AsyncImage** component, which accepts a URL argument, to display an image from a remote URL:
 
@@ -37,7 +37,7 @@ struct ContentView: View {
 }
 ```
 
-### PhotosPicker (iOS16)
+## PhotosPicker (iOS16)
 To display an image from the user's photo library, we can use the PhotosPicker component:
 
 ```swift
@@ -57,8 +57,8 @@ struct ContentView: View {
 }
 ```
 
-## Modifiers
-### .resizable()
+# Modifiers
+## .resizable()
 You can specify how the picture should be scaled to fit its parent container using the *resizable()* modifier. A set size, proportional size, or a minimum and maximum size can all be specified.
 
 Here is an illustration of how to fit an image to its parent container with a fixed size using the *resizable()* modifier:
@@ -75,7 +75,7 @@ struct ContentView: View {
 In this way we adjust the size of the image to the measurements that we have given it, which can cause the image to be deformed if its proportion is not the same as that of the frame that contains it.
 
 
-### .scaledToFit() and scaledToFill()
+## .scaledToFit() and scaledToFill()
 If we want to display the image without deforming it, we must add a new modifier: *.scaleToFit()* or *scaleToFill()*.
 The function of *.scaleToFit* is to scale the image, maintaining the proportions, until one of the two measurements (width or height) fits the measurement of the corresponding axis of the frame.
 For example, a very narrow image will fit the height of the frame (Y axis), but there will be white space on the sides of the image (X axis).
@@ -124,7 +124,7 @@ struct ContentView: View {
 }
 ```
 
-### .clipShape()
+## .clipShape()
 The image can be clipped to a certain shape using the *.clipShape()* modifier. You can pick a pre-existing form like *Circle*, *Capsule*, or *Rectangle*, or you can use a *Path* to design a unique shape.
 
 Here is an illustration of how to clip the image to a circle using the *.clipShape()* modifier:
@@ -156,7 +156,7 @@ struct ContentView: View {
 }
 ```
 
-### .overlay()
+## .overlay()
 You can overlay a view on top of the image with the *.overlay()* modifier. Adding text, buttons, or other interactive elements is a good usage for this.
 
 Here is an illustration of how to put a button to the top of the image using the *.overlay()* modifier:
@@ -175,7 +175,7 @@ struct ContentView: View {
 }
 ```
 
-### .shadow()
+## .shadow()
 You can give the image a shadow by using the shadow() modifier. The hue, radius, and offset of the shadow are all programmable.
 
 Here's an illustration of how to add a shadow to the image using the *.shadow()* modifier:
@@ -189,7 +189,7 @@ struct ContentView: View {
 }
 ```
 
-### .blur()
+## .blur()
 You can blur the image by using the *.blur()* modifier. The blur mode and radius are also programmable.
 
 Here is an illustration of how to blur an image using the *.blur()* modifier:

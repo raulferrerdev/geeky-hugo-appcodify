@@ -14,7 +14,7 @@ draft: false
 
 One of the key features of SwiftUI is its use of **property wrappers**, which are used to control the flow of data through the view hierarchy. In this article, we will explore four **property wrappers** in particular: **@State**, **@Binding**, **@ObservedObject**, and **@Published**.
 
-## @State
+# @State
 SwiftUI's **@State** property wrapper gives you the ability to control a view's state. The view will automatically be stored in its internal state when a property is designated with the **@State** wrapper, and any changes to the property will cause the view to be rendered again. The display will update immediately when the state changes, making it simple to design dynamic and reactive user interfaces.
 
 Here is an example of a straightforward toggle button that controls its internal state using **@State**:
@@ -58,7 +58,7 @@ Additionally, it's important to remember that **@State** properties support a wi
 
 In conclusion, **@State** is a potent property wrapper that enables you to handle a view's state in a predictable and self-contained manner. The property is automatically stored in the view's internal state, a re-render of the view is triggered when the state changes, and a fresh copy of the value is created each time it is accessed to ensure consistency. You may design dynamic and reactive user interfaces that react to user interactions by updating automatically by using **@State**.
 
-## @Binding
+# @Binding
 **@Binding** property wrapper enables you to share a value across many views in your app. In other words, any changes made to the state will automatically reflect in the view, and any changes made to the view will automatically reflect in the state, thanks to the usage of this technique to establish a two-way binding between the state and a view.
 
 A child view can read the value of a property from a parent view and make it available for usage by the child view by using a **@Binding** property. As a result, data may be shared between views more effectively without a global state or repeated passing of the value down the view hierarchy.
@@ -100,7 +100,7 @@ In conclusion, **@Binding** is a potent property wrapper that enables data to be
 
 In response to user interactions, this enables several views to update dynamically and share the same state. Additionally, it gives you more control over how data moves through the view hierarchy by enabling you to construct a two-way binding between the parent and child views. You may design more intricate and dynamic user interfaces that react in real-time to user interactions by utilizing **@Binding**.
 
-## @ObservedObject
+# @ObservedObject
 SwiftUI's **@ObservedObject** property wrapper enables you to control an object's state that complies with the *ObservableObject protocol*. Any modifications to an object that has the @ObservedObject wrapper will cause the view to be re-rendered. In response to changes in the underlying data, it is simple to design dynamic and reactive user interfaces that update automatically.
 
 > **ObservableObject** enables to keep track of class modifications. Any views that depend on a class instance annotated with **ObservableObject** will reload themselves automatically to reflect the changing state. This enables a user interface that is more responsive and effective. To utilize **ObservableObject**, a class's properties must have an *objectWillChange* property that will be called before any changes are made to the class's properties. For example, the *objectWillChange* publisher is sent automatically by the **Published** property wrapper so that you don't have to explicitly call it each time a property changes.
@@ -133,7 +133,7 @@ In conclusion, **@ObservedObject** is an effective property wrapper that enables
 
 Additionally, it gives you more control over how data flows through your app because it lets you manage the state of objects that are not a part of the display hierarchy. You can build more intricate and dynamic user interfaces that react in real-time to changes in the underlying data by using **@ObservedObject**.
 
-## @Published
+# @Published
 As we have just seen, SwiftUI's **@Published** property wrapper generates the *ObservableObject protocol*-compliant code for an object automatically. In addition to frequently being used in conjunction with the **@State** and **@Binding** wrappers, it can be used in place of the **@ObservedObject** wrapper. Any modifications to a property that has the **@Published** wrapper applied will cause the view to be re-rendered.
 
 In this example, the name and age attributes of the Person class are marked with the **@Published** wrapper. The **@ObservedObject** wrapper is used by the PersonView to watch the object's state, and thus automatically creates the appropriate code for the class to comply with the *ObservableObject protocol*. The Text views will automatically update to reflect any changes made to the name or age properties of the individual because doing so will cause the view to be rendered again.
@@ -166,7 +166,7 @@ The **$** prefix in this example establishes a binding between the text field an
 In conclusion, **@Published** is a property wrapper that may be used in place of **@ObservedObject** and is frequently combined with the **@State** and **@Binding** wrappers to automatically make an object comply to the ObservableObject protocol. It makes it simple to design dynamic and reactive user interfaces since it enables you to manage the state of an object and causes a re-render of the view when the object's state changes.
 
 
-## Conclusion
+# Conclusion
 This chapter has explored the use of **property wrappers** extensively, with a focus on the **@State**, **@Binding**, **@ObservedObject**, and **@Published** wrappers.
 
 Using these wrappers, we have learned how to control the state of views and objects, send data between views, and create dynamic and reactive user interfaces.

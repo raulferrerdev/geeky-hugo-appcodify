@@ -8,10 +8,10 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 **Swift Package Manager** (SPM) was the dependency manager for Swift that Apple released together with Swift in 2015. Swift Package Manager joined other well-known dependency managers, such as [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage). However, it was not until the publication of Xcode 11 that this tool was integrated into Xcode itself, which made it easier to use. Now we are going to learn how to use Swift Package Manager.
-## A Swift package
+# A Swift package
 
 A Swift package is made up of a series of files with the source code and a manifest, a file called Package.swift (found in the root directory), which defines the name of the package, its contents, etc. When we compile these files, we generate a separate module that can then be shared (for example, from GitHub) imported into other projects. These files are compiled to form a module that can then be imported by other projects.
-## How can we create a Swift package
+# How can we create a Swift package
 
 With Xcode 11, it is very easy to create a Swift package. To do this, in the Xcode menu select File > New > Swift Package…
 {{< image src="images/posts/swift_package_manager_1.png" alt="Swift package manager">}}
@@ -156,7 +156,7 @@ let package = Package(
 ## We add code to our Swift package
 
 Once we have configured our project, we can add code. We must remember that we must declare as public those classes and methods that we want to use in the projects in which we import the Swift package. Once we have finished the project and have uploaded it to a repository (such as GitHub or GitLab), we can now download it and include it in other projects.
-## How to add a Swift package to our application
+# How to add a Swift package to our application
 
 To add the Swift package that we have created to an application, we simply do the following (as long as we are using Xcode 11):
 
@@ -174,6 +174,6 @@ Wherever we want to use it, we simply have to import them:
 #import MyLibray
 ```
 
-## Conclusion
+# Conclusion
 
 With the addition of Swift Package Manager to Xcode 11, it has become very easy to create and add dependencies to our projects. This opens a new way of, for example, modulating our applications, going from monolithic applications to applications made up of modules, and to be able to share code more easily between our projects.

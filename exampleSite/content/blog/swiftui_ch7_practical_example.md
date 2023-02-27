@@ -19,16 +19,16 @@ In this case, we have chosen a plane boarding pass.
 
 Once we know the user interface that we have to compose, we can choose different assembly strategies, but in the end, basically, they will all be reduced to nesting **VStack**, **HStack** and **ZStack**, with image and text components inside.
 
-## Componentes strucuture
+# Componentes strucuture
 The following image shows how the interface is structured with SwiftUI. The green boxes show **VStack** type structures, while the purple ones show **HStack** type structures. Inside, we basically find a couple of **Image** components and the rest are all **Text** components.
 
 {{< image src="images/posts/swiftui_cs7_2.png" alt="Boarding Pass Components structure">}}
 
-## Text and color custom components
+# Text and color custom components
 
 We are now going to make some custom components that will facilitate the development of the interface.
 
-### Custom colors
+## Custom colors
 The first of them will be to introduce the two colors that we can see that, along with white, appear in the interface: one orange and the other gray. What we will do is take these colors and [create them in the Assets](https://raulferrer.dev/blog/create_color_palette/), and then introduce them into the application code.
 
 ```swift
@@ -39,7 +39,7 @@ extension Color {
 ```
 Where *grayText* and *orangeBar* are the names we have assigned to those colors in Assets.
 
-### Custom text
+## Custom text
 In the case of the text, we see that it is the same font (in our case we will use the system one), and that only its size, weight and color change. Therefore, we can create a component (**CustomText**) to which we will pass those values together with the text, which will allow us to simplify the code of the view.
 
 ```swift
@@ -57,7 +57,7 @@ struct CustomText: View {
     }
 }
 ```
-## User Interface development
+# User Interface development
 To better organize the code, each of the parts that make up this interface will be created as variables and then we will include them all in the body. Thus, the body of the application would have the following form:
 
 ```swift
@@ -84,7 +84,7 @@ struct ContentView: View {
 ```
 Where *topLeftBar*, *nameView*, *flightInfoView*, *codeBar*, *topRightBar*, *cardNameView*, and *cardFlightInfoView* are the diferent parts of the UI.
 
-### topLeftBar
+## topLeftBar
 This component is basically an orange stripe. Is an **HStack** with a **VStack** (with an image and a text) on the left, and a **VStack** with two texts on the right. The space between is achieved with a **Spacer**.
 
 ```swift
@@ -130,7 +130,7 @@ var nameView: some View {
 }
 ```
 
-### flightInfoView
+## flightInfoView
 This component, positioned at the middle, is a **VStack** with several **CustomText** components inside (contains the departure flight info). We have used Group in order to allow the VStack to hold more than 10 elements inside:
 
 ```swift
@@ -159,7 +159,7 @@ var flightInfoView: some View {
 }
 ```
 
-### codeBar
+## codeBar
 
 This is the barcode for the Boarding pass. Is an **HStack** with an Image and a **CustomText**. The **CustomText** has been rotated -90º to put it vertically:
 
@@ -178,7 +178,7 @@ var codeBar: some View {
 }
 ```
 
-### topRightBar
+## topRightBar
 This component is as simple as a **CustomText** with backgorund color.
 ```swift
 var topRightBar: some View {
@@ -188,7 +188,7 @@ var topRightBar: some View {
 }
 ```
 
-### cardNameView
+## cardNameView
 This component, positioned at the left side, is a **VStack** with several **CustomText** components inside (contains the flight info):
 
 ```swift
@@ -205,7 +205,7 @@ var cardNameView: some View {
 }
 ```
 
-### cardFlightInfoView
+## cardFlightInfoView
 This component is somewhat more complex since it is made up of various **HStack** and **VStack** nested inside which there is a series of **CustomText** elements.
 
 ```swift
@@ -240,7 +240,7 @@ var cardFlightInfoView: some View {
     .background(Color.orangeBar)
 }
 ```
-## UI adjustment
+# UI adjustment
 Once we have created the different parts of the interface and we have inserted them into the *body*, the only thing left to do is adjust the spacing between these components so that they resemble the sample design as much as possible:
 
 ```swift
@@ -289,5 +289,5 @@ struct ContentView: View {
 ```
 {{< image src="images/posts/swiftui_cs7_3.png" alt="SwiftUI Boarding Pass">}}
 
-## Conclusion
+# Conclusion
 SwiftUI might make it difficult to create complex user interfaces, but with the right use of the containers and views provided by the framework, complex designs can be built with ease.

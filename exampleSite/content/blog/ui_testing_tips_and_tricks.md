@@ -9,14 +9,14 @@ draft: false
 
 **User interface (UI) [testing](https://raulferrer.dev/blog/intro_to_testing_in_swift/)** is a crucial step in the software development process that enables us to make sure the user interface of our program is accurate, dependable, and simple to use. The **XCUITest** framework will be used to demonstrate excellent **UI testing** in Swift in this article.
 
-## Why testing the UI?
+# Why testing the UI?
 **User interface (UI) testing** is important for a number of reasons:
 
 * **UI tests** assist us in identifying aesthetic and layout flaws that other types of tests might miss.
 * We may test an application from beginning to end using **UI tests**, emulating the user experience.
 * Regressions are more easily caught and existing functionality is not broken by UI changes thanks to **UI testing**.
 
-## Establishing an Xcode UI testing target
+# Establishing an Xcode UI testing target
 We must configure a **UI testing target** in Xcode before we can begin creating **UI tests** in Swift. Follow these steps to accomplish this:
 
 * Launch the Xcode project.
@@ -26,7 +26,7 @@ We must configure a **UI testing target** in Xcode before we can begin creating 
 * To build the **UI testing target**, click *Finish*.
 * The *Project Navigator* window will display both your application target and your UI testing target.
 
-## Writing UI test cases
+# Writing UI test cases
 The **XCUITest** framework is used to create UI test cases in Swift. A set of tools and APIs are provided by **XCUITest** for creating and performing **UI tests** in Xcode.
 
 We create a subclass of **XCTestCase** and add methods to the subclass that include our test code in order to write a **UI test case**. Typically, *test* word precedes these methods, as in *testExample()*.
@@ -61,7 +61,7 @@ In this example, we open the app and use the login form to enter test values int
 
 We can utilize the *Test* button in the Xcode toolbar or the *Command + U* keyboard shortcut to execute the **UI tests** in our test case. As indicated in the test case, Xcode will start the app and run the tests while interacting with the UI.
 
-## Guidelines for efficient UI testing
+# Guidelines for efficient UI testing
 Here are some pointers for creating efficient Swift **UI tests**:
 
 * Give your tests names that are illustrative. It will be simpler to comprehend what each test is checking as a result.
@@ -70,7 +70,7 @@ Here are some pointers for creating efficient Swift **UI tests**:
 * To confirm the UI's state, use **XCTAssert** statements. There are numerous ways to check if items contain the appropriate properties, including *exists*, *isSelected*, and *isHittable*, according to **XCTAssert**.
 * Make sure not to hardcode element identifiers. Instead, define distinct identifiers for UI elements using AccessibilityIdentifier, then utilize those identities to locate those elements in your tests. Your tests will be more resistant to UI changes as a result.
 
-## Best practices for UI testing
+# Best practices for UI testing
 Here are some Swift **UI testing** best practices:
 
 * Maintain focus in **UI tests**. One particular UI feature should be tested in a **UI test** at a time. A test shouldn't test several unrelated items at once.
@@ -79,7 +79,7 @@ Here are some Swift **UI testing** best practices:
 * Tests shouldn't be conducted on UI components that the user cannot see. Only aspects that the user can see and interact with should be subjected to UI testing.
 * Utilize a testing approach that is suitable for your application. Think about whether you want to test the UI at the integration level or at the unit level (testing individual components separately) (testing how elements work together).
 
-## Conclusion
+# Conclusion
 This post demonstrated how to create efficient Swift **UI tests** that make use of the **XCUITest** library. We learned how to locate and interact with UI elements using **XCUIElement** queries and actions, as well as how to use **XCTAssert** statements to confirm the UI's current state. We also discussed various UI testing best practices, such as maintaining isolated, focused tests and conducting user-centered testing.
 
 You can create trustworthy and efficient UI tests for your Swift applications by heeding these recommendations and utilizing the resources offered by the **XCUITest** framework.

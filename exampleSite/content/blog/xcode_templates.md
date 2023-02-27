@@ -14,7 +14,7 @@ When working with each of these patterns in some projects, I realized one of the
 
 But this is where **Xcode templates** come into play.
 
-## What are Xcode templates
+# What are Xcode templates
 
 Every time you create a new file in Xcode, a screen appears in which you have to select the type of file. When you select it, within the new file you will see some lines of code that make it easier for you to start working on that file.
 
@@ -39,17 +39,17 @@ That is, there is an import of UIKit, and then it generates the CustomButton cla
 
 In other words, **Xcode templates** are prewritten code that can be inserted into a project to quickly add new features or functionality.
 
-## What are the advantajes of the Xcode templates
+# What are the advantajes of the Xcode templates
 
 Some of the advantages of using Xcode templates are:
 * Save time and effort during the development process by reducing repetitive tasks and speeding up the overall process.
 * By reducing time on repetitive tasks, Xcode templates can help developers focus on the unique aspects of a project, freeing up time and improving overall productivity.
 * The fact that using this preset code can help reduce possible errors when programming.
 
-## How to create our own Xcode template
+# How to create our own Xcode template
 In addition to using the templates provided by Xcode, we can also create our own. But first, let's see what an Xcode template looks like.
 
-### Structure of an Xcode template
+## Structure of an Xcode template
 To see what a template is like in Xcode, we access the following folder (it is located inside the Xcode app itself): */Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/Source*
 
 If we now access the folder named *Swift File.xctemplate*, we can see two main files (we can also find a couple of .png files, which are the icons that are shown on the template selection screen):
@@ -64,17 +64,17 @@ import UIKIt
 
 > It must be taken into account that, although Xcode presents its templates in the mentioned folder, when creating our own it is better to do it outside the application, since when updating Xcode we would lose them. To do this, they are created in the folder *~/Library/Developer/Xcode/Templates/File Templates*.
 
-## Let's create our custom templates
+# Let's create our custom templates
 We are now going to create our own templates. For this we will take, as mentioned at the beginning, the architecture patterns VIPER and VIP.
 These architecture patterns work with numerous classes that communicate with each other through protocols, which makes it advisable to establish templates that already have all this repetitive code inside (and that, in many cases, we customize according to our project).
 The idea is to create a template that, just by entering the name of the screen that we want to create, generates all the necessary classes for us.
 
-### VIPER
+## VIPER
 VIPER is an architecture that divides application functionality into five components: View, Interactor, Presenter, Entity, and Router.
 It separates responsibilities within the app, using protocols to communicate between layers and adhering to the Single Responsibility and Interface Segregation Principles.
 The View displays information, the Interactor handles business logic, the Presenter acts as a link between components, the Entity is a simple object model, and the Router manages screen creation and navigation.
 
-#### The VIPER template
+### The VIPER template
 The first step will be to access the folder *~/Library/Developer/Xcode/Templates/File Templates* and create a new folder that we will name *VIPER.xctemplate*.
 
 For VIPER, I work with a template in which I have created five files:
@@ -99,7 +99,7 @@ In this file, together with the template description, we add the different files
 
 Now that we have this file, all we have to do is complete each of the created files with code. In the case of VIPER, I have customized this code based on the needs of the project.
 
-#### __FILEBASENAME__Protocols.swift
+### __FILEBASENAME__Protocols.swift
 ```swift
 //
 //  ___FILENAME___
@@ -132,7 +132,7 @@ protocol PresenterToInteractor___VARIABLE_moduleName___Protocol {
 protocol InteractorToPresenter___VARIABLE_moduleName___Protocol {}
 ```
 
-#### __FILEBASENAME__ViewController.swift
+### __FILEBASENAME__ViewController.swift
 ```swift
 //
 //  ___FILENAME___
@@ -157,7 +157,7 @@ class HomeViewController: UIViewController {
 }
 ```
 
-#### __FILEBASENAME__Presenter.swift
+### __FILEBASENAME__Presenter.swift
 ```swift
 //
 //  ___FILENAME___
@@ -174,7 +174,7 @@ class ___VARIABLE_moduleName___Presenter: ViewToPresenter___VARIABLE_moduleName_
 }
 ```
 
-#### __FILEBASENAME__Interactor.swift
+### __FILEBASENAME__Interactor.swift
 ```swift
 //
 //  ___FILENAME___
@@ -190,7 +190,7 @@ class ___VARIABLE_moduleName___Interactor: PresenterToInteractor___VARIABLE_modu
 }
 ```
 
-#### __FILEBASENAME__Router.swift
+### __FILEBASENAME__Router.swift
 ```swift
 //
 //  ___FILENAME___
@@ -225,7 +225,7 @@ And when selecting it, we can indicate the name of the module (in this case Logi
 {{< image src="images/posts/xcode_templates_3.png" alt="Xcode VIPER Module classes creation">}}
 
 
-### VIP
+## VIP
 The VIP architecture is a software design pattern in which data flows unidirectionally between the View, Interactor, and Presenter in a cycle.
 The View is in charge of managing the scene and communicating events to the Interactor, the Interactor is in charge of business logic and data retrieval, and the Presenter converts information received from the Interactor into data that the View can display. The Router is an optional component that is responsible for navigating between view controllers and passing information, and depending on the complexity of the screen, the Model and Worker components may also be present.
 
@@ -252,7 +252,7 @@ Along with the new *TemplateInfo.plist*, we can put all these files in a folder 
 
 For VIP based projects, I have customized a template with the following code (but remember, it depends on the project we are working on and can be customized as needed).
 
-#### __FILEBASENAME__Configurator.swift
+### __FILEBASENAME__Configurator.swift
 ```swift
 //
 //  ___FILENAME___
@@ -278,7 +278,7 @@ final class ___VARIABLE_sceneName___Configurator {
 }
 ```
 
-#### __FILEBASENAME__ViewController.swift
+### __FILEBASENAME__ViewController.swift
 ```swift
 //
 //  ___FILENAME___
@@ -318,7 +318,7 @@ extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewCo
 extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewDelegate {}
 ```
 
-#### __FILEBASENAME__View.swift
+### __FILEBASENAME__View.swift
 ```swift
 //
 //  ___FILENAME___
@@ -346,7 +346,7 @@ final class ___VARIABLE_sceneName___View: UIView {
 }
 ```
 
-#### __FILEBASENAME__Presenter.swift
+### __FILEBASENAME__Presenter.swift
 ```swift
 //
 //  ___FILENAME___
@@ -366,7 +366,7 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterIn
 
 ```
 
-#### __FILEBASENAME__Interactor.swift
+### __FILEBASENAME__Interactor.swift
 ```swift
 //
 //  ___FILENAME___
@@ -386,7 +386,7 @@ final class ___VARIABLE_sceneName___Interactor {
 extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___InteractorInput {}
 ```
 
-#### __FILEBASENAME__Router.swift
+### __FILEBASENAME__Router.swift
 ```swift
 //
 //  ___FILENAME___
@@ -405,7 +405,7 @@ extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterDelegate
 
 ```
 
-#### __FILEBASENAME__Model.swift
+### __FILEBASENAME__Model.swift
 ```swift
 //
 //  ___FILENAME___
@@ -432,5 +432,5 @@ And when selecting it, we can indicate the name of the module (in this case Logi
 
 {{< image src="images/posts/xcode_templates_5.png" alt="Xcode VIP Module classes creation">}}
 
-## Conclusion
+# Conclusion
 Finally, using **Xcode templates** can greatly simplify the development process and eliminate repetitive tasks. Developers can save time, increase efficiency, and ensure consistency across projects by creating custom templates. Using Xcode templates to increase productivity and maintain high-quality code is a must-have tool for developers.

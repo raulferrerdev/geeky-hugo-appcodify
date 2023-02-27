@@ -14,7 +14,7 @@ In SwiftUI, methods called **view modifiers** can be chained to views to change 
 
 A view modifier can be used, for instance, to modify the typeface or add a shadow to a view. Modifiers of the view are written in the form. In order to make many changes to a single view, you can chain together several view modifiers using *.modifierName()*. Let's see some of the most used.
 
-## .background(_:)
+# .background(_:)
 The *.background* modifier allows us to add one view as the background of another. The simplest example, and which is usually the use that is given the most, is to add a background color. For example:
 
 ```swift
@@ -31,7 +31,7 @@ Text("Hello, world!")
 ```
 > According to [Apple documentation](https://developer.apple.com/documentation/swiftui/view-deprecated), the *background(_:alignment:)* method is deprecated as of iOS 16.2. *background(alignment:content)* should be used.
 
-## .foregroundColor(_:)
+# .foregroundColor(_:)
 The *.foregroundColor* modifier allows us to set the style of the elements that we put in the foreground, such as text, symbols or shapes.
 
 ```swift
@@ -59,7 +59,7 @@ Rectangle()
     .fill(Color.red)
     .frame(width: 200, height: 100)
 ```
-## .offset(_:)
+# .offset(_:)
 *.offset* is a modifier that allows us to move a view relative to its original position. For example, the red rectangle in the previous example appears in the center of the screen. If we apply an offset(x: 100, y: 100), it will move 100 points to the right and 100 points down.
 
 ```swift
@@ -83,7 +83,7 @@ Every time we touch the red rectangle, the action *print("Hi!")* will be execute
 
 
 
-## .opacity(_:)
+# .opacity(_:)
 The *.opacity* modifier assigns transparency to a view. It is assigned a value from 0 (fully transparent) to 1 (opaque).
 So, if we use the following code:
 
@@ -116,7 +116,7 @@ VStack {
 ```
 What we see is how the icon is above the text and aligned to its left.
 
-## .padding(_:)
+# .padding(_:)
 
 With *.padding* we can indicate the space between a view and the border of the view that contains it. That is, it allows us to add a margin around the view. For example:
 ```swift
@@ -139,7 +139,7 @@ Or specify a different one for each side:
 Text("Hello, world!").padding(.init(top: 10, leading: 15, bottom: 5, trailing: 50))
 ```
 
-## .rotationEffect(_:)
+# .rotationEffect(_:)
 
 We can rotate a view using the *.rotationEffect* modifier. For example, we can flip the text 'Hello, world!' as follows:
 ```swift
@@ -153,7 +153,7 @@ Text("Hello, world!")
             .rotationEffect(.radians(.pi))
 ```
 
-## .scaleEffect(_:)
+# .scaleEffect(_:)
 *.scaleEffect* allows us to resize a view, either by making it bigger or smaller.
 For example, to multiply the size of *'Hello, world!'* by 2.5:
 ```swift
@@ -172,7 +172,7 @@ Text("Hello, world!")
 ```
 In this case, we scale the text from the top left.
 
-## Modifiers order
+# Modifiers order
 When we are going to apply different modifiers to the same view, we must take into account in which order we apply them. If we think that each time we apply a modifier it is as if we were creating a new view, we will apply (from top to bottom) each modifier to the view that is generated with the previous modifier.
 
 For example:

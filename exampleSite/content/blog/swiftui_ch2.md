@@ -23,7 +23,7 @@ If we add, for example, 11 Text elements in a VStack, due to this limitation  in
 In order to introduce more than 10 views within a VStack, an HStack, we can use different strategies.
 
 
-## Group
+# Group
 
 In SwiftUI, the **Group** view is a container that wraps a group of views and allows you to apply layout and styling to them as a unit. The Group view does not have any visual effect on its own; it is simply a way to group views together and apply layout and styling to them.
 
@@ -54,7 +54,7 @@ struct ContentView: View {
 }
 ```
 
-## ForEach
+# ForEach
 
 Another way to add more than 10 elements is to use **ForEach** (not to be confused with Swift's *forEach()* method). **ForEach** is a struct the type **View** itself, that is, of the same type as **VStack** or **Group**, which allows us to add views dynamically.
 **ForEach** works by supplying you with:
@@ -79,7 +79,7 @@ SwiftUI is instructed to utilize the entire object as the identifier by using th
 
 In the last method, it's critical to ensure that each value in the array is distinct because, if not, **ForEach** might improperly reuse the resulting views.
 
-## List
+# List
 **List** is an element, also of type View, that allows us to display a large number of elements in a vertical stack. The List view is specifically designed to display a large number of items, but adding scrolling support and optimizing performance.
 ```swift
 struct ContentView: View {

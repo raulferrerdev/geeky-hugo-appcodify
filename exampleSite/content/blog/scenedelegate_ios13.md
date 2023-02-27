@@ -7,9 +7,12 @@ tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-When we run an application on iOS, the first function called is *(_: didFinishLaunchingWithOptions:)* in the AppDelegate. In the AppDelegate we can also find a series of functions that are executed when the state of the application changes (going to the background, returning to the foreground, etc.). With Xcode 11, a new SceneDelegate class appears when generating a new project. But, what is the function of SceneDelegate in iOS 13. Now, in the **SceneDelegate** class in iOS 13 the concept of window (window) has been changed to [scene](https://developer.apple.com/documentation/uikit/app_and_environment/scenes), since now an application can have more than one scene . That is, we can open two or more windows of the same application and interact with each other.
+When we run an application on iOS, the first function called is *(_: didFinishLaunchingWithOptions:)* in the AppDelegate. In the AppDelegate we can also find a series of functions that are executed when the state of the application changes (going to the background, returning to the foreground, etc.).
 
-#### Functions of the SceneDelegate class
+# What's the SceneDelegate class?
+With Xcode 11, a new SceneDelegate class appears when generating a new project. But, what is the function of SceneDelegate in iOS 13. Now, in the **SceneDelegate** class in iOS 13 the concept of window (window) has been changed to [scene](https://developer.apple.com/documentation/uikit/app_and_environment/scenes), since now an application can have more than one scene . That is, we can open two or more windows of the same application and interact with each other.
+
+## Functions of the SceneDelegate class
 
 The main function in the SceneDelegate class is:
 

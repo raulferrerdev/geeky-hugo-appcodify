@@ -8,12 +8,12 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 In previous articles we had seen how to improve the architecture of our code through [design patterns](https://codderlly.com/blog/design_patterns_software/) and the use of [SOLID principles](https://raulferrergarcia.netlify.app/blog/solid_principles_swift/). Now we will see how to improve the Swift code with higher order functions. Surely you have used them more than once, but what are they and how do you improve your Swift code with higher order functions?
-## Swift higher order functions
+# Swift higher order functions
 
 Higher-order functions are functions that take other functions or closures as arguments and that return a function or a closure. These functions are used with arrays, sets and dictionaries, and act on the elements they contain (this is done by methods that are applied to the elements of the collection using the point syntax).
 
 Some of the best-known functions are **map**, **compactMap**, **flatMap**, **reduce**, **filter**, **contains**, **sorted**, **forEach** or **removeAll**.
-### map
+## map
 
 The map function works by performing an operation on all the elements of a collection and returning a new collection with the results of that operation.
 
@@ -57,7 +57,7 @@ Anyway, we can reduce this expression by using the shorthand argument **$0**, wh
 let uppercasedWords = words.map({ $0.uppercased() })
 ```
 
-### compactMap
+## compactMap
 
 Now suppose that inside the array of the previous example there are nil values. If we use the **map** function, we must take into account whether the value to be acted on is nil or not:
 
@@ -95,7 +95,7 @@ let uppercasedWords = words.compactMap {&nbsp;$0.uppercased() }
 ```
 
 In other words, **compactMap** loops through all the elements of the array and applies the method to non-nil values, returning them in an array, in this case of type [String] (that is, the value of String is not optional).
-### flatMap
+## flatMap
 
 The **flatMap** function allows us to transform a set of arrays into a single set that contains all the elements. As Apple declares in its [documentation](https://developer.apple.com/documentation/swift/sequence/2905332-flatmap):
 
@@ -130,7 +130,7 @@ let singleArray = words.flatMap { $0 }
 // singleArray = ["room", "home", "train", "green", "heroe"]
 ```
 
-### reduce
+## reduce
 
 [reduce](https://developer.apple.com/documentation/swift/array/2298686-reduce) is a function that, when applied to a collection, returns the result of combining the elements of that collection:
 
@@ -175,7 +175,7 @@ In a more simplified way we can write:
 let sum = numbers.reduce(0, { $0 + $1 })
 ```
 
-### filter
+## filter
 
 As its name suggests, the [filter](https://developer.apple.com/documentation/swift/sequence/3018365-filter) function filters the content of a collection and returns a new collection that contains the elements that meet a certain condition:
 
@@ -225,7 +225,7 @@ let worthWithO = words.filter { $0.contains("o") && $0.count >= 5 }
 // worthWithO = ["heroe"]
 ```
 
-### contains
+## contains
 
 In the previous example we have used the contains function to determine if a word contained the vowel ‘o’. Well, **contains** is a higher-order function that allows you to check if there are elements that meet a certain condition and return true or false depending on whether or not they meet it.
 
@@ -235,7 +235,7 @@ As Apple indicates in its [documentation](https://developer.apple.com/documentat
 func contains(_ element: Element) -> Bool
 ```
 
-### sorted
+## sorted
 
 On numerous occasions we find a collection of elements that we want to order in some way to show them. For example, in the word array examples seen so far, those words are not arranged alphabetically.
 
@@ -344,7 +344,7 @@ words.forEach({ word in
 // heroe
 ```
 
-### removeAll
+## removeAll
 
 The higher order function [removeAll(where:)](https://developer.apple.com/documentation/swift/array/3017530-removeall) allows us to remove elements from a sequence that meet certain conditions:
 
@@ -375,7 +375,7 @@ phrase.removeAll(where: { vowels.contains($0) })
 // phrase == "Th rn n Spn stys mnly n th pln."
 ```
 
-### Function concatenation
+## Function concatenation
 
 The first-order functions can be applied consecutively, concatenated. For example, we can take an array containing arrays of numbers and calculate their sum:
 
@@ -390,6 +390,6 @@ let sum: Int = numbers
 ```
 
 First we apply the **flatMap** function to obtain an array with all the numbers. Then we apply the **reduce** function to add them.
-## Conclusion
+# Conclusion
 
 We have just seen some of the most commonly used higher order functions and their power using some examples. These functions allow, on the one hand, to reduce the amount of code and, on the other, to make it clearer and more concise.

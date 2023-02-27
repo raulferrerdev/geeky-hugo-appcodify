@@ -7,6 +7,8 @@ tags: ["Development", "Code", "MetricKit"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
+# What's MetricKit?
 **MetricKit** in a new framework, introduced in iOS 13 (WWDC2019), with which it is intended to gather information (metrics) about battery behavior and application performance. For a registered application, reports on the behavior of said application will be received once a day as a general rule.
 ## Battery
 

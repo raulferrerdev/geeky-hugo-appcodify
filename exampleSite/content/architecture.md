@@ -10,6 +10,10 @@ course:
   enable: true
   title: "Software Architecture"
   course_list:
+  - name: "Access Control in Swift"
+    content: "Access control is a powerful feature in Swift that allows us to control the visibility of our types and members while also creating a clear and well-defined interface with which other parts of your code or modules can interact."
+    url: "https://raulferrer.dev/blog/swift_access_control/"
+    date: 2023-02-27
   - name: "Dependency injection in Swift"
     content: "If you use dependency injection, your application code will become more decoupled, testable, and scalable. In this post they explained what Dependency Injection is and its types."
     url: "https://raulferrer.dev/blog/dependency_injection_swift/"
