@@ -4,8 +4,8 @@ description: "In Swift, closures can create strong reference cycles that lead to
 date: 2023-03-03
 categories: ["Swift"]
 tags: ["Development", "Code"]
-image: "https://drive.google.com/uc?id=14gxuTvOLzWNzsy7gvFS4yt6dIddPxPiF"
-draft: true
+image: "https://drive.google.com/uc?id=1rs1UkKnANeO03Y5sVzfR35k_wgjJ_--i"
+draft: false
 ---
 
 # Introduction

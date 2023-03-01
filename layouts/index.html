@@ -38,6 +38,43 @@
 {{ end }}
 <!--=================== banner section end ===================-->
 
+
+{{ with site.Params.promo }}
+{{ if .enable }}
+<section class="section">
+  <div class="container">
+    <div class="border pt-4 pb-4 rounded">
+      <div class="row align-items-center flex-column-reverse flex-lg-row">
+        <div class="col-lg-12 mb-5 mb-lg-0">
+          {{ with .title_large }}<h1 class="banner-title mb-0">{{ . | markdownify }}</h1>{{ end }}
+        </div>
+        <div class="col-lg-7 mb-5 mb-lg-0" style="padding-left: 50px;">
+          {{ with .title_small }}<h2 class="h2 fw-normal mb-4">{{ . | markdownify}}</h2>{{ end }}
+          <p class="mb-4 fs-7 text-light-600">{{.content | markdownify}}</p>
+          {{ if .button_label }}
+          <a href="{{ .button_link | absURL }}" class="btn btn-primary">{{ .button_label }}</a>
+          {{ end }}
+        </div>
+        {{ with .image }}
+        <div class="col-lg-5 col-sm-8 col-9 mx-auto mb-5 mb-lg-0">
+          {{ $image:= resources.Get . }}
+          {{ $imageWidth:= add (string $image.Width) "x"}}
+          {{ $options := add (string $imageWidth) " webp" }}
+          {{ $imageWebp:= $image.Resize $options }}
+          <a href="https://a.co/d/06jq7Ih">
+          <img decoding="async" width="{{$image.Width}}" height="{{$image.Height}}"
+            src="{{ $imageWebp.RelPermalink }}" onerror="this.onerror=null;this.src='{{$image.RelPermalink}}'"
+            alt="banner-img" class="img-fluid">
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
 <!--=================== blog section start ===================-->
 <section class="section">
   <div class="container">
