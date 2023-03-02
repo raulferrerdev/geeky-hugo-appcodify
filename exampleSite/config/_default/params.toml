@@ -30,6 +30,12 @@ featured_post_title = "Featured Post"
 mainSections = ["blog"]
 # about widget content
 about_widget_content = "I'm **Raúl Ferrer** a Mobile Tech Lead & iOS Engineer. I like to write and explain about everything I learn."
+# promo widget content
+promo_widget_title = "iOS Architecture Patterns"
+promo_widget_subtitle = "Learn the **most on demand iOS Architectures**: MVC, MVP, MVVM, VIPER, and VIP."
+promo_widget_image = "images/promo.png"
+promo_widget_button = "I want to boost my career!"
+
 # footer content
 #footer_content = "Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus laoreet. Libero ullam rgscper."
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
@@ -61,7 +67,7 @@ enable = true
 title_small = "**iOS Architecture Patterns: MVC, MVP, MVVM, VIPER, and VIP in Swift**"
 image = "images/promo.png"
 content = "Ready to level up your iOS development skills? Look no further than **iOS Architecture Patterns: MVC, MVP, MVVM, VIPER, and VIP in Swift**. This comprehensive guide covers five of the most popular architecture patterns in the industry and how to implement them in your Swift projects. With clear explanations, code examples, and practical advice, you'll learn how to design and build iOS apps that are scalable, maintainable, and easy to test. Whether you're a beginner or an experienced developer, **iOS Architecture Patterns** will help you take your coding skills to new heights. Get your copy now and start building better apps with Swift today!"
-button_label = "Buy now!"
+button_label = "I want to boost my career!"
 button_link = "https://a.co/d/06jq7Ih"
 
 # Advertise
@@ -84,15 +90,13 @@ link = "architecture/"
 # cookies
 [cookies]
 enable = true
-expire_days = 2
+expire_days = 15
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
 ######################## sidebar widgets #########################
 [widgets]
-sidebar = ["sections", "about", "categories"] #, "recent-post", "newsletter"
-# available widget : about,categories,newsletter,recent-post
-
+sidebar = ["bookpromo", "sections", "about", "categories"]
 
 # Subscription
 [subscription]
