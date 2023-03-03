@@ -1,6 +1,6 @@
 ---
 title: "Understanding Weak and Unowned References in Swift Closures"
-description: "In Swift, closures can create strong reference cycles that lead to memory leaks and prevent objects from being deallocated from memory. To avoid this, we can use weak and unowned references in closures to create safe and efficient code. This article explains how to use [weak self] and [unowned self] to create weak references in closures, and provides examples of when to use each one."
+description: "In Swift, closures can create strong reference cycles that lead to memory leaks and prevent objects from being deallocated from memory. To avoid this, we can use weak and unowned references in closures to create safe and efficient code. This article explains how to use [weak self] and [unowned self] to create weak references in closures, and provides examples of when to use each one. "
 date: 2023-03-03
 categories: ["Swift"]
 tags: ["Development", "Code"]
