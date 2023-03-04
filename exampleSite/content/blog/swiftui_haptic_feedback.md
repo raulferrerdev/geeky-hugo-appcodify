@@ -1,5 +1,5 @@
 ---
-title: "Adding Haptic Feedback in SwiftUIs"
+title: "Adding Haptic Feedback in SwiftUI"
 description: "In this tutorial, we'll explore how to create a custom view modifier in SwiftUI that adds haptic feedback. We'll see how to use the UIImpactFeedbackGenerator, UINotificationFeedbackGenerator, and UISelectionFeedbackGenerator to provide tactile responses to user interactions."
 date: 2023-03-04
 categories: ["SwiftUI", "Design"]
