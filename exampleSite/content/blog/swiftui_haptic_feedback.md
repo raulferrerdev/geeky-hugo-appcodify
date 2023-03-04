@@ -4,7 +4,7 @@ description: "In this tutorial, we'll explore how to create a custom view modifi
 date: 2023-03-04
 categories: ["SwiftUI", "Design"]
 tags: ["Development", "Code"]
-image: "https://drive.google.com/uc?id=1YjjmUR9RLPduOd74THQVgKsqB7D8XKug"
+image: "https://drive.google.com/uc?id=11AznL5JKLNaxDDl52oazasuCrsZqOtz-"
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
