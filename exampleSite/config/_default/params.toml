@@ -9,13 +9,15 @@ logo_width = "200x"
 author = "Raúl Ferrer"
 recent_post_title = "Recent Posts"
 # logo text will only show when logo is missing.
-logo_text = "App{Codify}"
+logo_text = "RaúlFerrer{Dev}"
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata
 image = "https://drive.google.com/uc?id=1fgY4h4t_CAiRmTKkd6t9BNGyO06NskU_"
 title = "RaúlFerrer{Dev}"
-description = "Become a Better Software Developer at Raúl Ferrer Dev."
+description = "Raúl Ferrer is a mobile tech lead and senior iOS developer with more than 10 years of experience. Learn more about his projects, skills and services on his website."
+keywords = "Raúl Ferrer, mobile tech lead, ios engineer, ios developer, swift, swiftui, flutter, dart, solid, author, ios architecture patterns, clean code"
+
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"

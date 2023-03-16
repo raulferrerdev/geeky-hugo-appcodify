@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://raulferrer.dev/"
-title = "Raúl Ferrer | Craftsmanship Code"
+title = "Raúl Ferrer - Mobile Tech Lead & Senior iOS Developer"
 theme = "geeky-hugo"
 languageName = "En"
 languageCode = "en-us"
