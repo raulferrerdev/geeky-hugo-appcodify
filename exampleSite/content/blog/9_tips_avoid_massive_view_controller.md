@@ -1,6 +1,6 @@
 ---
-title: "9 Tips for Avoiding Massive View Controllers in MVC-Based Swift Apps"
-description: "Learn how to avoid having massive view controllers in MVC-based Swift apps with these 9 tips for keeping your code well-organized, maintainable, and scalable."
+title: "9 Tips to Avoid Massive View Controllers in Swift"
+description: "Learn how to avoid Massive View Controllers in Swift apps with these 9 tips for keeping your code well-organized, maintainable, and scalable."
 date: 2020-01-23
 categories: ["Architecture", "Swift"]
 tags: ["Development"]
@@ -10,7 +10,7 @@ draft: false
 
 The **[Model-View-Controller](https://raulferrer.dev/blog/architecture_patterns_ios/)** (**MVC**) design pattern is a basic component of creating app user interfaces, as any iOS developer is aware. However, when an app becomes more complicated, it's not unusual for view controllers to get huge and cumbersome. This can make the code difficult to comprehend and maintain and cause a number of issues, including lengthy build times and poor performance.
 
-# Model-View-Controller components
+# Model-View-Controller (MVC) components
 First of all, let's remember which components make up the Model-View-Controller pattern and what their functions are.
 
 ## Model
@@ -34,10 +34,10 @@ The **Controller** serves as a liaison between the **Model** and the **View**:
 * If the model's data changes, the view is updated to reflect those changes.
 * It looks after the application's life cycle.
 
-# Tips to avoid Massive-View-Controllers
+# Tips to avoid Massive View Controllers
 We'll look at various tactics for avoiding large view controllers in MVC-based programs in this post. Your codebase will be easier to maintain and scale if you use these strategies to keep your view controllers compact, tidy, and understandable.
 
-## 1. Set distinct classes for view controller and  logic
+## 1. Set distinct classes for view controller and logic
 The fact that view controllers frequently end up managing a broad range of duties unrelated to their primary function is one common cause of their size. A view controller, for instance, might be in charge of networking duties, data formatting, or business logic.
 
 Consider separating the functionality that is not directly connected to the view controller's primary duties into different classes to prevent this. You might develop a manager class to manage networking operations or a helper class to format data, for instance. By doing so, you'll be able to divide up the functionality into smaller, simpler-to-manage chunks, which will also make the code easier to comprehend and maintain.
