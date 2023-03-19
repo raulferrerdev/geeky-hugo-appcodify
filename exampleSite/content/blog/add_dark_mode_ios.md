@@ -1,22 +1,23 @@
 ---
-title: "How to add Dark Mode in iOS 13"
-description: "Find out how to add 'Dark mode' to your iOS apps. Learn to adapt them and use adaptive colors."
+title: "How to add Dark Mode in iOS 13 (set iPhone background black)"
+description: "Find out how to add Dark mode to your iOS apps. Learn to adapt them and use adaptive colors."
 date: 2022-12-04
 categories: ["Swift", "Design"]
 tags: ["Development"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-Surely you have heard of **Dark Mode** on iOS 13, that is, a mode in which the color range of the user interface darkens. This allows, among other things, to improve visibility in places with low light and reduce the energy consumption of applications (dark colors use less energy than light ones).
+
+## Set iPhone background black and keep visibility
+Surely you have heard of **Dark Mode** on iOS 13, that is, a mode in which the color range of the user interface darkens. This allows, among other things, to improve visibility in places with low light and reduce the energy consumption of applications (dark colors use less energy than light ones). For example, we can set our iPhone background black (as using dark mode), and then, the foreground color will change to white.
 
 Although some applications already included a Dark Mode in their interface, it was not until the publication of iOS 13 and iPadOS, that the Dark Mode was included in the configuration of the device itself.
-To change to Dark
 
-# Adapt applications to Dark Mode
+## Adapt applications to Dark Mode
 
 To adapt an application to Dark Mode we must work with Xcode 11 and iOS 13. In addition, we must modify the colors and images used in the application.
 
-## Use adaptive colors
+### Use adaptive colors (create dark mode color palette)
 
 Colors that adapt automatically to the style of the interface should be used. For this we have two possibilities:
 
@@ -31,7 +32,7 @@ To use these colors, for example, from the code, just write:
 
 - Or if we are in the Interface Builder, select it in the color attribute of the component we want to color.
 
-## Define custom colors
+### Define custom colors
 
 As we saw in [How to create a color palette (Color Assets) in Xcode](https://raulferrer.dev/blog/create_color_palette/), we can define our own color palette in Xcode, so that we can call from any point of the application to these colors (both from the code and from the Interface Builder)
 
@@ -39,7 +40,7 @@ To do this, we select the Assets.xcassets folder (or creating our own .xcassets 
 
 Then we right-click, select New Color Set and change its attributes to generate the new color.
 
-## Two versions of the same color
+### Two versions of the same color
 
 But now we must generate two versions of the same color: the version of the light or default mode and that of the dark mode.
 
