@@ -1,6 +1,6 @@
 ---
-title: "How to automatize the deployment of iOS applications with Bitrise"
-description: "Learn how to automate the deployment of your applications through the Bitrise platform. CI/CD at your fingertips."
+title: "Continuous integration and continuous delivery (CI CD) with Bitrise"
+description: "Learn how to automate Continuous integration and continuous delivery of your applications through the Bitrise platform. CI CD at your fingertips."
 date: 2020-04-28
 categories: ["Deployment"]
 tags: ["CI/CD"]
@@ -8,18 +8,19 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 
-One of the main problems that a team of developers working on the same project usually encounters is the fact that, when the code of each one of them is merged, conflicts between different developers’ code, errors, etc. can occur, which makes this process slow. To solve this point, Integration and continuous distribution comes into action to automate the deployment of applications. In this article we are going to learn how to automatize the deployment of iOS applications with Bitrise.
-# Introduction
+## Continuous integration and continuous delivery (CI CD)
+One of the main problems that a team of developers working on the same project usually encounters is the fact that, when the code of each one of them is merged, conflicts between different developers’ code, errors, etc. can occur, which makes this process slow. To solve this point, **continuous integration and continuous delivery** comes into action to automate the deployment of applications. In this article we are going to learn how to automatize the deployment of iOS applications with Bitrise.
+## Introduction
 
-In a previous article we already saw what Continuous Integration (CI), Continuous Delivery (CD) and Continuous Deployment (CD) are, and how it could be done with a new GitHub tool: [GitHub Actions](https://github.com/features/actions).
+In a previous article we already saw what Continuous Integration is (CI), what Continuous Delivery (CD) is, and  alos, what Continuous Deployment (CD) is, and how it could be done with a new GitHub tool: [GitHub Actions](https://github.com/features/actions).
 
 In summary:
 
-* **Continuous Integration**. Continuous integration (CI) allows different developers to upload and merge code changes in the same repository branch on a frequent basis. Once the code has been uploaded, it is validated automatically by means of unit and integration tests (both the uploaded code and the rest of the components of the application). In case of an error, this can be corrected more simple.
+* **Continuous Integration**. Continuous integration is a technology that allows different developers to upload and merge code changes in the same repository branch on a frequent basis. Once the code has been uploaded, it is validated automatically by means of unit and integration tests (both the uploaded code and the rest of the components of the application). In case of an error, this can be corrected more simple.
 * **Continuous Delivery**. In the Continuous Delivery (CD) the new code introduced and that has passed the Continuous Integration process is automatically published in a production environment (this implementation may require manual approval). What is intended is that the repository code is always in a state that allows its implementation in a production environment.
 * **Continuous Deployment**. In Continuous Deployment (CD), all changes in the code that have gone through the previous two stages are automatically implemented in production.
 
-# Use of Bitrise
+## Use of Bitrise
 
 As it was seen in the article that we have commented before, there are numerous tools to configure and carry out the entire process of continuous integration and distribution ([Jenkins](https://jenkins.io/), [CircleCI](https://circleci.com/),[ Visual Studio App Center](https://appcenter.ms/)…). In this case we will see how [Bitrise](https://www.bitrise.io/) works.
 
@@ -34,7 +35,7 @@ Bitrise is a paid tool, but there is a free version for us to try:
 {{< image src="images/posts/automatize_deployment_bitrise_1.png" alt="Bitrise">}}
 
 
-## Bitrise registration
+### Bitrise registration
 
 Registration at Bitrise is easy. We simply go to their website, and select ‘Get Started for Free‘:
 {{< image src="images/posts/automatize_deployment_bitrise_2.png" alt="Bitrise">}}
@@ -48,7 +49,7 @@ In this case we will use the registry through GitHub, since it will be the repos
 
 Once registered, a screen will appear indicating that we have not added any application yet and invites us to do so.
 {{< image src="images/posts/automatize_deployment_bitrise_5.png" alt="Bitrise">}}
-## Add an application to Bitrise
+### Add an application to Bitrise
 
 In order to test Bitrise, we first create a project in Xcode (which we will call BitriseTest) and upload it to a repository (in this case, [GitHub](https://github.com/raulferrerdev/BitriseTest)). It is important to edit the schema and activate the ‘Shared‘ option, which will avoid validation problems later when adding the application to Bitrise. In addition, when creating the project we will select the unit tests box, which will allow us to test the workflow with Bitrise when any test fails.
 {{< image src="images/posts/automatize_deployment_bitrise_6.png" alt="Bitrise">}}
@@ -86,7 +87,7 @@ When we select to add an application, we are shown a series of steps that must b
 
 
 As can be seen, the compilation of has produced without errors, since it is a simple project to which no unit tests had been added. Let’s see what happens now if we add a couple of simple unit tests.
-## Adding unit tests
+### Adding unit tests
 
 We are going to carry out a couple of simple tests, which will be based on testing a data model. To do this we create a new file in the project that we will call BitriseModel.swift, and that will contain the following code:
 ```swift
@@ -151,7 +152,7 @@ If, after the last step, we access the Bitrise console, we can see how a compila
 When it finishes, we see that the compilation of the project has given no errors and that all the tests have been passed.
 {{< image src="images/posts/automatize_deployment_bitrise_20.png" alt="Bitrise">}}
 
-## Failed tests
+### Failed tests
 
 Let’s see what happens now if one of the unit tests gives an error, for this we modify the first of the tests, and instead of checking that the username field is not empty, we will check that it is empty (we remove the ! sign in front of model.username.isEmpty. We run the tests in Xcode and note that indeed that test fails:
 {{< image src="images/posts/automatize_deployment_bitrise_21.png" alt="Bitrise">}}
@@ -166,7 +167,7 @@ If we now select the compilation, the process log is displayed, where we can see
 {{< image src="images/posts/automatize_deployment_bitrise_24.png" alt="Bitrise">}}
 {{< image src="images/posts/automatize_deployment_bitrise_25.png" alt="Bitrise">}}
 
-## Workflow review
+### Workflow review
 
 But what has happened during this workflow? To check it, we scroll to the bottom of the page that shows us the log of the process, and select the Open Workflow Editor button, which is on the left.
 
@@ -185,7 +186,7 @@ We can modify any of these processes simply by selecting the buttons with the �
 {{< image src="images/posts/automatize_deployment_bitrise_28.png" alt="Bitrise">}}
 
 On this page, in addition to modifying existing workflows, we can create new ones.
-# Deploying applications with Bitrise
+## Deploying applications with Bitrise
 
 We have just seen that, by default, there are two types of workflow: the primary one (which is the one that has been used to test the unit tests) and the deployment one. Let’s focus on the latter and see how we can automatically deploy an app on iTunes Connect.
 
@@ -223,16 +224,16 @@ The deployment process is as follows:
 
 {{< image src="images/posts/automatize_deployment_bitrise_35.png" alt="Bitrise">}}
 
-## Adding certificates
+### Adding certificates
 
 Once we have modified the workflow for the application deployment, we go to the Code Signing tab (which is located next to the Workflows tab). At this point we must add certificates; we simply have to follow the steps that Bitrise tells us.
 
 {{< image src="images/posts/automatize_deployment_bitrise_36.png" alt="Bitrise">}}
 
-## Secrets and environment variables
+### Secrets and environment variables
 
 In these two tabs we find (and we can edit or create new ones) some of the variables that we use in the process.
-## Triggers
+### Triggers
 
 Although you can run workflows manually in Bitrise, triggers automatically runs workflows. For example, a trigger might be to push a certain branch of a repository. In Bitrise you can define triggers for push, pull request or tag events.
 
@@ -245,19 +246,19 @@ In the same way we can set triggers for pull request events (in this example, fr
 Or tagging branches:
 {{< image src="images/posts/automatize_deployment_bitrise_39.png" alt="Bitrise">}}
 
-## Stack
+### Stack
 
 In this section we can see (and modify) the [virtual machine](https://devcenter.bitrise.io/infrastructure/available-stacks/) that will be used to run the application. We can even select different settings for different workflows.
 {{< image src="images/posts/automatize_deployment_bitrise_40.png" alt="Bitrise">}}
 
-## bitrise.yml
+### bitrise.yml
 
 It is the Bitrise configuration file, which we can download and modify if we want to use it on our own machine thanks to Bitrise CLI. Bitrise CLI is the o  pen source and offline version of Bitrise to run workflows on our own machine.
 {{< image src="images/posts/automatize_deployment_bitrise_41.png" alt="Bitrise">}}
 
-# Conclusion
+## Conclusion
 
-This article has only seen how to easily automate the deployment of an iOS application. Bitrise contains numerous configuration and work possibilities (for example, we can link workflows to a Slack account so that it informs us when a workflow ends and its status).
+This article has only seen how to easily automate the **continuous integration and continuous delivery** of an iOS application. Bitrise contains numerous configuration and work possibilities (for example, we can link workflows to a Slack account so that it informs us when a workflow ends and its status).
 
 After doing some tests with Bitrise some of the points for and against that I have found are:
 
