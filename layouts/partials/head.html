@@ -8,7 +8,9 @@
 <base href="{{ site.BaseURL }}">
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
-
+{{ if or (in "/page" .RelPermalink) }}
+<meta name="robots" content="noindex">
+{{ end }}
 <!-- multilingual SEO optimizations -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
@@ -26,6 +28,7 @@
 <meta name="theme-name" content="geeky-hugo" />
 <meta name="description" content="{{ .Params.Description | default site.Params.description }}">
 {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
 {{ hugo.Generator }}
 
 <!-- favicon -->
