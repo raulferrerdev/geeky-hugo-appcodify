@@ -7,20 +7,22 @@ tags: ["MapKit"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
+
+## What's Apple MapKit?
 Have you noticed the number of applications that show us a map in which they place us, indicate interesting places nearby, mark routes …? In this article I will explain how to build a maps and routes application with [MapKit](https://developer.apple.com/documentation/mapkit).
 
 But what is MapKit? MapKit is an Apple framework that bases its operation on the API and data from Apple Maps, so that you can easily add maps to the applications developed, in this case, for iOS.
-# A little of Swift
+## A little of Swift
 
 This project can be found in full on [GitHub](https://github.com/raulferrerdev/MapKitTracker).
 
-## UI Desingn
+### UI Desingn
 
 This project will basically consist of an MKMapView component, which will be the one that shows us the map, to which we will be adding different components according to the functionalities that we want to add to the application. In addition, in this project, all this will be done through code, without using storyboards or .xib files.
 
 {{< image src="images/posts/build_maps_mapkit_1.png" alt="Mapkit">}}
 
-## Creation of the project
+### Creation of the project
 
 To work without storyboards when establishing a project in Xcode 11 we have to do some steps after creating it:
 
@@ -42,7 +44,7 @@ window?.rootViewController = viewController
 window?.makeKeyAndVisible()
 window?.windowScene = windowScene
 ```
-## Add a map to our application
+### Add a map to our application
 
 To add a map to the screen, simply create an instance of MKMapView and add it to the screen view. To do this, in the ViewController class, first we have to import the MapKit library, then we create an instance of MKMapView and present it:
 ```swift
@@ -85,7 +87,7 @@ For this map to show us exactly, we must use the [CLLocationManager](https://dev
 * Monitor regions of interest.
 * Detect the position of nearby beacons.
 
-## Permissions
+### Permissions
 
 Keep in mind that in order to use the location functions, we must first ask the user for permission. To do this, we add in the Info.plist file, a series of parameters (as I also showed to [use notifications](https://raulferrer.dev/blog/xcode_push_notifications_simulator/)):
 
@@ -192,7 +194,7 @@ case .authorizedWhenInUse, .authorizedAlways:
 ```
 
 What we are doing here is saying that the MKMapView instance has to show the position of the user (mapView.showsUserLocation = true), to center the view on the user (method that we will create now) and to activate the location update.
-## Show our position on the map
+### Show our position on the map
 
 The centerViewOnUser() method, what it does is determine from the user’s location, establishing a centered rectangular region is point. For this we use [MKCoordinateRegion](https://developer.apple.com/documentation/mapkit/mkcoordinateregion).
 ```swift
@@ -297,7 +299,7 @@ If we run the application, we can see that we can change the type of map:
 
 {{< youtube qERfAoJfhQY >}}
 
-## Show directions
+### Show directions
 
 Now, what we are going to do is show on the screen the address of a point on the map (the center) from its coordinates, which we will obtain using the CLLocation class. To do this we create a getCenterLocation function, to which we pass the instance of MKMapView that we have and it will return the coordinates of the central point:
 
@@ -360,7 +362,7 @@ private func layoutUI() {
     ])
 }
 ```
-## Obtaining the address
+### Obtaining the address
 
 To obtain the address of a place from its coordinates, we will use the [CLGeocoder](https://developer.apple.com/documentation/corelocation/clgeocoder) class, which, as indicated by the Apple documentation, allows us to obtain a user-friendly representation of that location from the longitude and latitude of a point:
 
@@ -418,7 +420,7 @@ typealias CLGeocodeCompletionHandler = ([CLPlacemark]?, Error?) -> Void
 * Finally, and in the main thread, we add this information to the label.
 {{< youtube BG03No5PNLw >}}
 
-## Set routes
+### Set routes
 Now, what we have left to do in this project is to implement a route system. That is, starting from a point of origin and another of destination, establish the optimal routes for the path.
 
 We can do this in a simple way thanks to MapKit. In this case we will use the [MKDirections.Request](https://developer.apple.com/documentation/mapkit/mkdirections/request) class, which allows us to establish a request in which we indicate the point of origin, the destination, the type of transport, if we want to be shown alternative routes…
@@ -533,6 +535,6 @@ extension ViewController: MKMapViewDelegate {
 ```
 {{< youtube PTdlXLVSpgE >}}
 
-# Conclusion
+## Conclusion
 
 The Apple MapKit library allows you to easily develop an application that shows maps, shows our position on the map, shows us directions from a selected point on the map and the routes to get to that address.

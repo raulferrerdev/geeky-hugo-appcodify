@@ -7,19 +7,20 @@ tags: ["CI/CD"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-What is Continuous Integration and Continuous Delivery of software? What does CI/CD mean? When different developers work together in an application, if the merge of code occurs at the same time, numerous problems can occur: conflicts between different developers’ code, errors … which makes this process slow. This is where Integration and continuous distribution comes in.
-# Continuous Integration (CI)
+## Continuous Integration and Continuous Delivery
+What is **Continuous Integration and Continuous Delivery** of software? What does CI/CD mean? When different developers work together in an application, if the merge of code occurs at the same time, numerous problems can occur: conflicts between different developers’ code, errors … which makes this process slow. This is where Integration and continuous distribution comes in.
+## Continuous Integration (CI)
 
-Continuous integration (CI) allows different developers to upload and merge code changes in the same repository branch on a frequent basis. Once the code has been uploaded, it is validated automatically by means of unit and integration tests (both the uploaded code and the rest of the components of the application). In case of an error, this can be corrected more simple.
-# Continuous Delivery (CD)
+**Continuous integration (CI)** allows different developers to upload and merge code changes in the same repository branch on a frequent basis. Once the code has been uploaded, it is validated automatically by means of unit and integration tests (both the uploaded code and the rest of the components of the application). In case of an error, this can be corrected more simple.
+## Continuous Delivery (CD)
 
-In the Continuous Delivery (CD) the new code introduced and that has passed the Continuous Integration process is automatically published in a production environment (this implementation may require manual approval). What is intended is that the repository code is always in a state that allows its implementation in a production environment.
-# Continuous Deployment (CD)
+In the **Continuous Delivery (CD)** the new code introduced and that has passed the **Continuous Integration** process is automatically published in a production environment (this implementation may require manual approval). What is intended is that the repository code is always in a state that allows its implementation in a production environment.
+## Continuous Deployment (CD)
 
-In Continuous Deployment (CD), all changes in the code that have gone through the previous two stages are automatically implemented in production.
-# Tools to perform CI/CD
+In **Continuous Deployment (CD)**, all changes in the code that have gone through the previous two stages are automatically implemented in production.
+## Tools to perform Continuous Integration and Continuous Delivery
 
-There are numerous tools to configure and perform the entire CI/CD process:
+There are numerous tools to configure and perform the entire Continuous Integration and Continuous Delivery process:
 
 * [Jenkins](https://jenkins.io/). Free.
 * [TravisCI](https://travis-ci.org/). Free for open-source repository.
@@ -29,13 +30,13 @@ There are numerous tools to configure and perform the entire CI/CD process:
 * [Visual Studio App Center](https://appcenter.ms/). Commercial (there is a limited free version).
 {{< image src="images/posts/cicd_github_actions_1.png" alt="Github Actions">}}
 
-# GitHub Actions
+## GitHub Actions
 
 [GitHub Actions](https://github.com/features/actions) is a new tool to perform the CI/CD process, [introduced in October 2018](https://github.blog/2018-10-17-action-demos/), launched in beta in August 2019, and finally distributed in November 2019. GitHub Actions is also paid, although it has a free version with some limitations.
 
 {{< image src="images/posts/cicd_github_actions_2.png" alt="Github Actions">}}
 
-## Example of using Github Actions in an iOS/Swift project
+### Example of using Github Actions in an iOS/Swift project
 
 To show how to use Github Actions in the CI / CD process on iOS, I will use [my own project](https://github.com/raulferrerdev/GHFollowers) (based on a [Sean Allen](https://seanallen.co/) course).
 
@@ -54,9 +55,9 @@ Now we will change the content of the file so that on the one hand it executes t
 <script src="https://gist.github.com/raulferrerdev/e07a8341d8ee7c223c25074dcd3afaf4.js"></script>
 ```
 
-### name
+#### name
 It is a label for our workflow.
-### on
+#### on
 Github executes workflows that are defined with the on key. In our case any push event. We can also define a specific branch. For example, push events in the devel branch:
 ```shell
  on:
@@ -65,13 +66,13 @@ Github executes workflows that are defined with the on key. In our case any push
      - devel
 ```
 
-### jobs
+#### jobs
 
 Each workflow is made up of one or more jobs. In our case there is only one.
-### runs-on
+#### runs-on
 
 This parameter contains the type of virtual machine in which the code will be executed. In this case we will use macos-latest (to see the different types of virtual machines available you can access here).
-### strategy and matrix
+#### strategy and matrix
 
 A strategy creates a matrix of environments in which to execute the work. Each matrix allows to establish a set of different configurations of the virtual environment. In our case, we set the iOS simulator, with the operating system 13.2.2 and an iPhone 11 Pro Max device:
 ```shell
@@ -80,7 +81,7 @@ A strategy creates a matrix of environments in which to execute the work. Each m
            destination: ['platform=iOS Simulator,OS=13.2.2,name=iPhone 11 Pro Max']
 ```
 
-### steps
+#### steps
 
 A step is a sequence of tasks. In the example we are seeing, the first step is to check the repository so that the workflow can access it. In this case to the master branch.
 ```shell
