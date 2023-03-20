@@ -1,23 +1,26 @@
 ---
-title: "CryptoKit tutorial. How to use CryptoKit on iOS13 apps"
-description: "Cryptokit is an Apple library that allows us to work with encryption in our applications, generate public and private keys... Look in this post at some of its most interesting possibilities."
+title: "Cybersecurity info. How to use CryptoKit on iOS13 apps"
+description: "Cryptokit is an Apple library that allows us to work with encryption (cybersecurity info) in our applications, generate public and private keys... Look in this post at some of its most interesting possibilities."
 date: 2020-02-17
 categories: ["Framework", "Swift"]
 tags: ["CryptoKit", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-In this article, we are going to see an introduction tutorial to [CryptoKit](https://developer.apple.com/videos/play/wwdc2019/709/), presented by Apple on WWDC19, and how it can be used in applications developed for iOS13. CryptoKit allows, for example, the exchange of public and private keys, so that you could get to make purchases from an iPhone with the cryptocurrencies (Bitcoin, for example) stored in it.
 
-CryptoKit allows developers:
+## Using the CriptoKit framework
+
+If you're concerned about **cybersecurity info**, in this article we are going to see an introduction tutorial to [CryptoKit](https://developer.apple.com/videos/play/wwdc2019/709/), presented by Apple on WWDC19, and how it can be used in applications developed for iOS13. **CryptoKit** allows, for example, the exchange of public and private keys, so that you could get to make purchases from an iPhone with the cryptocurrencies (Bitcoin, for example) stored in it.
+
+**CryptoKit** allows developers:
 
 * Create and compare hashes.
 * Message encryption and authentication using symmetric cryptography.
 * Use of public keys to create and evaluate digital signatures.
 
-The use of CryptoKit is simple and does not require low level API knowledge or manually memory management.
-# Main operations that can be performed with CryptoKit
-## Hashing
+The use of **CryptoKit** is simple and does not require low level API knowledge or manually memory management.
+## Main operations that can be performed with CryptoKit
+### Hashing
 
 Hash functions generate, in general, a unique key from some input data. While the input data is the same, the key obtained will be the same, which allows you to use them, for example, to know if a file has been modified or not (if it has been modified, its hash will be different).
 **CryptoKit** allows, through the use of the HashFunction protocol, to obtain a hash according to three different implementations:
@@ -52,10 +55,10 @@ let md5Hash = Insecure.MD5.hash(data: data)
 let sha1Hash = Insecure.SHA1.hash(data: data)
 ```
 
-## Create and validate digital signatures
+### Create and validate digital signatures
 
 Digital signatures are used to verify the authenticity of a message or data. This procedure is done many times daily, either in email, in financial transactions or when accessing https pages.
-Cryptokit supports four different ways to create and verify digital signatures:
+**Cryptokit** supports four different ways to create and verify digital signatures:
 
 * Curve25519
 * P521
@@ -87,9 +90,9 @@ if publicKey.isValidSignature(signature, for: data) {
 }
 ```
 
-## Data encryption
+### Data encryption
 
-Nowadays data encryption is of great importance, since it allows your confidentiality. CryptoKit supports two types of encryption algorithms:
+Nowadays data encryption is of great importance, since it allows your confidentiality. **CryptoKit** supports two types of encryption algorithms:
 
 * AES-GCM
 * ChaChaPoly (this is preferred in mobile environments because it is faster).
@@ -117,7 +120,7 @@ In this case, in the data encryption we obtain an object of type ChaChaPoly.Seal
 * *ciphertext*: are the encrypted data, with the same size as the input data.
 * *tag*: it is an authentication label and prevents data from being altered without us noticing.
 
-## Key sharing
+### Key sharing
 
 A key agreement protocol is a process during which two parties securely choose a shared encryption key that can be used to sign and encrypt the data they want to share with each other. This also allows unauthorized parties to access the data.
 
@@ -157,6 +160,6 @@ if userASymmetricKey == userBSymmetricKey {
 ```
 
 Now we can use the generated symmetric key to encrypt information as we have seen previously (either through the AES-GCM algorithm or the ChaChaPoly).
-# Conclusion
+## Conclusion
 
-Unlike the previous system used in Apple to encrypt information (CommonCrypto), CryptoKit is high level, so it is simple to use. It includes the most common encryption algorithms, as well as the most used operations: hashing, encryption and key sharing.
+Respect to **cybersecurity info**, unlike the previous system used in Apple to encrypt information (CommonCrypto), **CryptoKit** is high level, so it is simple to use. It includes the most common encryption algorithms, as well as the most used operations: hashing, encryption and key sharing.
