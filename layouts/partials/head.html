@@ -8,7 +8,7 @@
 <base href="{{ site.BaseURL }}">
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
-{{ if (in "/page" .RelPermalink) }}
+{{ if in .Permalink ("page/")}}
 <meta name="robots" content="noindex">
 {{ end }}
 
