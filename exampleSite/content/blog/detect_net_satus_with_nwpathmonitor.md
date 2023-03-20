@@ -1,23 +1,25 @@
 ---
-title: "Detect Net status with NWPathMonitor"
-description: "Learn how to use NWPathMonitor to control the connectivity of your application (to know if there is an Internet connection or not and of what type)."
+title: "Check Internet status with NWPathMonitor"
+description: "Learn how to use NWPathMonitor to control the connectivity of your application (to know Internet status)."
 date: 2018-11-11
 categories: ["Connectivity", "Swift"]
 tags: ["Development", "Code"]
 type: "regular" # available types: [featured/regular]
 draft: false
 ---
-With iOS 12, Apple has introduced Network, a framework that includes the NWPathMonitor class. NWPathMonitor gives us the means to monitor changes of state in the internet connection (so it is no longer necessary to use the Reachability class, in applications that support iOS 12 onwards). Therefore, we can set aside the Reachability library, and detect the state of the network with NWPathMonitor.
 
-# NWPathMonitor
-To use this new way to check the status of the internet connection, we first need to create an instance of NWPathMonitor:
+## Checking Internet status in an app
+With iOS 12, Apple has introduced Network, a framework that includes the **NWPathMonitor** class. **NWPathMonitor** gives us the means to monitor changes of state in the **Internet status** (so it is no longer necessary to use the Reachability class, in applications that support iOS 12 onwards). Therefore, we can set aside the Reachability library, and detect the state of the network with **NWPathMonitor**.
+
+## NWPathMonitor
+To use this new way to check **Internet status**, we first need to create an instance of **NWPathMonitor**:
 
 ```swift
 let monitor = NWPathMonitor()
 ```
 
 
-We can also instantiate the NWPathMonitor class indicating a particular type of network that we want to check. For example, to check WiFi connections:
+We can also instantiate the **NWPathMonitor** class indicating a particular type of network that we want to check. For example, to check WiFi connections:
 
 ```swift
 let monitor = NWPathMonitor(requiredInterfaceType: .wifi)
@@ -31,7 +33,7 @@ NWPathMonitor can check different types of interfaces:
 * **wifi.** For WiFi connections.
 * **wiredEthernet.** If the device is connected to the internet by cable.
 
-Detection of changes in the state of the internet connection are made through the pathUpdateHandler property:
+Detection of changes in the **Internet status** are made through the *pathUpdateHandler* property:
 
 ```swift
 monitor.pathUpdateHandler = { path in
@@ -41,14 +43,14 @@ monitor.pathUpdateHandler = { path in
 }
 ```
 
-path is of NWPath type and, according to Apple documentation, status can be:
+path is of *NWPath* type and, according to Apple documentation, status can be:
 
 * **unsatisfied.** The connection (path) cannot be used.
 * **satisfied.** The connection (path) has been established and allows data to be sent.
 * **requiresConnection.** The connection (path) is not currently available, but if a new connection is established it can be activated.
 
-For more information on the possibilities of NWPath we can access the Apple documentation.
-Finally, in order to start receiving information about changes in the state of the internet connection, we need to call the start () method. The start () method needs a queue to do this job:
+For more information on the possibilities of *NWPath* we can access the Apple documentation.
+Finally, in order to start receiving information about changes in the state of the internet connection, we need to call the *start()* method. The *start()* method needs a queue to do this job:
 
 ```swift
 let queue = dispatchQueue.global(qos: .background)
@@ -57,7 +59,7 @@ monitor.start(queue: queue)
 
 
 Once we no longer need to know the changes in the state of the internet connection, we will call the cancel () method.
-## Code example
+### Code example
 
 For example, suppose we want to know at all times the status of the internet connection throughout the application. For this we can use a class of type Singleton:
 
@@ -104,7 +106,7 @@ class NetMonitor {
 ```
 
 
-Where ConnectionType is an enum that contains the specific cases of connectivity for our app. For example:
+Where *ConnectionType* is an enum that contains the specific cases of connectivity for our app. For example:
 
 ```swift
 public enum ConnectionType {
