@@ -8,9 +8,25 @@
 <base href="{{ site.BaseURL }}">
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
-{{ if or (in "/page" .RelPermalink) }}
+{{ if (in "/page" .RelPermalink) }}
 <meta name="robots" content="noindex">
 {{ end }}
+
+{{ if in .Permalink ("categories/")}}
+<meta name="robots" content="noindex">
+
+{{end}}
+
+{{ if in .Permalink ("tags/")}}
+<meta name="robots" content="noindex">
+
+{{end}}
+
+{{ if in .Permalink ("articles/")}}
+<meta name="robots" content="noindex">
+
+{{end}}
+
 <!-- multilingual SEO optimizations -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
