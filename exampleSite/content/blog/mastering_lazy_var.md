@@ -4,9 +4,8 @@ description: "This article explores the concept of lazy loading in Swift program
 date: 2023-04-12
 categories: ["Swift"]
 tags: ["Development", "Code"]
-# image: "https://drive.google.com/uc?id=1bk6IL9L-rn0ZzA5CRNpcn_3DfH6sYkLA"
+image: "https://drive.google.com/uc?id=1BsGjZ0kNe8iduL6qVau1qlwm72xu1_NU"
 draft: false
----
 
 ## What are lazy types?
 
@@ -183,9 +182,24 @@ In this example, we have a *MyAPI* class with a **lazy var** called *networkLazy
 
 The *networkLazyResponse* variable is then used in a function called *doSomethingWithNetworkResponse()*, and, when we create an instance of MyAPI and call *doSomethingWithNetworkResponse()*, we can see that the message *"Performing network request..."* is printed first, followed by the actual network response once the network request is complete.
 
+### Lazy sequences
+The use of **lazy** keyword in a sequence allows for the postponement of sequence operations until they are required. This is useful when you have a long sequence of items to load and don't want to do so all at once. Instead, you can load them as needed, which improves performance and reduces memory usage.
+
+You can use the **lazy** method on an existing sequence to create a **lazy** sequence. This method returns a **lazy** sequence wrapper that can be used to perform sequence operations in a **lazy** manner. For example, if you have an array of numbers and want to filter out all of the even numbers, you can use a **lazy** sequence and perform the filter operation on demand:
+
+```swift
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let filteredNumbers = numbers.lazy.filter { $0 % 2 == 1 }
+```
+In this case, we have an array of numbers ranging from 1 to 10. We use the **lazy** property to apply a filter closure to the array, keeping only the odd numbers by determining whether the remainder of the number divided by 2 equals 1.
+
+The filter closure is not executed immediately with **lazy** loading, but only when we access the elements of the sequence. This means that if we only need the odd numbers, we can save processing time and memory by using **lazy** loading rather than computing the entire filtered array in advance.
+
+We can use the **lazy** property to perform operations on large arrays efficiently and with little impact on performance.
+
 ## Pros and cons of lazy var
 
-### Pros
+### Pros
 
 * **Improved performance.** By deferring the computation of values until they are actually required, **lazy** initialization can improve performance by reducing unnecessary computations.
 * **Reduced memory usage.** By deferring value initialization until it is required, **lazy** types can reduce memory usage, particularly for values that are expensive to compute or require a large amount of memory.
