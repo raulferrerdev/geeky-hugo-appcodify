@@ -6,7 +6,7 @@ categories: ["Swift"]
 tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=1BsGjZ0kNe8iduL6qVau1qlwm72xu1_NU"
 draft: false
-
+---
 ## What are lazy types?
 
 **Lazy** types are used in Swift to delay the computation or initialization of a value until it is actually required. This can be useful for improving performance and reducing memory usage, particularly when initializing a value is costly or time-consuming.
