@@ -1,7 +1,7 @@
 ---
 title: "10 Tips for Writing Cleaner and More Readable Swift Code"
 description: "Writing clean and readable Swift code is essential for any developer. Here are ten tips to help you achieve this goal, including using descriptive variable names, minimizing nesting, and using optionals and protocols."
-date: 2023-03-13
+date: 2023-04-13
 categories: ["Swift"]
 tags: ["Development", "Code"]
 #image: "https://drive.google.com/uc?id=11WoHEToCNibtBwHfeu8RpeyJJ7noiSpU"
