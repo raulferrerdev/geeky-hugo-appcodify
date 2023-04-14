@@ -4,7 +4,7 @@ description: "Writing clean and readable Swift code is essential for any develop
 date: 2023-04-13
 categories: ["Swift"]
 tags: ["Development", "Code"]
-#image: "https://drive.google.com/uc?id=11WoHEToCNibtBwHfeu8RpeyJJ7noiSpU"
+image: "https://drive.google.com/uc?id=11WoHEToCNibtBwHfeu8RpeyJJ7noiSpU"
 draft: false
 ---
 
