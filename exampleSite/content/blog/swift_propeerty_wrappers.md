@@ -1,14 +1,13 @@
 ---
 title: "Property Wrappers in Swift: How to simplify your codebase and add functionality"
 description: "Learn how to simplify your codebase and add functionality using Property Wrappers in Swift. Explore the basics, how to use with UserDefaults, pros, and cons to make your codebase more readable and maintainable."
-date: 2023-01-13
+date: 2023-04-23
 categories: ["Swift"]
 tags: ["Development", "Code"]
-image: "https://drive.google.com/uc?id=1D9G6ELElIJs94vg1ZWCJouNokwU5lNTo"
-draft: true
+image: "https://drive.google.com/uc?id=1Nk2M7BALf5U-o5VvM_uP2sctrhFNvQQz"
+draft: false
 ---
-
-# What are property wrappers?
+## What are property wrappers?
 
 **Property wrappers** are a feature introduced in Swift 5.1 that allows developers to add behaviors or functionality to properties in a reusable and composable way. These are structures that 'wrap' a property and provide a custom *getter* and *setter* for it.
 
@@ -99,18 +98,18 @@ As we can see, the *username* property is wrapped with the UserDefault property 
 
 With this we have achieved to abstract away the details of reading and writing to *UserDefaults*, making it easy to add or change the persistence layer in the future, without affecting the rest of the codebase.
 
-# Pros and cons of property wrappers
+## Pros and cons of property wrappers
 
-## Pros
+### Pros
 * They make it simple to encapsulate complex property logic and behavior in a single and reusable struct.
 * They make it simple to add thread-safety, data validation, and key-value observing to properties.
 * They enable developers to add additional behavior or functionality to properties in a modular fashion.
 
-# Cons
+## Cons
 
 * They can make the codebase more complex and difficult to understand, especially if used excessively or in unexpected ways.
 * They can make the codebase more verbose by increasing the amount of boilerplate code required to implement a feature.
 * Because of the additional indirection introduced by the property wrapper, they can add a small amount of overhead to the app's performance.
 
-# Conclusion
+## Conclusion
 Finally, **property wrappers** are a feature in Swift 5.1 that allows developers to attach extra behavior or functionality to properties in a reusable, composable manner.
