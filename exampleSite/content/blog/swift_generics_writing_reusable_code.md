@@ -1,18 +1,18 @@
 ---
 title: "Swift Generics: Writing Flexible and Reusable Code"
 description: "Generics are an essential tool that allow you to write code that can be adapted to work with any type, making it more flexible and reusable. In this guide, you'll learn everything you need to know about generics in Swift, including how to use generic functions, types, and constraints."
-date: 2023-01-10
+date: 2023-04-27
 categories: ["Swift"]
 tags: ["Development", "Code"]
 image: "https://drive.google.com/uc?id=1-55gtLjg1VB7hNHtaP9MrxDOaBy0UbvU"
-draft: true
+draft: false
 ---
 
-# What are Generics?
+## What are Generics?
 
 **Generics** are a means to write code in Swift so that it is not type-specific and may be used with any type. This enables you to create **reusable**, **adaptable** code that may be applied in a variety of situations.
 
-# Writing generic functions
+## Writing generic functions
 A simple generic function that switches the values of two variables is shown here as an example:
 ```swift
 func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
@@ -67,7 +67,7 @@ stackOfStrings.push("world")
 let poppedString = stackOfStrings.pop()
 // poppedString is "world"
 ```
-# How to refactor legacy code with generics
+## How to refactor legacy code with generics
 
 If we want to apply the capabilities of the generics in legacy code, we will have to take into account some points. For example, you can start by identifying parts of legacy code that would profit from being made more flexible or reusable before applying generics to them. The code in those areas can then be refactored to use generic types and functions.
 
@@ -95,7 +95,7 @@ func sumArray<T: Numeric>(_ array: [T]) -> T {
 ```
 Now that the function has been updated, it can be used with any type of numeric data, including *doubles*, *floats*, and *integers*.
 
-# Some more generics complex examples
+## Some more generics complex examples
 
 Surely you know about the **Result** type, which represents the result of an operation, which may succeed or fail. It has two generic types: *SuccessType* and *FailureType*, which indicate the type of result that will be returned if the operation is *successful* and *unsuccessful*, respectively.
 
@@ -148,7 +148,7 @@ father.addChild(daughter)
 mother.addChild(son)
 mother.addChild(daughter)
 ```
-# Using typealias with generics
+## Using typealias with generics
 
 The **typealias** keyword in Swift allows you to designate an alias for a type, which comes in handy when working with generics among other things. For example:
 
@@ -169,7 +169,7 @@ struct Stack<Element> {
 
 In this example, the **generic** type *Element* is represented by the **typealias** *ItemType*, which is a property of the *Stack* struct. This enables you to refer to the type of the items in the stack using the more evocative word *ItemType* rather than *Element*.
 
-# Set type constaints for generics
+## Set type constaints for generics
 In Swift, **constraints** can be used to provide the specifications for the **generic** types that are utilized in a function or type. These restrictions make that the **generic** type complies with certain specifications, such as adhering to a specific protocol or being a subclass of a specific class. For example:
 ```swift
 protocol Comparable {
@@ -206,7 +206,7 @@ struct Queue<Element: Equatable> {
 ```
 The *ItemType* **typealias** in this iteration of the *Queue* struct is restricted to the Equatable protocol, therefore the *Queue* can only be used with types that comply with *Equatable*. This enables you to compare items in the queue using the == operator.
 
-## Multiple constaints
+### Multiple constaints
 Additionally, more than one **constraint** may be used in a single **generic** type declaration. For instance:
 ```swift
 func display<T: CustomStringConvertible & Comparable>(item: T) {
@@ -215,5 +215,7 @@ func display<T: CustomStringConvertible & Comparable>(item: T) {
 ```
 In this example, the **generic** type T of the *display(item:)* function is restricted to the *CustomStringConvertible* and *Comparable* protocols. This indicates that only types that abide by both of these protocols can be utilized with the function.
 
-# Conclusion
-In conclusion, Swift's use of **generics** enables the development of reusable and adaptable code by enabling programmers to create functions and types that operate on any sort of data rather than just a few predefined types. The developer can have better control over the data utilized and catch mistakes at build time rather than run time thanks to the ability to impose a type **constraint** on **generics**. This enhances the readability, maintainability, and safety of the code. Swift developers may write more reliable and effective code by utilizing **generics**, making it a crucial skill to acquire when using the language.
+## Conclusion
+In conclusion, Swift's use of **generics** enables the development of reusable and adaptable code by enabling programmers to create functions and types that operate on any sort of data rather than just a few predefined types.
+
+The developer can have better control over the data utilized and catch mistakes at build time rather than run time thanks to the ability to impose a type **constraint** on **generics**. This enhances the readability, maintainability, and safety of the code. Swift developers may write more reliable and effective code by utilizing **generics**, making it a crucial skill to acquire when using the language.
