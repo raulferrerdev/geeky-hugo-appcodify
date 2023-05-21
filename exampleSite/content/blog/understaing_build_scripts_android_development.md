@@ -179,7 +179,8 @@ To run a **custom task**, you can use the Gradle command line or your IDE interf
 ```
 **Custom tasks** give you great flexibility to automate additional actions during the process of building your Android app. You can use them to customize the build flow, add specific functionality, or integrate external tools into your development process.
 
-## Key points to keep in mind when working with build scripts in Android
+## Key points to keep in mind when working with build scripts in Android
+
 Here are some tips for iOS developers getting into Android and the key points to keep in mind when working with build scripts on Android:
 
 * **Get familiar with Gradle.** Gradle is a fundamental build tool in the Android ecosystem. Make sure you understand how it works, the syntax of build scripts, and how dependencies are managed.
