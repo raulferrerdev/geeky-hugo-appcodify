@@ -9,6 +9,9 @@ draft: false
 ---
 ## Continuous Integration and Continuous Delivery
 What is **Continuous Integration and Continuous Delivery** of software? What does CI/CD mean? When different developers work together in an application, if the merge of code occurs at the same time, numerous problems can occur: conflicts between different developers’ code, errors … which makes this process slow. This is where Integration and continuous distribution comes in.
+
+{{<ads1>}}
+
 ## Continuous Integration (CI)
 
 **Continuous integration (CI)** allows different developers to upload and merge code changes in the same repository branch on a frequent basis. Once the code has been uploaded, it is validated automatically by means of unit and integration tests (both the uploaded code and the rest of the components of the application). In case of an error, this can be corrected more simple.
@@ -80,6 +83,7 @@ A strategy creates a matrix of environments in which to execute the work. Each m
          matrix:
            destination: ['platform=iOS Simulator,OS=13.2.2,name=iPhone 11 Pro Max']
 ```
+{{<ads2>}}
 
 #### steps
 

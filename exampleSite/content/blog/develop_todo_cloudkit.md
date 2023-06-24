@@ -8,6 +8,8 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 If we want to develop an application that allows data and files to be shared and synchronized between different devices, we will need to use a backend service that allows us to perform these tasks. In the case of devices with iOS, or macOS, we can use **CloudKit**. In this article we are going to see how a task application is developed with *CloudKit*.
+{{<ads1>}}
+
 # What is CloudKit?
 
 [CloudKit](https://developer.apple.com/icloud/cloudkit/) is Apple’s storage service that allows your applications to save data and files remotely. Apple introduced CloudKit at [WWDC 2014](https://developer.apple.com/videos/wwdc2014/) as a new library that allowed communication with iCloud servers.
@@ -848,6 +850,8 @@ If we mark a record as complete and then turn off the app and reload it, we see 
 Record update.
 
 {{< youtube BtGwu_QwIRU >}}
+
+{{<ads2>}}
 
 # Conclusion
 

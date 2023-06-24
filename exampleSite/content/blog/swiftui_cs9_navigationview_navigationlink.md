@@ -12,6 +12,7 @@ draft: false
 {{< youtube FAcwmuamy5I >}}
 
 This post will go over how to use NavigationStack and NavigationLink, which are the two main components for managing the navigation stack and navigating between views in an app. 
+{{<ads1>}}
 
 ## NavigationView Deprecation in iOS 16.2
 
@@ -215,5 +216,6 @@ struct Box: Identifiable, Hashable {
 ```
 Where if the item passed is of type *Item*, it will show a DetailedView, while for a type Box it will show a BoxView.
 
+{{<ads2>}}
 ## Conclusion
 NavigationStack is a game changer for Navigation in SwiftUI. allowing to upgrade our apps.

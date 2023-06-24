@@ -11,6 +11,7 @@ draft: false
 **[Flutter](https://raulferrer.dev/blog/learn_programming_with_flutter/)** is a multi-platform software created by Google that allows us to develop mobile applications for both Android and iOS, desktop applications that run on Linux, Windows and macOs, and even for the web, always sharing the same code base.
 
 Since its presentation a few years ago (2017), the acceptance of **Flutter** among developers has been increasing day by day, so that today we can find thousands of applications both in the Apple Store and in Google Play developed with **Flutter**.
+{{<ads1>}}
 
 Since its launch, the evolution of **Flutter** has been permanent and, yesterday, at **[Flutter Forward](https://flutter.dev/events/flutter-forward)**, the new features that are to be incorporated were presented.
 
@@ -58,6 +59,7 @@ But progress has been made in Dart's support for new architectures, such as WebA
 *  Alpha quality builds of Dart 3 and Flutter have been released for developers to test packages and apps.
 *  The team is investing in developer expertise for Flutter, including the [News Toolkit](https://github.com/flutter/news_toolkit) to speed up mobile development for news publishers and other content providers. The News Toolkit includes everything you need to build an article-centric app, complete with navigation, search, authentication, ad integrations, notifications, profiles, and subscriptions.
 
+{{<ads2>}}
 
 # Conclusion
 All this are great news for Flutter developers. If you would deep more in where is Flutter heading, you can check his [roadmap](https://github.com/flutter/flutter/wiki/Roadmap).

@@ -11,6 +11,7 @@ draft: false
 ## Async await in Swift
 
 A language feature called **async await**, enables you to construct asynchronous code that seems to be synchronous. It enables concurrent task execution without the use of convoluted callback procedures, making concurrent task execution code easier to create and read.
+{{<ads1>}}
 
 Utilizing **async await** has a number of advantages, one of which is that it makes your software more effective and responsive. When you utilize **async await**, you may create programs that conduct time-consuming processes in the background while letting the main thread carry on. This guarantees that your software will remain responsive while it waits for a task to finish, which can be crucial in user-facing apps.
 
@@ -183,6 +184,7 @@ let result = try await withCheckedContinuation { continuation in
 }
 ```
 The asynchronous task is carried out in this case within the continuation block. A returning expression that returns the task's outcome to the caller resumes the continuation when the task is finished.
+{{<ads2>}}
 
 ## Conclusion
 

@@ -9,6 +9,7 @@ draft: true
 
 ## What's the The Composable Architecture (TCA)
 **The Composable Architecture (TCA)** is a modern software architecture pattern that allows developing scalable and maintainable iOS applications. TCA is built upon the principles of functional programming and provides a clear separation of concerns between the different components of an application. It was developed by [Point-Free](https://www.pointfree.co/collections/composable-architecture), a online video series on Swift and functional programming.
+{{<ads1>}}
 
 At its core, **The Composable Architecture (TCA)** is all about breaking down a complex app into small, reusable pieces that can be composed together. This approach makes it easier to reason about an app's behavior and makes it more modular and testable.
 
@@ -101,6 +102,7 @@ struct TodoAppEnvironment {
     var mainQueue: AnySchedulerOf<DispatchQueue>
 }
 ```
+{{<ads2>}}
 
 ### Store
 

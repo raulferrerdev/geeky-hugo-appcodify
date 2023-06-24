@@ -10,6 +10,8 @@ draft: false
 
 # Introduction
 What is new in **Swift 5.3** (whose publication process was announced by [Apple on 3/25](https://swift.org/blog/5-3-release-process/)) can be found both at the code level (multi-pattern catch, multiple trailing closure …) and in the use of Swift Package Manager (addition of binary dependencies or resources. Below I detail some of the new features in Swift 5.3 (keep in mind that we expect to see the new beta of Swift 5.3 at WWDC20, although to test it you can download it at [Swift.org](https://swift.org/download/#snapshots)).
+{{<ads1>}}
+
 ## Synthesized Comparable conformance for enums ([SE-0266](https://github.com/apple/swift-evolution/blob/master/proposals/0266-synthesized-comparable-for-enumerations.md))
 
 Thanks to this new addition, we can adopt the **Comparable** protocol in enums that do not have associated values, or that do have them and they adopt the Comparable protocol. With this, what is achieved is to be able to compare two cases of the same enum using, for example, > or <.
@@ -182,6 +184,7 @@ For those of us who use [Swift Package Manager](https://www.raulferrergarcia.com
 * **Package Manager Binary Dependencies ([SE-0272](https://github.com/apple/swift-evolution/blob/master/proposals/0272-swiftpm-binary-dependencies.md))**. You can use dependencies in binary format, such as Firebase or GoogleAnalytics.
 * **Conditional dependencies ([SE-0273](https://github.com/apple/swift-evolution/blob/master/proposals/0273-swiftpm-conditional-target-dependencies.md))**. This option will allow specifying which dependencies are added depending on the platform.
 * **Localized resources ([SE-0278](https://github.com/apple/swift-evolution/blob/master/proposals/0278-package-manager-localized-resources.md))**. Along with the possibility of adding resources to Swift packages, they can be localized.
+{{<ads2>}}
 
 # Conclusion
 

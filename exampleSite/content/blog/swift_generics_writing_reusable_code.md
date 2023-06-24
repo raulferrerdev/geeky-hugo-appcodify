@@ -11,6 +11,7 @@ draft: false
 ## What are Generics?
 
 **Generics** are a means to write code in Swift so that it is not type-specific and may be used with any type. This enables you to create **reusable**, **adaptable** code that may be applied in a variety of situations.
+{{<ads1>}}
 
 ## Writing generic functions
 A simple generic function that switches the values of two variables is shown here as an example:
@@ -214,6 +215,7 @@ func display<T: CustomStringConvertible & Comparable>(item: T) {
 }
 ```
 In this example, the **generic** type T of the *display(item:)* function is restricted to the *CustomStringConvertible* and *Comparable* protocols. This indicates that only types that abide by both of these protocols can be utilized with the function.
+{{<ads2>}}
 
 ## Conclusion
 In conclusion, Swift's use of **generics** enables the development of reusable and adaptable code by enabling programmers to create functions and types that operate on any sort of data rather than just a few predefined types.

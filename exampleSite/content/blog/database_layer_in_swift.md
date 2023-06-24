@@ -9,6 +9,9 @@ draft: false
 ---
 ## Data access
 Nowadays,for **data access** most mobile applications have an internal database (Core Data, Realm …) to store information, which can then be used, for example, if the application does not have an internet connection.
+
+{{<ads1>}}
+
 If for **data access** we want to implement a database in our application following SOLID principles, we must take into account:
 
 * The database layer should not be exposed to controllers (ViewControllers).
@@ -74,6 +77,7 @@ struct Sorted {
 }
 ```
 
+{{<ads2>}}
 
 ## Conclusion
 

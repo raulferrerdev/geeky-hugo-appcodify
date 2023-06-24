@@ -10,6 +10,7 @@ draft: false
 
 ## Introduction to Design patterns
 Normally, in software development we often encounter problems that have similar characteristics. To solve them we find different solutions, but as some of these solutions are usually better than others (from the point of view of flexibility and reusability), they end up being preferred. These solutions end up becoming **Design Patterns** in software. **Design Patterns** in software are solutions to recurring design problems that are being applied daily in the software industry.
+{{<ads1>}}
 
 **Design patterns** allow developers to have a guide when establishing the [structure of a program, and make it more flexible and reusable](https://raulferrer.dev/blog/architecture_patterns_ios/). In addition, it also allows solving problems with a methodology already tested and not doing so from scratch.
 ## How many design patterns in software are there?
@@ -52,3 +53,4 @@ There are 23 **design patterns**, which were described in the book [Design Patte
 * **Strategy.** It allows to define that, from a family of algorithms, we can select one of them at runtime to perform a certain action.
 * **Template Method.** This pattern defines the skeleton of an algorithm in a superclass, but allows subclasses to redefine some methods without changing their structure.
 * **Visitor.** It allows to separate the algorithms from the objects with which they operate.
+{{<ads2>}}

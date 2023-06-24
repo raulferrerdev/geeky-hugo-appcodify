@@ -8,6 +8,8 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 **Push notifications** are the messages that are sent, to an application installed on a device, from a server. In the case of iOS applications, the Apple Push Notifications Service (APN) is used. Until now, the only way to test these notifications was on physical devices. However, this has changed with the beta version of [Xcode 11.4](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_2_release_notes), with which we can already test the push notifications in the simulator.
+{{<ads1>}}
+
 # Enable notifications in the simulator
 
 First, before testing the **push notifications** in the simulator, we have to ask the user for permission to show the notifications. We can do this by including the following code, for example, in the *AppDelegate* class:
@@ -201,6 +203,7 @@ In the case we are seeing the command will be:
  xcrun simctl push 7FBB1156-30B7-439D-AEB7-B7BFA283748F com.testapp.TestPushNotifications pushTest.apns
 ```
 {{< youtube VBDMb4207ow >}}
+{{<ads2>}}
 
 # Conclusion
 

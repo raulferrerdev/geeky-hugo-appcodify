@@ -13,6 +13,7 @@ draft: false
 In SwiftUI, methods called **view modifiers** can be chained to views to change their behavior or look. A view can be modified with view modifiers, which also make it easier to reuse code.
 
 A view modifier can be used, for instance, to modify the typeface or add a shadow to a view. Modifiers of the view are written in the form. In order to make many changes to a single view, you can chain together several view modifiers using *.modifierName()*. Let's see some of the most used.
+{{<ads1>}}
 
 # .background(_:)
 The *.background* modifier allows us to add one view as the background of another. The simplest example, and which is usually the use that is given the most, is to add a background color. For example:
@@ -171,6 +172,7 @@ Text("Hello, world!")
     .scaleEffect(x: 2.5, y: 10, anchor: .topLeading)
 ```
 In this case, we scale the text from the top left.
+{{<ads2>}}
 
 # Modifiers order
 When we are going to apply different modifiers to the same view, we must take into account in which order we apply them. If we think that each time we apply a modifier it is as if we were creating a new view, we will apply (from top to bottom) each modifier to the view that is generated with the previous modifier.

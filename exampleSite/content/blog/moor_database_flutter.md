@@ -11,6 +11,7 @@ There are different databases to incorporate into a **[Flutter](https://raulferr
 
 The introduction to Moor will be done by developing a small project in Flutter, which you can download from [GitHub](https://github.com/raulferrerdev/moor_project).
 {{< image src="images/posts/moor_database_flutter_1.png" alt="Flutter and Moor database">}}
+{{<ads1>}}
 
 # Introduction
 
@@ -406,6 +407,7 @@ It is a simple application, in which we have not added any other screen to verif
 Once the file is found, we can open it with an application like [DB Browser for SQLite](https://sqlitebrowser.org/), and we can see how the data has been saved.
 
 {{< image src="images/posts/moor_database_flutter_6.png" alt="Flutter and Moor database">}}
+{{<ads2>}}
 
 # Conclusion
 

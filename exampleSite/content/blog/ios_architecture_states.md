@@ -11,6 +11,7 @@ draft: false
 # Introduction
 Surely you have applied or, at least, you know architectures such as MVC, MVVM, MVP (even others such as VIPER or VIP). However, there are also other architectures that have been developed and that are somewhat less known.
 For example, in a previous [post I already talked about Redux](https://raulferrer.dev/blog/redux_pattern/) as an architecture that, although it is well known in web development, is perhaps less so in iOS development. But there are others that are perhaps less well known, such as The Composable Architecture (TCA) or The Elm Architecture, of which we will now make a short introduction so that you know them.
+{{<ads1>}}
 
 # The Elm Architecture (TEA)
 The Elm Architecture originated from the use of Elm and the development of webapps. This architecture is based on a Model (which contains the state of the application), a view that is generated according to the model, and an Update that transforms the model.
@@ -120,6 +121,7 @@ struct AppState: Equatable {
 * **View.** It is in charge of representing the data it receives from the State.
 
 {{< image src="images/posts/ios_architecture_states_2.png" alt="The Composable Architecture is Swift schema">}}
+{{<ads2>}}
 
 
 ## Pros and Cons of TCA

@@ -12,6 +12,7 @@ draft: false
 {{< youtube QBlLpGJ846s >}}
 
 The **Image** component in SwiftUI is a potent and adaptable way to show images in your app. It can be used to show pictures from the user's photo collection, a remote URL, or your software bundle. Modifiers allow you to adapt the appearance and behavior of the Image component to your own requirements.
+{{<ads1>}}
 
 # Image source
 ## Bundle
@@ -155,6 +156,7 @@ struct ContentView: View {
     }
 }
 ```
+{{<ads2>}}
 
 ## .overlay()
 You can overlay a view on top of the image with the *.overlay()* modifier. Adding text, buttons, or other interactive elements is a good usage for this.

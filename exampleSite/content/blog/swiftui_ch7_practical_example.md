@@ -11,6 +11,7 @@ draft: false
 {{< youtube 7vX4CeuoTxk >}}
 
 After having seen in previous posts some of the basic components of SwiftUI: **VStack**, **HStack**, **ZStack**, **Image**, **Text**, **Button**... now, what we are going to do is put them all together in a practical example to create a more complex interface.
+{{<ads1>}}
 
 In this case, we have chosen a plane boarding pass.
 
@@ -288,6 +289,7 @@ struct ContentView: View {
 }
 ```
 {{< image src="images/posts/swiftui_cs7_3.png" alt="SwiftUI Boarding Pass">}}
+{{<ads2>}}
 
 # Conclusion
 SwiftUI might make it difficult to create complex user interfaces, but with the right use of the containers and views provided by the framework, complex designs can be built with ease.

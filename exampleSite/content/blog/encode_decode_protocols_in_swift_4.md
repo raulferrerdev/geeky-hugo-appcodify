@@ -10,6 +10,8 @@ draft: false
 Currently, many applications receive information from the servers with which they connect in JSON format.
 With Swift 4, this process has been simplified thanks to the Encodable and Decodable protocols. The struct or class that adopt these protocols may be encoded to a JSON format or decoded from that format, with a few lines of code.
 
+{{<ads1>}}
+
 * *Encodable protocol.* Convert instances of a specific type to format, for example, JSON.
 * *Decodable protocol.* Converts information in format, for example, JSON to instances of a certain type.
 * *Codable protocol.* It is a typealias definition for a protocol that adopts Encodable and Decodable protocols.
@@ -58,6 +60,7 @@ do {
     print(error.localizedDescription)
 }
 ```
+{{<ads2>}}
 
 # Encodable
 

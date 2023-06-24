@@ -15,6 +15,8 @@ The use of **Swift Package Manager** will allow us to share it and include it as
 
 > The code for this article can be found on [GitHub](https://github.com/raulferrerdev/FABButton). Keep in mind there may be some modifications in the repository code compared to the one described here, since new functionalities can be added, others can be improved and small errors can be corrected.
 
+{{<ads1>}}
+
 ## Swift Package Creation (for Swift Package Manager)
 
 First we create the Swift package. To do this, from the Xcode menu we follow the *New > Swift Package* path and give it the name of FABButton (remember to activate version control, Create Git repository on my Mac, to be able to upload it later to a repository on the network).
@@ -269,6 +271,9 @@ To:
 ```swift
 private var mainButton = FABMainButton(frame: .zero)
 ```
+
+{{<ads1>}}
+
 
 ## Creating the secondary buttons
 
@@ -876,6 +881,8 @@ extension ViewController: FABSecondaryButtonDelegate {
 If we now run this application, we can check the operation of the **Floating Action Button**.
 
 {{< youtube CitIua96wrc >}}
+{{<ads2>}}
+
 
 ## Conclusion
 

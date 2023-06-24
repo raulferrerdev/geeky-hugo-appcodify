@@ -9,6 +9,8 @@ draft: false
 ---
 
 Dan Abramov and Andrew Clark created the **Redux** Open Source Javascript library in 2015. Redux is modeled after the Flux architecture created by Facebook and manages and centralizes the application state.
+{{<ads1>}}
+
 # Foundation
 The foundation of the Redux architecture is the assumption that data can only flow in one direction and that there can be only one model (the source of truth) in charge of storing and modifying the data so that it can be shown.
 # Redux components
@@ -78,6 +80,7 @@ In redux the flow is as follows:
 * It is an architecture that is widely used in web development, but little used in the development of iOS applications, so the available information is limited and can be inconvenient for newbies.
 * It is a fairly fixed and specialized architecture, which means that it leaves little ability to customize or change to another architecture once it has been applied in the development of a project.
 * Asynchronous events that occur in a Middleware can lead to conflicts between actions.
+{{<ads2>}}
 
 # Conclusion
 Redux is another possibility to consider when developing an iOS application. As is all architectures, it has its pros and cons, which must be evaluated according to the project we have in hand.

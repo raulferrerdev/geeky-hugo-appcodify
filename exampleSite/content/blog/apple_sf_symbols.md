@@ -10,6 +10,7 @@ draft: false
 
 ## What are SF Symbols
 During [WWDC 2019](https://developer.apple.com/videos/wwdc2019/), Apple introduced a free set of over [1,500 symbols](https://developer.apple.com/videos/play/wwdc2019/206/) to be used by developers in their applications. Here I will explain how to use the new Apple **SF Symbols** in your applications. In any case, even if they are free, you must take into account the license agreements indicated by [Apple](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/):
+{{<ads1>}}
 
 > All **SF Symbols** shall be considered to be system-provided images as defined in the Xcode and [Apple SDKs license agreements](https://developer.apple.com/terms/) and are subject to the terms and conditions set forth therein. You may not use **SF Symbols** — or glyphs that are substantially or confusingly similar — in your app icons, logos, or any other trademark-related use. Apple reserves the right to review and, in its sole discretion, require modification or discontinuance of use of any Symbol used in violation of the foregoing restrictions, and you agree to promptly comply with any such request.
 
@@ -165,6 +166,7 @@ button.setImage(symbol, for: .normal)
 let configuration = UIImage.SymbolConfiguration(weight: .light)
 button.setPreferredSymbolConfiguration(configuration, forImageIn: .normal)
 ```
+{{<ads2>}}
 
 ## Conclusion
 

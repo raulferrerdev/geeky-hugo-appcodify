@@ -11,7 +11,7 @@ draft: false
 
 ## Learn Android as an iOS Developer
 As an experienced iOS developer, one of the main points I have had to understand when starting to develop applications for Android has been the **build scripts**.
-
+{{<ads1>}}
 First of all, it is important to understand that the development of applications on iOS and Android has its particularities. While they share the common goal of creating high-quality mobile apps, there are significant differences in development environments, tools used, and key concepts.
 
 One of the areas where we find these differences is in the **build tools**. While in the iOS ecosystem we are familiar with Xcode and its integrated build system, in Android we are familiar with **Gradle** and its **build scripts**.
@@ -178,7 +178,7 @@ To run a **custom task**, you can use the Gradle command line or your IDE interf
 ./gradlew myCustomTask
 ```
 **Custom tasks** give you great flexibility to automate additional actions during the process of building your Android app. You can use them to customize the build flow, add specific functionality, or integrate external tools into your development process.
-
+{{<ads2>}}
 ## Key points to keep in mind when working with build scripts in Android
 
 Here are some tips for iOS developers getting into Android and the key points to keep in mind when working with build scripts on Android:

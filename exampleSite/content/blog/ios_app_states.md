@@ -9,6 +9,7 @@ draft: true
 ---
 
 An iOS app can exist in multiple states, each with its own set of features and behaviors. **Not running**, **inactive**, **active**, **background**, and **suspended** are some of these states.
+{{<ads1>}}
 
 When an app is **not running**, no code is being executed and it is not visible to the user. This state can occur when an app is first installed and not yet launched, or when the system terminates an app.
 
@@ -108,6 +109,7 @@ In conclusion, an iOS app can exist in several states, including not running, in
 Linkedin post with hashtags promoting this article
 "Want to develop efficient and user-friendly iOS apps? Check out my latest article on understanding iOS app states and how to respond to them using the UIApplicationDelegate protocol or the SceneDelegate class in SwiftUI. Learn about the different states of an iOS app and the characteristics and behaviors of each state. #iOSdevelopment #SwiftUI #appstates #applifecycle #appdevelopment"
 
+{{<ads2>}}
 
 
 

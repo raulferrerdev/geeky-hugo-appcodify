@@ -10,6 +10,7 @@ draft: false
 
 # What's MVVM
 **MVVM (Model-View-ViewModel)** is an [architecture pattern](https://raulferrer.dev/architecture_patterns_ios/) that wants to separate the presentation logic from the business logic. It's composed by a **Model** layer, a **View** layer and a **ViewModel** layer.
+{{<ads1>}}
 
 # MVVM Structure
 
@@ -143,6 +144,7 @@ let view = View()
 
 view.viewModel = viewModel
 ```
+{{<ads2>}}
 
 # Conclusion
 

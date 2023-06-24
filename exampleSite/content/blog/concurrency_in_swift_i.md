@@ -13,6 +13,7 @@ draft: true
 This is the first article in our series on SwiftUI **Concurrency**. With SwiftUI, one of the most well-liked frameworks for creating user interfaces in the Apple ecosystem, we will be examining concurrent programming in this series.
 
 In this article, we will define **concurrency** and discuss how it relates to SwiftUI development. We will also look at a few of the typical difficulties that come up when dealing with concurrent code.
+{{<ads1>}}
 
 **Concurrency** is a huge asset for SwiftUI as a framework for creating user interfaces. For instance, SwiftUI's user interface is described using declarative syntax, which necessitates that the framework modify the view hierarchy in response to changes in the underlying data. When updating complex views or large data sets, this process can be computationally expensive. 
 
@@ -54,6 +55,7 @@ The advantages and disadvantages of concurrency include better performance, resp
 By allowing users to interact with a program while it is working on other tasks in the background, concurrency also makes software more responsive. This can be crucial for real-time interaction-based applications like online gaming or video conferencing.
 
 Scalability is a benefit of concurrency as well. Concurrency enables an application to handle more requests as the number of users or requests increases without slowing down or crashing.
+{{<ads2>}}
 
 Concurrency, however, also brings with it both difficulties and disadvantages. Coordination and synchronization between several tasks is one of the key difficulties of concurrency. Concurrency can lead to race situations, deadlocks, and other problems that can compromise the accuracy and dependability of the application without effective coordination and synchronization.
 

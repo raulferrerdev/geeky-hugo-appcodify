@@ -12,6 +12,7 @@ draft: false
 {{< youtube nTnd9fNoukA >}}
 
 Any app must include buttons in order for users to interact with the user interface and initiate actions. The **Button** view, which can be modified with a number of modifiers to change its appearance and behavior, is used in SwiftUI to build buttons.
+{{<ads1>}}
 
 Use the following code in SwiftUI to build a simple button:
 
@@ -133,3 +134,4 @@ Button(action: {
 
 The *disabled *modifier, which disables the button when set to true, and the *scaleEffect* modifier, which scales the button up or down when tapped, are just two of the many more choices available in SwiftUI for customizing buttons. You can design buttons that are specific to the requirements of your app by mixing these modifiers and developing unique looks and behaviors.
 
+{{<ads2>}}

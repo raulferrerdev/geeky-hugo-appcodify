@@ -13,6 +13,7 @@ A few months ago I wrote a post about the advantages and disadvantages of some o
 When working with each of these patterns in some projects, I realized one of the possible disadvantages that patterns like VIPER or VIP had: the large number of classes and repetitive code that was needed for their operation.
 
 But this is where **Xcode templates** come into play.
+{{<ads1>}}
 
 # What are Xcode templates
 
@@ -317,6 +318,8 @@ extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewCo
 
 extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewDelegate {}
 ```
+{{<ads1>}}
+
 
 ### __FILEBASENAME__View.swift
 ```swift
@@ -431,6 +434,7 @@ Now, if we go to Xcode and create a new file, in the templates section we will f
 And when selecting it, we can indicate the name of the module (in this case Login) so that it creates the corresponding files for us.
 
 {{< image src="images/posts/xcode_templates_5.png" alt="Xcode VIP Module classes creation">}}
+{{<ads2>}}
 
 # Conclusion
 Finally, using **Xcode templates** can greatly simplify the development process and eliminate repetitive tasks. Developers can save time, increase efficiency, and ensure consistency across projects by creating custom templates. Using Xcode templates to increase productivity and maintain high-quality code is a must-have tool for developers.

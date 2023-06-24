@@ -8,6 +8,9 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 In previous articles we had seen how to improve the architecture of our code through [design patterns](https://codderlly.com/blog/design_patterns_software/) and the use of [SOLID principles](https://raulferrergarcia.netlify.app/blog/solid_principles_swift/). Now we will see how to improve the Swift code with higher order functions. Surely you have used them more than once, but what are they and how do you improve your Swift code with higher order functions?
+
+{{<ads1>}}
+
 # Swift higher order functions
 
 Higher-order functions are functions that take other functions or closures as arguments and that return a function or a closure. These functions are used with arrays, sets and dictionaries, and act on the elements they contain (this is done by methods that are applied to the elements of the collection using the point syntax).
@@ -390,6 +393,8 @@ let sum: Int = numbers
 ```
 
 First we apply the **flatMap** function to obtain an array with all the numbers. Then we apply the **reduce** function to add them.
+{{<ads2>}}
+
 # Conclusion
 
 We have just seen some of the most commonly used higher order functions and their power using some examples. These functions allow, on the one hand, to reduce the amount of code and, on the other, to make it clearer and more concise.

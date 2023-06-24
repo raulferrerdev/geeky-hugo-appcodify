@@ -10,6 +10,7 @@ draft: false
 
 # Introduction
 **RxSwift** is a framework that enables reactive programming in **iOS** apps. It enables developers to write code that more intuitively and efficiently responds to changes in data and events. **RxSwift** is built on top of the ReactiveX framework, which is a cross-platform **reactive programming** implementation.
+{{<ads1>}}
 
 # RxSwift advantages
 **RxSwift** offers several advantages to developers, including:
@@ -68,6 +69,7 @@ Let's se now in detail those elements:
 * **onNext.** An **Observable** can emit this kind of event, and it represents a subsequent event that contains the **Observable**'s subsequent value. The random number is printed to the console using it in the example.
 
 * **disposeBag.** This is an object that **RxSwift** makes available and which controls **Observable** subscriptions. A subscription can be *disposed* of when it is no longer required by using the *disposed(by:)* method on the dispose bag. In the example, we manage the *subscription* to the **Observable** we generated using the dispose bag.
+{{<ads2>}}
 
 # Conclusion
 

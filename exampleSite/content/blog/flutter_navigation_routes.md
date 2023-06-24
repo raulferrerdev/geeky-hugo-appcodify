@@ -8,6 +8,9 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 In all applications we need to navigate from one screen to another to be able to access their contents. This can be done in two different ways in [Flutter](https://raulferrer.dev/blog/learn_programming_with_flutter/): by creating an instance of the *PageRoute* [widget](https://raulferrer.dev/blog/learn_how_build_widgets_flutter/) and then passing it to the **Navigator** widget, or by using the Named Routes option. In this article we are going to see how to set **Flutter** navigation with **Routes**.
+
+{{<ads1>}}
+
 # Using *PageRoute* to navigate between pages
 
 Both the *Cupertino* package (iOS layout) and the *Material Design* (Android layout), present a display router: *CupertinoPageRoute* and *MaterialPageRoute*.
@@ -194,6 +197,7 @@ And the navigation is done as follows:
 ```dart
 Navigator.pushNamed(context, ROUTE_LIBRARY);
 ```
+{{<ads2>}}
 
 # Conclusion
 

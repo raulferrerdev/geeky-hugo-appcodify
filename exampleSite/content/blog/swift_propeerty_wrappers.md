@@ -10,6 +10,7 @@ draft: false
 ## What are property wrappers?
 
 **Property wrappers** are a feature introduced in Swift 5.1 that allows developers to add behaviors or functionality to properties in a reusable and composable way. These are structures that 'wrap' a property and provide a custom *getter* and *setter* for it.
+{{<ads1>}}
 
 Thus, for example, we can use property containers to add functionality such as: thread safety, data validation, or observation of key-value pairs of properties.
 
@@ -110,6 +111,7 @@ With this we have achieved to abstract away the details of reading and writing t
 * They can make the codebase more complex and difficult to understand, especially if used excessively or in unexpected ways.
 * They can make the codebase more verbose by increasing the amount of boilerplate code required to implement a feature.
 * Because of the additional indirection introduced by the property wrapper, they can add a small amount of overhead to the app's performance.
+{{<ads2>}}
 
 ## Conclusion
 Finally, **property wrappers** are a feature in Swift 5.1 that allows developers to attach extra behavior or functionality to properties in a reusable, composable manner.

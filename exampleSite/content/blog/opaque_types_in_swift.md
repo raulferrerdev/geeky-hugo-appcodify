@@ -10,6 +10,7 @@ draft: false
 
 # What are Opaque Types
 In Swift, an **opaque type** is a type that is defined in one module (such as a framework or library) but can only be used as a specific, concrete type within that module. The actual underlying type is hidden from any other modules that import the framework or library.
+{{<ads1>}}
 
 Consider a framework that specifies the **opaque type** *Authenticator* as an example. A function that accepts an instance of an authenticator as an argument and returns a Boolean value indicating whether or not the authentication was successful may be defined by the framework. The framework, however, conceals the true underlying type of the authenticator. As a result, additional modules that import the framework are unable to instantiate the *Authenticator* class or make use of any of its methods or properties.
 
@@ -130,6 +131,7 @@ Consider a framework that defines the **opaque type** *Authenticator* and a **ge
 In this instance, the framework defines the *authenticate* function, which accepts any type as a value. The importing module is not informed of the true *Authenticator*'s underlying type. By doing so, the framework can operate on any kind of value while still keeping the caller's implementation of the *Authenticator* a secret.
 
 **Generics** and **opaque types** can be combined to produce more adaptable, reusable code that is hidden from the caller. This can be especially helpful when developing frameworks or libraries because it enables you to give users flexibility while keeping control over the implementation specifics.
+{{<ads2>}}
 
 # Conclusion
 

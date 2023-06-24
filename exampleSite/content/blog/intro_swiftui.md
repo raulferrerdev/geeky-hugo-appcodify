@@ -17,6 +17,7 @@ The fact that **SwiftUI** is a declarative framework means that *User Interfaces
 {{< image src="images/posts/intro_swiftui_1.png" alt="SwiftUI">}}
 
 This SwiftUI declarative syntax allows applications to show the status of the application at all times, that is, we always have it updated.
+{{<ads1>}}
 
 # Starting the project
 In order to develop applications with **SwiftUI** we need some minimum requirements such as using XCode11+ (currently the Xcode version is 14.1) and iOS13+.
@@ -108,3 +109,4 @@ The image assets and other resources that you can use in your app are kept in th
 
 ## Preview Content
 This group contains the Review Content.xcassets. This is another catalog that allows us to store all those assets that we are going to use only in the design of the application.
+{{<ads2>}}

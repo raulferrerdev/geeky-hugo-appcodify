@@ -10,6 +10,8 @@ draft: false
 
 # What's VisionKit
 In iOS 11 Apple integrated a library called [Vision](https://developer.apple.com/documentation/vision/). This library use algorithms to perform a series of tasks on images and video (text detection, barcodes, etc.). Now, with iOS 13, Apple has published a new library, [VisionKit](https://developer.apple.com/documentation/visionkit), that allows you to use the document scanner of the system itself (the same one that uses the Notes application). Now let’s see how you can develop your own OCR in iOS 13 with VisionKit.
+{{<ads1>}}
+
 # Project start
 
 In order to check how we can scan a document and recognize its content, we create a project in Xcode 11 (remember that VisionKit only works on iOS 13+). This project can be found complete on [GitHub](https://github.com/raulferrerdev/DocScan)).
@@ -328,6 +330,9 @@ Now we can test the application. To do this we turn it on and capture an image.
 
 As you can see, it perfectly recognizes the text of the image.
 {{< youtube jdsFRTKW5IA >}}
+
+{{<ads2>}}
+
 
 # Conclusion
 

@@ -8,6 +8,7 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 When we run an application on iOS, the first function called is *(_: didFinishLaunchingWithOptions:)* in the AppDelegate. In the AppDelegate we can also find a series of functions that are executed when the state of the application changes (going to the background, returning to the foreground, etc.).
+{{<ads1>}}
 
 # What's the SceneDelegate class?
 With Xcode 11, a new SceneDelegate class appears when generating a new project. But, what is the function of SceneDelegate in iOS 13. Now, in the **SceneDelegate** class in iOS 13 the concept of window (window) has been changed to [scene](https://developer.apple.com/documentation/uikit/app_and_environment/scenes), since now an application can have more than one scene . That is, we can open two or more windows of the same application and interact with each other.
@@ -49,12 +50,13 @@ On the other hand, in the *AppDelegate* class there are two new methods related 
 func application (_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration // It is called when a new 'scene session' is created
  
 func application (_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set <UISceneSession>) // Called when the user discards a 'scene session'
-```swift
+```
 
 ## Modification in the Info.plist file
 
 Together with these new delegates, Xcode creates a new entry (*Application Scene Manifest*) in the *Info.plist* file:
 ![scenedelegate ios 13](../../images/posts/scenedelegate_ios_13_1.png)
+{{<ads2>}}
 
 This new entry we find these fields:
 

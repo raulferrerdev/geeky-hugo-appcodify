@@ -8,6 +8,8 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 **Swift Package Manager** (SPM) was the dependency manager for Swift that Apple released together with Swift in 2015. Swift Package Manager joined other well-known dependency managers, such as [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage). However, it was not until the publication of Xcode 11 that this tool was integrated into Xcode itself, which made it easier to use. Now we are going to learn how to use Swift Package Manager.
+{{<ads1>}}
+
 # A Swift package
 
 A Swift package is made up of a series of files with the source code and a manifest, a file called Package.swift (found in the root directory), which defines the name of the package, its contents, etc. When we compile these files, we generate a separate module that can then be shared (for example, from GitHub) imported into other projects. These files are compiled to form a module that can then be imported by other projects.
@@ -173,6 +175,7 @@ Wherever we want to use it, we simply have to import them:
 ```swift
 #import MyLibray
 ```
+{{<ads2>}}
 
 # Conclusion
 

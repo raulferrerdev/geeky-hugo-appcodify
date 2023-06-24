@@ -10,6 +10,7 @@ draft: false
 ## What are lazy types?
 
 **Lazy** types are used in Swift to delay the computation or initialization of a value until it is actually required. This can be useful for improving performance and reducing memory usage, particularly when initializing a value is costly or time-consuming.
+{{<ads1>}}
 
 ## The Lazy keyword in Swift
 
@@ -209,6 +210,7 @@ We can use the **lazy** property to perform operations on large arrays efficient
 * **Increased code complexity.** Because **lazy** initialization necessitates the use of closures, it can introduce new dependencies between properties and methods.
 * **Thread safety.** In multi-threaded environments, **lazy** initialization can be problematic because multiple threads may attempt to access the same **lazy** property at the same time. If the property is not properly protected, this can result in race conditions and other synchronization issues.
 * **Increased memory usage.** **Lazy** initialization can reduce memory usage in some cases, but it can also increase memory usage in others because it requires the use of closures to defer initialization.
+{{<ads2>}}
 
 ## Conclusion
 In Swift, **lazy** initialization is a potent technique that can enhance efficiency and simplify your code. You can eliminate extraneous computations or data loading by waiting the creation of a variable until it is truly required, which can result in speedier and more effective code. To avoid problems like unexpected behavior if the variable is accessed before it has been initialized, it's crucial to know when to utilize and when to avoid **lazy** initialization. You may utilize **lazy** initialization to create more effective, manageable code in your Swift applications by keeping these things in mind.

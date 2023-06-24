@@ -11,6 +11,8 @@ draft: true
 **Concurrency** is an essential element of modern software development, allowing developers to create applications that are efficient, responsive, and scalable. In the case of Swift, this simultaneity allows us to write efficient code that can take advantage of multi-core processors and provide a smooth user experience. With the introduction of new **concurrency** functions in Swift 5.5 and SwiftUI, such as **async/await** and structured **concurrency**, it is easier to write concurrent code in a safe and efficient manner.
 
 In this series of articles, we will look at the fundamentals of Swift **concurrency**, such as processes, subprocesses, and blocking, as well as advanced topics like **Grand Central Dispatch (GCD)**, **Operation Queues**, and Swift's new **concurrency** functions.
+{{<ads1>}}
+
 
 ## Introduction to Prcesses and Threads
 **Processes** and **threads** are basic concepts in actual operating systems such as macOS and iOS, and understanding how they work is essential for developing efficient and responsive software. In a nutshell:
@@ -74,6 +76,8 @@ createFile()
 ```
 
 Here, a new file is created on disk using the *createFile()* method and the *FileManager* class. The program is allocating a new resource that is distinct from other resources in the system by creating a new file.
+{{<ads2>}}
+
 
 #### Fault tolerance
 

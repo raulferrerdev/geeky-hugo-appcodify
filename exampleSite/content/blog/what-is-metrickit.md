@@ -10,6 +10,8 @@ draft: false
 
 # What's MetricKit?
 **MetricKit** in a new framework, introduced in iOS 13 (WWDC2019), with which it is intended to gather information (metrics) about battery behavior and application performance. For a registered application, reports on the behavior of said application will be received once a day as a general rule.
+{{<ads1>}}
+
 ## Battery
 
 Battery metrics include, among other parameters:
@@ -55,5 +57,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MXMetricManagerSubscriber
     }
 }
 ```
+{{<ads2>}}
 
 The *didReceive* method receives an array that contains the information of the last 24 hours (and of all that information that could not be received previously).

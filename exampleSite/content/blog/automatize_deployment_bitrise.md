@@ -10,6 +10,8 @@ draft: false
 
 ## Continuous integration and continuous delivery (CI CD)
 One of the main problems that a team of developers working on the same project usually encounters is the fact that, when the code of each one of them is merged, conflicts between different developers’ code, errors, etc. can occur, which makes this process slow. To solve this point, **continuous integration and continuous delivery** comes into action to automate the deployment of applications. In this article we are going to learn how to automatize the deployment of iOS applications with Bitrise.
+{{<ads1>}}
+
 ## Introduction
 
 In a previous article we already saw what Continuous Integration is (CI), what Continuous Delivery (CD) is, and  alos, what Continuous Deployment (CD) is, and how it could be done with a new GitHub tool: [GitHub Actions](https://github.com/features/actions).
@@ -255,6 +257,7 @@ In this section we can see (and modify) the [virtual machine](https://devcenter.
 
 It is the Bitrise configuration file, which we can download and modify if we want to use it on our own machine thanks to Bitrise CLI. Bitrise CLI is the o  pen source and offline version of Bitrise to run workflows on our own machine.
 {{< image src="images/posts/automatize_deployment_bitrise_41.png" alt="Bitrise">}}
+{{<ads2>}}
 
 ## Conclusion
 

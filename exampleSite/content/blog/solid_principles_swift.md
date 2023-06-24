@@ -10,6 +10,7 @@ draft: false
 
 # What are SOLID principles?
 As a developer, you probably use or have heard about [SOLID principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod). This acronym, introduced by [Robert C. Martin](https://twitter.com/unclebobmartin) (Uncle Bob, and who also sets de ‘[Clean Architcture](https://raulferrer.dev/blog/clean_architecture/)’), in his book [Agile Software Development: Principles, Patterns, and Practices](https://www.goodreads.com/book/%20show%20/%2084985.Agile_Software_Development_Principles_Patterns_and_Practices), refers to five basic principles of object-oriented programming, which are related to [Design Patterns](https://raulferrer.dev/blog/design_patterns_software/).
+{{<ads1>}}
 
 If we apply these five principles:
 
@@ -359,6 +360,7 @@ class UserService: StorageManager {
     }
 }
 ```
+{{<ads2>}}
 
 # Conclusion
 

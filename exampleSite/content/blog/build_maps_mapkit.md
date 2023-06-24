@@ -12,6 +12,8 @@ draft: false
 Have you noticed the number of applications that show us a map in which they place us, indicate interesting places nearby, mark routes …? In this article I will explain how to build a maps and routes application with [MapKit](https://developer.apple.com/documentation/mapkit).
 
 But what is MapKit? MapKit is an Apple framework that bases its operation on the API and data from Apple Maps, so that you can easily add maps to the applications developed, in this case, for iOS.
+{{<ads1>}}
+
 ## A little of Swift
 
 This project can be found in full on [GitHub](https://github.com/raulferrerdev/MapKitTracker).
@@ -534,6 +536,7 @@ extension ViewController: MKMapViewDelegate {
 }
 ```
 {{< youtube PTdlXLVSpgE >}}
+{{<ads2>}}
 
 ## Conclusion
 

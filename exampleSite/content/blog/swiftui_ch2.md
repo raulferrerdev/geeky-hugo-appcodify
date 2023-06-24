@@ -12,6 +12,7 @@ draft: false
 {{< youtube 0QJTVPfRS-0 >}}
 
 There is a limit of 10 views that can be put directly into the VStack, HStack or ZStack structures in SwiftUI. This is so because VStack, HStack, and ZStack are constructed as generic structures, and the type parameter controls the amount of views that can be directly included in them.
+{{<ads1>}}
 
 VStack, HStack, ZStack... are views that are built using ViewBuilder. You can see that there are numerous instances of the buildBlock method, each taking a different number of views as parameters, if you look at the [ViewBuilder documentation](https://developer.apple.com/documentation/swiftui/viewbuilder). The limitation you noticed is caused by the fact that the function with the most views only accepts 10 views.
 {{< image src="images/posts/swiftui_cs2_1.png" alt="SwiftUI VStack limits">}}
@@ -78,6 +79,7 @@ In this example, *items* is an array of strings that represents the views that w
 SwiftUI is instructed to utilize the entire object as the identifier by using the *\.self* command. In this instance, it instructs SwiftUI that every String value in the array is distinct and suitable for identification.
 
 In the last method, it's critical to ensure that each value in the array is distinct because, if not, **ForEach** might improperly reuse the resulting views.
+{{<ads2>}}
 
 # List
 **List** is an element, also of type View, that allows us to display a large number of elements in a vertical stack. The List view is specifically designed to display a large number of items, but adding scrolling support and optimizing performance.

@@ -13,6 +13,7 @@ draft: false
 
 
 In this post I am going to describe how to use it. In the last previous chapter of this course, we saw the new navigation component that is used as of iOS 16.0: [NavigationStack](https://raulferrer.dev/blog/swiftui_cs9_navigationview_navigationlink/). In this chapter we are going to see a second component, **NavigationSplitView**, which allows us to perform a navigation based on two and even three columns.
+{{<ads1>}}
 
 ## Navigation by columns
 Column navigation surely sounds familiar to you. If you have entered the Mail application on an iPad, you will have seen how you can navigate through the different components: Inbox, received emails and details of an email on the same screen, all of which are displayed in different columns. This is what we are going to do now with the **NavigationSplitView**.
@@ -385,6 +386,7 @@ struct ContentView: View {
     }
 }
 ```
+{{<ads2>}}
 
 ## Conclusion
 With this chapter you already have the minimum tools to apply navigation by columns using NavigationSplitView in your applications. You have seen how in a simple way you can build a navigation that is shown by different applications, such as Apple Mail.

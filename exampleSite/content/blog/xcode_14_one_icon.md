@@ -11,6 +11,7 @@ draft: false
 How many times have we found ourselves preparing countless icons of all the sizes required by Apple for our applications: sizes for iPhone and iPad and for different utilities — Spotlight, Notifications or App.
 Generating so many icons of different sizes was tedious if you did it manually, and something simpler and you used an icon generator (which from an icon, normally 1024x1024px, generated all the necessary sizes).
 But now with Xcode 14, as Apple announced at WWDC 2022, it will only be necessary to configure the Assets catalog of our application so that it only uses a 1024x1024px icon. Xcode 14 will take care of resizing this icon according to its needs.
+{{<ads1>}}
 
 # How to configure an application with a single icon
 
@@ -34,5 +35,7 @@ In this way, the icon template is reduced to a single case, that of 1024x1024px.
 This new functionality of Xcode 14 has some limitations:
 * It is only available for iOS, iPadOS, and watchOS. For macOS, icons of different sizes are still required.
 * When this option is selected, it is for all icon sizes. That is, if we want an icon of a certain size to be different, we will have to configure them all one by one.
+{{<ads2>}}
+
 # Conclusion
 Being able to use a single icon for the results of our application both in a reduction in the work time dedicated to generating the icons and in the fact that, by using a single image, the size of our apps is reduced.

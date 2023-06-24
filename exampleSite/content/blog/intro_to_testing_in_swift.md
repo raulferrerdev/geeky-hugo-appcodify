@@ -8,6 +8,8 @@ draft: false
 ---
 
 As a developer knowing how to write code is only half the battle. Equally crucial is making sure that your code functions properly and does so even after updates and modifications. **Testing** is useful in this situation. We'll go through the fundamentals of testing in Swift in this post and show you how to start using tests in your own applications.
+{{<ads1>}}
+
 
 # What to test?
 The act of confirming that a piece of code operates as intended is known as **testing**. This can involve verifying that a function, given a particular input, delivers the right output or that a view controller, when displaying data to the user, does so accurately.
@@ -49,6 +51,7 @@ func testAdd() {
 The **XCTest** framework's *XCTAssertEqual* function is a tool that verifies that an expression is equal to the expected value. The test will fail if the expression does not match the predicted value.
 
 The *Test* button in the top toolbar or the U keyboard shortcut can be used to execute our tests. Our tests will be executed by Xcode, and the results will be shown in the *Test* *Navigator* pane.
+{{<ads2>}}
 
 # Conclusion
 This post taught us the fundamentals of **testing** in Swift and how to begin adding tests to our own applications. **Testing** is a crucial step in the development process that assists us in making sure our code is error-free and of the highest quality. Using the **XCTest** framework, we saw an example of how to set up a testing target in Xcode and create a test case.

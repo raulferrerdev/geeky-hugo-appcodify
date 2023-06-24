@@ -8,6 +8,7 @@ draft: false
 ---
 
 **User interface (UI) [testing](https://raulferrer.dev/blog/intro_to_testing_in_swift/)** is a crucial step in the software development process that enables us to make sure the user interface of our program is accurate, dependable, and simple to use. The **XCUITest** framework will be used to demonstrate excellent **UI testing** in Swift in this article.
+{{<ads1>}}
 
 # Why testing the UI?
 **User interface (UI) testing** is important for a number of reasons:
@@ -78,6 +79,7 @@ Here are some Swift **UI testing** best practices:
 * Don't test implementation specifics. The user experience, not the UI implementation, should be the main emphasis of **UI tests**.
 * Tests shouldn't be conducted on UI components that the user cannot see. Only aspects that the user can see and interact with should be subjected to UI testing.
 * Utilize a testing approach that is suitable for your application. Think about whether you want to test the UI at the integration level or at the unit level (testing individual components separately) (testing how elements work together).
+{{<ads2>}}
 
 # Conclusion
 This post demonstrated how to create efficient Swift **UI tests** that make use of the **XCUITest** library. We learned how to locate and interact with UI elements using **XCUIElement** queries and actions, as well as how to use **XCTAssert** statements to confirm the UI's current state. We also discussed various UI testing best practices, such as maintaining isolated, focused tests and conducting user-centered testing.

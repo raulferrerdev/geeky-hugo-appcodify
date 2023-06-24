@@ -8,6 +8,8 @@ type: "regular" # available types: [featured/regular]
 draft: false
 ---
 In a [previous article](https://raulferrergarcia.netlify.app/blog/learn_programmming_with_flutter/), in which I introduce Flutter, I discussed the importance of widgets in Flutter. Let’s see how it is built in Flutter.
+{{<ads1>}}
+
 # What is a widget?
 
 We can think of **widgets** as reusable code blocks that describe the appearance of the user interface (UI). They do this based on their state, which, as we will see later, can be *static* (does not change) or *dynamic* (changes over time).
@@ -179,6 +181,7 @@ In this case, the build method returns a somewhat more complex series of widgets
 * **Column:** it is also a layout type widget, which allows a list of widgets to be arranged vertically.
 * **Text:** display text on the screen.
 * **FloatingActionButton:** This widget features an on-screen button.
+{{<ads2>}}
 
 # Conclusion
 

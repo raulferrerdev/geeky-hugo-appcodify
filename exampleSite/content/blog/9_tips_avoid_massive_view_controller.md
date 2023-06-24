@@ -9,6 +9,7 @@ draft: false
 ---
 
 The **[Model-View-Controller](https://raulferrer.dev/blog/architecture_patterns_ios/)** (**MVC**) design pattern is a basic component of creating app user interfaces, as any iOS developer is aware. However, when an app becomes more complicated, it's not unusual for view controllers to get huge and cumbersome. This can make the code difficult to comprehend and maintain and cause a number of issues, including lengthy build times and poor performance.
+{{<ads1>}}
 
 # Model-View-Controller (MVC) components
 First of all, let's remember which components make up the Model-View-Controller pattern and what their functions are.
@@ -82,6 +83,7 @@ Define a protocol for the dependency you wish to inject, and then send an instan
 *Map*, *filter*, and *reduce* are examples of [functional programming techniques](https://raulferrer.dev/blog/swift_high_order_functions/) that can be used to build more terse and expressive code. These methods enable declarative manipulation of data sets, which can facilitate code comprehension and maintenance.
 
 If you want to make your view controller logic simpler and clearer, think about adopting functional programming techniques. For instance, you could use filter to choose a subset of data based on specific criteria or map to change the format of an array of data.
+{{<ads2>}}
 
 # Conclusion
 The MVC design pattern in Swift allows you to avoid huge view controllers using a variety of techniques. Your codebase will be easier to maintain and scale by keeping your view controllers compact, well-organized, and understandable if you adhere to best practices like isolating logic into distinct classes, employing child view controllers, and using functional programming approaches.

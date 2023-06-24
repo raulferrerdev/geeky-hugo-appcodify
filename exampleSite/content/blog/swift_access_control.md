@@ -11,6 +11,7 @@ draft: false
 
 As a developer, one of the most important principles I learned was *encapsulation*. This principle means hiding implementation details in your code and providing a clear and well-defined interface for interacting with other parts of your code or other modules.
 Swift's **access control** is a powerful tool that aids in encapsulation and the creation of more secure, modular, and easy-to-maintain code.
+{{<ads1>}}
 
 
 # How choose access levels?
@@ -114,6 +115,7 @@ class Person {
 }
 ```
 In this example, we have defined the class *Person* with a **private** property of name and a method *greet()* that uses that property. Because the *name* property is marked **private**, only code inside the *Person* class will be able to access this property; however, any code that has access to a *Person* instance will be able to call the *greet()* method.
+{{<ads2>}}
 
 # Conclusion
 

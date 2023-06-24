@@ -12,6 +12,7 @@ draft: false
 
 
 A typical UI component that may be used to collect user inputs in a systematic manner is the form. We'll explore advanced **SwiftUI** form-building tools and strategies in this tutorial.
+{{<ads1>}}
 
 ## What's a SwiftUI Form
 A **Form** in **SwiftUI** is a container view that arranges its child views into a single column. By default, the form is scrollable, allowing the user to view all of the material if it fills the entire screen height.
@@ -124,6 +125,7 @@ Form {
     }
 }
 ```
+{{<ads2>}}
 
 ## Conclusion
 **Forms** are an essential component of any app that requires user input, and creating forms with **SwiftUI** has never been easier. You can group related controls into sections, change the form's appearance, and even create custom form controls. I hope this article has helped you better understand **SwiftUI**'s advanced features and techniques for creating forms.

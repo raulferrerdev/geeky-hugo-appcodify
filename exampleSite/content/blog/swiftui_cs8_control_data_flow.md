@@ -13,6 +13,7 @@ draft: false
 
 
 One of the key features of SwiftUI is its use of **property wrappers**, which are used to control the flow of data through the view hierarchy. In this article, we will explore four **property wrappers** in particular: **@State**, **@Binding**, **@ObservedObject**, and **@Published**.
+{{<ads1>}}
 
 # @State
 SwiftUI's **@State** property wrapper gives you the ability to control a view's state. The view will automatically be stored in its internal state when a property is designated with the **@State** wrapper, and any changes to the property will cause the view to be rendered again. The display will update immediately when the state changes, making it simple to design dynamic and reactive user interfaces.
@@ -164,6 +165,7 @@ struct PersonView: View {
 The **$** prefix in this example establishes a binding between the text field and the person's name property. The person's name property updates when the user inputs in the text box, and the view responds by changing the Text view.
 
 In conclusion, **@Published** is a property wrapper that may be used in place of **@ObservedObject** and is frequently combined with the **@State** and **@Binding** wrappers to automatically make an object comply to the ObservableObject protocol. It makes it simple to design dynamic and reactive user interfaces since it enables you to manage the state of an object and causes a re-render of the view when the object's state changes.
+{{<ads2>}}
 
 
 # Conclusion

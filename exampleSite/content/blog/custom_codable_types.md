@@ -14,6 +14,9 @@ We are going to see how we can encode and decode information in **JSON format** 
 
 In a previous publication we saw how to transform data in **JSON format**, which we had obtained from an external source (such as when making a request to a web service), into structures (*struct*) or classes (*class*) using the Codable protocol.
 
+{{<ads1>}}
+
+
 In that publication, the properties of the structures or classes had the same name as the keys (keys) in the JSON. That is, if the key in the JSON was *firstName*, then the property of the structure associated with that value is also *firstName*:
 
 ```swift
@@ -118,6 +121,9 @@ And in the console we obtain:
 ```swift
 "User(id: "39631383-4e2a-48ef-bb40-f9d896392eab", firstName: "Jane", lastName: "Doe", mail: "jane.doe@example.com", active: "true")"
 ```
+
+{{<ads2>}}
+
 
 ## Conclusion
 The use of Codable types allows us to work easily with **JSON format** in our apps.

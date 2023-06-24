@@ -11,6 +11,7 @@ draft: false
 ## Clean code in Swift
 
 **Writing clear and legible code** is crucial for Swift developers. In the long run, it makes code simpler to comprehend, maintain, and modify. Here are some guidelines to help you create Swift code that is clearer and easier to read.
+{{<ads1>}}
 
 ### 1. Observe naming standards
 
@@ -224,6 +225,7 @@ print(reducedNumbers)
 ```
 
 The *filter* function is used to choose even numbers from an array in this example. The even numbers are then each doubled using the *map* function. The array that results is summarized using the *reduce* function. This is an illustration of how to write clear, readable code using functional programming techniques.
+{{<ads2>}}
 
 ## Conclusion
 

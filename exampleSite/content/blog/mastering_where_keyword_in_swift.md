@@ -10,6 +10,7 @@ draft: false
 
 # What is the where clause?
 In Swift, the **where** clause is used to *specify additional constraints* on generic types, functions, and associated types. That is to say, it allows us to define some requirements that must be satisfied in order for the code to compile and execute properly.
+{{<ads1>}}
 
 # Uses of the where clause
 Let's see some of the most common uses of the **where** clause in Swift.
@@ -164,5 +165,7 @@ default:
     fatalError("Invalid grade")
 }
 ```
+{{<ads2>}}
+
 # Conclusion
 Although with the use of *if* statements we can achieve the same result than with the **where** clause, **'where'** is a more concise and readable way of adding constraints. When working with complex types and constraints, with the use of the **where** clause we can make the code more efficient, expressive, and maintainable.

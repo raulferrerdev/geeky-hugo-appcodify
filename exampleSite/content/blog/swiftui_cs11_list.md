@@ -12,6 +12,7 @@ draft: false
 {{< youtube YpmvfYZlMtc >}}
 
 A **List** is a SwiftUI compoent that displays a *vertically scrollable* collection of rows. This component is used to display data from arrays, dictionaries, and other data sources. Text, images, and other elements can also be included.
+{{<ads1>}}
 
 ## How does a List function in SwiftUI
 
@@ -208,6 +209,7 @@ struct ContentView: View {
     }
 }
 ```
+{{<ads2>}}
 
 ## Conclusion
 *List* view is an effective tool for showing collections of data. You may make unique lists with its many features to suit the requirements of our app. The use of modifiers as *.deleted* or *.onMove* allow us to add some fuctionality. The addition of *headers* and *footers* allow us to give more information to the user on using our app.

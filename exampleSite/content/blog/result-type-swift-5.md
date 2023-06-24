@@ -16,6 +16,7 @@ public enum Result<Success, Failure: Error> {
     case success(Success), failure(Failure)
 }
 ```
+{{<ads1>}}
 
 **Result** allows to handle errors for asynchronous APIs in an automatic way. For example, to make a call to a server that returns a list of users (struct User), we can implement the following method:
 
@@ -54,3 +55,4 @@ fetchUsers(url: url) { result in
     }
 }
 ```
+{{<ads2>}}

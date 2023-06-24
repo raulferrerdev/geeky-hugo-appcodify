@@ -13,6 +13,7 @@ draft: false
 Surely you have noticed in an application how pressing a button or moving a swift produces a slight vibration. This information that we receive in this way from the application is called **haptic feedback**.
 This feedback can be in the form of vibrations, touches, or other physical sensations that the user can feel through the device.
 With this **haptic feedback** we can improve the user experience and make your app feel more responsive and engaging. Let's now see how to use **haptic feedback** in SwiftUI.
+{{<ads1>}}
 
 # Using haptic feedback in SwiftUI
 Although SwiftUI has **haptic feedback** itself, we can use it by adding UIKit and **CoreHaptics**, and then using the **UIFeedbackGenerator** class.
@@ -173,5 +174,7 @@ struct ContentView: View {
     }
 }
 ```
+{{<ads2>}}
+
 # Conclusion
 In this post, we've explored how to use haptic feedback in SwiftUI, and their different types: UIImpactFeedbackGenerator, UINotificationFeedbackGenerator, and UISelectionFeedbackGenerator. On adding haptic feedback to our apps, we can enhance the user experience and make apps feel more responsive and engaging.

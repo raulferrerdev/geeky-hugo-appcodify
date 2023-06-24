@@ -10,6 +10,8 @@ draft: false
 
 ## Checking Internet status in an app
 With iOS 12, Apple has introduced Network, a framework that includes the **NWPathMonitor** class. **NWPathMonitor** gives us the means to monitor changes of state in the **Internet status** (so it is no longer necessary to use the Reachability class, in applications that support iOS 12 onwards). Therefore, we can set aside the Reachability library, and detect the state of the network with **NWPathMonitor**.
+{{<ads1>}}
+
 
 ## NWPathMonitor
 To use this new way to check **Internet status**, we first need to create an instance of **NWPathMonitor**:
@@ -116,6 +118,7 @@ public enum ConnectionType {
     case unknown
 }
 ```
+{{<ads2>}}
 
 
 To use this Singleton type class:

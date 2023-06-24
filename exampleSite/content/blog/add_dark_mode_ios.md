@@ -12,6 +12,7 @@ draft: false
 Surely you have heard of **Dark Mode** on iOS 13, that is, a mode in which the color range of the user interface darkens. This allows, among other things, to improve visibility in places with low light and reduce the energy consumption of applications (dark colors use less energy than light ones). For example, we can set our iPhone background black (as using dark mode), and then, the foreground color will change to white.
 
 Although some applications already included a Dark Mode in their interface, it was not until the publication of iOS 13 and iPadOS, that the Dark Mode was included in the configuration of the device itself.
+{{<ads1>}}
 
 ## Adapt applications to Dark Mode
 
@@ -39,6 +40,7 @@ As we saw in [How to create a color palette (Color Assets) in Xcode](https://rau
 To do this, we select the Assets.xcassets folder (or creating our own .xcassets folder for colors) in the project navigator (Project Navigator).
 
 Then we right-click, select New Color Set and change its attributes to generate the new color.
+{{<ads2>}}
 
 ### Two versions of the same color
 

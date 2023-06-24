@@ -12,6 +12,9 @@ draft: false
 
 If you're concerned about **cybersecurity info**, in this article we are going to see an introduction tutorial to [CryptoKit](https://developer.apple.com/videos/play/wwdc2019/709/), presented by Apple on WWDC19, and how it can be used in applications developed for iOS13. **CryptoKit** allows, for example, the exchange of public and private keys, so that you could get to make purchases from an iPhone with the cryptocurrencies (Bitcoin, for example) stored in it.
 
+{{<ads1>}}
+
+
 **CryptoKit** allows developers:
 
 * Create and compare hashes.
@@ -160,6 +163,9 @@ if userASymmetricKey == userBSymmetricKey {
 ```
 
 Now we can use the generated symmetric key to encrypt information as we have seen previously (either through the AES-GCM algorithm or the ChaChaPoly).
+
+{{<ads2>}}
+
 ## Conclusion
 
 Respect to **cybersecurity info**, unlike the previous system used in Apple to encrypt information (CommonCrypto), **CryptoKit** is high level, so it is simple to use. It includes the most common encryption algorithms, as well as the most used operations: hashing, encryption and key sharing.

@@ -9,6 +9,7 @@ draft: false
 
 ## Advanced Swift Testing
 As you gain experience testing with Swift, you could encounter problems that are difficult to resolve using [simple **test cases**](https://raulferrer.dev/blog/starting_unit_testing_in_swift/). You might need to employ sophisticated **Swift testing** methods like **mocking** and **stubbing** in certain circumstances. In this piece, we'll look at **mocking** and **stubbing** and how you can use them to create tests that are more useful.
+{{<ads1>}}
 
 ## What is mocking?
 Using the **mocking** technique, you can make *fake objects that can be substituted for actual ones in your tests*. You may isolate the piece of code you're testing and make sure it operates as you anticipate using these fictitious objects, often known as mocks.
@@ -75,6 +76,7 @@ func testLoadMovies() {
 }
 ```
 The **stub** UIViewController in this test defines the behavior of the view controller while the **mock** APIClient simulates the behavior of the real API client. This enables us to independently test and validate the loadMovies method's functionality.
+{{<ads2>}}
 
 ## Conclusion
 In this post, we learnt about advanced **Swift testing** strategies like **mocking** and **stubbing** and how to utilize them to create Swift tests that are more useful. Testing complex or hard-to-predict behavior is made simpler by the use of **mocks** and **stubs**, which enable us to isolate particular code units and specify their behavior for the purposes of our tests. We watched a demonstration of how to test a view controller that pulls data from a remote API using **mocks** and **stubs**.

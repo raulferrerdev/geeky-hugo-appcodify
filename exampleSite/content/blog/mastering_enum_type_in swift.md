@@ -9,6 +9,7 @@ draft: false
 ---
 
 A useful tool in any programmer's toolbox is an **enumeration**, or **enum**. They enable type-safe interaction and the grouping of related variables. **Enums** will be discussed in this post, along with how Swift may make use of them. **Enum** fundamentals as well as some more complex ideas, like related values, raw values, and custom initializers, will be covered.
+{{<ads1>}}
 
 # What are enums?
 
@@ -200,6 +201,7 @@ for day in Day.allCases {
 ```
 
 This can be helpful for creating a list of every case that an **enum** could have.
+{{<ads2>}}
 
 # Conclusion
 

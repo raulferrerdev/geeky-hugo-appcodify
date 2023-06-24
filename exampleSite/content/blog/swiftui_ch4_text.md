@@ -11,6 +11,7 @@ draft: false
 
 {{< youtube ev0Bux_NSKU >}}
 SwiftUI's core component, **Text**, is used to display and input text in our apps. It is a view from the SwiftUI framework that symbolizes a line of text.
+{{<ads1>}}
 
 A string of text can be displayed in our user interface using SwiftUI's **Text** view. By providing a string as the argument to its initializer, we may construct a Text view:
 
@@ -90,6 +91,7 @@ We can alter the gap between lines of text using this modification. The lines ar
 Text("Hello, World!")
   .lineSpacing(10)
 ```
+{{<ads2>}}
 
 # .truncationMode(_:)
 This modifier controls how the text is truncated when it exceeds the bounds of the Text view. By default, the text is truncated at the end and an *ellipsis* (...) is displayed. However, we can use this modifier to specify a different truncation mode. For example, to truncate the text at the beginning and display an *ellipsis* at the start, we can use the following code:

@@ -10,6 +10,7 @@ draft: false
 
 ## Pros and Cons of most used software architecture patterns
 A little over 6 years ago, on 2011, when I started learning to program applications for iOS, I used the Model View Controller (MVC) **software architecture pattern** (recommended by Apple), although it always ended up being a “Massive-View-Controller” architecture.
+{{<ads1>}}
 
 Step by step I became interested in improving the way in which applications could be built. From the architecture of MVC in Objective-C I went to MVC with Swift, then to MVVM applying RXSwift, even doing tests with VIPER and VIP, although initially they seemed complex to me (without forgetting MVP, which I learned about through Android developers).
 
@@ -80,6 +81,7 @@ VIP, unlike the other architectures discussed, works with a one-way flow of info
 * VIP have a lot of protocols and boilerplate code, which can be confusing. It's advisable to use templates.
 * For newbies could be overhelming, as at first sight seems over-engineered.
 * As VIPER, is not usually recommended in small applications.
-* It must be taken into account that, although it is a small functionality to add, the amount of code to write is high.
+* It must be taken into account that, although it is a small functionality to add, the amount of code to write is high.{{<ads2>}}
+
 ## Conclusion
 As you can see, each of the software architecture patterns you have seen has its pros and cons, so it's not possible to talk about one architecture being better than the other: you just have to know how to apply them in each case.

@@ -11,6 +11,7 @@ draft: false
 A safe approach to persist small amounts of data in your iOS, macOS, tvOS, or watchOS app is to store it in the **keychain**. A database called **keychain** is used to store private data such as encryption keys and passwords.
 
 In this article, we'll look at utilizing Swift to save data in the **keychain**. We'll start by talking about the keychain and its significance before delving into the procedures needed to store information in the keychain.
+{{<ads1>}}
 
 # What exactly is a keychain, and why is it significant?
 Passwords, encryption keys, and other private data are kept in the keychain, a secure database. The keychain is a secure location to keep sensitive information because it is encrypted and secured by the user's device passcode.
@@ -162,6 +163,7 @@ func deletePassword(account: String, service: String) {
 In this example, we create a dictionary containing the key-value pairs needed to remove the password from the keychain. The keys are *Security* framework constants, and the values are the *account* and *service* Data objects.
 
 The dictionary is then passed to the *SecItemDelete* function, which deletes the password from the keychain. The function returns a status code that indicates whether or not the operation was successful.
+{{<ads2>}}
 
 # Conclusion
 In this post, we learned how to use Swift to store, retrieve, update, and delete data from the keychain. We saw how the keychain can be shared among multiple apps on the same device and is a secure and convenient way to persist small pieces of data in your app.

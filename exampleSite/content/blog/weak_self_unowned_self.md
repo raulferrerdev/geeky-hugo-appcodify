@@ -12,6 +12,7 @@ draft: false
 **Automatic Reference Counting (ARC)** is a memory management feature in Swift that tracks the number of references to an object to manage its lifetime. When the number of references to an object reaches zero, the object is freed up in memory.
 
 The mechanisms used by ARC to manage the lifetime of objects are *retain* and *release*. When we make a strong reference to an object, we 'retain' it, which increases the number of references by one. When we 'release' a reference to an object, the reference count is decremented by one. When the reference count reaches zero, ARC frees the object from memory.
+{{<ads1>}}
 
 ## Retain cycles
 In Swift, **retain cycles**, also known as *strong reference cycles*, occur when two or more objects have strong references to one another. **Retain cycles** can prevent objects from being released from memory, resulting in *memory leaks* and poor performance over time.
@@ -91,6 +92,7 @@ As a rule of thumb:
 In fact, as documentation posted in [swift.org](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/#Weak-and-Unowned-References):
 
 > Define a capture in a closure as an unowned reference when the closure and the instance it captures will always refer to each other, and will always be deallocated at the same time. Conversely, define a capture as a weak reference when the captured reference may become nil at some point in the future. Weak references are always of an optional type, and automatically become nil when the instance they reference is deallocated. This enables you to check for their existence within the closure’s body.
+{{<ads2>}}
 
 # Conclusion
 Understanding *weak references* and *unowned references* in Swift closures is important for avoids memory leaks and other common memory management problems. It is also important to use the appropriate type of reference for each situation, depending on whether we are confident that the object will exist for the duration of the closure or not. By following these best practices, we can write more maintainable and reliable Swift code.

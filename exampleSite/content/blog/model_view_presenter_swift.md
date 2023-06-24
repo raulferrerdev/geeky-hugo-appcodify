@@ -9,6 +9,7 @@ draft: false
 
 # Introduction
 **MVP (Model-View-Presenter)** is an architectural pattern derived from MVC, which is frequently used in the creation of mobile applications. This pattern allows you to separate presentation logic from business logic. This separation helps make the code more maintainable, scalable, and testable.
+{{<ads1>}}
 
 # Components
 The MVP has three components:
@@ -154,6 +155,7 @@ class UserView: UIView, UserViewDelegate {
 * Because it's more complex than MVC, it's typically not recommended for use in small, simple applications.
 * The Presenter in MVP has the same potential to become an important component as the Controller in MVC.
 * Even though we have further modularized the design, there are still some issues, such as continuous controller control over screen switching.
+{{<ads2>}}
 
 # Conclusion
 

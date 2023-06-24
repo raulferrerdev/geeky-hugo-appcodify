@@ -9,6 +9,7 @@ draft: false
 
 We discussed various advanced testing strategies for Swift in a [recent article](https://raulferrer.dev/blog/advanced_testing_in_swift_mocking_stubbing/), including mocks and stubs. Although we have seen some examples of these strategies in use, there are times when we may encounter cases that are more complex.
 What methods might we employ, for instance, if we wanted to test a **UINavigationController** or a **UITabBarController** component?
+{{<ads1>}}
 
 # Testing UINavigationController
 You have a several alternatives when using Swift's XCTest to test a **UINavigationController**'s behavior.
@@ -206,6 +207,7 @@ Here are some extra things to think about while testing a **UITabBarController**
 * When testing a **UITabBarController**, it's often a good idea to test a range of various scenarios. You might wish to test, for instance, what happens when you open a different tab or when you alter the things in the tab bar.
 
 * Make careful to test the **UITabBarController**'s behavior as well as that of the view controllers it controls. To ensure that the correct view controllers are being displayed and acting as intended, use **XCTest**.
+{{<ads2>}}
 
 # Conclusion
 In conclusion, using **XCTest** in Swift to test a **UINavigationController** or **UITabBarController** can be a useful approach to make sure that your code is functioning properly and acting as expected. The controller can be set up in the test function, a subclass of the controller can be created, a mock object can be used, and a partial mock can be used, among other approaches, to test these controllers.

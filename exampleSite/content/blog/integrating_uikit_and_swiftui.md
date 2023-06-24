@@ -13,6 +13,7 @@ draft: false
 Developers have a new tool, **SwiftUI**, to create user interfaces that are far more user-friendly and cutting-edge than those created using **UIKit**. For developers who have put a lot of time and effort into understanding and using **UIKit**, the switch to **SwiftUI** might not be as simple. In some circumstances, you might also want to recycle previously created UIKit code or interface elements.
 
 Luckily, **SwiftUI**'s interaction with **UIKit** offers a solution for these situations. This post will examine how to combine **UIKit** with **SwiftUI**, the advantages of doing so, and any potential drawbacks.
+{{<ads1>}}
 
 ### What is UIKit?
 
@@ -118,6 +119,7 @@ Despite the advantages, it's important to be aware of a few restrictions when in
 * **Increased complexity.** Combining **UIKit** with **SwiftUI** can make your code more complex, especially if you're switching from a codebase that only uses **UIKit**.
 
 * **Maintenance costs.** Keeping up with two different codebases for **UIKit** and **SwiftUI** can be time-consuming and raise your app's maintenance costs.
+{{<ads2>}}
 
 ## Conclusion
 In conclusion, integrating UIKit and SwiftUI views can offer a range of benefits for app development. Combining these frameworks can provide developers with more flexibility, allowing them to use the best tools for specific tasks while still maintaining a cohesive user interface.

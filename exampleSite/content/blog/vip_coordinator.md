@@ -9,6 +9,7 @@ draft: false
 ---
 
 Clean Swift, also known as VIP (View-Interactor-Presenter) architecture, is an iOS application design pattern that [Raymond Law introduced it in 2014](https://clean-swift.com/) as an alternative to the popular Model-View-Controller (MVC) pattern. VIP architecture's primary goal is to make the codebase more modular, testable, and scalable.
+{{<ads1>}}
 
 # When should you use VIP architecture?
 VIP architecture is well suited for large, complex iOS applications that necessitate the collaboration of multiple developers. It's also useful for applications that need a lot of test coverage and upkeep.
@@ -183,6 +184,7 @@ So we have set up all the dependencies required for the ExampleViewController sc
 
 ## Protocols nomenclature
 As you have seen, there are a lot of protocols that allows the flow of informaction. In this case, we have also use a *Input/Output* convention to define the inputs and outputs of each component. In order to accomplish that, we use *typealias* to 'rename' this protocols in each case.
+{{<ads2>}}
 
 # Advantajes and drawbacks
 As any other architecture, VIP has advantajes and drawbacks.

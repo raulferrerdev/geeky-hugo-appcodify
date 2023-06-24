@@ -13,6 +13,7 @@ draft: false
 
 # Introduction
 One of SwiftUI's most powerful features is the ability to lay out collections of views using flexible grid systems. Two of the most popular grid systems in SwiftUI are **LazyVGrid** and **LazyHGrid**. In this chapter, we'll take a deep dive into **LazyVGrid** and **LazyHGrid** and look at how they can be used to create complex and responsive user interfaces.
+{{<ads1>}}
 
 # LazyVGrid
 **LazyVGrid** is a SwiftUI view that organizes its child views into a vertical grid. It provides a flexible and scalable method of displaying items in a grid-like format, with each row containing a different number of items and different items having different sizes.
@@ -121,6 +122,7 @@ In this example we have a **LazyVGrid** with five columns, where the first and l
 We also have a **LazyHGrid** with four rows inside each item of the **LazyVGrid**, with each row having an adaptive height ranging from 50 to 250 points. The grid also has a row spacing of 10 points.
 
 Each cell of the LazyHGrid has a Text view inside that displays the item number. The text view has a blue background with white text and is sized to fill the entire cell using *frame(maxWidth:.infinity, maxHeight:.infinity)*.
+{{<ads2>}}
 
 # Conclusion
 **LazyVGrid** and **LazyHGrid** are robust and adaptable grid systems that let design intricate and dynamic user interfaces. They offer a simple method for presenting collections of views in a grid-like format and adjust to the available area to guarantee that your layouts are consistently optimized for the user's device and screen size.

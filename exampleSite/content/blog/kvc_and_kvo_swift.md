@@ -9,6 +9,7 @@ draft: false
 ---
 
 KVC and KVO are two important concepts in iOS app development, especially when using Swift. These two frameworks enable developers to access and manipulate object properties while also observing changes to properties in real time. In this post, we'll go over KVC and KVO in great detail, explaining what they are, how they work, and how to use them effectively in your iOS app.
+{{<ads1>}}
 
 # KVC (Key-Value Coding)
 
@@ -49,6 +50,7 @@ let age = person.value(forKey: "age") as? Int
 ```swift
 person.addObserver(self, forKeyPath: "name", options: [.new, .old], context: nil)
 ```
+{{<ads2>}}
 
 The **observer** will always be notified of changes to the name property together with the property's current and previous values. You must override the *observeValue(forKeyPath:of:change:context:)* method in order to handle these notifications:
 

@@ -12,6 +12,7 @@ draft: false
 SwiftUI allows us to easily compose a user interface (UI) by adding components (View) and organizing them in the UI space according to our interests.
 The components to organize these Views are basically three: **VStack**, **HStack** and **ZStack**.
 {{< youtube -dQ7ADkO_qk >}}
+{{<ads1>}}
 
 ## VStack
 When we create an application with SwiftUI, a default scene (*ContentView*) appears, which contains the following code:
@@ -102,6 +103,8 @@ struct ContentView: View {
 ```
 
 > By default, zIndex has a value of 0 on each element of a **ZStack**. This value can be changed to positive or negative values to modify the positioning on the stack.
+{{<ads2>}}
+
 ## Spacer
 We have seen that in the case of **VStack** and **HStack** we can indicate the separation between the different elements through the spacing parameter. But what if we wanted the **VStack** items to be at the bottom of the screen? And at the top?
 For this we have the **Spacer** element. This is an element with no content that expands to take up all available space (vertically on a **VStack** and horizontally on an **HStack**).
